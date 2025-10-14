@@ -13,12 +13,13 @@ def calculate_battery_level(g, username):
     """Calculate energy level based on recent activity"""
     user = g.get_user(username)
     
-    week_ago = datetime.now() - timedelta(days=7)
+    week_ago = datetime.utcnow() - timedelta(days=7)
     activity_score = 0
     
     try:
         for event in user.get_events()[:100]:
-            if event.created_at < week_ago:
+            event_time = event.created_at.replace(tzinfo=None) if event.created_at.tzinfo else event.created_at
+            if event_time < week_ago:
                 break
                 
             if event.type == 'PushEvent':
@@ -91,10 +92,15 @@ def update_readme(username):
     
     new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
     
+    # Check if substitution worked
+    if new_content == content:
+        print(f"⚠️  Warning: No changes detected. Pattern may not have matched.")
+        print(f"Looking for pattern: {pattern}")
+    
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    print(f"✅ Updated battery status")
+    print(f"✅ Updated battery status (Level: {username if 'level' not in dir() else level}%)")
 
 if __name__ == '__main__':
     username = os.getenv('GITHUB_REPOSITORY', 'deepextrema/deepextrema').split('/')[0]

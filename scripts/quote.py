@@ -87,6 +87,15 @@ def update_readme(quote):
     
     new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
     
+    if new_content == content:
+        print(f"⚠️  Warning: QUOTE section not found or no changes made")
+        print(f"Looking for: {pattern}")
+        # Check if markers exist
+        if '<!--START_SECTION:QUOTE-->' in content:
+            print(f"✓ START marker found")
+        if '<!--END_SECTION:QUOTE-->' in content:
+            print(f"✓ END marker found")
+    
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     

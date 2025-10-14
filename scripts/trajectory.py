@@ -23,7 +23,7 @@ def get_now_launching(g, username):
         repos = list(user.get_repos(sort='pushed'))[:20]
         
         candidates = []
-        two_weeks_ago = datetime.now() - timedelta(days=14)
+        two_weeks_ago = datetime.utcnow() - timedelta(days=14)
         
         for repo in repos:
             if repo.fork or repo.archived:
@@ -76,10 +76,11 @@ def get_recent_activity(g, username, limit=5):
     try:
         user = g.get_user(username)
         activities = []
-        cutoff = datetime.now() - timedelta(days=7)
+        cutoff = datetime.utcnow() - timedelta(days=7)
         
         for event in user.get_events()[:50]:
-            if event.created_at.replace(tzinfo=None) < cutoff:
+            event_time = event.created_at.replace(tzinfo=None) if event.created_at.tzinfo else event.created_at
+            if event_time < cutoff:
                 break
                 
             if event.type == 'PushEvent':
@@ -136,17 +137,25 @@ def update_readme(username):
         # Update LAUNCH section
         pattern = r'<!--START_SECTION:LAUNCH-->.*?<!--END_SECTION:LAUNCH-->'
         replacement = f'<!--START_SECTION:LAUNCH-->\n{launch_section}\n<!--END_SECTION:LAUNCH-->'
-        content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        
+        if new_content == content:
+            print(f"⚠️  LAUNCH section: No match found!")
         
         # Update TRAJECTORY section
         pattern = r'<!--START_SECTION:TRAJECTORY-->.*?<!--END_SECTION:TRAJECTORY-->'
         replacement = f'<!--START_SECTION:TRAJECTORY-->\n{trajectory_section}\n<!--END_SECTION:TRAJECTORY-->'
-        content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        new_content = re.sub(pattern, replacement, new_content, flags=re.DOTALL)
+        
+        if new_content == content:
+            print(f"⚠️  TRAJECTORY section: No match found!")
         
         with open(readme_path, 'w', encoding='utf-8') as f:
-            f.write(content)
+            f.write(new_content)
         
         print(f"✅ Updated trajectory and launch status")
+        print(f"   Launch: {now_launching[:60]}...")
+        print(f"   Activities: {len(activities)} found")
     except Exception as e:
         print(f"Error updating trajectory: {e}")
 
