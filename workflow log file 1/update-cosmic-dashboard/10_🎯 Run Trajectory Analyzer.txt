@@ -1,0 +1,14 @@
+﻿2025-10-14T03:15:47.5280162Z ##[group]Run python scripts/trajectory.py
+2025-10-14T03:15:47.5280505Z [36;1mpython scripts/trajectory.py[0m
+2025-10-14T03:15:47.5312824Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:47.5313053Z env:
+2025-10-14T03:15:47.5313305Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5313718Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:47.5314299Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5314646Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5315009Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5315362Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:47.5315833Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:47.5316073Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:47.5316337Z ##[endgroup]
+2025-10-14T03:15:55.5116234Z ✅ Updated trajectory and launch status

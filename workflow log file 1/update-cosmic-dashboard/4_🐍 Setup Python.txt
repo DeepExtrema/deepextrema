@@ -1,0 +1,21 @@
+﻿2025-10-14T03:15:16.1363375Z ##[group]Run actions/setup-python@v5
+2025-10-14T03:15:16.1363664Z with:
+2025-10-14T03:15:16.1363854Z   python-version: 3.11
+2025-10-14T03:15:16.1364070Z   cache: pip
+2025-10-14T03:15:16.1364246Z   check-latest: false
+2025-10-14T03:15:16.1364562Z   token: ***
+2025-10-14T03:15:16.1364750Z   update-environment: true
+2025-10-14T03:15:16.1364972Z   allow-prereleases: false
+2025-10-14T03:15:16.1365174Z   freethreaded: false
+2025-10-14T03:15:16.1365376Z ##[endgroup]
+2025-10-14T03:15:16.2995479Z ##[group]Installed versions
+2025-10-14T03:15:16.3640203Z Successfully set up CPython (3.11.13)
+2025-10-14T03:15:16.3641462Z ##[endgroup]
+2025-10-14T03:15:16.4308292Z [command]/opt/hostedtoolcache/Python/3.11.13/x64/bin/pip cache dir
+2025-10-14T03:15:18.5738973Z /home/runner/.cache/pip
+2025-10-14T03:15:18.7666871Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.11.13-pip-049766dee1f2f86bf0d6b46b5e8de04a91d282f3a54ec71fdcf70d1ec5e57ca0
+2025-10-14T03:15:19.6600484Z Received 53371401 of 53371401 (100.0%), 68.5 MBs/sec
+2025-10-14T03:15:19.6601190Z Cache Size: ~51 MB (53371401 B)
+2025-10-14T03:15:19.6659750Z [command]/usr/bin/tar -xf /home/runner/work/_temp/5c43a8ee-85b2-43a2-a58c-5f0748007a88/cache.tzst -P -C /home/runner/work/deepextrema/deepextrema --use-compress-program unzstd
+2025-10-14T03:15:19.7551969Z Cache restored successfully
+2025-10-14T03:15:19.7666158Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.11.13-pip-049766dee1f2f86bf0d6b46b5e8de04a91d282f3a54ec71fdcf70d1ec5e57ca0

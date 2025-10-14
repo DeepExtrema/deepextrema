@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:43.6314103Z ##[group]Run python scripts/neural_pathways.py
+2025-10-14T03:16:43.6314457Z [36;1mpython scripts/neural_pathways.py[0m
+2025-10-14T03:16:43.6346447Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:43.6346674Z env:
+2025-10-14T03:16:43.6346913Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6347323Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:43.6347715Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348075Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348423Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348797Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:43.6349467Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:43.6349720Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:43.6349986Z ##[endgroup]
+2025-10-14T03:16:47.3800895Z ✅ Updated neural pathways

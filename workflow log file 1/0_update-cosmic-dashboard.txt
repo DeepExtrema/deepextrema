@@ -1,0 +1,543 @@
+﻿2025-10-14T03:15:09.3267065Z Current runner version: '2.328.0'
+2025-10-14T03:15:09.3290230Z ##[group]Runner Image Provisioner
+2025-10-14T03:15:09.3291041Z Hosted Compute Agent
+2025-10-14T03:15:09.3291563Z Version: 20250912.392
+2025-10-14T03:15:09.3292314Z Commit: d921fda672a98b64f4f82364647e2f10b2267d0b
+2025-10-14T03:15:09.3293047Z Build Date: 2025-09-12T15:23:14Z
+2025-10-14T03:15:09.3293594Z ##[endgroup]
+2025-10-14T03:15:09.3294227Z ##[group]Operating System
+2025-10-14T03:15:09.3294814Z Ubuntu
+2025-10-14T03:15:09.3295234Z 24.04.3
+2025-10-14T03:15:09.3295780Z LTS
+2025-10-14T03:15:09.3296243Z ##[endgroup]
+2025-10-14T03:15:09.3296736Z ##[group]Runner Image
+2025-10-14T03:15:09.3297452Z Image: ubuntu-24.04
+2025-10-14T03:15:09.3297941Z Version: 20250929.60.1
+2025-10-14T03:15:09.3298936Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250929.60/images/ubuntu/Ubuntu2404-Readme.md
+2025-10-14T03:15:09.3300830Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250929.60
+2025-10-14T03:15:09.3301893Z ##[endgroup]
+2025-10-14T03:15:09.3302921Z ##[group]GITHUB_TOKEN Permissions
+2025-10-14T03:15:09.3304668Z Contents: write
+2025-10-14T03:15:09.3305338Z Metadata: read
+2025-10-14T03:15:09.3305889Z ##[endgroup]
+2025-10-14T03:15:09.3308215Z Secret source: Actions
+2025-10-14T03:15:09.3309044Z Prepare workflow directory
+2025-10-14T03:15:09.3701947Z Prepare all required actions
+2025-10-14T03:15:09.3756705Z Getting action download info
+2025-10-14T03:15:09.7442992Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-10-14T03:15:09.9256968Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2025-10-14T03:15:10.0558859Z Download action repository 'Platane/snk@v3' (SHA:a69d1dbca7a94c2ef0edf10dcd9e19982d74dd39)
+2025-10-14T03:15:10.5401768Z Complete job name: update-cosmic-dashboard
+2025-10-14T03:15:10.5934390Z ##[group]Pull down action image 'platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9'
+2025-10-14T03:15:10.5985498Z ##[command]/usr/bin/docker pull platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9
+2025-10-14T03:15:11.1028070Z docker.io/platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9: Pulling from platane/snk
+2025-10-14T03:15:11.2232884Z 89320e7119e2: Pulling fs layer
+2025-10-14T03:15:11.2236791Z 86d96eec3952: Pulling fs layer
+2025-10-14T03:15:11.2237972Z c1092dfef153: Pulling fs layer
+2025-10-14T03:15:11.2238842Z 4e09c8b3a7d5: Pulling fs layer
+2025-10-14T03:15:11.2240012Z e0c4331cf2a2: Pulling fs layer
+2025-10-14T03:15:11.2240889Z 28c1207371f3: Pulling fs layer
+2025-10-14T03:15:11.2241781Z 6c6bdff38fbc: Pulling fs layer
+2025-10-14T03:15:11.2242682Z bdec4791c336: Pulling fs layer
+2025-10-14T03:15:11.2243579Z 03c04b200096: Pulling fs layer
+2025-10-14T03:15:11.2244510Z 28c1207371f3: Waiting
+2025-10-14T03:15:11.2245278Z bdec4791c336: Waiting
+2025-10-14T03:15:11.2246312Z 6c6bdff38fbc: Waiting
+2025-10-14T03:15:11.2247333Z 4e09c8b3a7d5: Waiting
+2025-10-14T03:15:11.2248314Z 03c04b200096: Waiting
+2025-10-14T03:15:11.2249544Z e0c4331cf2a2: Waiting
+2025-10-14T03:15:11.4142747Z 86d96eec3952: Download complete
+2025-10-14T03:15:11.6118927Z 4e09c8b3a7d5: Verifying Checksum
+2025-10-14T03:15:11.6121169Z 4e09c8b3a7d5: Download complete
+2025-10-14T03:15:11.7950238Z e0c4331cf2a2: Verifying Checksum
+2025-10-14T03:15:11.7952493Z e0c4331cf2a2: Download complete
+2025-10-14T03:15:11.9451385Z 89320e7119e2: Verifying Checksum
+2025-10-14T03:15:11.9461318Z 89320e7119e2: Download complete
+2025-10-14T03:15:12.0001623Z 28c1207371f3: Verifying Checksum
+2025-10-14T03:15:12.0006803Z 28c1207371f3: Download complete
+2025-10-14T03:15:12.1866675Z 6c6bdff38fbc: Download complete
+2025-10-14T03:15:12.2420835Z c1092dfef153: Verifying Checksum
+2025-10-14T03:15:12.2422888Z c1092dfef153: Download complete
+2025-10-14T03:15:12.4127238Z 03c04b200096: Download complete
+2025-10-14T03:15:12.4592010Z bdec4791c336: Verifying Checksum
+2025-10-14T03:15:12.4595480Z bdec4791c336: Download complete
+2025-10-14T03:15:13.2557380Z 89320e7119e2: Pull complete
+2025-10-14T03:15:14.1898996Z 86d96eec3952: Pull complete
+2025-10-14T03:15:14.6547511Z c1092dfef153: Pull complete
+2025-10-14T03:15:14.6696407Z 4e09c8b3a7d5: Pull complete
+2025-10-14T03:15:14.6893214Z e0c4331cf2a2: Pull complete
+2025-10-14T03:15:14.6995339Z 28c1207371f3: Pull complete
+2025-10-14T03:15:14.7180693Z 6c6bdff38fbc: Pull complete
+2025-10-14T03:15:15.5225362Z bdec4791c336: Pull complete
+2025-10-14T03:15:15.5394638Z 03c04b200096: Pull complete
+2025-10-14T03:15:15.5436819Z Digest: sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9
+2025-10-14T03:15:15.5444849Z Status: Downloaded newer image for platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9
+2025-10-14T03:15:15.5455555Z docker.io/platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9
+2025-10-14T03:15:15.5477087Z ##[endgroup]
+2025-10-14T03:15:15.5736544Z ##[group]Run actions/checkout@v4
+2025-10-14T03:15:15.5737147Z with:
+2025-10-14T03:15:15.5737404Z   repository: DeepExtrema/deepextrema
+2025-10-14T03:15:15.5737800Z   token: ***
+2025-10-14T03:15:15.5737991Z   ssh-strict: true
+2025-10-14T03:15:15.5738182Z   ssh-user: git
+2025-10-14T03:15:15.5738382Z   persist-credentials: true
+2025-10-14T03:15:15.5738605Z   clean: true
+2025-10-14T03:15:15.5738803Z   sparse-checkout-cone-mode: true
+2025-10-14T03:15:15.5739047Z   fetch-depth: 1
+2025-10-14T03:15:15.5739404Z   fetch-tags: false
+2025-10-14T03:15:15.5739610Z   show-progress: true
+2025-10-14T03:15:15.5739813Z   lfs: false
+2025-10-14T03:15:15.5739989Z   submodules: false
+2025-10-14T03:15:15.5740184Z   set-safe-directory: true
+2025-10-14T03:15:15.5740636Z ##[endgroup]
+2025-10-14T03:15:15.6806897Z Syncing repository: DeepExtrema/deepextrema
+2025-10-14T03:15:15.6808233Z ##[group]Getting Git version info
+2025-10-14T03:15:15.6808735Z Working directory is '/home/runner/work/deepextrema/deepextrema'
+2025-10-14T03:15:15.6809637Z [command]/usr/bin/git version
+2025-10-14T03:15:15.6902070Z git version 2.51.0
+2025-10-14T03:15:15.6928086Z ##[endgroup]
+2025-10-14T03:15:15.6951869Z Temporarily overriding HOME='/home/runner/work/_temp/a1855de7-3623-4e40-9a90-350ceb2b208f' before making global git config changes
+2025-10-14T03:15:15.6953349Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-14T03:15:15.6958235Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/deepextrema/deepextrema
+2025-10-14T03:15:15.6999782Z Deleting the contents of '/home/runner/work/deepextrema/deepextrema'
+2025-10-14T03:15:15.7003425Z ##[group]Initializing the repository
+2025-10-14T03:15:15.7007538Z [command]/usr/bin/git init /home/runner/work/deepextrema/deepextrema
+2025-10-14T03:15:15.7120900Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-10-14T03:15:15.7121875Z hint: is subject to change. To configure the initial branch name to use in all
+2025-10-14T03:15:15.7122502Z hint: of your new repositories, which will suppress this warning, call:
+2025-10-14T03:15:15.7122949Z hint:
+2025-10-14T03:15:15.7123270Z hint: 	git config --global init.defaultBranch <name>
+2025-10-14T03:15:15.7123901Z hint:
+2025-10-14T03:15:15.7124277Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-10-14T03:15:15.7124875Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-10-14T03:15:15.7125332Z hint:
+2025-10-14T03:15:15.7125556Z hint: 	git branch -m <name>
+2025-10-14T03:15:15.7125987Z hint:
+2025-10-14T03:15:15.7126600Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-10-14T03:15:15.7127604Z Initialized empty Git repository in /home/runner/work/deepextrema/deepextrema/.git/
+2025-10-14T03:15:15.7138454Z [command]/usr/bin/git remote add origin https://github.com/DeepExtrema/deepextrema
+2025-10-14T03:15:15.7180287Z ##[endgroup]
+2025-10-14T03:15:15.7181061Z ##[group]Disabling automatic garbage collection
+2025-10-14T03:15:15.7185407Z [command]/usr/bin/git config --local gc.auto 0
+2025-10-14T03:15:15.7213919Z ##[endgroup]
+2025-10-14T03:15:15.7221216Z ##[group]Setting up auth
+2025-10-14T03:15:15.7221912Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-14T03:15:15.7251848Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-14T03:15:15.7596846Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-14T03:15:15.7626207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-14T03:15:15.7845334Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-10-14T03:15:15.7881000Z ##[endgroup]
+2025-10-14T03:15:15.7881447Z ##[group]Fetching the repository
+2025-10-14T03:15:15.7890994Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5c8672fee8ab660dfd03e76f993cd1639d0fc4cb:refs/remotes/origin/main
+2025-10-14T03:15:16.0829980Z From https://github.com/DeepExtrema/deepextrema
+2025-10-14T03:15:16.0831130Z  * [new ref]         5c8672fee8ab660dfd03e76f993cd1639d0fc4cb -> origin/main
+2025-10-14T03:15:16.0863487Z ##[endgroup]
+2025-10-14T03:15:16.0864192Z ##[group]Determining the checkout info
+2025-10-14T03:15:16.0866491Z ##[endgroup]
+2025-10-14T03:15:16.0871973Z [command]/usr/bin/git sparse-checkout disable
+2025-10-14T03:15:16.0913511Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-10-14T03:15:16.0941184Z ##[group]Checking out the ref
+2025-10-14T03:15:16.0945878Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-10-14T03:15:16.1012846Z Switched to a new branch 'main'
+2025-10-14T03:15:16.1015968Z branch 'main' set up to track 'origin/main'.
+2025-10-14T03:15:16.1022432Z ##[endgroup]
+2025-10-14T03:15:16.1059030Z [command]/usr/bin/git log -1 --format=%H
+2025-10-14T03:15:16.1081804Z 5c8672fee8ab660dfd03e76f993cd1639d0fc4cb
+2025-10-14T03:15:16.1363385Z ##[group]Run actions/setup-python@v5
+2025-10-14T03:15:16.1363668Z with:
+2025-10-14T03:15:16.1363857Z   python-version: 3.11
+2025-10-14T03:15:16.1364073Z   cache: pip
+2025-10-14T03:15:16.1364249Z   check-latest: false
+2025-10-14T03:15:16.1364565Z   token: ***
+2025-10-14T03:15:16.1364753Z   update-environment: true
+2025-10-14T03:15:16.1364975Z   allow-prereleases: false
+2025-10-14T03:15:16.1365177Z   freethreaded: false
+2025-10-14T03:15:16.1365379Z ##[endgroup]
+2025-10-14T03:15:16.2995499Z ##[group]Installed versions
+2025-10-14T03:15:16.3640231Z Successfully set up CPython (3.11.13)
+2025-10-14T03:15:16.3641475Z ##[endgroup]
+2025-10-14T03:15:16.4308325Z [command]/opt/hostedtoolcache/Python/3.11.13/x64/bin/pip cache dir
+2025-10-14T03:15:18.5739021Z /home/runner/.cache/pip
+2025-10-14T03:15:18.7666894Z Cache hit for: setup-python-Linux-x64-24.04-Ubuntu-python-3.11.13-pip-049766dee1f2f86bf0d6b46b5e8de04a91d282f3a54ec71fdcf70d1ec5e57ca0
+2025-10-14T03:15:19.6600630Z Received 53371401 of 53371401 (100.0%), 68.5 MBs/sec
+2025-10-14T03:15:19.6601195Z Cache Size: ~51 MB (53371401 B)
+2025-10-14T03:15:19.6659769Z [command]/usr/bin/tar -xf /home/runner/work/_temp/5c43a8ee-85b2-43a2-a58c-5f0748007a88/cache.tzst -P -C /home/runner/work/deepextrema/deepextrema --use-compress-program unzstd
+2025-10-14T03:15:19.7552020Z Cache restored successfully
+2025-10-14T03:15:19.7666182Z Cache restored from key: setup-python-Linux-x64-24.04-Ubuntu-python-3.11.13-pip-049766dee1f2f86bf0d6b46b5e8de04a91d282f3a54ec71fdcf70d1ec5e57ca0
+2025-10-14T03:15:19.7819533Z ##[group]Run pip install -r requirements.txt
+2025-10-14T03:15:19.7819953Z [36;1mpip install -r requirements.txt[0m
+2025-10-14T03:15:19.7860890Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:19.7861146Z env:
+2025-10-14T03:15:19.7861616Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:19.7862039Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:19.7862431Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:19.7862788Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:19.7863145Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:19.7863499Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:19.7863796Z ##[endgroup]
+2025-10-14T03:15:21.9893001Z Collecting PyGithub==2.1.1 (from -r requirements.txt (line 1))
+2025-10-14T03:15:21.9907564Z   Using cached PyGithub-2.1.1-py3-none-any.whl.metadata (2.2 kB)
+2025-10-14T03:15:22.0262553Z Collecting requests==2.31.0 (from -r requirements.txt (line 2))
+2025-10-14T03:15:22.0276060Z   Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+2025-10-14T03:15:22.1767664Z Collecting matplotlib==3.8.0 (from -r requirements.txt (line 3))
+2025-10-14T03:15:22.1784300Z   Using cached matplotlib-3.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.8 kB)
+2025-10-14T03:15:22.3510722Z Collecting numpy==1.26.0 (from -r requirements.txt (line 4))
+2025-10-14T03:15:22.3527610Z   Using cached numpy-1.26.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (58 kB)
+2025-10-14T03:15:22.3963569Z Collecting pynacl>=1.4.0 (from PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.3977170Z   Using cached pynacl-1.6.0-cp38-abi3-manylinux_2_34_x86_64.whl.metadata (9.4 kB)
+2025-10-14T03:15:22.4238415Z Collecting python-dateutil (from PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.4251451Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+2025-10-14T03:15:22.4593989Z Collecting pyjwt>=2.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.4607273Z   Using cached PyJWT-2.10.1-py3-none-any.whl.metadata (4.0 kB)
+2025-10-14T03:15:22.4907916Z Collecting typing-extensions>=4.0.0 (from PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.4921291Z   Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-10-14T03:15:22.5261763Z Collecting urllib3>=1.26.0 (from PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.5275096Z   Using cached urllib3-2.5.0-py3-none-any.whl.metadata (6.5 kB)
+2025-10-14T03:15:22.5526589Z Collecting Deprecated (from PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:22.5540218Z   Using cached Deprecated-1.2.18-py2.py3-none-any.whl.metadata (5.7 kB)
+2025-10-14T03:15:22.6429429Z Collecting charset-normalizer<4,>=2 (from requests==2.31.0->-r requirements.txt (line 2))
+2025-10-14T03:15:22.6445606Z   Using cached charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (36 kB)
+2025-10-14T03:15:22.6714840Z Collecting idna<4,>=2.5 (from requests==2.31.0->-r requirements.txt (line 2))
+2025-10-14T03:15:22.6728371Z   Using cached idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-10-14T03:15:22.7143119Z Collecting certifi>=2017.4.17 (from requests==2.31.0->-r requirements.txt (line 2))
+2025-10-14T03:15:22.7156468Z   Using cached certifi-2025.10.5-py3-none-any.whl.metadata (2.5 kB)
+2025-10-14T03:15:22.8059872Z Collecting contourpy>=1.0.1 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:22.8074471Z   Using cached contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+2025-10-14T03:15:22.8298711Z Collecting cycler>=0.10 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:22.8312281Z   Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+2025-10-14T03:15:22.9856767Z Collecting fonttools>=4.22.0 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:22.9872595Z   Using cached fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (112 kB)
+2025-10-14T03:15:23.0649737Z Collecting kiwisolver>=1.0.1 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:23.0664273Z   Using cached kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.3 kB)
+2025-10-14T03:15:23.0977962Z Collecting packaging>=20.0 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:23.0991965Z   Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-10-14T03:15:23.3027402Z Collecting pillow>=6.2.0 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:23.3043116Z   Using cached pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+2025-10-14T03:15:23.3436159Z Collecting pyparsing>=2.3.1 (from matplotlib==3.8.0->-r requirements.txt (line 3))
+2025-10-14T03:15:23.3447943Z   Using cached pyparsing-3.2.5-py3-none-any.whl.metadata (5.0 kB)
+2025-10-14T03:15:23.5683402Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]>=2.4.0->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:23.5698008Z   Using cached cryptography-46.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (5.7 kB)
+2025-10-14T03:15:23.6864778Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]>=2.4.0->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:23.6878638Z   Using cached cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.6 kB)
+2025-10-14T03:15:23.7101685Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.4.0->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:23.7114671Z   Using cached pycparser-2.23-py3-none-any.whl.metadata (993 bytes)
+2025-10-14T03:15:23.7399991Z Collecting six>=1.5 (from python-dateutil->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:23.7413070Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+2025-10-14T03:15:23.8599508Z Collecting wrapt<2,>=1.10 (from Deprecated->PyGithub==2.1.1->-r requirements.txt (line 1))
+2025-10-14T03:15:23.8614621Z   Using cached wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+2025-10-14T03:15:23.8669101Z Using cached PyGithub-2.1.1-py3-none-any.whl (302 kB)
+2025-10-14T03:15:23.8684333Z Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+2025-10-14T03:15:23.8697934Z Using cached matplotlib-3.8.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.6 MB)
+2025-10-14T03:15:23.8794309Z Using cached numpy-1.26.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.2 MB)
+2025-10-14T03:15:23.8935529Z Using cached charset_normalizer-3.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (150 kB)
+2025-10-14T03:15:23.8948242Z Using cached idna-3.11-py3-none-any.whl (71 kB)
+2025-10-14T03:15:23.8961572Z Using cached urllib3-2.5.0-py3-none-any.whl (129 kB)
+2025-10-14T03:15:23.8975267Z Using cached certifi-2025.10.5-py3-none-any.whl (163 kB)
+2025-10-14T03:15:23.8989746Z Using cached contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+2025-10-14T03:15:23.9004805Z Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+2025-10-14T03:15:23.9017666Z Using cached fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.0 MB)
+2025-10-14T03:15:23.9065735Z Using cached kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+2025-10-14T03:15:23.9087943Z Using cached packaging-25.0-py3-none-any.whl (66 kB)
+2025-10-14T03:15:23.9101412Z Using cached pillow-11.3.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+2025-10-14T03:15:23.9160522Z Using cached PyJWT-2.10.1-py3-none-any.whl (22 kB)
+2025-10-14T03:15:23.9174007Z Using cached cryptography-46.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.5 MB)
+2025-10-14T03:15:23.9217334Z Using cached cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (215 kB)
+2025-10-14T03:15:23.9231472Z Using cached pynacl-1.6.0-cp38-abi3-manylinux_2_34_x86_64.whl (1.4 MB)
+2025-10-14T03:15:23.9253808Z Using cached pyparsing-3.2.5-py3-none-any.whl (113 kB)
+2025-10-14T03:15:23.9267478Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+2025-10-14T03:15:23.9281654Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+2025-10-14T03:15:23.9294313Z Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-10-14T03:15:23.9307168Z Using cached Deprecated-1.2.18-py2.py3-none-any.whl (10.0 kB)
+2025-10-14T03:15:23.9320312Z Using cached wrapt-1.17.3-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (82 kB)
+2025-10-14T03:15:23.9333112Z Using cached pycparser-2.23-py3-none-any.whl (118 kB)
+2025-10-14T03:15:24.0723722Z Installing collected packages: wrapt, urllib3, typing-extensions, six, pyparsing, pyjwt, pycparser, pillow, packaging, numpy, kiwisolver, idna, fonttools, cycler, charset-normalizer, certifi, requests, python-dateutil, Deprecated, contourpy, cffi, pynacl, matplotlib, cryptography, PyGithub
+2025-10-14T03:15:29.4007052Z 
+2025-10-14T03:15:29.4027312Z Successfully installed Deprecated-1.2.18 PyGithub-2.1.1 certifi-2025.10.5 cffi-2.0.0 charset-normalizer-3.4.3 contourpy-1.3.3 cryptography-46.0.2 cycler-0.12.1 fonttools-4.60.1 idna-3.11 kiwisolver-1.4.9 matplotlib-3.8.0 numpy-1.26.0 packaging-25.0 pillow-11.3.0 pycparser-2.23 pyjwt-2.10.1 pynacl-1.6.0 pyparsing-3.2.5 python-dateutil-2.9.0.post0 requests-2.31.0 six-1.17.0 typing-extensions-4.15.0 urllib3-2.5.0 wrapt-1.17.3
+2025-10-14T03:15:29.5935953Z ##[group]Run Platane/snk@v3
+2025-10-14T03:15:29.5936205Z with:
+2025-10-14T03:15:29.5936397Z   github_user_name: DeepExtrema
+2025-10-14T03:15:29.5936759Z   outputs: dist/github-snake.svg
+dist/github-snake-dark.svg?palette=github-dark
+
+2025-10-14T03:15:29.5937312Z   github_token: ***
+2025-10-14T03:15:29.5937503Z env:
+2025-10-14T03:15:29.5937749Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:29.5938158Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:29.5938548Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:29.5938923Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:29.5939486Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:29.5939847Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:29.5940139Z ##[endgroup]
+2025-10-14T03:15:29.6035270Z ##[command]/usr/bin/docker run --name platanesnksha25696390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9_d76af2 --label 759326 --workdir /github/workspace --rm -e "pythonLocation" -e "PKG_CONFIG_PATH" -e "Python_ROOT_DIR" -e "Python2_ROOT_DIR" -e "Python3_ROOT_DIR" -e "LD_LIBRARY_PATH" -e "INPUT_GITHUB_USER_NAME" -e "INPUT_OUTPUTS" -e "INPUT_GITHUB_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/deepextrema/deepextrema":"/github/workspace" platane/snk@sha256:96390294299275740e5963058c9784c60c5393b3b8b16082dcf41b240db791f9
+2025-10-14T03:15:30.0236194Z 🎣 fetching github user contribution
+2025-10-14T03:15:30.4444341Z 📡 computing best route
+2025-10-14T03:15:35.0875350Z 🖌 creating svg (outputs[0])
+2025-10-14T03:15:35.0887713Z 🖌 creating svg (outputs[1])
+2025-10-14T03:15:35.0983210Z 💾 writing to dist/github-snake.svg
+2025-10-14T03:15:35.0985559Z 💾 writing to dist/github-snake-dark.svg
+2025-10-14T03:15:35.1932146Z ##[group]Run python scripts/cosmic_fact.py
+2025-10-14T03:15:35.1932497Z [36;1mpython scripts/cosmic_fact.py[0m
+2025-10-14T03:15:35.1965127Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:35.1965355Z env:
+2025-10-14T03:15:35.1965613Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1966056Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:35.1966489Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1966881Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1967257Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1967630Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:35.1968221Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:35.1968427Z ##[endgroup]
+2025-10-14T03:15:45.8661677Z Error fetching NASA APOD: HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)
+2025-10-14T03:15:45.8664137Z ✅ Updated cosmic fact: The coldest place in the universe is the Boomerang...
+2025-10-14T03:15:45.8862999Z ##[group]Run python scripts/quote.py
+2025-10-14T03:15:45.8863525Z [36;1mpython scripts/quote.py[0m
+2025-10-14T03:15:45.8911269Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:45.8911667Z env:
+2025-10-14T03:15:45.8912115Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:45.8912865Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:45.8913613Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:45.8914251Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:45.8914899Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:45.8915556Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:45.8916501Z   OPENAI_API_KEY: ***
+2025-10-14T03:15:45.8916872Z ##[endgroup]
+2025-10-14T03:15:46.7324510Z ✅ Updated quote: Embrace the unknown, defy gravity, and pioneer the next frontier of humanity.
+2025-10-14T03:15:46.7505067Z ##[group]Run python scripts/battery.py
+2025-10-14T03:15:46.7505395Z [36;1mpython scripts/battery.py[0m
+2025-10-14T03:15:46.7537637Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:46.7537865Z env:
+2025-10-14T03:15:46.7538121Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7538552Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:46.7538985Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7539604Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7539976Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7540358Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:46.7540841Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:46.7541078Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:46.7541352Z ##[endgroup]
+2025-10-14T03:15:47.4992376Z Error fetching events: can't compare offset-naive and offset-aware datetimes
+2025-10-14T03:15:47.4993231Z ✅ Updated battery status
+2025-10-14T03:15:47.5280174Z ##[group]Run python scripts/trajectory.py
+2025-10-14T03:15:47.5280508Z [36;1mpython scripts/trajectory.py[0m
+2025-10-14T03:15:47.5312831Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:47.5313056Z env:
+2025-10-14T03:15:47.5313308Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5313721Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:47.5314302Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5314648Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5315012Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:47.5315364Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:47.5315836Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:47.5316075Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:47.5316339Z ##[endgroup]
+2025-10-14T03:15:55.5116270Z ✅ Updated trajectory and launch status
+2025-10-14T03:15:55.5412304Z ##[group]Run python scripts/evolution.py
+2025-10-14T03:15:55.5412638Z [36;1mpython scripts/evolution.py[0m
+2025-10-14T03:15:55.5444826Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:55.5445050Z env:
+2025-10-14T03:15:55.5445302Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5445728Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:55.5446151Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5446525Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5446890Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5447266Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:55.5447748Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:55.5447988Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:55.5448262Z ##[endgroup]
+2025-10-14T03:15:56.8100923Z ✅ Updated evolution graph
+2025-10-14T03:15:56.8408178Z ##[group]Run python scripts/shiplog.py
+2025-10-14T03:15:56.8408784Z [36;1mpython scripts/shiplog.py[0m
+2025-10-14T03:15:56.8456415Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:56.8456832Z env:
+2025-10-14T03:15:56.8457280Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8458027Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:56.8458785Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8459680Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8460354Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8461033Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:56.8461847Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:56.8462300Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:56.8462784Z ##[endgroup]
+2025-10-14T03:16:01.0464888Z ✅ Updated starship build log
+2025-10-14T03:16:01.0761322Z ##[group]Run python scripts/model_week.py
+2025-10-14T03:16:01.0761720Z [36;1mpython scripts/model_week.py[0m
+2025-10-14T03:16:01.0794179Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:01.0794463Z env:
+2025-10-14T03:16:01.0794801Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0795332Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:01.0795855Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0796302Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0796758Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0797217Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:01.0797600Z ##[endgroup]
+2025-10-14T03:16:01.1013639Z ✅ Updated model of the week: Llama 3
+2025-10-14T03:16:01.1083225Z ##[group]Run python scripts/thrusters.py
+2025-10-14T03:16:01.1083810Z [36;1mpython scripts/thrusters.py[0m
+2025-10-14T03:16:01.1126102Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:01.1126344Z env:
+2025-10-14T03:16:01.1126608Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.1127031Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:01.1127494Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.1127854Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.1128394Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.1128750Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:01.1129683Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:01.1130124Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:01.1130513Z ##[endgroup]
+2025-10-14T03:16:27.4646685Z ✅ Updated active thrusters
+2025-10-14T03:16:27.4956385Z ##[group]Run python scripts/velocity_waves.py
+2025-10-14T03:16:27.4956973Z [36;1mpython scripts/velocity_waves.py[0m
+2025-10-14T03:16:27.5004356Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:27.5004756Z env:
+2025-10-14T03:16:27.5005184Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5005917Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:27.5006645Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5007294Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5007982Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5008654Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:27.5009761Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:27.5010188Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:27.5010642Z ##[endgroup]
+2025-10-14T03:16:31.3472413Z ✅ Updated velocity waves
+2025-10-14T03:16:31.3763238Z ##[group]Run python scripts/dna_helix.py
+2025-10-14T03:16:31.3763598Z [36;1mpython scripts/dna_helix.py[0m
+2025-10-14T03:16:31.3795836Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:31.3796065Z env:
+2025-10-14T03:16:31.3796319Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:31.3796744Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:31.3797143Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:31.3797515Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:31.3797891Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:31.3798255Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:31.3798838Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:31.3799097Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:31.3799595Z ##[endgroup]
+2025-10-14T03:16:34.9864018Z ✅ Updated DNA helix
+2025-10-14T03:16:35.0164679Z ##[group]Run python scripts/signal_radar.py
+2025-10-14T03:16:35.0165279Z [36;1mpython scripts/signal_radar.py[0m
+2025-10-14T03:16:35.0201452Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:35.0201688Z env:
+2025-10-14T03:16:35.0201953Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:35.0202371Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:35.0202763Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:35.0203126Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:35.0203481Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:35.0203858Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:35.0204531Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:35.0204944Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:35.0205412Z ##[endgroup]
+2025-10-14T03:16:38.8686423Z ✅ Updated signal radar
+2025-10-14T03:16:38.8975790Z ##[group]Run python scripts/mission_success.py
+2025-10-14T03:16:38.8976146Z [36;1mpython scripts/mission_success.py[0m
+2025-10-14T03:16:38.9008328Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:38.9008561Z env:
+2025-10-14T03:16:38.9008812Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9009462Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:38.9009872Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9010230Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9010608Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9011166Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:38.9011639Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:38.9011875Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:38.9012147Z ##[endgroup]
+2025-10-14T03:16:39.7154314Z ✅ Updated mission success rate
+2025-10-14T03:16:39.7465482Z ##[group]Run python scripts/lightning_commits.py
+2025-10-14T03:16:39.7465899Z [36;1mpython scripts/lightning_commits.py[0m
+2025-10-14T03:16:39.7498457Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:39.7498729Z env:
+2025-10-14T03:16:39.7499020Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7499703Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:39.7500172Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7500592Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7501012Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7501447Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:39.7502012Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:39.7502277Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:39.7502587Z ##[endgroup]
+2025-10-14T03:16:43.6022915Z ✅ Updated lightning commits
+2025-10-14T03:16:43.6314115Z ##[group]Run python scripts/neural_pathways.py
+2025-10-14T03:16:43.6314459Z [36;1mpython scripts/neural_pathways.py[0m
+2025-10-14T03:16:43.6346452Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:43.6346677Z env:
+2025-10-14T03:16:43.6346916Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6347326Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:43.6347717Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348078Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348426Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:43.6348799Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:43.6349472Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:43.6349723Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:43.6349988Z ##[endgroup]
+2025-10-14T03:16:47.3800941Z ✅ Updated neural pathways
+2025-10-14T03:16:47.4108728Z ##[group]Run python scripts/parallax_stars.py
+2025-10-14T03:16:47.4109112Z [36;1mpython scripts/parallax_stars.py[0m
+2025-10-14T03:16:47.4141734Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:47.4141970Z env:
+2025-10-14T03:16:47.4142230Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4142665Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:47.4143081Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4143448Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4143819Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4144208Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:47.4144519Z ##[endgroup]
+2025-10-14T03:16:47.4309800Z ✅ Generated parallax star field
+2025-10-14T03:16:47.4358588Z ##[group]Run python scripts/gravity_well.py
+2025-10-14T03:16:47.4358928Z [36;1mpython scripts/gravity_well.py[0m
+2025-10-14T03:16:47.4387971Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:47.4388204Z env:
+2025-10-14T03:16:47.4388464Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4388895Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:47.4389446Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4389810Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4390181Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4390554Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:47.4391032Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:47.4391454Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:47.4391723Z ##[endgroup]
+2025-10-14T03:16:48.6582898Z ✅ Generated gravity well
+2025-10-14T03:16:48.6872417Z ##[group]Run python scripts/orbital_mechanics.py
+2025-10-14T03:16:48.6872778Z [36;1mpython scripts/orbital_mechanics.py[0m
+2025-10-14T03:16:48.6904892Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:48.6905119Z env:
+2025-10-14T03:16:48.6905370Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6905798Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:48.6906212Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6906582Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6906953Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6907325Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:48.6907809Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:48.6908043Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:48.6908324Z ##[endgroup]
+2025-10-14T03:16:51.6623601Z ✅ Generated orbital mechanics visualization
+2025-10-14T03:16:51.7354260Z ##[group]Run git config --local user.name "Cosmic-Bot 🌌"
+2025-10-14T03:16:51.7354691Z [36;1mgit config --local user.name "Cosmic-Bot 🌌"[0m
+2025-10-14T03:16:51.7355099Z [36;1mgit config --local user.email "cosmic-bot@users.noreply.github.com"[0m
+2025-10-14T03:16:51.7355492Z [36;1mgit add README.md assets/ dist/ data/ || true[0m
+2025-10-14T03:16:51.7355962Z [36;1mgit diff --staged --quiet || git commit -m "⭐ Update Cosmic Dashboard - $(date +'%Y-%m-%d %H:%M UTC')"[0m
+2025-10-14T03:16:51.7356412Z [36;1mgit push || echo "Nothing to push"[0m
+2025-10-14T03:16:51.7388620Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:51.7388879Z env:
+2025-10-14T03:16:51.7389124Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7389971Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:51.7390396Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7390778Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7391136Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7391509Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:51.7391809Z ##[endgroup]
+2025-10-14T03:16:51.7487750Z fatal: pathspec 'data/' did not match any files
+2025-10-14T03:16:51.9615038Z Everything up-to-date
+2025-10-14T03:16:51.9687561Z Post job cleanup.
+2025-10-14T03:16:52.1167877Z Cache hit occurred on the primary key setup-python-Linux-x64-24.04-Ubuntu-python-3.11.13-pip-049766dee1f2f86bf0d6b46b5e8de04a91d282f3a54ec71fdcf70d1ec5e57ca0, not saving cache.
+2025-10-14T03:16:52.1270255Z Post job cleanup.
+2025-10-14T03:16:52.2197125Z [command]/usr/bin/git version
+2025-10-14T03:16:52.2232699Z git version 2.51.0
+2025-10-14T03:16:52.2274813Z Temporarily overriding HOME='/home/runner/work/_temp/dd398e4d-f75b-478e-b6c1-12428261e65e' before making global git config changes
+2025-10-14T03:16:52.2276476Z Adding repository directory to the temporary git global config as a safe directory
+2025-10-14T03:16:52.2286938Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/deepextrema/deepextrema
+2025-10-14T03:16:52.2320521Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-10-14T03:16:52.2352353Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-10-14T03:16:52.2582240Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-10-14T03:16:52.2602469Z http.https://github.com/.extraheader
+2025-10-14T03:16:52.2615093Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-10-14T03:16:52.2645554Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-10-14T03:16:52.2968230Z Cleaning up orphan processes

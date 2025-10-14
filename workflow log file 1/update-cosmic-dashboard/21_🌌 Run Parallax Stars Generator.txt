@@ -1,0 +1,12 @@
+﻿2025-10-14T03:16:47.4108712Z ##[group]Run python scripts/parallax_stars.py
+2025-10-14T03:16:47.4109109Z [36;1mpython scripts/parallax_stars.py[0m
+2025-10-14T03:16:47.4141720Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:47.4141967Z env:
+2025-10-14T03:16:47.4142227Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4142662Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:47.4143079Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4143446Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4143816Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4144205Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:47.4144516Z ##[endgroup]
+2025-10-14T03:16:47.4309783Z ✅ Generated parallax star field

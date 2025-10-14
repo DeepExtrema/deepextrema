@@ -10,9 +10,17 @@ from datetime import datetime, timedelta
 from github import Github
 import json
 from urllib.parse import quote
+from cache import get_cached_data, cache_data
+from utils import retry_with_backoff, validate_env_vars, log_error, log_warning, log_info
 
 def get_monthly_stats(g, username, months=6):
     """Aggregate stars, commits, PRs by month"""
+    # Try to get cached data first
+    cache_key = f"evolution_stats_{username}_{months}"
+    cached = get_cached_data(cache_key)
+    if cached:
+        return cached
+    
     try:
         user = g.get_user(username)
         
@@ -50,9 +58,11 @@ def get_monthly_stats(g, username, months=6):
         
         stats[list(stats.keys())[0]]['commits'] = commit_count
         
+        # Cache the results
+        cache_data(cache_key, stats)
         return stats
     except Exception as e:
-        print(f"Error getting monthly stats: {e}")
+        log_error(f"Error getting monthly stats: {e}")
         # Return default data
         stats = {}
         for i in range(6):
@@ -131,7 +141,7 @@ def update_readme(username):
 *Last updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}*
 """
     except Exception as e:
-        print(f"Error generating evolution graph: {e}")
+        log_error(f"Error generating evolution graph: {e}")
         evolution_section = f"""## 📈 Evolution Graph
 *Initializing trajectory analysis...*
 
@@ -150,9 +160,13 @@ def update_readme(username):
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    print(f"✅ Updated evolution graph")
+    log_info("Updated evolution graph")
 
 if __name__ == '__main__':
+    required_vars = ['GITHUB_TOKEN', 'GITHUB_REPOSITORY']
+    if not validate_env_vars(required_vars):
+        log_warning("Some features may not work correctly")
+    
     username = os.getenv('GITHUB_REPOSITORY', 'deepextrema/deepextrema').split('/')[0]
     update_readme(username)
 

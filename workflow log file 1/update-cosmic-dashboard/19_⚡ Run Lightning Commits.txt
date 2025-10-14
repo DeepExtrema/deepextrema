@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:39.7465468Z ##[group]Run python scripts/lightning_commits.py
+2025-10-14T03:16:39.7465896Z [36;1mpython scripts/lightning_commits.py[0m
+2025-10-14T03:16:39.7498450Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:39.7498726Z env:
+2025-10-14T03:16:39.7499016Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7499699Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:39.7500170Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7500589Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7501010Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:39.7501444Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:39.7502009Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:39.7502274Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:39.7502584Z ##[endgroup]
+2025-10-14T03:16:43.6022866Z ✅ Updated lightning commits

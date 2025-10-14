@@ -8,6 +8,7 @@ import os
 import re
 from github import Github
 from collections import Counter
+from utils import validate_env_vars, log_error, log_warning, log_info
 
 def generate_dna_helix_svg(languages):
     """Generate SVG double helix"""
@@ -46,7 +47,20 @@ def generate_dna_helix_svg(languages):
     
     svg_parts.append('</svg>')
     
-    return '\n'.join(svg_parts)
+    # Compress SVG by removing unnecessary whitespace
+    svg_content = '\n'.join(svg_parts)
+    svg_content = compress_svg(svg_content)
+    
+    return svg_content
+
+def compress_svg(svg_string):
+    """Remove unnecessary whitespace from SVG"""
+    import re
+    # Remove extra whitespace
+    svg_string = re.sub(r'\s+', ' ', svg_string)
+    # Remove whitespace around tags
+    svg_string = re.sub(r'>\s+<', '><', svg_string)
+    return svg_string
 
 def update_readme(username):
     """Update README with DNA helix"""
@@ -87,7 +101,7 @@ def update_readme(username):
 *Sequencing genetic code...*
 """
     except Exception as e:
-        print(f"Error creating DNA helix: {e}")
+        log_error(f"Error creating DNA helix: {e}")
         dna_section = """### 🧬 Repository DNA Helix
 *Initializing genetic analysis...*
 """
@@ -104,9 +118,13 @@ def update_readme(username):
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    print(f"✅ Updated DNA helix")
+    log_info("Updated DNA helix")
 
 if __name__ == '__main__':
+    required_vars = ['GITHUB_TOKEN', 'GITHUB_REPOSITORY']
+    if not validate_env_vars(required_vars):
+        log_warning("Some features may not work correctly")
+    
     username = os.getenv('GITHUB_REPOSITORY', 'deepextrema/deepextrema').split('/')[0]
     update_readme(username)
 

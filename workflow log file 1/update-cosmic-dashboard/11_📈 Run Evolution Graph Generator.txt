@@ -1,0 +1,14 @@
+﻿2025-10-14T03:15:55.5412290Z ##[group]Run python scripts/evolution.py
+2025-10-14T03:15:55.5412636Z [36;1mpython scripts/evolution.py[0m
+2025-10-14T03:15:55.5444820Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:55.5445047Z env:
+2025-10-14T03:15:55.5445300Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5445725Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:55.5446148Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5446515Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5446887Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:55.5447264Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:55.5447745Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:55.5447985Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:55.5448253Z ##[endgroup]
+2025-10-14T03:15:56.8100878Z ✅ Updated evolution graph

@@ -1,0 +1,12 @@
+﻿2025-10-14T03:16:01.0761311Z ##[group]Run python scripts/model_week.py
+2025-10-14T03:16:01.0761717Z [36;1mpython scripts/model_week.py[0m
+2025-10-14T03:16:01.0794174Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:01.0794460Z env:
+2025-10-14T03:16:01.0794799Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0795329Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:01.0795852Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0796299Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0796756Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:01.0797214Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:01.0797597Z ##[endgroup]
+2025-10-14T03:16:01.1013622Z ✅ Updated model of the week: Llama 3

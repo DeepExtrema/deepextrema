@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:47.4358579Z ##[group]Run python scripts/gravity_well.py
+2025-10-14T03:16:47.4358925Z [36;1mpython scripts/gravity_well.py[0m
+2025-10-14T03:16:47.4387966Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:47.4388202Z env:
+2025-10-14T03:16:47.4388461Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4388892Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:47.4389443Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4389807Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4390179Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:47.4390552Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:47.4391029Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:47.4391451Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:47.4391720Z ##[endgroup]
+2025-10-14T03:16:48.6582861Z ✅ Generated gravity well

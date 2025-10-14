@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:38.8975778Z ##[group]Run python scripts/mission_success.py
+2025-10-14T03:16:38.8976143Z [36;1mpython scripts/mission_success.py[0m
+2025-10-14T03:16:38.9008322Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:38.9008558Z env:
+2025-10-14T03:16:38.9008809Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9009458Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:38.9009869Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9010221Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9010605Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:38.9011163Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:38.9011636Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:38.9011872Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:38.9012145Z ##[endgroup]
+2025-10-14T03:16:39.7154291Z ✅ Updated mission success rate

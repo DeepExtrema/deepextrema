@@ -1,0 +1,37 @@
+# DeepExtrema Dashboard Configuration
+
+# API Settings
+api:
+  nasa_api_timeout: 15
+  github_api_timeout: 30
+  max_retries: 3
+
+# Feature Toggles
+features:
+  enable_nasa_api: true
+  enable_openai_api: true
+  enable_caching: true
+
+# Display Settings
+display:
+  max_repos_displayed: 10
+  max_commits_displayed: 5
+  chart_width: 800
+  chart_height: 300
+
+# Colors (theme)
+colors:
+  primary: "#6EE7B7"
+  secondary: "#3B82F6"
+  accent: "#9333EA"
+  background: "#0B0B0C"
+
+# Cache Settings
+cache:
+  duration_hours: 1
+  max_size_mb: 100
+
+# Performance Settings
+performance:
+  parallel_requests: 3
+  request_delay_ms: 100

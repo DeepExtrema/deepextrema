@@ -6,6 +6,7 @@ Animated star field SVG
 
 import os
 import random
+from utils import log_error, log_warning, log_info
 
 def generate_parallax_svg():
     """Generate animated parallax star field as SVG"""
@@ -49,7 +50,20 @@ def generate_parallax_svg():
     
     svg.append('</svg>')
     
-    return '\n'.join(svg)
+    # Compress SVG by removing unnecessary whitespace
+    svg_content = '\n'.join(svg)
+    svg_content = compress_svg(svg_content)
+    
+    return svg_content
+
+def compress_svg(svg_string):
+    """Remove unnecessary whitespace from SVG"""
+    import re
+    # Remove extra whitespace
+    svg_string = re.sub(r'\s+', ' ', svg_string)
+    # Remove whitespace around tags
+    svg_string = re.sub(r'>\s+<', '><', svg_string)
+    return svg_string
 
 def create_parallax_background():
     """Create and save parallax star field SVG"""
@@ -61,9 +75,9 @@ def create_parallax_background():
         with open("assets/parallax_stars.svg", "w", encoding='utf-8') as f:
             f.write(svg_content)
         
-        print("✅ Generated parallax star field")
+        log_info("Generated parallax star field")
     except Exception as e:
-        print(f"Error generating parallax stars: {e}")
+        log_error(f"Error generating parallax stars: {e}")
 
 if __name__ == '__main__':
     create_parallax_background()

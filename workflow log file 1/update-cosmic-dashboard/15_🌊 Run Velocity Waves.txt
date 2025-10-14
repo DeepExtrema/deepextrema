@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:27.4956372Z ##[group]Run python scripts/velocity_waves.py
+2025-10-14T03:16:27.4956966Z [36;1mpython scripts/velocity_waves.py[0m
+2025-10-14T03:16:27.5004345Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:27.5004750Z env:
+2025-10-14T03:16:27.5005178Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5005910Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:27.5006636Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5007276Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5007972Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:27.5008647Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:27.5009751Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:27.5010182Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:27.5010636Z ##[endgroup]
+2025-10-14T03:16:31.3472372Z ✅ Updated velocity waves

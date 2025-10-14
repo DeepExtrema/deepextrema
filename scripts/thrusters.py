@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from github import Github
 from collections import Counter
 import base64
+from utils import validate_env_vars, log_error, log_warning, log_info
 
 def get_github_client():
     token = os.getenv('GITHUB_TOKEN')
@@ -66,9 +67,16 @@ def detect_frameworks_libraries(g, username):
         user = g.get_user(username)
         week_ago = datetime.now() - timedelta(days=7)
         
-        for repo in user.get_repos(sort='pushed')[:20]:
+        repos = list(user.get_repos(sort='pushed')[:20])
+        total_repos = len(repos)
+        
+        for i, repo in enumerate(repos):
             if repo.fork or repo.archived:
                 continue
+            
+            # Progress indicator
+            if i % 5 == 0:
+                log_info(f"Processing {i}/{total_repos} repositories for frameworks...")
                 
             if repo.pushed_at and repo.pushed_at.replace(tzinfo=None) > week_ago:
                 manifest_files = ['package.json', 'requirements.txt', 'Cargo.toml', 'go.mod', 'pom.xml', 'pyproject.toml']
@@ -86,7 +94,7 @@ def detect_frameworks_libraries(g, username):
         
         return frameworks.most_common(5)
     except Exception as e:
-        print(f"Error detecting frameworks: {e}")
+        log_error(f"Error detecting frameworks: {e}")
         return []
 
 def detect_databases_cloud(g, username):
@@ -136,7 +144,7 @@ def detect_databases_cloud(g, username):
         
         return tech.most_common(5)
     except Exception as e:
-        print(f"Error detecting databases/cloud: {e}")
+        log_error(f"Error detecting databases/cloud: {e}")
         return []
 
 def detect_tools(g, username):
@@ -185,7 +193,7 @@ def detect_tools(g, username):
         
         return tools.most_common(5)
     except Exception as e:
-        print(f"Error detecting tools: {e}")
+        log_error(f"Error detecting tools: {e}")
         return []
 
 def format_percentage_bar(percentage):
@@ -239,7 +247,7 @@ def update_readme(username):
         
         thrusters_section += f"\n\n*Last scan: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}*\n"
     except Exception as e:
-        print(f"Error creating thrusters section: {e}")
+        log_error(f"Error creating thrusters section: {e}")
         thrusters_section = f"""## 🔥 Active Thrusters
 *Initializing tech stack analysis...*
 
@@ -259,9 +267,13 @@ def update_readme(username):
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    print(f"✅ Updated active thrusters")
+    log_info("Updated active thrusters")
 
 if __name__ == '__main__':
+    required_vars = ['GITHUB_TOKEN', 'GITHUB_REPOSITORY']
+    if not validate_env_vars(required_vars):
+        log_warning("Some features may not work correctly")
+    
     username = os.getenv('GITHUB_REPOSITORY', 'deepextrema/deepextrema').split('/')[0]
     update_readme(username)
 

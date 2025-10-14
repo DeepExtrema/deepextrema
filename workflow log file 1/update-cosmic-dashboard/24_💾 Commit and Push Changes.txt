@@ -1,0 +1,17 @@
+﻿2025-10-14T03:16:51.7354247Z ##[group]Run git config --local user.name "Cosmic-Bot 🌌"
+2025-10-14T03:16:51.7354687Z [36;1mgit config --local user.name "Cosmic-Bot 🌌"[0m
+2025-10-14T03:16:51.7355095Z [36;1mgit config --local user.email "cosmic-bot@users.noreply.github.com"[0m
+2025-10-14T03:16:51.7355490Z [36;1mgit add README.md assets/ dist/ data/ || true[0m
+2025-10-14T03:16:51.7355958Z [36;1mgit diff --staged --quiet || git commit -m "⭐ Update Cosmic Dashboard - $(date +'%Y-%m-%d %H:%M UTC')"[0m
+2025-10-14T03:16:51.7356409Z [36;1mgit push || echo "Nothing to push"[0m
+2025-10-14T03:16:51.7388615Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:51.7388876Z env:
+2025-10-14T03:16:51.7389121Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7389966Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:51.7390393Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7390749Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7391134Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:51.7391506Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:51.7391806Z ##[endgroup]
+2025-10-14T03:16:51.7487737Z fatal: pathspec 'data/' did not match any files
+2025-10-14T03:16:51.9615010Z Everything up-to-date

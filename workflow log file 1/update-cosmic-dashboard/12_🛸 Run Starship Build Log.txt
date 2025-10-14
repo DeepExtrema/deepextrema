@@ -1,0 +1,14 @@
+﻿2025-10-14T03:15:56.8408156Z ##[group]Run python scripts/shiplog.py
+2025-10-14T03:15:56.8408777Z [36;1mpython scripts/shiplog.py[0m
+2025-10-14T03:15:56.8456403Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:56.8456826Z env:
+2025-10-14T03:15:56.8457274Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8458019Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:56.8458778Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8459672Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8460347Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:56.8461027Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:56.8461840Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:56.8462294Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:56.8462779Z ##[endgroup]
+2025-10-14T03:16:01.0464843Z ✅ Updated starship build log

@@ -1,0 +1,15 @@
+﻿2025-10-14T03:15:46.7505056Z ##[group]Run python scripts/battery.py
+2025-10-14T03:15:46.7505392Z [36;1mpython scripts/battery.py[0m
+2025-10-14T03:15:46.7537632Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:46.7537863Z env:
+2025-10-14T03:15:46.7538118Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7538549Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:46.7538982Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7539594Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7539974Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:46.7540356Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:46.7540839Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:46.7541076Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:15:46.7541349Z ##[endgroup]
+2025-10-14T03:15:47.4992294Z Error fetching events: can't compare offset-naive and offset-aware datetimes
+2025-10-14T03:15:47.4993227Z ✅ Updated battery status

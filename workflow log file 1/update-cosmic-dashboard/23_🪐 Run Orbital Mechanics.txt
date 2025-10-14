@@ -1,0 +1,14 @@
+﻿2025-10-14T03:16:48.6872404Z ##[group]Run python scripts/orbital_mechanics.py
+2025-10-14T03:16:48.6872775Z [36;1mpython scripts/orbital_mechanics.py[0m
+2025-10-14T03:16:48.6904886Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:16:48.6905116Z env:
+2025-10-14T03:16:48.6905367Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6905795Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:16:48.6906209Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6906580Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6906951Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:16:48.6907322Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:16:48.6907807Z   GITHUB_TOKEN: ***
+2025-10-14T03:16:48.6908040Z   GITHUB_REPOSITORY: DeepExtrema/deepextrema
+2025-10-14T03:16:48.6908321Z ##[endgroup]
+2025-10-14T03:16:51.6623481Z ✅ Generated orbital mechanics visualization

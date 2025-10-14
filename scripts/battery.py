@@ -6,20 +6,20 @@ Measures commit activity "energy level" for the current week
 
 import os
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from github import Github
+from utils import retry_with_backoff, validate_env_vars, log_error, log_warning, log_info
 
 def calculate_battery_level(g, username):
     """Calculate energy level based on recent activity"""
     user = g.get_user(username)
     
-    week_ago = datetime.utcnow() - timedelta(days=7)
+    week_ago = datetime.now(timezone.utc) - timedelta(days=7)
     activity_score = 0
     
     try:
         for event in user.get_events()[:100]:
-            event_time = event.created_at.replace(tzinfo=None) if event.created_at.tzinfo else event.created_at
-            if event_time < week_ago:
+            if event.created_at < week_ago:
                 break
                 
             if event.type == 'PushEvent':
@@ -31,7 +31,7 @@ def calculate_battery_level(g, username):
             elif event.type == 'CreateEvent':
                 activity_score += 4
     except Exception as e:
-        print(f"Error fetching events: {e}")
+        log_error(f"Error fetching events: {e}")
     
     # Normalize to 0-100
     battery_level = min(100, activity_score * 2)
@@ -74,7 +74,7 @@ def update_readme(username):
 *Last check: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}*
 """
     except Exception as e:
-        print(f"Error calculating battery: {e}")
+        log_error(f"Error calculating battery: {e}")
         battery_section = f"""## 🔋 System Energy Level
 ```
 🟢🟢🟢🟢🟢  100% - OPERATIONAL
@@ -94,15 +94,19 @@ def update_readme(username):
     
     # Check if substitution worked
     if new_content == content:
-        print(f"⚠️  Warning: No changes detected. Pattern may not have matched.")
-        print(f"Looking for pattern: {pattern}")
+        log_warning("No changes detected. Pattern may not have matched.")
+        log_info(f"Looking for pattern: {pattern}")
     
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
-    print(f"✅ Updated battery status (Level: {username if 'level' not in dir() else level}%)")
+    log_info(f"Updated battery status (Level: {username if 'level' not in dir() else level}%)")
 
 if __name__ == '__main__':
+    required_vars = ['GITHUB_TOKEN', 'GITHUB_REPOSITORY']
+    if not validate_env_vars(required_vars):
+        log_warning("Some features may not work correctly")
+    
     username = os.getenv('GITHUB_REPOSITORY', 'deepextrema/deepextrema').split('/')[0]
     update_readme(username)
 

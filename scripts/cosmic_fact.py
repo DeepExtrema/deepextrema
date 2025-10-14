@@ -7,27 +7,37 @@ Fetches daily cosmic/astronomy facts from NASA APOD or generates from astronomic
 import os
 import re
 import requests
+import time
 from datetime import datetime
 
 def get_nasa_apod():
-    """Fetch NASA Astronomy Picture of the Day"""
+    """Fetch NASA Astronomy Picture of the Day with retry logic"""
     api_key = os.getenv('NASA_API_KEY', 'DEMO_KEY')
     url = f'https://api.nasa.gov/planetary/apod?api_key={api_key}'
     
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        data = response.json()
-        
-        # Clean explanation to one sentence
-        explanation = data.get('explanation', '')
-        first_sentence = explanation.split('.')[0] + '.'
-        
-        fact = f"**{data.get('title', 'Cosmic Wonder')}**: {first_sentence}"
-        return fact
-    except Exception as e:
-        print(f"Error fetching NASA APOD: {e}")
-        return get_fallback_fact()
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            timeout = 10 + (attempt * 5)  # Increase timeout with each retry
+            response = requests.get(url, timeout=timeout)
+            response.raise_for_status()
+            data = response.json()
+            
+            # Clean explanation to one sentence
+            explanation = data.get('explanation', '')
+            first_sentence = explanation.split('.')[0] + '.'
+            
+            fact = f"**{data.get('title', 'Cosmic Wonder')}**: {first_sentence}"
+            return fact
+        except Exception as e:
+            print(f"NASA API attempt {attempt + 1} failed: {e}")
+            if attempt < max_retries - 1:
+                time.sleep(2 ** attempt)  # Exponential backoff: 1s, 2s, 4s
+            else:
+                print("All NASA API attempts failed, using fallback")
+                return get_fallback_fact()
+    
+    return get_fallback_fact()
 
 def get_fallback_fact():
     """Fallback cosmic facts when API fails"""

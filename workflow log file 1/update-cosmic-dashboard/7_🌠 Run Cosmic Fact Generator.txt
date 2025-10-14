@@ -1,0 +1,14 @@
+﻿2025-10-14T03:15:35.1932133Z ##[group]Run python scripts/cosmic_fact.py
+2025-10-14T03:15:35.1932493Z [36;1mpython scripts/cosmic_fact.py[0m
+2025-10-14T03:15:35.1965122Z shell: /usr/bin/bash -e {0}
+2025-10-14T03:15:35.1965353Z env:
+2025-10-14T03:15:35.1965610Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1966053Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib/pkgconfig
+2025-10-14T03:15:35.1966486Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1966878Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1967254Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.13/x64
+2025-10-14T03:15:35.1967628Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.13/x64/lib
+2025-10-14T03:15:35.1968218Z   GITHUB_TOKEN: ***
+2025-10-14T03:15:35.1968424Z ##[endgroup]
+2025-10-14T03:15:45.8661618Z Error fetching NASA APOD: HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)
+2025-10-14T03:15:45.8664039Z ✅ Updated cosmic fact: The coldest place in the universe is the Boomerang...

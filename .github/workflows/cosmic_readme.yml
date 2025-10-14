@@ -28,6 +28,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: 📊 Check API Rate Limit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/rate_limit_check.py
+
       - name: 🐍 Generate Snake Animation
         uses: Platane/snk@v3
         with:
@@ -134,7 +139,14 @@ jobs:
         run: |
           git config --local user.name "Cosmic-Bot 🌌"
           git config --local user.email "cosmic-bot@users.noreply.github.com"
+          mkdir -p data
           git add README.md assets/ dist/ data/ || true
           git diff --staged --quiet || git commit -m "⭐ Update Cosmic Dashboard - $(date +'%Y-%m-%d %H:%M UTC')"
           git push || echo "Nothing to push"
+
+      - name: 📢 Notify on Failure
+        if: failure()
+        run: |
+          echo "::error::Cosmic Dashboard update failed!"
+          echo "Check the workflow logs for details."
 
