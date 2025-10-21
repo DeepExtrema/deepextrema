@@ -70,7 +70,7 @@ Kept because the frontier should stay on the table.
 ![Evolution](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22line%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%22May%2025%22%2C%20%22Jun%2025%22%2C%20%22Jul%2025%22%2C%20%22Aug%2025%22%2C%20%22Sep%2025%22%2C%20%22Oct%2025%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Total%20Stars%22%2C%20%22data%22%3A%20%5B1%2C%201%2C%201%2C%201%2C%201%2C%201%5D%2C%20%22borderColor%22%3A%20%22%236EE7B7%22%2C%20%22backgroundColor%22%3A%20%22rgba%28110%2C%20231%2C%20183%2C%200.1%29%22%2C%20%22fill%22%3A%20true%2C%20%22tension%22%3A%200.4%7D%2C%20%7B%22label%22%3A%20%22Recent%20Commits%22%2C%20%22data%22%3A%20%5B0%2C%200%2C%200%2C%200%2C%200%2C%200%5D%2C%20%22borderColor%22%3A%20%22%233B82F6%22%2C%20%22backgroundColor%22%3A%20%22rgba%2859%2C%20130%2C%20246%2C%200.1%29%22%2C%20%22fill%22%3A%20true%2C%20%22tension%22%3A%200.4%7D%5D%7D%2C%20%22options%22%3A%20%7B%22scales%22%3A%20%7B%22y%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22grid%22%3A%20%7B%22color%22%3A%20%22rgba%28255%2C255%2C255%2C0.1%29%22%7D%7D%2C%20%22x%22%3A%20%7B%22grid%22%3A%20%7B%22display%22%3A%20false%7D%7D%7D%2C%20%22plugins%22%3A%20%7B%22legend%22%3A%20%7B%22position%22%3A%20%22top%22%2C%20%22labels%22%3A%20%7B%22color%22%3A%20%22%23ECEFF4%22%7D%7D%2C%20%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22%5Cud83d%5Cudcc8%20Evolution%20Trajectory%22%2C%20%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%7D&backgroundColor=rgb(11,11,12)&width=800&height=300)
 
 *Tracking growth across the void*  
-*Last updated: 2025-10-20 03:43 UTC*
+*Last updated: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:EVOLUTION-->
 
@@ -82,7 +82,7 @@ Kept because the frontier should stay on the table.
 - ⚡ Pushed 0 commits to **deepline-website**
 - ⚡ Pushed 0 commits to **deepline-website**
 
-*Last scan: 2025-10-20 03:43 UTC*
+*Last scan: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:TRAJECTORY-->
 
@@ -92,21 +92,21 @@ Kept because the frontier should stay on the table.
 
 <!--START_SECTION:VELOCITYWAVES-->
 ### 🌊 Velocity Waves
-![Velocity Waves](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22line%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%220%3A00%22%2C%20%221%3A00%22%2C%20%222%3A00%22%2C%20%223%3A00%22%2C%20%224%3A00%22%2C%20%225%3A00%22%2C%20%226%3A00%22%2C%20%227%3A00%22%2C%20%228%3A00%22%2C%20%229%3A00%22%2C%20%2210%3A00%22%2C%20%2211%3A00%22%2C%20%2212%3A00%22%2C%20%2213%3A00%22%2C%20%2214%3A00%22%2C%20%2215%3A00%22%2C%20%2216%3A00%22%2C%20%2217%3A00%22%2C%20%2218%3A00%22%2C%20%2219%3A00%22%2C%20%2220%3A00%22%2C%20%2221%3A00%22%2C%20%2222%3A00%22%2C%20%2223%3A00%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Commits%22%2C%20%22data%22%3A%20%5B0%2C%201%2C%205%2C%2011%2C%203%2C%205%2C%202%2C%200%2C%201%2C%201%2C%203%2C%200%2C%203%2C%200%2C%203%2C%201%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%5D%2C%20%22borderColor%22%3A%20%22%236EE7B7%22%2C%20%22backgroundColor%22%3A%20%22rgba%28110%2C%20231%2C%20183%2C%200.2%29%22%2C%20%22fill%22%3A%20true%2C%20%22tension%22%3A%200.4%2C%20%22pointRadius%22%3A%204%2C%20%22pointBackgroundColor%22%3A%20%22%239333EA%22%7D%5D%7D%2C%20%22options%22%3A%20%7B%22plugins%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22%5Cud83c%5Cudf0a%20Coding%20Velocity%20Waves%20%2824h%29%22%2C%20%22color%22%3A%20%22%23ECEFF4%22%7D%2C%20%22legend%22%3A%20%7B%22labels%22%3A%20%7B%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%2C%20%22scales%22%3A%20%7B%22y%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22grid%22%3A%20%7B%22color%22%3A%20%22rgba%28255%2C255%2C255%2C0.1%29%22%7D%7D%2C%20%22x%22%3A%20%7B%22grid%22%3A%20%7B%22display%22%3A%20false%7D%7D%7D%7D%7D&backgroundColor=rgb(11,11,12)&width=800&height=300)
+![Velocity Waves](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22line%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%220%3A00%22%2C%20%221%3A00%22%2C%20%222%3A00%22%2C%20%223%3A00%22%2C%20%224%3A00%22%2C%20%225%3A00%22%2C%20%226%3A00%22%2C%20%227%3A00%22%2C%20%228%3A00%22%2C%20%229%3A00%22%2C%20%2210%3A00%22%2C%20%2211%3A00%22%2C%20%2212%3A00%22%2C%20%2213%3A00%22%2C%20%2214%3A00%22%2C%20%2215%3A00%22%2C%20%2216%3A00%22%2C%20%2217%3A00%22%2C%20%2218%3A00%22%2C%20%2219%3A00%22%2C%20%2220%3A00%22%2C%20%2221%3A00%22%2C%20%2222%3A00%22%2C%20%2223%3A00%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Commits%22%2C%20%22data%22%3A%20%5B0%2C%201%2C%205%2C%2012%2C%203%2C%206%2C%202%2C%200%2C%201%2C%201%2C%203%2C%200%2C%204%2C%200%2C%203%2C%201%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%2C%200%5D%2C%20%22borderColor%22%3A%20%22%236EE7B7%22%2C%20%22backgroundColor%22%3A%20%22rgba%28110%2C%20231%2C%20183%2C%200.2%29%22%2C%20%22fill%22%3A%20true%2C%20%22tension%22%3A%200.4%2C%20%22pointRadius%22%3A%204%2C%20%22pointBackgroundColor%22%3A%20%22%239333EA%22%7D%5D%7D%2C%20%22options%22%3A%20%7B%22plugins%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22%5Cud83c%5Cudf0a%20Coding%20Velocity%20Waves%20%2824h%29%22%2C%20%22color%22%3A%20%22%23ECEFF4%22%7D%2C%20%22legend%22%3A%20%7B%22labels%22%3A%20%7B%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%2C%20%22scales%22%3A%20%7B%22y%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22grid%22%3A%20%7B%22color%22%3A%20%22rgba%28255%2C255%2C255%2C0.1%29%22%7D%7D%2C%20%22x%22%3A%20%7B%22grid%22%3A%20%7B%22display%22%3A%20false%7D%7D%7D%7D%7D&backgroundColor=rgb(11,11,12)&width=800&height=300)
 
 🌙 **Peak Orbit:** 3:00 - 4:00 UTC
 
-*Last updated: 2025-10-20 03:44 UTC*
+*Last updated: 2025-10-21 03:35 UTC*
 
 <!--END_SECTION:VELOCITYWAVES-->
 
 <!--START_SECTION:RADAR-->
 ### 📡 Signal Strength Radar
-![Radar Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22radar%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%22Stars%22%2C%20%22Forks%22%2C%20%22Activity%22%2C%20%22Community%22%2C%20%22Health%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Signal%20Strength%22%2C%20%22data%22%3A%20%5B1%2C%200%2C%2078%2C%200%2C%2083%5D%2C%20%22backgroundColor%22%3A%20%22rgba%28110%2C%20231%2C%20183%2C%200.2%29%22%2C%20%22borderColor%22%3A%20%22%236EE7B7%22%2C%20%22pointBackgroundColor%22%3A%20%22%239333EA%22%2C%20%22pointBorderColor%22%3A%20%22%23FFFFFF%22%2C%20%22pointRadius%22%3A%206%7D%5D%7D%2C%20%22options%22%3A%20%7B%22scales%22%3A%20%7B%22r%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22max%22%3A%20100%2C%20%22ticks%22%3A%20%7B%22backdropColor%22%3A%20%22transparent%22%2C%20%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%2C%20%22plugins%22%3A%20%7B%22legend%22%3A%20%7B%22labels%22%3A%20%7B%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%7D%7D&backgroundColor=rgb(11,11,12)&width=600&height=400)
+![Radar Chart](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22radar%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%22Stars%22%2C%20%22Forks%22%2C%20%22Activity%22%2C%20%22Community%22%2C%20%22Health%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Signal%20Strength%22%2C%20%22data%22%3A%20%5B1%2C%200%2C%2084%2C%200%2C%2083%5D%2C%20%22backgroundColor%22%3A%20%22rgba%28110%2C%20231%2C%20183%2C%200.2%29%22%2C%20%22borderColor%22%3A%20%22%236EE7B7%22%2C%20%22pointBackgroundColor%22%3A%20%22%239333EA%22%2C%20%22pointBorderColor%22%3A%20%22%23FFFFFF%22%2C%20%22pointRadius%22%3A%206%7D%5D%7D%2C%20%22options%22%3A%20%7B%22scales%22%3A%20%7B%22r%22%3A%20%7B%22beginAtZero%22%3A%20true%2C%20%22max%22%3A%20100%2C%20%22ticks%22%3A%20%7B%22backdropColor%22%3A%20%22transparent%22%2C%20%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%2C%20%22plugins%22%3A%20%7B%22legend%22%3A%20%7B%22labels%22%3A%20%7B%22color%22%3A%20%22%23ECEFF4%22%7D%7D%7D%7D%7D&backgroundColor=rgb(11,11,12)&width=600&height=400)
 
-🎯 Overall Signal: **32%**
+🎯 Overall Signal: **33%**
 
-*Last updated: 2025-10-20 03:44 UTC*
+*Last updated: 2025-10-21 03:35 UTC*
 
 <!--END_SECTION:RADAR-->
 
@@ -127,22 +127,22 @@ Kept because the frontier should stay on the table.
 *Self-detected tech stack from activity in the last 7 days*
 
 ### 👨‍💻 Languages
-**Python** `████████████████░░░░` 82.0%
-**C++** `███░░░░░░░░░░░░░░░░░` 15.6%
+**Python** `████████████████░░░░` 81.9%
+**C++** `███░░░░░░░░░░░░░░░░░` 15.7%
 **C** `░░░░░░░░░░░░░░░░░░░░` 1.2%
-**Cuda** `░░░░░░░░░░░░░░░░░░░░` 0.5%
+**Cuda** `░░░░░░░░░░░░░░░░░░░░` 0.6%
 **XSLT** `░░░░░░░░░░░░░░░░░░░░` 0.2%
 
 ### 🧰 Frameworks & Libraries
-`numpy`, `react`
+`numpy`
 
 ### 🗄️ Databases & Cloud
 *None detected*
 
 ### 💻 Tools & DevOps
-`GitHub Actions`, `ESLint`, `Docker`
+`GitHub Actions`, `ESLint`
 
-*Last scan: 2025-10-20 03:44 UTC*
+*Last scan: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:THRUSTERS-->
 
@@ -155,19 +155,19 @@ Kept because the frontier should stay on the table.
 🟡 **Status:** Minor Issues  
 `██████████████████░░` **90%**
 
-✅ Successful: 9 | ❌ Failed: 0 | 📊 Total: 10
+✅ Successful: 10 | ❌ Failed: 0 | 📊 Total: 11
 
-*Last check: 2025-10-20 03:44 UTC*
+*Last check: 2025-10-21 03:35 UTC*
 
 <!--END_SECTION:MISSIONSUCCESS-->
 
 <!--START_SECTION:BATTERY-->
 ## 🔋 System Energy Level
 ```
-🟡🟡🟡⚪⚪  46% - CRUISING
+🔴⚪⚪⚪⚪  18% - STANDBY
 ```
 *Measured from activity in the last 7 days*  
-*Last check: 2025-10-20 03:43 UTC*
+*Last check: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:BATTERY-->
 
@@ -179,36 +179,36 @@ Kept because the frontier should stay on the table.
 ### ⚡ Lightning Commits
 ```
 ⚡ LIGHTNING COMMIT LOG
+12:09:04 → [abc1d51] Refactor metallic theme and update section styles
+         ↳ deepline-website
+05:14:22 → [fd7cf34] feat: Add animated 3D hero visual and improved loading state
+         ↳ deepline-website
+03:44:42 → [5b460d7] ⭐ Update Cosmic Dashboard - 2025-10-20 03:44 UTC
+         ↳ deepextrema
 01:14:05 → [8c1f776] Update metallic theme and styles
-         ↳ deepline-website
-10:04:43 → [c3977ef] Enhance hero visual with 3D canvas and style updates
-         ↳ deepline-website
-09:53:24 → [9e75235] Add 3D hero scene layout, canvas styling, and metallic-theme
          ↳ deepline-website
 03:42:28 → [3ffc8d0] ⭐ Update Cosmic Dashboard - 2025-10-19 03:42 UTC
          ↳ deepextrema
-03:24:09 → [aaca515] ⭐ Update Cosmic Dashboard - 2025-10-18 03:24 UTC
-         ↳ deepextrema
 ```
 
-*Last updated: 2025-10-20 03:44 UTC*
+*Last updated: 2025-10-21 03:35 UTC*
 <!--END_SECTION:LIGHTNING-->
 
 <!--START_SECTION:SHIPLOG-->
 ## 🛸 Starship Build Log
 *Active repositories sorted by recent commits*
 
-🎨 **[deepline-website](https://github.com/DeepExtrema/deepline-website)** — Update metallic theme and styles *(today)*
-🧠 **[deepextrema](https://github.com/DeepExtrema/deepextrema)** — ⭐ Update Cosmic Dashboard - 2025-10-19 03:42 UTC *(1d ago)*
-🧠 **[ChatBot](https://github.com/DeepExtrema/ChatBot)** — Update README.md *(172d ago)*
-🧠 **[Langchain_agtent-GHW](https://github.com/DeepExtrema/Langchain_agtent-GHW)** — Initial commit *(5d ago)*
-🧪 **[Sherlock-Multiagent-Data-Scientist](https://github.com/DeepExtrema/Sherlock-Multiagent-Data-Scientist)** — Potential fix for code scanning alert no. 5: Information exp *(11d ago)*
-🧠 **[Healthboard](https://github.com/DeepExtrema/Healthboard)** — Initial commit *(137d ago)*
-🧪 **[RAG_Codebase](https://github.com/DeepExtrema/RAG_Codebase)** — Initial commit *(231d ago)*
-🧠 **[Inventory_Tracker](https://github.com/DeepExtrema/Inventory_Tracker)** — made pantry tracker with search bar and Add/Remove button *(440d ago)*
-🎨 **[Portfolio-Website](https://github.com/DeepExtrema/Portfolio-Website)** — nothing should have canged here *(445d ago)*
+🎨 **[deepline-website](https://github.com/DeepExtrema/deepline-website)** — Refactor metallic theme and update section styles *(today)*
+🧠 **[deepextrema](https://github.com/DeepExtrema/deepextrema)** — ⭐ Update Cosmic Dashboard - 2025-10-20 03:44 UTC *(today)*
+🧠 **[ChatBot](https://github.com/DeepExtrema/ChatBot)** — Update README.md *(173d ago)*
+🧠 **[Langchain_agtent-GHW](https://github.com/DeepExtrema/Langchain_agtent-GHW)** — Initial commit *(6d ago)*
+🧪 **[Sherlock-Multiagent-Data-Scientist](https://github.com/DeepExtrema/Sherlock-Multiagent-Data-Scientist)** — Potential fix for code scanning alert no. 5: Information exp *(12d ago)*
+🧠 **[Healthboard](https://github.com/DeepExtrema/Healthboard)** — Initial commit *(138d ago)*
+🧪 **[RAG_Codebase](https://github.com/DeepExtrema/RAG_Codebase)** — Initial commit *(232d ago)*
+🧠 **[Inventory_Tracker](https://github.com/DeepExtrema/Inventory_Tracker)** — made pantry tracker with search bar and Add/Remove button *(441d ago)*
+🎨 **[Portfolio-Website](https://github.com/DeepExtrema/Portfolio-Website)** — nothing should have canged here *(446d ago)*
 
-*Last updated: 2025-10-20 03:43 UTC*
+*Last updated: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:SHIPLOG-->
 
@@ -228,7 +228,7 @@ graph LR
 ```
 
 *Topic transitions in commit messages (last 60 days)*  
-*Last updated: 2025-10-20 03:44 UTC*
+*Last updated: 2025-10-21 03:35 UTC*
 
 <!--END_SECTION:NEURAL-->
 
@@ -241,7 +241,7 @@ graph LR
 **[Stable Diffusion XL](https://stability.ai/sdxl)**  
 *Visual synthesis redefined*
 
-*Rotates weekly • Last updated: 2025-10-20*
+*Rotates weekly • Last updated: 2025-10-21*
 
 <!--END_SECTION:MODEL-->
 
@@ -251,17 +251,17 @@ graph LR
 
 <!--START_SECTION:COSMICFACT-->
 ## 🌠 Cosmic Fact of the Day
-> The International Space Station travels at 17,500 mph.
+> There are more stars in the universe than grains of sand on Earth.
 
-*Last updated: 2025-10-20 03:43 UTC*
+*Last updated: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:COSMICFACT-->
 
 <!--START_SECTION:QUOTE-->
 ## 💭 Daily Transmission
-> *"Embrace the unknown, harness the impossible, shape the future with fearless innovation."*
+> *"Forge the future with cosmic grit, robotic wisdom, and rocket-fueled ambition."*
 
-*Last signal: 2025-10-20 03:43 UTC*
+*Last signal: 2025-10-21 03:34 UTC*
 
 <!--END_SECTION:QUOTE-->
 
