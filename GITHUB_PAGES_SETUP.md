@@ -4,10 +4,10 @@ This guide documents the steps to configure the custom domain `deepline.dev` for
 
 ## Status
 
-✅ **Phase 3 Complete**: CNAME file has been added to the repository root with content `deepline.dev`
+✅ **Repository Configuration Complete**: CNAME file has been added to the repository root with content `deepline.dev`
 
-🔲 **Phase 2 Required**: DNS configuration (requires DNS admin access)
-🔲 **Phase 4 Required**: GitHub Pages settings configuration (requires GitHub admin access)
+🔲 **DNS Configuration Required**: DNS records need to be configured (requires DNS admin access)
+🔲 **GitHub Pages Settings Required**: Custom domain needs to be set in GitHub UI (requires GitHub admin access)
 
 ## Variables
 
@@ -110,7 +110,7 @@ openssl s_client -connect deepline.dev:443 -servername deepline.dev </dev/null |
 | Issue | Solution |
 |-------|----------|
 | Cloudflare proxy left ON | Turn to DNS only (grey cloud) for apex and www |
-| Wrong apex config | Use all four A records: 185.199.108-111.153 |
+| Wrong apex config | Use all four A records: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 |
 | Only www configured | Add apex A records |
 | CAA blocks issuance | Allow letsencrypt.org (only if you use CAA) |
 
@@ -118,6 +118,6 @@ openssl s_client -connect deepline.dev:443 -servername deepline.dev </dev/null |
 
 If issues occur, revert DNS to:
 - `www` → CNAME `deepextrema.github.io.`
-- apex → A records (185.199.108-111.153)
+- apex → A records (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153)
 
 Remove any conflicting records and retry validation.
