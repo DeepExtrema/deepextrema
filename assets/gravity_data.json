@@ -1,6 +1,11 @@
 {
   "nodes": [
     {
+      "id": "ARES",
+      "size": 5,
+      "color": "#6EE7B7"
+    },
+    {
       "id": "ChatBot",
       "size": 5,
       "color": "#6EE7B7"
@@ -42,11 +47,6 @@
     },
     {
       "id": "RAG_Codebase",
-      "size": 5,
-      "color": "#6EE7B7"
-    },
-    {
-      "id": "saad",
       "size": 5,
       "color": "#6EE7B7"
     },
