@@ -31,6 +31,11 @@
       "color": "#6EE7B7"
     },
     {
+      "id": "Jobs_Applier_AI_Agent_AIHawk",
+      "size": 5,
+      "color": "#3B82F6"
+    },
+    {
       "id": "Langchain_agtent-GHW",
       "size": 5,
       "color": "#6EE7B7"
@@ -51,5 +56,10 @@
       "color": "#6EE7B7"
     }
   ],
-  "links": []
+  "links": [
+    {
+      "source": "Jobs_Applier_AI_Agent_AIHawk",
+      "target": "Jobs_Applier_AI_Agent_AIHawk"
+    }
+  ]
 }
