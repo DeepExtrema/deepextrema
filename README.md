@@ -1,97 +1,166 @@
-<p align="center">
-  <img src="assets/header.svg" width="100%" alt="Bridge Window">
-</p>
+<!-- CONSTELLATION_HEADER -->
+<div align="center">
+  <img src="assets/constellation_header.svg" alt="Cosmic Header" width="100%" />
+</div>
+<!-- /CONSTELLATION_HEADER -->
+
+<h1 align="center">🌌 DeepExtrema</h1>
+
+<h3 align="center">🧠 Founder | Builder | Explorer</h3>
 
 <p align="center">
-  <code>SYSTEMS DIAGNOSTIC: [✅ OPERATIONAL] | FRESHNESS: <span id="freshness">JUST NOW</span></code>
+  <em>Forward-deployed consciousness — audacity with instrumentation.</em>
 </p>
+
+<!-- SYSTEMS_HEALTH -->
+<div align="center">
+  <code>Systems: ✅ Operational | Last Sync: Initializing... | Freshness: 🟢 Fresh</code>
+</div>
+<!-- /SYSTEMS_HEALTH -->
 
 ---
 
-# 🌌 DeepExtrema
-### 🧠 Founder | Builder | Explorer
-> **Forward-deployed consciousness — audacity with instrumentation.**
+## 🚀 Ship Log
 
+<!-- SHIP_LOG -->
+
+### 🎯 Currently Shipping
+> *Loading shipping target...*
+
+### 📋 Recent Work Log
+| Time | Event | Repository |
+|------|-------|------------|
+| - | Initializing... | - |
+
+### 🔥 Active Fronts
+> *Scanning for activity...*
+
+<!-- /SHIP_LOG -->
+
+---
+
+## 📊 Flight Telemetry
+
+<!-- FLIGHT_TELEMETRY -->
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🛸 Activity Orbit
+```
+Commits (14d): ░░░░░░░░░░
+Active Days:   0 / 14
+```
+
+</td>
+<td width="33%" align="center">
+
+### ⚡ Velocity
+```
+PRs Merged (7d):    0
+Issues Closed (7d): 0
+Trend: → Steady
+```
+
+</td>
+<td width="33%" align="center">
+
+### 📦 Load
+```
+Open Issues: 0
+Open PRs:    0
+```
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+### 🔧 Thrusters Engaged
+> *Scanning tech stack...*
+
+</td>
+<td align="center">
+
+### 📈 Momentum
+```
+Score: 0
+```
+
+</td>
+</tr>
+</table>
+
+<!-- /FLIGHT_TELEMETRY -->
+
+---
+
+## 📈 Evolution Map
+
+<!-- EVOLUTION_MAP -->
 <div align="center">
-
-![Python](https://img.shields.io/badge/Python-0B0B0C?style=for-the-badge&logo=python&logoColor=6EE7B7)
-![JavaScript](https://img.shields.io/badge/JavaScript-0B0B0C?style=for-the-badge&logo=javascript&logoColor=3B82F6)
-![AI](https://img.shields.io/badge/AI%2FML-0B0B0C?style=for-the-badge&logo=tensorflow&logoColor=9333EA)
-![Docker](https://img.shields.io/badge/Docker-0B0B0C?style=for-the-badge&logo=docker&logoColor=6EE7B7)
-
+  <img src="assets/evolution_chart.svg" alt="Evolution Chart" width="100%" />
 </div>
 
----
-
-## 👤 About Me
-I build systems that learn how to solve problems on their own.  
-Sometimes they analyze data; sometimes they automate decisions.  
-They always start with curiosity and end with receipts.
-
----
-
-## 🛠 Currently Shipping
-> **Target Locked:** `DeepExtrema/Project-X` [Active Development]
-
-| Recent Log | Active Fronts |
-| :--- | :--- |
-| `[10:30]` Merged PR #42: Optimize Neural Weights | 📡 **Repo-A** (High Momentum) |
-| `[09:15]` Deployed: Orbital-Relay-v2 | 📡 **Repo-B** (Maintenance) |
-
----
-
-<p align="center">
-  <img src="assets/hud.svg" width="100%" alt="Flight Telemetry">
-</p>
-
----
-
-<p align="center">
-  <img src="assets/signals.svg" width="100%" alt="Subspace Signals">
-</p>
-
----
-
-<p align="center">
-  <img src="assets/evolution.svg" width="100%" alt="Evolution Map">
-</p>
-
----
-
-## ⚙ Projects
-
-### Sherlock — AI Data Scientist
-Investigates datasets like a human analyst: **hypothesize → test → explain**.  
-Finds patterns, outliers, and stories; writes it down so decisions aren't vibes.
-
-### Orbital Forge
-Autonomous construction drones in low orbit.  
-Kept because the frontier should stay on the table.
-
-### Deepline
-A small company exploring autonomy in data and machine learning systems.  
-Depth first; scale later. Fundamentals over theater.
-
----
-
 <div align="center">
-  <table>
-    <tr>
-      <td align="center"><b>🌌 SIGNAL: SPACE</b><br/>APOD: The Veil Nebula</td>
-      <td align="center"><b>🤖 SIGNAL: AI</b><br/>Trending: Llama-2-70b</td>
-      <td align="center"><b>📟 SIGNAL: PHRASE</b><br/>"Code is the vessel."</td>
-    </tr>
-  </table>
+  <em>90-day trajectory • Updated daily</em>
 </div>
+<!-- /EVOLUTION_MAP -->
+
+---
+
+## 📡 Signal Feed
+
+<!-- SIGNAL_FEED -->
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🌌 Space
+> *Awaiting transmission from NASA...*
+
+</td>
+<td width="33%" align="center">
+
+### 🤖 AI
+> *Scanning HuggingFace...*
+
+</td>
+<td width="33%" align="center">
+
+### 💬 Phrase
+> *Generating...*
+
+</td>
+</tr>
+</table>
+
+<!-- /SIGNAL_FEED -->
+
+---
+
+<!-- DNA_HELIX -->
+<div align="center">
+  <img src="assets/dna_helix.svg" alt="Tech DNA Helix" width="800" />
+</div>
+<!-- /DNA_HELIX -->
+
+---
+
+<!-- SNAKE -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg" />
+    <img alt="github-snake" src="dist/github-snake.svg" />
+  </picture>
+</div>
+<!-- /SNAKE -->
 
 ---
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+  <em>Built with curiosity, powered by code 🌌</em>
 </p>
-
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,15,24&height=100&section=footer"/>
-</div>
-
-**Built with curiosity, powered by code** 🌌

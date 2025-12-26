@@ -1,0 +1,107 @@
+name: 🚀 Update Cosmic Cockpit
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'src/**'
+      - '.github/workflows/update-cockpit.yml'
+
+permissions:
+  contents: write
+
+env:
+  PYTHONPATH: ${{ github.workspace }}
+
+jobs:
+  update-cockpit:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: 📦 Install Dependencies
+        run: pip install -r requirements.txt
+      
+      # ========================================
+      # Pipeline 1: GitHub Telemetry (Core)
+      # ========================================
+      
+      - name: 🛸 Generate Constellation Header
+        run: python scripts/constellation_header.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: ❤️ Check Systems Health
+        run: python scripts/systems_health.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 📜 Update Ship Log
+        run: python scripts/ship_log.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 📊 Generate Flight Telemetry
+        run: python scripts/flight_telemetry.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 📈 Update Evolution Map
+        run: python scripts/evolution_map.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      # ========================================
+      # Pipeline 2: External Signals (Optional)
+      # These may fail if API keys not set
+      # ========================================
+      
+      - name: 📡 Update Signal Feed
+        run: python scripts/signal_feed.py
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
+          HUGGINGFACE_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      # ========================================
+      # Decorative Layer
+      # ========================================
+      
+      - name: 🧬 Generate DNA Helix
+        run: python scripts/dna_helix.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🐍 Generate Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: DeepExtrema
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      
+      # ========================================
+      # Commit and Push
+      # ========================================
+      
+      - name: 💾 Commit and Push Changes
+        run: |
+          git config --local user.name "Cosmic-Bot 🌌"
+          git config --local user.email "cosmic-bot@users.noreply.github.com"
+          git add README.md assets/ dist/ data/ || true
+          git diff --staged --quiet || git commit -m "⭐ Update Cosmic Cockpit - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push || echo "Nothing to push"
