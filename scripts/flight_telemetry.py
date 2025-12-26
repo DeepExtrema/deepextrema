@@ -103,54 +103,82 @@ def main():
         metrics_7d.get("active_repos_count", 0)
     )
     
-    # Build the telemetry display
+    # Build the telemetry display with generous spacing
     readme_content = f'''
 <table>
+<tr></tr>
 <tr>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### 🛸 Activity Orbit
+
+<br>
+
 ```
 Commits (14d): {activity_bar} {commits_14d}
 Active Days:   {active_days} / 14
 ```
 
+<br>
 </td>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### ⚡ Velocity
+
+<br>
+
 ```
 PRs Merged (7d):    {prs_7d}
 Issues Closed (7d): {issues_7d}
 Trend: {trend}
 ```
 
+<br>
 </td>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### 📦 Load
+
+<br>
+
 ```
 Open Issues: {open_issues}
 Open PRs:    {open_prs}
 ```
 
+<br>
 </td>
 </tr>
+<tr></tr>
 <tr>
-<td colspan="2" align="center">
+<td align="center" colspan="2">
+<br>
 
 ### 🔧 Thrusters Engaged
+
+<br>
+
 {thrusters_display}
 
+<br>
 </td>
 <td align="center">
+<br>
 
 ### 📈 Momentum
+
+<br>
+
 ```
 Score: {momentum}
 ```
+
 <sub>commits×1 + PRs×5 + repos×2</sub>
 
+<br>
 </td>
 </tr>
 </table>

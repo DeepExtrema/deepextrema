@@ -129,11 +129,14 @@ def main():
         events = []
         active_repos = []
     
-    # Build markdown
+    # Build markdown with generous spacing
     parts = []
     
     # Currently Shipping section
     parts.append("### 🎯 Currently Shipping")
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
     if shipping:
         type_icons = {"release": "🚀", "pr": "🔀", "active": "⚡"}
         icon = type_icons.get(shipping["type"], "🎯")
@@ -141,18 +144,32 @@ def main():
     else:
         parts.append("> *No active shipping targets detected*")
     
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
+    
     # Recent Work Log section
-    parts.append("\n### 📋 Recent Work Log")
+    parts.append("### 📋 Recent Work Log")
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
     if events:
         parts.append("| Time | Event | Repository |")
-        parts.append("|------|-------|------------|")
+        parts.append("|:-----|:------|:-----------|")
         for event in events:
             parts.append(f'| {event["time"]} | {event["icon"]} {event["description"]} | [{event["repo"]}]({event["url"]}) |')
     else:
         parts.append("> *No recent activity to display*")
     
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
+    
     # Active Fronts section
-    parts.append("\n### 🔥 Active Fronts")
+    parts.append("### 🔥 Active Fronts")
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
     if active_repos:
         front_items = []
         for repo in active_repos:
@@ -162,6 +179,10 @@ def main():
         parts.append(" • ".join(front_items))
     else:
         parts.append("> *Scanning for activity...*")
+    
+    parts.append("")
+    parts.append("<br>")
+    parts.append("")
     
     readme_content = "\n".join(parts)
     update_readme_section("SHIP_LOG", readme_content)

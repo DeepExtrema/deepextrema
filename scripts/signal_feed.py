@@ -214,28 +214,47 @@ def main():
     
     readme_content = f'''
 <table>
+<tr></tr>
 <tr>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### 🌌 Space{space_stale}
+
+<br>
+
 **{space.get('title', 'Signal')}**
 
 {truncate_string(space.get('description', ''), 80)}
 
+<br>
+<br>
 </td>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### 🤖 AI{ai_stale}
+
+<br>
+
 **[{ai.get('name', 'Model')}]({ai.get('url', '#')})**
 
 {ai.get('description', 'Trending model')}
 
+<br>
+<br>
 </td>
-<td width="33%" align="center">
+<td align="center" width="33%">
+<br>
 
 ### 💬 Phrase
+
+<br>
+
 > *{phrase.get('text', 'Loading...')}*
 
+<br>
+<br>
 </td>
 </tr>
 </table>
