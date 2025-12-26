@@ -47,6 +47,12 @@ They always start with curiosity and end with receipts.
 ---
 
 <p align="center">
+  <img src="assets/signals.svg" width="100%" alt="Subspace Signals">
+</p>
+
+---
+
+<p align="center">
   <img src="assets/evolution.svg" width="100%" alt="Evolution Map">
 </p>
 

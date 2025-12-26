@@ -16,10 +16,12 @@ def main():
     # If standard fetch fails, use dummy data handled inside class
     try:
         metrics = stream.get_metrics()
+        signals = stream.get_signals()
         history = stream.update_blackbox(metrics)
     except Exception as e:
         print(f"⚠️ Telemetry Acquisition Failed: {e}")
         metrics = {}
+        signals = {}
         history = []
     
     # 3. Render Visuals
@@ -33,6 +35,10 @@ def main():
         # Generate HUD
         with open("assets/hud.svg", "w", encoding='utf-8') as f:
             f.write(renderer.create_hud(metrics))
+            
+        # Generate Signals
+        with open("assets/signals.svg", "w", encoding='utf-8') as f:
+            f.write(renderer.create_signal_row(signals))
             
         # Generate Evolution Map
         with open("assets/evolution.svg", "w", encoding='utf-8') as f:

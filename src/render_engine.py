@@ -181,15 +181,20 @@ class RenderEngine:
         h_row2 = 100
         
         # --- COMPONENT 1: Target Locked (Shipping) ---
+        target = metrics.get('target', {})
+        target_name = target.get('name', 'Unknown')
+        target_ver = target.get('version', 'v0.0.0')
+        target_prog = target.get('progress', 0)
+        
         target_svg = f"""
             <circle cx="100" cy="60" r="30" stroke="{Palette.ORANGE}" stroke-width="2" fill="none" opacity="0.8"/>
             <circle cx="100" cy="60" r="20" stroke="{Palette.ORANGE}" stroke-width="1" fill="none" class="glow-cyan"/>
             <line x1="70" y1="60" x2="130" y2="60" stroke="{Palette.ORANGE}" />
             <line x1="100" y1="30" x2="100" y2="90" stroke="{Palette.ORANGE}" />
             <text x="100" y="110" text-anchor="middle" class="label" fill="{Palette.ORANGE}">TARGET LOCKED</text>
-            <text x="100" y="125" text-anchor="middle" class="text" font-size="14">v2.5.0 Release</text>
+            <text x="100" y="125" text-anchor="middle" class="text" font-size="12">{target_ver}</text>
             <rect x="20" y="130" width="160" height="4" fill="{Palette.SURFACE_LIGHT}"/>
-            <rect x="20" y="130" width="140" height="4" fill="{Palette.ORANGE}"/>
+            <rect x="20" y="130" width="{160 * (target_prog/100)}" height="4" fill="{Palette.ORANGE}"/>
         """
         
         # --- COMPONENT 2: Recent Log (Console) ---
@@ -197,6 +202,7 @@ class RenderEngine:
         console_txt = ""
         for i, line in enumerate(log_lines[:4]):
             color = Palette.GREEN if "Merged" in line else Palette.TEXT_DIM
+            if "Deployed" in line: color = Palette.ORANGE
             console_txt += f'<text x="10" y="{20 + (i*20)}" class="text" font-family="Courier New" font-size="11" fill="{color}">> {line}</text>'
             
         console_svg = f"""
@@ -212,7 +218,7 @@ class RenderEngine:
                 <g transform="translate(10, {15 + i*40})">
                     <rect x="0" y="0" width="170" height="30" rx="2" fill="{Palette.SURFACE_LIGHT}" stroke="{Palette.BORDER}"/>
                     <circle cx="15" cy="15" r="4" fill="{Palette.CYAN}" class="glow-cyan"/>
-                    <text x="30" y="18" class="text" font-size="11">{f}</text>
+                    <text x="30" y="18" class="text" font-size="11">{f[:18]}</text>
                 </g>
             """
 
@@ -292,6 +298,36 @@ class RenderEngine:
             <!-- Status Strip -->
             <rect x="10" y="5" width="780" height="30" rx="4" fill="{Palette.GREEN_DIM}" stroke="{Palette.GREEN}" />
             <text x="30" y="24" class="value" fill="{Palette.GREEN}">[✔] OPERATIONAL | LAST SUCCESSFUL RUN: JUST NOW</text>
+        </svg>"""
+        return svg
+
+    def create_signal_row(self, signals):
+        """Generates 6) Signal Feed Row (Space + AI + Phrase)"""
+        width, height = 800, 150
+        
+        def signal_card(x, title, text, sub, icon_color):
+            return f"""
+            <g transform="translate({x}, 20)">
+                {self.assets.draw_panel(0, 0, 250, 110, title)}
+                <circle cx="230" cy="20" r="4" fill="{icon_color}" class="glow-{icon_color.replace('#', '')}"/>
+                <text x="20" y="50" class="text" font-size="14" font-weight="bold">{text}</text>
+                <text x="20" y="80" class="label" opacity="0.7">{sub}</text>
+            </g>
+            """
+            
+        svg = f"""<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
+            {self.assets.get_defs()}
+            <rect width="100%" height="100%" class="bg" />
+            
+            {signal_card(10, "SIGNAL: SPACE", signals.get('space', {}).get('text', 'N/A'), 
+                         signals.get('space', {}).get('sub', ''), Palette.CYAN)}
+                         
+            {signal_card(275, "SIGNAL: AI", signals.get('ai', {}).get('text', 'N/A'), 
+                         signals.get('ai', {}).get('sub', ''), Palette.PURPLE)}
+                         
+            {signal_card(540, "SIGNAL: PHRASE", signals.get('phrase', {}).get('text', 'N/A'), 
+                         signals.get('phrase', {}).get('sub', ''), Palette.ORANGE)}
+
         </svg>"""
         return svg
 
