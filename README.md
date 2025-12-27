@@ -18,7 +18,7 @@
 
 <!-- SYSTEMS_HEALTH -->
 <div align="center">
-  <code>Systems: ⚠️ Check Failed | Last Sync: 2025-12-27 01:01 UTC | Error: 403 {"message": "Resource not </code>
+  <code>Systems: ⚠️ Check Failed | Last Sync: 2025-12-27 06:20 UTC | Error: 403 {"message": "Resource not </code>
 </div>
 <!-- /SYSTEMS_HEALTH -->
 
@@ -192,9 +192,9 @@ Score: 0
 
 <br>
 
-**Voyager 1**
+**The Sun**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
