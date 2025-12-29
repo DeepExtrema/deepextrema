@@ -11,7 +11,7 @@
 <h3 align="center">🧠 Founder | Builder | Explorer</h3>
 
 <p align="center">
-  <em>Forward-deployed consciousness — audacity with instrumentation.</em>
+  <em>Forward-deployed consciousness. </em>
 </p>
 
 <br>
