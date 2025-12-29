@@ -15,170 +15,24 @@
 </p>
 
 <br>
+# 💫 About Me:
+🛠️ I’m currently working on: ARES (2D LiDAR + ML hand-gesture control) + Sherlock (agentic data analysis → report + optional baseline ML models)<br><br>🤝 I’m looking to collaborate on: OSS + research-y builds around agentic analytics and robotics perception (NYC in-person preferred, remote OK)<br><br>🧠 I’m looking for help with: architecture review + pair programming + tests/evals (reproducible builds only)<br><br>🌱 I’m currently learning: LangChain/agent frameworks, LLM systems, JS/TS, ROS2 + Rust<br><br>💬 Ask me about: agent orchestration + evals, LiDAR perception/gesture classification, shipping ML systems (FastAPI/Docker/K8s)<br><br>⚡ Fun fact: my favorite game is Terra Invicta
 
-<!-- SYSTEMS_HEALTH -->
-<div align="center">
-  <code>Systems: ⚠️ Check Failed | Last Sync: 2025-12-29 01:08 UTC | Error: 403 {"message": "Resource not </code>
-</div>
-<!-- /SYSTEMS_HEALTH -->
 
-<br>
-<br>
+## 🌐 Socials:
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/@deepextrema) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/taimoorawan/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/@deepextrema) 
 
----
+# 💻 Tech Stack:
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=@deepextrema&theme=cobalt&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=@deepextrema&theme=cobalt&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=@deepextrema&theme=cobalt&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-<br>
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-## 🚀 Ship Log
-
-<br>
-
-<!-- SHIP_LOG -->
-### 🎯 Currently Shipping
-
-<br>
-
-> *No active shipping targets detected*
-
-<br>
-
-### 📋 Recent Work Log
-
-<br>
-
-> *No recent activity to display*
-
-<br>
-
-### 🔥 Active Fronts
-
-<br>
-
-> *Scanning for activity...*
-
-<br>
-
-<!-- /SHIP_LOG -->
-
----
-
-<br>
-
-## 📊 Flight Telemetry
-
-<br>
-
-<!-- FLIGHT_TELEMETRY -->
-
-<table>
-<tr></tr>
-<tr>
-<td align="center" width="33%">
-<br>
-
-### 🛸 Activity Orbit
-
-<br>
-
-```
-Commits (14d): ░░░░░░░░░░ 0
-Active Days:   0 / 14
-```
-
-<br>
-</td>
-<td align="center" width="33%">
-<br>
-
-### ⚡ Velocity
-
-<br>
-
-```
-PRs Merged (7d):    0
-Issues Closed (7d): 0
-Trend: → Steady
-```
-
-<br>
-</td>
-<td align="center" width="33%">
-<br>
-
-### 📦 Load
-
-<br>
-
-```
-Open Issues: 0
-Open PRs:    0
-```
-
-<br>
-</td>
-</tr>
-<tr></tr>
-<tr>
-<td align="center" colspan="2">
-<br>
-
-### 🔧 Thrusters Engaged
-
-<br>
-
-*Scanning tech stack...*
-
-<br>
-</td>
-<td align="center">
-<br>
-
-### 📈 Momentum
-
-<br>
-
-```
-Score: 0
-```
-
-<sub>commits×1 + PRs×5 + repos×2</sub>
-
-<br>
-</td>
-</tr>
-</table>
-
-<!-- /FLIGHT_TELEMETRY -->
-
-<br>
-
----
-
-<br>
-
-## 📈 Evolution Map
-
-<br>
-
-<!-- EVOLUTION_MAP -->
-<div align="center">
-  <img src="assets/evolution_chart.svg" alt="Evolution Chart" width="100%" />
-</div>
-
-<div align="center">
-  <em>90-day trajectory • Updated 2025-12-29 • 0 snapshots</em>
-</div>
-<!-- /EVOLUTION_MAP -->
-
-<br>
-
----
-
-<br>
-
-## 📡 Signal Feed
-
-<br>
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 <!-- SIGNAL_FEED -->
 
