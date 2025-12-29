@@ -44,11 +44,10 @@
 ### 🌌 Space (stale)
 
 <br>
----
 
-**Black Holes**
+**Neutron Stars**
 
-Time slows down near a black hole due to extreme gravitational effects.
+A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 <br>
