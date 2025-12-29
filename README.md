@@ -15,7 +15,7 @@
 </p>
 
 <br>
-## 💫 About Me:
+ 💫 About Me:
 🛠️ I’m currently working on: ARES (2D LiDAR + ML hand-gesture control) + Sherlock (agentic data analysis → report + optional baseline ML models)<br><br>🤝 I’m looking to collaborate on: OSS + research-y builds around agentic analytics and robotics perception (NYC in-person preferred, remote OK)<br><br>🧠 I’m looking for help with: architecture review + pair programming + tests/evals (reproducible builds only)<br><br>🌱 I’m currently learning: LangChain/agent frameworks, LLM systems, JS/TS, ROS2 + Rust<br><br>💬 Ask me about: agent orchestration + evals, LiDAR perception/gesture classification, shipping ML systems (FastAPI/Docker/K8s)<br><br>⚡ Fun fact: my favorite game is Terra Invicta
 
 
@@ -85,19 +85,6 @@ Tensors and Dynamic neural networks in Python with strong...
 <!-- /SIGNAL_FEED -->
 
 <br>
-
----
-
-<br>
-
-<!-- DNA_HELIX -->
-<div align="center">
-  <img src="assets/dna_helix.svg" alt="Tech DNA Helix" width="800" />
-</div>
-<!-- /DNA_HELIX -->
-
-<br>
-
 ---
 
 <br>
