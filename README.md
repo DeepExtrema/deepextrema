@@ -32,7 +32,7 @@
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-
+---
 <!-- SIGNAL_FEED -->
 
 <table>
@@ -44,6 +44,7 @@
 ### 🌌 Space (stale)
 
 <br>
+---
 
 **Black Holes**
 
