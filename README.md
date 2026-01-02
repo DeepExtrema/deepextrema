@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[huggingface/transformers](https://github.com/huggingface/transformers)**
+**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
 
-🤗 Transformers: the model-definition framework for state-...
+Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 <br>
