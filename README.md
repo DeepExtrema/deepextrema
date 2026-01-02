@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**Black Holes**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-Tensors and Dynamic neural networks in Python with strong...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
