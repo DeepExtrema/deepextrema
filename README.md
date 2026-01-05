@@ -59,9 +59,9 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-Tensors and Dynamic neural networks in Python with strong...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
