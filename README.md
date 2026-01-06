@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Embrace the unknown, pioneer the next horizon.*
+> *Every system starts as a question.*
 
 <br>
 <br>
