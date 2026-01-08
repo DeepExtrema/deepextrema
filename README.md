@@ -59,9 +59,9 @@ Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-Tensors and Dynamic neural networks in Python with strong...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
