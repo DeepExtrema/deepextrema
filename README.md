@@ -53,22 +53,10 @@
 <!-- COMPLIANCE_DASHBOARD -->
 ## 🔒 COMPLIANCE DASHBOARD
 
-*Metrics on system compliance, code quality, and security enforcement*
+*System health metrics, compliance scoring, and security enforcement*
 
 <div align="center">
-
-### SYSTEM HEALTH: ⚠️ INITIALIZING
-
-```
-╔════════════════════════════════════════════════════════════════╗
-║              COMPLIANCE DASHBOARD - SYSTEM STATUS              ║
-╠════════════════════════════════════════════════════════════════╣
-║                                                                ║
-║  Status: System monitoring temporarily unavailable             ║
-║                                                                ║
-╚════════════════════════════════════════════════════════════════╝
-```
-
+  <img src="assets/compliance_dashboard.svg" alt="Compliance Dashboard" width="100%" />
 </div>
 <!-- /COMPLIANCE_DASHBOARD -->
 
