@@ -59,9 +59,9 @@ Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-Tensors and Dynamic neural networks in Python with strong...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
@@ -73,7 +73,7 @@ Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 
-> *The frontier rewards those who show up.*
+> *Curiosity compounds like interest, but pays in discoveries.*
 
 <br>
 <br>
