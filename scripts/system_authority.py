@@ -91,15 +91,15 @@ def generate_system_authority_svg(recent_repos: list) -> str:
     ▸ OPERATIONAL MANDATE
   </text>
 
-  <text x="80" y="{y_offset + 50}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
+  <text x="80" y="{y_offset + 55}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="18">
     <tspan x="80" dy="0">AI systems: agent-based &amp; multi-agent designs, data quality workflows, operational ML</tspan>
-    <tspan x="80" dy="20">Projects: software-only to robotics-adjacent (LiDAR perception)</tspan>
-    <tspan x="80" dy="20">Approach: First principles thinking, system behavior, reliability, non-ideal conditions</tspan>
+    <tspan x="80" dy="26">Projects: software-only to robotics-adjacent (LiDAR perception)</tspan>
+    <tspan x="80" dy="26">Approach: First principles thinking, system behavior, reliability, non-ideal conditions</tspan>
   </text>''')
 
     # Active processes section (dynamic from repos)
-    y_offset = 300
+    y_offset = 310
     svg_parts.append(f'''
   <!-- Active Processes -->
   <rect x="50" y="{y_offset}" width="530" height="140" fill="{PANEL_COLOR}" opacity="0.6"/>
@@ -116,41 +116,41 @@ def generate_system_authority_svg(recent_repos: list) -> str:
         repo2 = recent_repos[1]
 
         svg_parts.append(f'''
-  <text x="80" y="{y_offset + 55}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+  <text x="80" y="{y_offset + 50}" fill="{NEON_SECONDARY}" filter="url(#glow)"
+        font-family="'Courier New', monospace" font-size="20" font-weight="bold">
     {repo1['name'][:25]}
   </text>
-  <text x="80" y="{y_offset + 75}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
-    {repo1.get('description', 'Active development')[:60] if repo1.get('description') else 'Active development'}
+  <text x="80" y="{y_offset + 70}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="16">
+    {repo1.get('description', 'Active development')[:55] if repo1.get('description') else 'Active development'}
   </text>
 
-  <text x="80" y="{y_offset + 105}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+  <text x="80" y="{y_offset + 100}" fill="{NEON_SECONDARY}" filter="url(#glow)"
+        font-family="'Courier New', monospace" font-size="20" font-weight="bold">
     {repo2['name'][:25]}
   </text>
-  <text x="80" y="{y_offset + 125}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
-    {repo2.get('description', 'Active development')[:60] if repo2.get('description') else 'Active development'}
+  <text x="80" y="{y_offset + 120}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="16">
+    {repo2.get('description', 'Active development')[:55] if repo2.get('description') else 'Active development'}
   </text>''')
     else:
         # Fallback
         svg_parts.append(f'''
-  <text x="80" y="{y_offset + 60}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+  <text x="80" y="{y_offset + 50}" fill="{NEON_SECONDARY}" filter="url(#glow)"
+        font-family="'Courier New', monospace" font-size="20" font-weight="bold">
     ARES
   </text>
-  <text x="80" y="{y_offset + 78}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
+  <text x="80" y="{y_offset + 70}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="16">
     2D LiDAR + ML hand-gesture control
   </text>
 
-  <text x="80" y="{y_offset + 108}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+  <text x="80" y="{y_offset + 100}" fill="{NEON_SECONDARY}" filter="url(#glow)"
+        font-family="'Courier New', monospace" font-size="20" font-weight="bold">
     SHERLOCK
   </text>
-  <text x="80" y="{y_offset + 126}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
+  <text x="80" y="{y_offset + 120}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="16">
     Agentic data analysis to report + ML models
   </text>''')
 
@@ -166,10 +166,10 @@ def generate_system_authority_svg(recent_repos: list) -> str:
   </text>
 
   <text x="650" y="{y_offset + 55}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="17">
+        font-family="'Courier New', monospace" font-size="16">
     <tspan x="650" dy="0">✓ Agent orchestration + evaluation frameworks</tspan>
-    <tspan x="650" dy="20">✓ LiDAR perception + gesture classification</tspan>
-    <tspan x="650" dy="20">✓ Production ML (FastAPI • Docker • Kubernetes)</tspan>
+    <tspan x="650" dy="24">✓ LiDAR perception + gesture classification</tspan>
+    <tspan x="650" dy="24">✓ Production ML (FastAPI • Docker • Kubernetes)</tspan>
   </text>''')
 
     # Learning section
@@ -185,9 +185,9 @@ def generate_system_authority_svg(recent_repos: list) -> str:
   </text>
 
   <text x="80" y="{y_offset + 50}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
+        font-family="'Courier New', monospace" font-size="16">
     <tspan x="80" dy="0">LangChain • Agent Systems • LLM Architectures</tspan>
-    <tspan x="80" dy="16">JavaScript • TypeScript • ROS2 • Rust</tspan>
+    <tspan x="80" dy="22">JavaScript • TypeScript • ROS2 • Rust</tspan>
   </text>''')
 
     # Collaboration section
@@ -202,10 +202,10 @@ def generate_system_authority_svg(recent_repos: list) -> str:
   </text>
 
   <text x="650" y="{y_offset + 50}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="23">
+        font-family="'Courier New', monospace" font-size="16">
     <tspan x="650" dy="0">[AUTHORIZED] OSS research: agentic analytics, robotics</tspan>
-    <tspan x="650" dy="16">[LOCATION] NYC preferred • Remote OK</tspan>
-    <tspan x="650" dy="16">[REQUIRED] Architecture review • Pair programming</tspan>
+    <tspan x="650" dy="22">[LOCATION] NYC preferred • Remote OK</tspan>
+    <tspan x="650" dy="22">[REQUIRED] Architecture review • Pair programming</tspan>
   </text>''')
 
     svg_parts.append('</svg>')

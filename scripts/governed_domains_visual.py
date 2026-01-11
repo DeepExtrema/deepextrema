@@ -112,11 +112,12 @@ def generate_governed_domains_svg(language_stats: dict) -> str:
 
             svg_parts.append(f'''
   <text x="{tech_x}" y="{tech_y}" fill="{color}"
-        font-family="'Courier New', monospace" font-size="30">
+        font-family="'Courier New', monospace" font-size="12">
     {tech}
   </text>''')
 
-            tech_x += len(tech) * 6 + 12
+            # Monospace font width is ~0.6 * font_size, plus padding
+            tech_x += len(tech) * 7.2 + 15
 
             if tech_x > x + 510:
                 break

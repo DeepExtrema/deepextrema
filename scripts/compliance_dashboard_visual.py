@@ -218,10 +218,10 @@ def generate_compliance_dashboard_svg(repos: list, stats: dict, activity: dict) 
         col = i % 2
         row = i // 2
         x = 90 + col * 540
-        y = y_pos + row * 35
+        y = y_pos + row * 40
 
         svg_parts.append(f'''
-  <text x="{x}" y="{y}" fill="{TEXT_COLOR}" font-family="'Courier New', monospace" font-size="30">
+  <text x="{x}" y="{y}" fill="{TEXT_COLOR}" font-family="'Courier New', monospace" font-size="16">
     {label}: <tspan fill="{color}" font-weight="bold">{status}</tspan>
   </text>''')
 

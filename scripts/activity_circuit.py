@@ -157,7 +157,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
         y = margin_top + day_idx * (cell_size + cell_gap) + cell_size / 2
         svg_parts.append(f'''
   <text x="{margin_left - 15}" y="{y + 4}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="13" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">{label}</text>''')
 
     # Generate contribution cells
@@ -254,7 +254,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
             month_label = temp_date.strftime("%b").upper()
             svg_parts.append(f'''
   <text x="{x}" y="{margin_top - 10}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="13" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">{month_label}</text>''')
             last_month = temp_date.month
 
@@ -270,7 +270,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
     svg_parts.append(f'''
   <!-- Legend -->
   <text x="{legend_x}" y="{legend_y}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="30"
+        font-family="'Courier New', monospace" font-size="12"
         text-anchor="start" opacity="0.6">LESS</text>''')
 
     legend_colors = [
@@ -289,7 +289,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
 
     svg_parts.append(f'''
   <text x="{legend_x + 40 + 5 * (cell_size + 4) + 10}" y="{legend_y}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="30"
+        font-family="'Courier New', monospace" font-size="12"
         text-anchor="start" opacity="0.6">MORE</text>''')
 
     # Statistics panel
