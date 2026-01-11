@@ -53,7 +53,7 @@
   <rect x="50" y="20" width="1100" height="50" fill="#2a2a2a" opacity="0.8"/>
   <line x1="50" y1="20" x2="1150" y2="20" stroke="#ff6b35" stroke-width="2" filter="url(#glow)"/>
   <text x="600.0" y="52" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="20" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="38" font-weight="bold"
         text-anchor="middle" letter-spacing="3">
     GOVERNED DOMAINS
   </text>
@@ -66,34 +66,34 @@
 
   <!-- Category header -->
   <text x="75" y="125" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     💬 LANGUAGES
   </text>
 
   <!-- Technologies -->
 
   <text x="75" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Python
   </text>
 
   <text x="123" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     JavaScript
   </text>
 
   <text x="195" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     TypeScript
   </text>
 
   <text x="267" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Rust
   </text>
 
   <text x="303" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Markdown
   </text>
 
@@ -105,24 +105,24 @@
 
   <!-- Category header -->
   <text x="635" y="125" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     ☁️ INFRASTRUCTURE
   </text>
 
   <!-- Technologies -->
 
   <text x="635" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Cloudflare
   </text>
 
   <text x="707" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Firebase
   </text>
 
   <text x="767" y="148" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Vercel
   </text>
 
@@ -134,19 +134,19 @@
 
   <!-- Category header -->
   <text x="75" y="205" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     ⚡ RUNTIME
   </text>
 
   <!-- Technologies -->
 
   <text x="75" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     FastAPI
   </text>
 
   <text x="129" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Node.js
   </text>
 
@@ -158,29 +158,29 @@
 
   <!-- Category header -->
   <text x="635" y="205" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     🗄️ DATA
   </text>
 
   <!-- Technologies -->
 
   <text x="635" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     MySQL
   </text>
 
   <text x="677" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Neo4J
   </text>
 
   <text x="719" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Redis
   </text>
 
   <text x="761" y="228" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Supabase
   </text>
 
@@ -192,49 +192,49 @@
 
   <!-- Category header -->
   <text x="75" y="285" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     🧠 ML/ANALYSIS
   </text>
 
   <!-- Technologies -->
 
   <text x="75" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Matplotlib
   </text>
 
   <text x="147" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Keras
   </text>
 
   <text x="189" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     NumPy
   </text>
 
   <text x="231" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Pandas
   </text>
 
   <text x="279" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Plotly
   </text>
 
   <text x="327" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     scikit-learn
   </text>
 
   <text x="411" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     SciPy
   </text>
 
   <text x="453" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     TensorFlow
   </text>
 
@@ -246,29 +246,29 @@
 
   <!-- Category header -->
   <text x="635" y="285" fill="#ff6b35" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     ⚙️ ORCHESTRATION
   </text>
 
   <!-- Technologies -->
 
   <text x="635" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Kubernetes
   </text>
 
   <text x="707" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     GitHub
   </text>
 
   <text x="755" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Prometheus
   </text>
 
   <text x="827" y="308" fill="#888888"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     Raspberry Pi
   </text>
 
@@ -276,7 +276,7 @@
   <rect x="0" y="510" width="1200" height="40" fill="#2a2a2a" opacity="0.8"/>
   <line x1="0" y1="510" x2="1200" y2="510" stroke="#ff6b35" stroke-width="1" opacity="0.5"/>
   <text x="600.0" y="535" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     TOTAL DOMAINS: <tspan fill="#ff6b35" font-weight="bold">26</tspan> •
     ACTIVE: <tspan fill="#ff6b35" font-weight="bold">0</tspan> •
     CATEGORIES: <tspan fill="#ff6b35" font-weight="bold">6</tspan>

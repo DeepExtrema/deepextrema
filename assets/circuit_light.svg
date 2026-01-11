@@ -77,24 +77,24 @@
   <rect x="70" y="15" width="748" height="50" fill="#2a2a2a" opacity="0.8"/>
   <line x1="70" y1="15" x2="818" y2="15" stroke="#ff6b35" stroke-width="2" opacity="0.6"/>
   <text x="424.0" y="40" fill="#ff6b35" filter="url(#text-glow)"
-        font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="2">
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold" text-anchor="middle" letter-spacing="2">
     ACTIVITY CIRCUIT
   </text>
   <text x="424.0" y="53" fill="#888888"
-        font-family="'Courier New', monospace" font-size="10" text-anchor="middle" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="23" text-anchor="middle" letter-spacing="1">
     POLICY ENFORCEMENT PATTERNS • 52 WEEK OPERATIONAL HISTORY
   </text>
 
   <text x="65" y="89.5" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">MON</text>
 
   <text x="65" y="117.5" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">WED</text>
 
   <text x="65" y="145.5" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">FRI</text>
   <!-- Circuit Traces -->
 <line x1="323.5" y1="141.5" x2="323.5" y2="155.5"
@@ -1937,56 +1937,56 @@
   </rect>
 
   <text x="122" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">FEB</text>
 
   <text x="178" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">MAR</text>
 
   <text x="248" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">APR</text>
 
   <text x="304" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">MAY</text>
 
   <text x="360" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">JUN</text>
 
   <text x="430" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">JUL</text>
 
   <text x="486" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">AUG</text>
 
   <text x="556" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">SEP</text>
 
   <text x="612" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">OCT</text>
 
   <text x="668" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">NOV</text>
 
   <text x="738" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">DEC</text>
 
   <text x="794" y="70" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">JAN</text>
 
   <!-- Legend -->
   <text x="80" y="203" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9"
+        font-family="'Courier New', monospace" font-size="30"
         text-anchor="start" opacity="0.6">LESS</text>
 
   <rect x="120" y="194" width="11" height="11" rx="2"
@@ -2005,14 +2005,14 @@
         fill="#ff6b35" opacity="1.0" filter="url(#max-glow)"/>
 
   <text x="205" y="203" fill="#333333"
-        font-family="'Courier New', monospace" font-size="9"
+        font-family="'Courier New', monospace" font-size="30"
         text-anchor="start" opacity="0.6">MORE</text>
 
   <!-- Statistics Panel -->
   <rect x="0" y="198" width="848" height="40" fill="#2a2a2a" opacity="0.7"/>
   <line x1="0" y1="198" x2="848" y2="198" stroke="#ff6b35" stroke-width="1" opacity="0.4"/>
   <text x="424.0" y="218" fill="#333333"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     <tspan fill="#ff6b35" font-weight="bold">661</tspan> TOTAL ENFORCEMENTS  •
     <tspan fill="#ff6b35" font-weight="bold">12</tspan> PEAK ACTIVITY  •
     <tspan fill="#ff6b35" font-weight="bold">212</tspan> ACTIVE DAYS  •
