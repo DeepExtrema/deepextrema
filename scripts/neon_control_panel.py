@@ -182,12 +182,10 @@ def generate_neon_control_panel(total_stars: int, total_repos: int, total_commit
   <!-- Main Governance Gear -->
   <path d="{main_gear}" fill="none" stroke="{NEON_COLORS['neon_primary']}" stroke-width="4" filter="url(#neon-glow-strong)">
     <animateTransform attributeName="transform" type="rotate" from="0 {center_x} {center_y}"
-                      to="360 {center_x} {center_y}" dur="20s" repeatCount="indefinite"/>
+                      to="360 {center_x} {center_y}" dur="30s" repeatCount="indefinite"/>
   </path>
   <circle cx="{center_x}" cy="{center_y}" r="20" fill="none" stroke="{NEON_COLORS['neon_primary']}"
-          stroke-width="3" filter="url(#neon-glow)">
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
+          stroke-width="3" filter="url(#neon-glow)" opacity="0.9"/>
   <circle cx="{center_x}" cy="{center_y}" r="10" fill="{NEON_COLORS['neon_primary']}" opacity="0.3"/>''')
 
     # Surrounding gears (procedural bureaucracy)
@@ -221,7 +219,6 @@ def generate_neon_control_panel(total_stars: int, total_repos: int, total_commit
   <!-- Access Control Lock -->
   <g opacity="0.9">
     {lock_svg}
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
   </g>''')
 
     # Chains (dependency linkages)
@@ -249,7 +246,7 @@ def generate_neon_control_panel(total_stars: int, total_repos: int, total_commit
         svg_parts.append(f'''
   <path d="{path}" stroke="{NEON_COLORS['circuit']}" stroke-width="2" opacity="0.3"/>
   <path d="{path}" stroke="{NEON_COLORS['circuit_active']}" stroke-width="2" filter="url(#neon-glow)" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="4s" begin="{i}s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="{i*2}s" repeatCount="indefinite"/>
   </path>''')
 
     # Status display (governance metrics)

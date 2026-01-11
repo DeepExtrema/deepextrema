@@ -9,34 +9,76 @@
 <!-- SYSTEM_AUTHORITY -->
 <div align="center">
 
-## SYSTEM ARCHITECT
+<h2><code>S Y S T E M&nbsp;&nbsp;&nbsp;A R C H I T E C T</code></h2>
 
-**DeepExtrema** – *Authority encoded as infrastructure*
+**DeepExtrema** — *Authority encoded as infrastructure*
 
 </div>
 
-### OPERATIONAL MANDATE
+<br>
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║                      OPERATIONAL MANDATE                             ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
 
 I work on AI systems, primarily around agent-based and multi-agent designs, data quality workflows, and operational ML systems. My projects range from software-only systems to robotics-adjacent work, including LiDAR-based perception. I tend to approach problems from first principles and spend most of my time thinking about system behavior, reliability, and how things hold up outside of ideal conditions.
 
-**CURRENT PROCESSES:**
-- **ARES** → 2D LiDAR + ML hand-gesture control
-- **Sherlock** → Agentic data analysis → report + optional baseline ML models
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  CURRENT PROCESSES                                                   ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
 
-**COLLABORATION PROTOCOLS:**
-- Open-source research builds around agentic analytics and robotics perception
-- NYC in-person preferred, remote authorized
-- Architecture review + pair programming + tests/evals (reproducible builds only)
+<table>
+<tr>
+<td width="50%">
 
-**ACTIVE LEARNING DOMAINS:**
-- LangChain/agent frameworks, LLM systems
-- JavaScript/TypeScript
-- ROS2 + Rust
+**ARES**
+`2D LiDAR + ML hand-gesture control`
 
-**EXPERTISE JURISDICTIONS:**
-- Agent orchestration + evaluation frameworks
-- LiDAR perception/gesture classification
-- Shipping ML systems (FastAPI/Docker/K8s)
+</td>
+<td width="50%">
+
+**SHERLOCK**
+`Agentic data analysis → report + ML models`
+
+</td>
+</tr>
+</table>
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  COLLABORATION PROTOCOLS                                             ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+- `[AUTHORIZED]` Open-source research builds: agentic analytics, robotics perception
+- `[LOCATION]` NYC in-person preferred, remote authorized
+- `[REQUIRED]` Architecture review + pair programming + tests/evals
+- `[CONSTRAINT]` Reproducible builds only
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  ACTIVE LEARNING DOMAINS                                             ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+**FRAMEWORKS:** LangChain, agent systems, LLM architectures
+**LANGUAGES:** JavaScript, TypeScript
+**SYSTEMS:** ROS2, Rust
+
+```
+╔══════════════════════════════════════════════════════════════════════╗
+║  EXPERTISE JURISDICTIONS                                             ║
+╚══════════════════════════════════════════════════════════════════════╝
+```
+
+✓ Agent orchestration + evaluation frameworks
+✓ LiDAR perception + gesture classification
+✓ Production ML systems (FastAPI • Docker • Kubernetes)
+
 <!-- /SYSTEM_AUTHORITY -->
 
 <br>

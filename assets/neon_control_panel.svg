@@ -72,12 +72,10 @@
   <!-- Main Governance Gear -->
   <path d="M 660.00,150.00 L 644.14,158.78 L 655.43,172.96 L 637.42,175.00 L 642.43,192.43 L 625.00,187.42 L 622.96,205.43 L 608.78,194.14 L 600.00,210.00 L 591.22,194.14 L 577.04,205.43 L 575.00,187.42 L 557.57,192.43 L 562.58,175.00 L 544.57,172.96 L 555.86,158.78 L 540.00,150.00 L 555.86,141.22 L 544.57,127.04 L 562.58,125.00 L 557.57,107.57 L 575.00,112.58 L 577.04,94.57 L 591.22,105.86 L 600.00,90.00 L 608.78,105.86 L 622.96,94.57 L 625.00,112.58 L 642.43,107.57 L 637.42,125.00 L 655.43,127.04 L 644.14,141.22 Z" fill="none" stroke="#ff6b35" stroke-width="4" filter="url(#neon-glow-strong)">
     <animateTransform attributeName="transform" type="rotate" from="0 600.0 150.0"
-                      to="360 600.0 150.0" dur="20s" repeatCount="indefinite"/>
+                      to="360 600.0 150.0" dur="30s" repeatCount="indefinite"/>
   </path>
   <circle cx="600.0" cy="150.0" r="20" fill="none" stroke="#ff6b35"
-          stroke-width="3" filter="url(#neon-glow)">
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
+          stroke-width="3" filter="url(#neon-glow)" opacity="0.9"/>
   <circle cx="600.0" cy="150.0" r="10" fill="#ff6b35" opacity="0.3"/>
 
   <path d="M 205.00,105.00 L 215.85,98.53 L 209.69,87.50 L 222.32,87.32 L 222.50,74.69 L 233.53,80.85 L 240.00,70.00 L 246.47,80.85 L 257.50,74.69 L 257.68,87.32 L 270.31,87.50 L 264.15,98.53 L 275.00,105.00 L 264.15,111.47 L 270.31,122.50 L 257.68,122.68 L 257.50,135.31 L 246.47,129.15 L 240.00,140.00 L 233.53,129.15 L 222.50,135.31 L 222.32,122.68 L 209.69,122.50 L 215.85,111.47 Z" fill="none" stroke="#ff8c42" stroke-width="3" filter="url(#neon-glow)">
@@ -120,7 +118,6 @@
 
     <circle cx="180.0" cy="43.0" r="3" fill="#ff6b35" filter="url(#neon-glow)"/>
     <rect x="178.5" y="43.0" width="3" height="8" fill="#ff6b35" filter="url(#neon-glow)"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
   </g>
 
   <!-- Access Control Lock -->
@@ -135,7 +132,6 @@
 
     <circle cx="1020.0" cy="43.0" r="3" fill="#ff6b35" filter="url(#neon-glow)"/>
     <rect x="1018.5" y="43.0" width="3" height="8" fill="#ff6b35" filter="url(#neon-glow)"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
   </g>
 
   <!-- Access Control Lock -->
@@ -150,7 +146,6 @@
 
     <circle cx="600.0" cy="253.0" r="3" fill="#ff6b35" filter="url(#neon-glow)"/>
     <rect x="598.5" y="253.0" width="3" height="8" fill="#ff6b35" filter="url(#neon-glow)"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
   </g>
 
   <!-- Dependency Chain -->
@@ -211,17 +206,17 @@
 
   <path d="M 50,150.0 L 180.0,150.0" stroke="#444444" stroke-width="2" opacity="0.3"/>
   <path d="M 50,150.0 L 180.0,150.0" stroke="#ff6b35" stroke-width="2" filter="url(#neon-glow)" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="4s" begin="0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="0s" repeatCount="indefinite"/>
   </path>
 
   <path d="M 1020.0,150.0 L 1150,150.0" stroke="#444444" stroke-width="2" opacity="0.3"/>
   <path d="M 1020.0,150.0 L 1150,150.0" stroke="#ff6b35" stroke-width="2" filter="url(#neon-glow)" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="2s" repeatCount="indefinite"/>
   </path>
 
   <path d="M 600.0,30 L 600.0,45.0" stroke="#444444" stroke-width="2" opacity="0.3"/>
   <path d="M 600.0,30 L 600.0,45.0" stroke="#ff6b35" stroke-width="2" filter="url(#neon-glow)" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="6s" begin="4s" repeatCount="indefinite"/>
   </path>
 
   <!-- Status Display Panel -->
@@ -245,7 +240,7 @@
 
   <text x="960.0" y="260" fill="#ff6b35" filter="url(#neon-glow)"
         font-family="'Courier New', monospace" font-size="14" font-weight="bold" text-anchor="middle">
-    SYNC: 2026-01-11 09:00 UTC
+    SYNC: 2026-01-11 22:25 UTC
   </text>
 
   <text x="600.0" y="285" fill="#cccccc"

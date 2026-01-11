@@ -1,6 +1,15 @@
-<svg width="880" height="205" xmlns="http://www.w3.org/2000/svg">
+<svg width="848" height="238" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="circuit-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Glow filters for different intensities -->
+    <filter id="low-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="med-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
@@ -8,10 +17,28 @@
       </feMerge>
     </filter>
 
-    <filter id="strong-glow" x="-100%" y="-100%" width="300%" height="300%">
+    <filter id="high-glow" x="-75%" y="-75%" width="250%" height="250%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="max-glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="text-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
@@ -19,2439 +46,1976 @@
   </defs>
 
   <!-- Background -->
-  <rect width="880" height="205" fill="#f5f5f5"/>
+  <rect width="848" height="238" fill="#f5f5f5"/>
 
-  <!-- Circuit pattern background -->
-  <line x1="0" y1="0" x2="880" y2="0" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="40" x2="880" y2="40" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="80" x2="880" y2="80" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="120" x2="880" y2="120" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="160" x2="880" y2="160" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="200" x2="880" y2="200" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="0" y1="0" x2="0" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="40" y1="0" x2="40" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="80" y1="0" x2="80" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="120" y1="0" x2="120" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="160" y1="0" x2="160" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="200" y1="0" x2="200" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="240" y1="0" x2="240" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="280" y1="0" x2="280" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="320" y1="0" x2="320" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="360" y1="0" x2="360" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="400" y1="0" x2="400" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="440" y1="0" x2="440" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="480" y1="0" x2="480" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="520" y1="0" x2="520" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="560" y1="0" x2="560" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="600" y1="0" x2="600" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="640" y1="0" x2="640" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="680" y1="0" x2="680" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="720" y1="0" x2="720" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="760" y1="0" x2="760" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="800" y1="0" x2="800" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<line x1="840" y1="0" x2="840" y2="205" stroke="#2a2a2a" stroke-width="1" opacity="0.2"/>
-<circle cx="674" cy="48" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="45" cy="90" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="270" cy="77" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="162" cy="46" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="712" cy="159" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="109" cy="171" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="452" cy="28" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="50" cy="43" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="243" cy="79" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="537" cy="174" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="47" cy="163" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="223" cy="159" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="449" cy="76" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="479" cy="170" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="304" cy="21" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="797" cy="60" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="734" cy="128" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="368" cy="91" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="179" cy="75" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="801" cy="106" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="124" cy="43" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="409" cy="44" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="387" cy="108" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="638" cy="87" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="846" cy="31" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="767" cy="137" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="569" cy="51" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="407" cy="40" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="585" cy="95" r="2" fill="#2a2a2a" opacity="0.3"/>
-<circle cx="663" cy="178" r="2" fill="#2a2a2a" opacity="0.3"/>
+  <!-- Industrial panel backing -->
+  <rect x="0" y="0" width="848" height="238" fill="#e0e0e0" opacity="0.3"/>
+<line x1="0" y1="0" x2="0" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="50" y1="0" x2="50" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="100" y1="0" x2="100" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="150" y1="0" x2="150" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="200" y1="0" x2="200" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="250" y1="0" x2="250" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="300" y1="0" x2="300" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="350" y1="0" x2="350" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="400" y1="0" x2="400" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="450" y1="0" x2="450" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="500" y1="0" x2="500" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="550" y1="0" x2="550" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="600" y1="0" x2="600" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="650" y1="0" x2="650" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="700" y1="0" x2="700" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="750" y1="0" x2="750" y2="238" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="800" y1="0" x2="800" y2="238" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="0" y1="0" x2="848" y2="0" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="0" y1="50" x2="848" y2="50" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="0" y1="100" x2="848" y2="100" stroke="#333333" stroke-width="1" opacity="0.15"/>
+<line x1="0" y1="150" x2="848" y2="150" stroke="#333333" stroke-width="1" opacity="0.08"/>
+<line x1="0" y1="200" x2="848" y2="200" stroke="#333333" stroke-width="1" opacity="0.15"/>
 
-  <text x="40" y="60.0" fill="#333333" font-family="monospace" font-size="10" text-anchor="end" opacity="0.6">Mon</text>
+  <!-- Title Panel -->
+  <rect x="70" y="15" width="748" height="50" fill="#2a2a2a" opacity="0.8"/>
+  <line x1="70" y1="15" x2="818" y2="15" stroke="#ff6b35" stroke-width="2" opacity="0.6"/>
+  <text x="424.0" y="40" fill="#ff6b35" filter="url(#text-glow)"
+        font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="2">
+    ACTIVITY CIRCUIT
+  </text>
+  <text x="424.0" y="53" fill="#888888"
+        font-family="'Courier New', monospace" font-size="10" text-anchor="middle" letter-spacing="1">
+    POLICY ENFORCEMENT PATTERNS • 52 WEEK OPERATIONAL HISTORY
+  </text>
 
-  <text x="40" y="90.0" fill="#333333" font-family="monospace" font-size="10" text-anchor="end" opacity="0.6">Wed</text>
+  <text x="65" y="89.5" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="end" opacity="0.7" letter-spacing="1">MON</text>
 
-  <text x="40" y="120.0" fill="#333333" font-family="monospace" font-size="10" text-anchor="end" opacity="0.6">Fri</text>
+  <text x="65" y="117.5" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="end" opacity="0.7" letter-spacing="1">WED</text>
 
-  <rect x="50" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-12: No activity</title>
+  <text x="65" y="145.5" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="end" opacity="0.7" letter-spacing="1">FRI</text>
+  <!-- Circuit Traces -->
+<line x1="323.5" y1="141.5" x2="323.5" y2="155.5"
+                     stroke="#ff6b35" stroke-width="1" opacity="0.2"/>
+  <!-- Contribution Cells -->
+
+  <rect x="80" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-12: 2 enforcements</title>
   </rect>
 
-  <rect x="65" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-01-13: 9 contributions</title>
+  <rect x="94" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-13: 1 enforcement</title>
   </rect>
 
-  <circle cx="71.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="65" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-01-14: 1 contributions</title>
+  <rect x="94" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-14: 3 enforcements</title>
   </rect>
 
-  <rect x="65" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-15: No activity</title>
+  <rect x="94" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-15: 3 enforcements</title>
   </rect>
 
-  <rect x="65" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-16: No activity</title>
+  <rect x="94" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-16: 3 enforcements</title>
   </rect>
 
-  <rect x="65" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="94" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-01-17: No activity</title>
   </rect>
 
-  <rect x="65" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-18: No activity</title>
+  <rect x="94" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-18: 5 enforcements</title>
   </rect>
 
-  <rect x="65" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-01-19: 10 contributions</title>
+  <rect x="94" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-19: 2 enforcements</title>
   </rect>
 
-  <circle cx="71.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="80" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-01-20: 7 contributions</title>
+  <rect x="108" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-20: 2 enforcements</title>
   </rect>
 
-  <circle cx="86.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="80" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-01-21: 4 contributions</title>
+  <rect x="108" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-21: No activity</title>
   </rect>
 
-  <rect x="80" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-22: No activity</title>
+  <rect x="108" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-22: 5 enforcements</title>
   </rect>
 
-  <rect x="80" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-01-23: 10 contributions</title>
+  <rect x="108" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-23: 1 enforcement</title>
   </rect>
 
-  <circle cx="86.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="80" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-01-24: No activity</title>
+  <rect x="108" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-24: 5 enforcements</title>
   </rect>
 
-  <rect x="80" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-01-25: 10 contributions</title>
+  <rect x="108" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-25: No activity</title>
   </rect>
 
-  <circle cx="86.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="80" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-01-26: 9 contributions</title>
+  <rect x="108" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-26: 3 enforcements</title>
   </rect>
 
-  <circle cx="86.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="95" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-01-27: 2 contributions</title>
+  <rect x="122" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-27: 1 enforcement</title>
   </rect>
 
-  <rect x="95" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-01-28: 9 contributions</title>
+  <rect x="122" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-28: No activity</title>
   </rect>
 
-  <circle cx="101.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="95" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-01-29: 8 contributions</title>
+  <rect x="122" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-01-29: 8 enforcements</title>
   </rect>
 
-  <circle cx="101.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="95" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-01-30: 1 contributions</title>
+  <rect x="122" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-30: No activity</title>
   </rect>
 
-  <rect x="95" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-01-31: 1 contributions</title>
+  <rect x="122" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-31: No activity</title>
   </rect>
 
-  <rect x="95" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-02-01: 10 contributions</title>
+  <rect x="122" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-01: No activity</title>
   </rect>
 
-  <circle cx="101.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="95" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-02-02: No activity</title>
+  <rect x="122" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-02-02: 8 enforcements</title>
   </rect>
 
-  <rect x="110" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="136" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-02-03: No activity</title>
   </rect>
 
-  <rect x="110" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-02-04: No activity</title>
+  <rect x="136" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-04: 3 enforcements</title>
   </rect>
 
-  <rect x="110" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-02-05: 10 contributions</title>
+  <rect x="136" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-05: No activity</title>
   </rect>
 
-  <circle cx="116.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="110" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-06: 7 contributions</title>
+  <rect x="136" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-06: 5 enforcements</title>
   </rect>
 
-  <circle cx="116.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="110" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="136" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-02-07: No activity</title>
   </rect>
 
-  <rect x="110" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-08: 9 contributions</title>
+  <rect x="136" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-08: 3 enforcements</title>
   </rect>
 
-  <circle cx="116.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="110" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="136" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-02-09: No activity</title>
   </rect>
 
-  <rect x="125" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-10: 9 contributions</title>
+  <rect x="150" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-10: No activity</title>
   </rect>
 
-  <circle cx="131.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="125" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-11: 8 contributions</title>
+  <rect x="150" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-11: No activity</title>
   </rect>
 
-  <circle cx="131.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="125" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-02-12: No activity</title>
+  <rect x="150" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-12: 1 enforcement</title>
   </rect>
 
-  <rect x="125" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-02-13: No activity</title>
+  <rect x="150" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-13: 5 enforcements</title>
   </rect>
 
-  <rect x="125" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-02-14: 1 contributions</title>
+  <rect x="150" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-14: 5 enforcements</title>
   </rect>
 
-  <rect x="125" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-15: 9 contributions</title>
+  <rect x="150" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-15: No activity</title>
   </rect>
 
-  <circle cx="131.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="125" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-16: 7 contributions</title>
+  <rect x="150" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-02-16: 12 enforcements</title>
   </rect>
 
-  <circle cx="131.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
+  <circle cx="155.5" cy="169.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
-  <rect x="140" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="164" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-02-17: No activity</title>
   </rect>
 
-  <rect x="140" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="164" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-02-18: No activity</title>
   </rect>
 
-  <rect x="140" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-19: 6 contributions</title>
+  <rect x="164" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-19: No activity</title>
   </rect>
 
-  <circle cx="146.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="140" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-02-20: 10 contributions</title>
+  <rect x="164" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-20: 5 enforcements</title>
   </rect>
 
-  <circle cx="146.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="140" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-02-21: No activity</title>
+  <rect x="164" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-21: 2 enforcements</title>
   </rect>
 
-  <rect x="140" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-22: 8 contributions</title>
+  <rect x="164" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-22: No activity</title>
   </rect>
 
-  <circle cx="146.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="140" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-02-23: 10 contributions</title>
+  <rect x="164" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-23: No activity</title>
   </rect>
 
-  <circle cx="146.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="155" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-24: 7 contributions</title>
+  <rect x="178" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-24: No activity</title>
   </rect>
 
-  <circle cx="161.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="155" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-02-25: 3 contributions</title>
+  <rect x="178" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-25: 1 enforcement</title>
   </rect>
 
-  <rect x="155" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-02-26: 9 contributions</title>
+  <rect x="178" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-26: 1 enforcement</title>
   </rect>
 
-  <circle cx="161.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="155" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-02-27: 10 contributions</title>
+  <rect x="178" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-27: 1 enforcement</title>
   </rect>
 
-  <circle cx="161.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="155" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-02-28: 3 contributions</title>
+  <rect x="178" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-28: No activity</title>
   </rect>
 
-  <rect x="155" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-03-01: No activity</title>
+  <rect x="178" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-01: 1 enforcement</title>
   </rect>
 
-  <rect x="155" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-03-02: 10 contributions</title>
+  <rect x="178" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-02: 1 enforcement</title>
   </rect>
 
-  <circle cx="161.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="170" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="192" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-03-03: No activity</title>
   </rect>
 
-  <rect x="170" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-04: 8 contributions</title>
+  <rect x="192" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-04: 2 enforcements</title>
   </rect>
 
-  <circle cx="176.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="170" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-05: 6 contributions</title>
+  <rect x="192" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-05: No activity</title>
   </rect>
 
-  <circle cx="176.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="170" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-03-06: 1 contributions</title>
+  <rect x="192" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-06: 1 enforcement</title>
   </rect>
 
-  <rect x="170" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="192" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-03-07: No activity</title>
   </rect>
 
-  <rect x="170" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-08: 7 contributions</title>
+  <rect x="192" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-08: 1 enforcement</title>
   </rect>
 
-  <circle cx="176.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="170" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-03-09: No activity</title>
+  <rect x="192" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-09: 2 enforcements</title>
   </rect>
 
-  <rect x="185" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-03-10: No activity</title>
+  <rect x="206" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-10: 2 enforcements</title>
   </rect>
 
-  <rect x="185" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-03-11: 10 contributions</title>
+  <rect x="206" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-11: 5 enforcements</title>
   </rect>
 
-  <circle cx="191.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="185" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-03-12: 1 contributions</title>
+  <rect x="206" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-12: No activity</title>
   </rect>
 
-  <rect x="185" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-13: 8 contributions</title>
+  <rect x="206" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-13: No activity</title>
   </rect>
 
-  <circle cx="191.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="185" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-14: 4 contributions</title>
+  <rect x="206" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-14: No activity</title>
   </rect>
 
-  <rect x="185" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-15: 9 contributions</title>
+  <rect x="206" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-15: 5 enforcements</title>
   </rect>
 
-  <circle cx="191.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="185" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-16: 5 contributions</title>
+  <rect x="206" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-16: 3 enforcements</title>
   </rect>
 
-  <rect x="200" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-17: 5 contributions</title>
+  <rect x="220" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-03-17: 8 enforcements</title>
   </rect>
 
-  <rect x="200" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-18: 6 contributions</title>
+  <rect x="220" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-18: 1 enforcement</title>
   </rect>
 
-  <circle cx="206.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="200" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-03-19: No activity</title>
+  <rect x="220" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-19: 2 enforcements</title>
   </rect>
 
-  <rect x="200" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-20: 8 contributions</title>
+  <rect x="220" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-20: No activity</title>
   </rect>
 
-  <circle cx="206.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="200" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-03-21: No activity</title>
+  <rect x="220" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-21: 3 enforcements</title>
   </rect>
 
-  <rect x="200" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="220" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-03-22: No activity</title>
   </rect>
 
-  <rect x="200" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-03-23: 1 contributions</title>
+  <rect x="220" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-23: 1 enforcement</title>
   </rect>
 
-  <rect x="215" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-24: 4 contributions</title>
+  <rect x="234" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-24: No activity</title>
   </rect>
 
-  <rect x="215" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-25: 6 contributions</title>
+  <rect x="234" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-25: No activity</title>
   </rect>
 
-  <circle cx="221.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="215" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="234" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-03-26: No activity</title>
   </rect>
 
-  <rect x="215" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-27: 5 contributions</title>
+  <rect x="234" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-27: No activity</title>
   </rect>
 
-  <rect x="215" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-03-28: 5 contributions</title>
+  <rect x="234" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-28: No activity</title>
   </rect>
 
-  <rect x="215" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-29: 8 contributions</title>
+  <rect x="234" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-29: 3 enforcements</title>
   </rect>
 
-  <circle cx="221.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="215" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-03-30: 2 contributions</title>
+  <rect x="234" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-30: 5 enforcements</title>
   </rect>
 
-  <rect x="230" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-03-31: 7 contributions</title>
+  <rect x="248" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-31: No activity</title>
   </rect>
 
-  <circle cx="236.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="230" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-01: 10 contributions</title>
+  <rect x="248" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-01: No activity</title>
   </rect>
 
-  <circle cx="236.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="230" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-04-02: 5 contributions</title>
+  <rect x="248" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-02: 2 enforcements</title>
   </rect>
 
-  <rect x="230" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-04-03: 4 contributions</title>
+  <rect x="248" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-03: 5 enforcements</title>
   </rect>
 
-  <rect x="230" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-04: 10 contributions</title>
+  <rect x="248" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-04: 5 enforcements</title>
   </rect>
 
-  <circle cx="236.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="230" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-05: 10 contributions</title>
+  <rect x="248" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-05: 3 enforcements</title>
   </rect>
 
-  <circle cx="236.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="230" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-06: 7 contributions</title>
+  <rect x="248" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-06: 5 enforcements</title>
   </rect>
 
-  <circle cx="236.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="245" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-07: 10 contributions</title>
+  <rect x="262" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-07: 3 enforcements</title>
   </rect>
 
-  <circle cx="251.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="245" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-08: 8 contributions</title>
+  <rect x="262" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-08: 3 enforcements</title>
   </rect>
 
-  <circle cx="251.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="245" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-04-09: 5 contributions</title>
+  <rect x="262" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-09: 2 enforcements</title>
   </rect>
 
-  <rect x="245" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-04-10: 1 contributions</title>
+  <rect x="262" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-10: No activity</title>
   </rect>
 
-  <rect x="245" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-11: 9 contributions</title>
+  <rect x="262" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-11: No activity</title>
   </rect>
 
-  <circle cx="251.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="245" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-04-12: No activity</title>
+  <rect x="262" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-12: 2 enforcements</title>
   </rect>
 
-  <rect x="245" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-13: 10 contributions</title>
+  <rect x="262" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-13: 1 enforcement</title>
   </rect>
 
-  <circle cx="251.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="260" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-04-14: 5 contributions</title>
+  <rect x="276" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-14: No activity</title>
   </rect>
 
-  <rect x="260" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-04-15: 1 contributions</title>
+  <rect x="276" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-15: 5 enforcements</title>
   </rect>
 
-  <rect x="260" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-04-16: No activity</title>
+  <rect x="276" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-16: 1 enforcement</title>
   </rect>
 
-  <rect x="260" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-17: 7 contributions</title>
+  <rect x="276" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-17: No activity</title>
   </rect>
 
-  <circle cx="266.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="260" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-04-18: No activity</title>
+  <rect x="276" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-18: 2 enforcements</title>
   </rect>
 
-  <rect x="260" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="276" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-04-19: No activity</title>
   </rect>
 
-  <rect x="260" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-04-20: 10 contributions</title>
+  <rect x="276" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-20: 3 enforcements</title>
   </rect>
 
-  <circle cx="266.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="275" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-21: 8 contributions</title>
+  <rect x="290" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-21: No activity</title>
   </rect>
 
-  <circle cx="281.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="275" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-04-22: 2 contributions</title>
+  <rect x="290" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-22: 5 enforcements</title>
   </rect>
 
-  <rect x="275" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="290" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-04-23: No activity</title>
   </rect>
 
-  <rect x="275" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-04-24: 1 contributions</title>
+  <rect x="290" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-24: No activity</title>
   </rect>
 
-  <rect x="275" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="290" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-04-25: No activity</title>
   </rect>
 
-  <rect x="275" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-04-26: No activity</title>
+  <rect x="290" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-26: 1 enforcement</title>
   </rect>
 
-  <rect x="275" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-04-27: 6 contributions</title>
+  <rect x="290" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-27: 5 enforcements</title>
   </rect>
 
-  <circle cx="281.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="290" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-04-28: 2 contributions</title>
+  <rect x="304" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-28: No activity</title>
   </rect>
 
-  <rect x="290" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-04-29: No activity</title>
+  <rect x="304" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-29: 3 enforcements</title>
   </rect>
 
-  <rect x="290" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="304" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-04-30: No activity</title>
   </rect>
 
-  <rect x="290" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-01: 9 contributions</title>
+  <rect x="304" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-01: 1 enforcement</title>
   </rect>
 
-  <circle cx="296.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="290" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-02: No activity</title>
+  <rect x="304" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-02: 8 enforcements</title>
   </rect>
 
-  <rect x="290" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-03: 9 contributions</title>
+  <rect x="304" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-03: 1 enforcement</title>
   </rect>
 
-  <circle cx="296.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="290" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-05-04: 10 contributions</title>
+  <rect x="304" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-04: 2 enforcements</title>
   </rect>
 
-  <circle cx="296.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="305" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-05-05: 3 contributions</title>
+  <rect x="318" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-05: 3 enforcements</title>
   </rect>
 
-  <rect x="305" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="318" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-05-06: No activity</title>
   </rect>
 
-  <rect x="305" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-07: No activity</title>
+  <rect x="318" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-07: 1 enforcement</title>
   </rect>
 
-  <rect x="305" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-08: 7 contributions</title>
+  <rect x="318" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-08: 2 enforcements</title>
   </rect>
 
-  <circle cx="311.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="305" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-05-09: 2 contributions</title>
+  <rect x="318" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-09: 8 enforcements</title>
   </rect>
 
-  <rect x="305" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-10: No activity</title>
+  <rect x="318" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-10: 8 enforcements</title>
   </rect>
 
-  <rect x="305" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-05-11: 10 contributions</title>
+  <rect x="318" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-11: No activity</title>
   </rect>
 
-  <circle cx="311.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="320" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="332" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-05-12: No activity</title>
   </rect>
 
-  <rect x="320" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-05-13: 1 contributions</title>
+  <rect x="332" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-13: 2 enforcements</title>
   </rect>
 
-  <rect x="320" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="332" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-05-14: No activity</title>
   </rect>
 
-  <rect x="320" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="332" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-05-15: No activity</title>
   </rect>
 
-  <rect x="320" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-16: 6 contributions</title>
+  <rect x="332" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-16: 3 enforcements</title>
   </rect>
 
-  <circle cx="326.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="320" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-05-17: 10 contributions</title>
+  <rect x="332" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-17: No activity</title>
   </rect>
 
-  <circle cx="326.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="320" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-18: No activity</title>
+  <rect x="332" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-18: 2 enforcements</title>
   </rect>
 
-  <rect x="335" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="346" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-05-19: No activity</title>
   </rect>
 
-  <rect x="335" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-20: No activity</title>
+  <rect x="346" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-20: 2 enforcements</title>
   </rect>
 
-  <rect x="335" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-21: No activity</title>
+  <rect x="346" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-21: 3 enforcements</title>
   </rect>
 
-  <rect x="335" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-22: 7 contributions</title>
+  <rect x="346" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-22: 2 enforcements</title>
   </rect>
 
-  <circle cx="341.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="335" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-05-23: 10 contributions</title>
+  <rect x="346" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-23: 1 enforcement</title>
   </rect>
 
-  <circle cx="341.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="335" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-24: No activity</title>
+  <rect x="346" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-24: 1 enforcement</title>
   </rect>
 
-  <rect x="335" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-05-25: 4 contributions</title>
+  <rect x="346" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-25: No activity</title>
   </rect>
 
-  <rect x="350" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-26: 8 contributions</title>
+  <rect x="360" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-26: 2 enforcements</title>
   </rect>
 
-  <circle cx="356.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="350" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-27: 6 contributions</title>
+  <rect x="360" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-27: No activity</title>
   </rect>
 
-  <circle cx="356.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="350" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-05-28: 3 contributions</title>
+  <rect x="360" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-28: 3 enforcements</title>
   </rect>
 
-  <rect x="350" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-05-29: 5 contributions</title>
+  <rect x="360" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-29: No activity</title>
   </rect>
 
-  <rect x="350" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-05-30: 9 contributions</title>
+  <rect x="360" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-30: 1 enforcement</title>
   </rect>
 
-  <circle cx="356.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="350" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-05-31: No activity</title>
+  <rect x="360" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-31: 1 enforcement</title>
   </rect>
 
-  <rect x="350" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-06-01: 10 contributions</title>
+  <rect x="360" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-01: 1 enforcement</title>
   </rect>
 
-  <circle cx="356.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="365" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-06-02: 2 contributions</title>
+  <rect x="374" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-02: 2 enforcements</title>
   </rect>
 
-  <rect x="365" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-03: 4 contributions</title>
+  <rect x="374" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-03: 2 enforcements</title>
   </rect>
 
-  <rect x="365" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="374" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-06-04: No activity</title>
   </rect>
 
-  <rect x="365" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-05: 4 contributions</title>
+  <rect x="374" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-06-05: 8 enforcements</title>
   </rect>
 
-  <rect x="365" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="374" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-06-06: No activity</title>
   </rect>
 
-  <rect x="365" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-07: 6 contributions</title>
+  <rect x="374" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-07: No activity</title>
   </rect>
 
-  <circle cx="371.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="365" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-08: 9 contributions</title>
+  <rect x="374" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-08: No activity</title>
   </rect>
 
-  <circle cx="371.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="380" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-06-09: 10 contributions</title>
+  <rect x="388" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-09: 1 enforcement</title>
   </rect>
 
-  <circle cx="386.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="380" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-10: 5 contributions</title>
+  <rect x="388" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-10: No activity</title>
   </rect>
 
-  <rect x="380" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-06-11: 10 contributions</title>
+  <rect x="388" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-11: 2 enforcements</title>
   </rect>
 
-  <circle cx="386.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="380" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-06-12: 10 contributions</title>
+  <rect x="388" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-12: No activity</title>
   </rect>
 
-  <circle cx="386.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="380" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-13: 3 contributions</title>
+  <rect x="388" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-13: 5 enforcements</title>
   </rect>
 
-  <rect x="380" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-14: No activity</title>
+  <rect x="388" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-14: 1 enforcement</title>
   </rect>
 
-  <rect x="380" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="388" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-06-15: No activity</title>
   </rect>
 
-  <rect x="395" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-16: No activity</title>
+  <rect x="402" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-16: 5 enforcements</title>
   </rect>
 
-  <rect x="395" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-17: No activity</title>
+  <rect x="402" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-17: 5 enforcements</title>
   </rect>
 
-  <rect x="395" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-06-18: 1 contributions</title>
+  <rect x="402" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-18: 2 enforcements</title>
   </rect>
 
-  <rect x="395" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-19: No activity</title>
+  <rect x="402" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-19: 1 enforcement</title>
   </rect>
 
-  <rect x="395" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-20: No activity</title>
+  <rect x="402" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-20: 5 enforcements</title>
   </rect>
 
-  <rect x="395" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-21: No activity</title>
+  <rect x="402" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-21: 5 enforcements</title>
   </rect>
 
-  <rect x="395" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-22: 6 contributions</title>
+  <rect x="402" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-22: No activity</title>
   </rect>
 
-  <circle cx="401.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="410" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-06-23: 10 contributions</title>
+  <rect x="416" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-23: 3 enforcements</title>
   </rect>
 
-  <circle cx="416.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="410" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-06-24: No activity</title>
+  <rect x="416" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-24: 5 enforcements</title>
   </rect>
 
-  <rect x="410" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-25: 9 contributions</title>
+  <rect x="416" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-25: No activity</title>
   </rect>
 
-  <circle cx="416.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="410" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-26: 4 contributions</title>
+  <rect x="416" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-26: No activity</title>
   </rect>
 
-  <rect x="410" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-27: 5 contributions</title>
+  <rect x="416" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-27: No activity</title>
   </rect>
 
-  <rect x="410" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-28: 9 contributions</title>
+  <rect x="416" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-28: 5 enforcements</title>
   </rect>
 
-  <circle cx="416.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="410" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-06-29: 8 contributions</title>
+  <rect x="416" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-29: 5 enforcements</title>
   </rect>
 
-  <circle cx="416.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="425" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-06-30: 5 contributions</title>
+  <rect x="430" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-30: No activity</title>
   </rect>
 
-  <rect x="425" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-01: 7 contributions</title>
+  <rect x="430" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-01: No activity</title>
   </rect>
 
-  <circle cx="431.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="425" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-02: No activity</title>
+  <rect x="430" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-02: 1 enforcement</title>
   </rect>
 
-  <rect x="425" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-07-03: 10 contributions</title>
+  <rect x="430" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-03: 5 enforcements</title>
   </rect>
 
-  <circle cx="431.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="425" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-04: No activity</title>
+  <rect x="430" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-04: 8 enforcements</title>
   </rect>
 
-  <rect x="425" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-05: 8 contributions</title>
+  <rect x="430" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-05: No activity</title>
   </rect>
 
-  <circle cx="431.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="425" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-06: 7 contributions</title>
+  <rect x="430" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-06: 1 enforcement</title>
   </rect>
 
-  <circle cx="431.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="440" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-07: 6 contributions</title>
+  <rect x="444" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-07: 3 enforcements</title>
   </rect>
 
-  <circle cx="446.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="440" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-07-08: 5 contributions</title>
+  <rect x="444" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-08: No activity</title>
   </rect>
 
-  <rect x="440" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-09: No activity</title>
+  <rect x="444" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-09: 3 enforcements</title>
   </rect>
 
-  <rect x="440" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-07-10: 5 contributions</title>
+  <rect x="444" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-10: No activity</title>
   </rect>
 
-  <rect x="440" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-11: No activity</title>
+  <rect x="444" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-11: 1 enforcement</title>
   </rect>
 
-  <rect x="440" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-07-12: 1 contributions</title>
+  <rect x="444" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-12: 1 enforcement</title>
   </rect>
 
-  <rect x="440" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-07-13: 4 contributions</title>
+  <rect x="444" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-13: 8 enforcements</title>
   </rect>
 
-  <rect x="455" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-14: 7 contributions</title>
+  <rect x="458" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-14: 1 enforcement</title>
   </rect>
 
-  <circle cx="461.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="455" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-15: 6 contributions</title>
+  <rect x="458" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-15: No activity</title>
   </rect>
 
-  <circle cx="461.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="455" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-16: 9 contributions</title>
+  <rect x="458" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-16: 3 enforcements</title>
   </rect>
 
-  <circle cx="461.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="455" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-17: No activity</title>
+  <rect x="458" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-17: 1 enforcement</title>
   </rect>
 
-  <rect x="455" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-18: 6 contributions</title>
+  <rect x="458" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-18: No activity</title>
   </rect>
 
-  <circle cx="461.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="455" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-07-19: 6 contributions</title>
+  <rect x="458" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-19: No activity</title>
   </rect>
 
-  <circle cx="461.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="455" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="458" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-07-20: No activity</title>
   </rect>
 
-  <rect x="470" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-07-21: 3 contributions</title>
+  <rect x="472" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-21: 8 enforcements</title>
   </rect>
 
-  <rect x="470" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-22: No activity</title>
+  <rect x="472" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-22: 1 enforcement</title>
   </rect>
 
-  <rect x="470" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-23: No activity</title>
+  <rect x="472" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-23: 1 enforcement</title>
   </rect>
 
-  <rect x="470" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-24: No activity</title>
+  <rect x="472" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-07-24: 12 enforcements</title>
   </rect>
 
-  <rect x="470" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-25: No activity</title>
+  <circle cx="477.5" cy="127.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+
+  <rect x="472" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-25: 3 enforcements</title>
   </rect>
 
-  <rect x="470" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-07-26: 4 contributions</title>
+  <rect x="472" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-26: No activity</title>
   </rect>
 
-  <rect x="470" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-07-27: No activity</title>
+  <rect x="472" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-27: 2 enforcements</title>
   </rect>
 
-  <rect x="485" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-07-28: 10 contributions</title>
+  <rect x="486" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-28: 5 enforcements</title>
   </rect>
 
-  <circle cx="491.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="485" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="486" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-07-29: No activity</title>
   </rect>
 
-  <rect x="485" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="486" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-07-30: No activity</title>
   </rect>
 
-  <rect x="485" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-07-31: 10 contributions</title>
+  <rect x="486" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-31: 1 enforcement</title>
   </rect>
 
-  <circle cx="491.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="485" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-01: No activity</title>
+  <rect x="486" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-08-01: 12 enforcements</title>
   </rect>
 
-  <rect x="485" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-08-02: 10 contributions</title>
+  <circle cx="491.5" cy="141.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+
+  <rect x="486" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-02: 1 enforcement</title>
   </rect>
 
-  <circle cx="491.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="485" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-08-03: 10 contributions</title>
+  <rect x="486" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-03: No activity</title>
   </rect>
 
-  <circle cx="491.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="500" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-08-04: 6 contributions</title>
+  <rect x="500" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-04: 1 enforcement</title>
   </rect>
 
-  <circle cx="506.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="500" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-08-05: 2 contributions</title>
+  <rect x="500" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-05: No activity</title>
   </rect>
 
-  <rect x="500" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-06: No activity</title>
+  <rect x="500" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-06: 1 enforcement</title>
   </rect>
 
-  <rect x="500" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="500" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-08-07: No activity</title>
   </rect>
 
-  <rect x="500" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-08-08: 7 contributions</title>
+  <rect x="500" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-08-08: 8 enforcements</title>
   </rect>
 
-  <circle cx="506.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="500" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-09: 5 contributions</title>
+  <rect x="500" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-09: 3 enforcements</title>
   </rect>
 
-  <rect x="500" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-10: No activity</title>
+  <rect x="500" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-10: 3 enforcements</title>
   </rect>
 
-  <rect x="515" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-11: 3 contributions</title>
+  <rect x="514" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-11: 1 enforcement</title>
   </rect>
 
-  <rect x="515" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="514" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-08-12: No activity</title>
   </rect>
 
-  <rect x="515" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-08-13: 7 contributions</title>
+  <rect x="514" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-13: No activity</title>
   </rect>
 
-  <circle cx="521.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="515" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-08-14: 2 contributions</title>
+  <rect x="514" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-14: 3 enforcements</title>
   </rect>
 
-  <rect x="515" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-15: 5 contributions</title>
+  <rect x="514" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-15: No activity</title>
   </rect>
 
-  <rect x="515" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-16: No activity</title>
+  <rect x="514" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-16: 1 enforcement</title>
   </rect>
 
-  <rect x="515" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-17: No activity</title>
+  <rect x="514" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-17: 1 enforcement</title>
   </rect>
 
-  <rect x="530" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-18: 4 contributions</title>
+  <rect x="528" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-18: 2 enforcements</title>
   </rect>
 
-  <rect x="530" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="528" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-08-19: No activity</title>
   </rect>
 
-  <rect x="530" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-20: No activity</title>
+  <rect x="528" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-20: 3 enforcements</title>
   </rect>
 
-  <rect x="530" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-21: No activity</title>
+  <rect x="528" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-21: 3 enforcements</title>
   </rect>
 
-  <rect x="530" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="528" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-08-22: No activity</title>
   </rect>
 
-  <rect x="530" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-23: 4 contributions</title>
+  <rect x="528" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-23: 1 enforcement</title>
   </rect>
 
-  <rect x="530" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-24: No activity</title>
+  <rect x="528" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-24: 3 enforcements</title>
   </rect>
 
-  <rect x="545" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-25: No activity</title>
+  <rect x="542" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-08-25: 8 enforcements</title>
   </rect>
 
-  <rect x="545" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-26: No activity</title>
+  <rect x="542" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-26: 2 enforcements</title>
   </rect>
 
-  <rect x="545" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-08-27: No activity</title>
+  <rect x="542" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-27: 1 enforcement</title>
   </rect>
 
-  <rect x="545" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-08-28: 10 contributions</title>
+  <rect x="542" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-28: No activity</title>
   </rect>
 
-  <circle cx="551.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="545" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-08-29: 7 contributions</title>
+  <rect x="542" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-29: 1 enforcement</title>
   </rect>
 
-  <circle cx="551.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="545" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-08-30: 1 contributions</title>
+  <rect x="542" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-30: 1 enforcement</title>
   </rect>
 
-  <rect x="545" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-08-31: 3 contributions</title>
+  <rect x="542" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-31: 1 enforcement</title>
   </rect>
 
-  <rect x="560" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-09-01: 3 contributions</title>
+  <rect x="556" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-09-01: 8 enforcements</title>
   </rect>
 
-  <rect x="560" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-09-02: No activity</title>
+  <rect x="556" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-02: 5 enforcements</title>
   </rect>
 
-  <rect x="560" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-09-03: 2 contributions</title>
+  <rect x="556" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-03: No activity</title>
   </rect>
 
-  <rect x="560" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-04: 9 contributions</title>
+  <rect x="556" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-04: 3 enforcements</title>
   </rect>
 
-  <circle cx="566.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="560" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-09-05: No activity</title>
+  <rect x="556" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-05: 2 enforcements</title>
   </rect>
 
-  <rect x="560" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="556" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-09-06: No activity</title>
   </rect>
 
-  <rect x="560" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="556" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-09-07: No activity</title>
   </rect>
 
-  <rect x="575" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-09-08: No activity</title>
+  <rect x="570" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-08: 2 enforcements</title>
   </rect>
 
-  <rect x="575" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-09-09: 2 contributions</title>
+  <rect x="570" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-09: No activity</title>
   </rect>
 
-  <rect x="575" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-10: 7 contributions</title>
+  <rect x="570" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-10: 1 enforcement</title>
   </rect>
 
-  <circle cx="581.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="575" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-11: 9 contributions</title>
+  <rect x="570" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-11: 2 enforcements</title>
   </rect>
 
-  <circle cx="581.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="575" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="570" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-09-12: No activity</title>
   </rect>
 
-  <rect x="575" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-13: 9 contributions</title>
+  <rect x="570" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-09-13: 12 enforcements</title>
   </rect>
 
-  <circle cx="581.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
+  <circle cx="575.5" cy="155.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
-  <rect x="575" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-09-14: 4 contributions</title>
+  <rect x="570" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-14: 3 enforcements</title>
   </rect>
 
-  <rect x="590" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-09-15: No activity</title>
+  <rect x="584" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-15: 2 enforcements</title>
   </rect>
 
-  <rect x="590" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-16: 9 contributions</title>
+  <rect x="584" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-16: No activity</title>
   </rect>
 
-  <circle cx="596.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="590" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-17: 7 contributions</title>
+  <rect x="584" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-17: 1 enforcement</title>
   </rect>
 
-  <circle cx="596.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="590" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-09-18: 3 contributions</title>
+  <rect x="584" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-18: 5 enforcements</title>
   </rect>
 
-  <rect x="590" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-19: 6 contributions</title>
+  <rect x="584" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-19: 3 enforcements</title>
   </rect>
 
-  <circle cx="596.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="590" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-09-20: 2 contributions</title>
+  <rect x="584" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-20: No activity</title>
   </rect>
 
-  <rect x="590" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-09-21: No activity</title>
+  <rect x="584" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-21: 1 enforcement</title>
   </rect>
 
-  <rect x="605" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-09-22: 1 contributions</title>
+  <rect x="598" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-22: No activity</title>
   </rect>
 
-  <rect x="605" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-23: 7 contributions</title>
+  <rect x="598" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-23: No activity</title>
   </rect>
 
-  <circle cx="611.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="605" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-09-24: 3 contributions</title>
+  <rect x="598" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-24: 5 enforcements</title>
   </rect>
 
-  <rect x="605" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-09-25: 3 contributions</title>
+  <rect x="598" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-25: 1 enforcement</title>
   </rect>
 
-  <rect x="605" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-09-26: 2 contributions</title>
+  <rect x="598" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-26: No activity</title>
   </rect>
 
-  <rect x="605" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-27: 8 contributions</title>
+  <rect x="598" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-27: No activity</title>
   </rect>
 
-  <circle cx="611.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="605" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-09-28: 6 contributions</title>
+  <rect x="598" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-28: 1 enforcement</title>
   </rect>
 
-  <circle cx="611.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="620" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="612" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-09-29: No activity</title>
   </rect>
 
-  <rect x="620" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-09-30: 10 contributions</title>
+  <rect x="612" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-30: No activity</title>
   </rect>
 
-  <circle cx="626.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="620" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-01: 9 contributions</title>
+  <rect x="612" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-01: No activity</title>
   </rect>
 
-  <circle cx="626.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="620" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-02: 6 contributions</title>
+  <rect x="612" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-02: 2 enforcements</title>
   </rect>
 
-  <circle cx="626.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="620" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-10-03: 4 contributions</title>
+  <rect x="612" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-03: 3 enforcements</title>
   </rect>
 
-  <rect x="620" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-04: 1 contributions</title>
+  <rect x="612" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-04: No activity</title>
   </rect>
 
-  <rect x="620" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-05: 1 contributions</title>
+  <rect x="612" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-05: No activity</title>
   </rect>
 
-  <rect x="635" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-06: 6 contributions</title>
+  <rect x="626" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-06: 3 enforcements</title>
   </rect>
 
-  <circle cx="641.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="635" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-10-07: 5 contributions</title>
+  <rect x="626" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-07: No activity</title>
   </rect>
 
-  <rect x="635" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-08: 8 contributions</title>
+  <rect x="626" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-08: 2 enforcements</title>
   </rect>
 
-  <circle cx="641.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="635" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="626" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-09: No activity</title>
   </rect>
 
-  <rect x="635" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-10-10: No activity</title>
+  <rect x="626" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-10: 2 enforcements</title>
   </rect>
 
-  <rect x="635" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-11: 1 contributions</title>
+  <rect x="626" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-11: No activity</title>
   </rect>
 
-  <rect x="635" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-12: 1 contributions</title>
+  <rect x="626" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-12: 5 enforcements</title>
   </rect>
 
-  <rect x="650" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-10-13: No activity</title>
+  <rect x="640" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-13: 1 enforcement</title>
   </rect>
 
-  <rect x="650" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="640" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-14: No activity</title>
   </rect>
 
-  <rect x="650" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-15: 8 contributions</title>
+  <rect x="640" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-10-15: 8 enforcements</title>
   </rect>
 
-  <circle cx="656.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="650" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="640" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-16: No activity</title>
   </rect>
 
-  <rect x="650" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-10-17: No activity</title>
+  <rect x="640" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-17: 2 enforcements</title>
   </rect>
 
-  <rect x="650" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-10-18: 3 contributions</title>
+  <rect x="640" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-18: 5 enforcements</title>
   </rect>
 
-  <rect x="650" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-10-19: 5 contributions</title>
+  <rect x="640" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-19: No activity</title>
   </rect>
 
-  <rect x="665" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-20: 8 contributions</title>
+  <rect x="654" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-20: No activity</title>
   </rect>
 
-  <circle cx="671.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="665" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-21: 2 contributions</title>
+  <rect x="654" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-21: No activity</title>
   </rect>
 
-  <rect x="665" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-10-22: 10 contributions</title>
+  <rect x="654" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-22: 2 enforcements</title>
   </rect>
 
-  <circle cx="671.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="665" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-10-23: No activity</title>
+  <rect x="654" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-23: 2 enforcements</title>
   </rect>
 
-  <rect x="665" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="654" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-24: No activity</title>
   </rect>
 
-  <rect x="665" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-10-25: 8 contributions</title>
+  <rect x="654" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-25: 3 enforcements</title>
   </rect>
 
-  <circle cx="671.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="665" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="654" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-26: No activity</title>
   </rect>
 
-  <rect x="680" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-10-27: 3 contributions</title>
+  <rect x="668" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-27: 5 enforcements</title>
   </rect>
 
-  <rect x="680" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-28: 2 contributions</title>
+  <rect x="668" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-28: 1 enforcement</title>
   </rect>
 
-  <rect x="680" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="668" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-10-29: No activity</title>
   </rect>
 
-  <rect x="680" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-10-30: 2 contributions</title>
+  <rect x="668" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-30: 5 enforcements</title>
   </rect>
 
-  <rect x="680" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-10-31: No activity</title>
+  <rect x="668" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-31: 2 enforcements</title>
   </rect>
 
-  <rect x="680" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-01: 8 contributions</title>
+  <rect x="668" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-01: 1 enforcement</title>
   </rect>
 
-  <circle cx="686.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="680" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-02: No activity</title>
+  <rect x="668" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-02: 1 enforcement</title>
   </rect>
 
-  <rect x="695" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-03: 1 contributions</title>
+  <rect x="682" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-03: 3 enforcements</title>
   </rect>
 
-  <rect x="695" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-04: 2 contributions</title>
+  <rect x="682" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-04: No activity</title>
   </rect>
 
-  <rect x="695" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-05: No activity</title>
+  <rect x="682" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-05: 5 enforcements</title>
   </rect>
 
-  <rect x="695" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-06: 1 contributions</title>
+  <rect x="682" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-06: 2 enforcements</title>
   </rect>
 
-  <rect x="695" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-11-07: 10 contributions</title>
+  <rect x="682" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-07: No activity</title>
   </rect>
 
-  <circle cx="701.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="695" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-08: No activity</title>
+  <rect x="682" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-08: 1 enforcement</title>
   </rect>
 
-  <rect x="695" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-09: 7 contributions</title>
+  <rect x="682" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-09: 5 enforcements</title>
   </rect>
 
-  <circle cx="701.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="710" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-10: 1 contributions</title>
+  <rect x="696" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-10: No activity</title>
   </rect>
 
-  <rect x="710" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="696" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-11-11: No activity</title>
   </rect>
 
-  <rect x="710" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="696" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-11-12: No activity</title>
   </rect>
 
-  <rect x="710" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-11-13: 3 contributions</title>
+  <rect x="696" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-13: 2 enforcements</title>
   </rect>
 
-  <rect x="710" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-11-14: 10 contributions</title>
+  <rect x="696" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-14: No activity</title>
   </rect>
 
-  <circle cx="716.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="710" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-11-15: 5 contributions</title>
+  <rect x="696" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-15: No activity</title>
   </rect>
 
-  <rect x="710" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-16: No activity</title>
+  <rect x="696" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-16: 5 enforcements</title>
   </rect>
 
-  <rect x="725" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-17: No activity</title>
+  <rect x="710" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-17: 1 enforcement</title>
   </rect>
 
-  <rect x="725" y="65" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-18: 6 contributions</title>
+  <rect x="710" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-18: No activity</title>
   </rect>
 
-  <circle cx="731.0" cy="71.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="725" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="710" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-11-19: No activity</title>
   </rect>
 
-  <rect x="725" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-20: 1 contributions</title>
+  <rect x="710" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-20: 2 enforcements</title>
   </rect>
 
-  <rect x="725" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-11-21: No activity</title>
+  <rect x="710" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-21: 2 enforcements</title>
   </rect>
 
-  <rect x="725" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-22: 2 contributions</title>
+  <rect x="710" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-22: No activity</title>
   </rect>
 
-  <rect x="725" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-23: 6 contributions</title>
+  <rect x="710" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-23: 5 enforcements</title>
   </rect>
 
-  <circle cx="731.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="740" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-24: 9 contributions</title>
+  <rect x="724" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-24: No activity</title>
   </rect>
 
-  <circle cx="746.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="740" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-11-25: 5 contributions</title>
+  <rect x="724" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-25: No activity</title>
   </rect>
 
-  <rect x="740" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="724" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-11-26: No activity</title>
   </rect>
 
-  <rect x="740" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-27: 7 contributions</title>
+  <rect x="724" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-27: No activity</title>
   </rect>
 
-  <circle cx="746.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="740" y="110" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-11-28: 2 contributions</title>
+  <rect x="724" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-28: No activity</title>
   </rect>
 
-  <rect x="740" y="125" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-11-29: 6 contributions</title>
+  <rect x="724" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-29: 5 enforcements</title>
   </rect>
 
-  <circle cx="746.0" cy="131.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="740" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-11-30: 3 contributions</title>
+  <rect x="724" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-30: 3 enforcements</title>
   </rect>
 
-  <rect x="755" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-01: 1 contributions</title>
+  <rect x="738" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-01: 3 enforcements</title>
   </rect>
 
-  <rect x="755" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="738" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-12-02: No activity</title>
   </rect>
 
-  <rect x="755" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-03: No activity</title>
+  <rect x="738" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-03: 1 enforcement</title>
   </rect>
 
-  <rect x="755" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-04: 8 contributions</title>
+  <rect x="738" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-04: 1 enforcement</title>
   </rect>
 
-  <circle cx="761.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="755" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-05: No activity</title>
+  <rect x="738" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-05: 3 enforcements</title>
   </rect>
 
-  <rect x="755" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-06: 1 contributions</title>
+  <rect x="738" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-06: No activity</title>
   </rect>
 
-  <rect x="755" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-07: 8 contributions</title>
+  <rect x="738" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-07: No activity</title>
   </rect>
 
-  <circle cx="761.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="770" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="752" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-12-08: No activity</title>
   </rect>
 
-  <rect x="770" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-09: No activity</title>
+  <rect x="752" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-09: 2 enforcements</title>
   </rect>
 
-  <rect x="770" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="752" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-12-10: No activity</title>
   </rect>
 
-  <rect x="770" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-11: 2 contributions</title>
+  <rect x="752" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-11: No activity</title>
   </rect>
 
-  <rect x="770" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-12: 7 contributions</title>
+  <rect x="752" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-12: No activity</title>
   </rect>
 
-  <circle cx="776.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="770" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-13: 1 contributions</title>
+  <rect x="752" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-13: No activity</title>
   </rect>
 
-  <rect x="770" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-14: 9 contributions</title>
+  <rect x="752" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-14: No activity</title>
   </rect>
 
-  <circle cx="776.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="785" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="766" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-12-15: No activity</title>
   </rect>
 
-  <rect x="785" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="766" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2025-12-16: No activity</title>
   </rect>
 
-  <rect x="785" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-17: No activity</title>
+  <rect x="766" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-17: 3 enforcements</title>
   </rect>
 
-  <rect x="785" y="95" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-18: No activity</title>
+  <rect x="766" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-18: 5 enforcements</title>
   </rect>
 
-  <rect x="785" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-19: No activity</title>
+  <rect x="766" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-19: 5 enforcements</title>
   </rect>
 
-  <rect x="785" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-12-20: 5 contributions</title>
+  <rect x="766" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-20: No activity</title>
   </rect>
 
-  <rect x="785" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-21: 1 contributions</title>
+  <rect x="766" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-12-21: 12 enforcements</title>
   </rect>
 
-  <rect x="800" y="50" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-12-22: 3 contributions</title>
+  <circle cx="771.5" cy="169.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+
+  <rect x="780" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-22: 3 enforcements</title>
   </rect>
 
-  <rect x="800" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-12-23: 3 contributions</title>
+  <rect x="780" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-23: 3 enforcements</title>
   </rect>
 
-  <rect x="800" y="80" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-24: 7 contributions</title>
+  <rect x="780" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-24: No activity</title>
   </rect>
 
-  <circle cx="806.0" cy="86.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="800" y="95" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-12-25: 3 contributions</title>
+  <rect x="780" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-25: No activity</title>
   </rect>
 
-  <rect x="800" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-26: No activity</title>
+  <rect x="780" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-26: 2 enforcements</title>
   </rect>
 
-  <rect x="800" y="125" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.6" filter="url(#circuit-glow)">
-    <title>2025-12-27: 5 contributions</title>
+  <rect x="780" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-27: No activity</title>
   </rect>
 
-  <rect x="800" y="140" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2025-12-28: 10 contributions</title>
+  <rect x="780" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-28: No activity</title>
   </rect>
 
-  <circle cx="806.0" cy="146.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="815" y="50" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2025-12-29: 7 contributions</title>
+  <rect x="794" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-29: 3 enforcements</title>
   </rect>
 
-  <circle cx="821.0" cy="56.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="815" y="65" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2025-12-30: 2 contributions</title>
+  <rect x="794" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-30: No activity</title>
   </rect>
 
-  <rect x="815" y="80" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2025-12-31: No activity</title>
+  <rect x="794" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-31: 5 enforcements</title>
   </rect>
 
-  <rect x="815" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2026-01-01: 10 contributions</title>
+  <rect x="794" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2026-01-01: No activity</title>
   </rect>
 
-  <circle cx="821.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="815" y="110" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2026-01-02: No activity</title>
+  <rect x="794" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-02: 2 enforcements</title>
   </rect>
 
-  <rect x="815" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="794" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2026-01-03: No activity</title>
   </rect>
 
-  <rect x="815" y="140" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2026-01-04: 1 contributions</title>
+  <rect x="794" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-04: 1 enforcement</title>
   </rect>
 
-  <rect x="830" y="50" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="808" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2026-01-05: No activity</title>
   </rect>
 
-  <rect x="830" y="65" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2026-01-06: No activity</title>
+  <rect x="808" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-06: 1 enforcement</title>
   </rect>
 
-  <rect x="830" y="80" width="12" height="12" rx="2"
-        fill="#ff8c42" opacity="0.4" filter="url(#circuit-glow)">
-    <title>2026-01-07: 1 contributions</title>
+  <rect x="808" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-07: 1 enforcement</title>
   </rect>
 
-  <rect x="830" y="95" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#circuit-glow)">
-    <title>2026-01-08: 10 contributions</title>
+  <rect x="808" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2026-01-08: 3 enforcements</title>
   </rect>
 
-  <circle cx="836.0" cy="101.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="830" y="110" width="12" height="12" rx="2"
-        fill="#ff6b35" opacity="0.8" filter="url(#circuit-glow)">
-    <title>2026-01-09: 8 contributions</title>
+  <rect x="808" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2026-01-09: No activity</title>
   </rect>
 
-  <circle cx="836.0" cy="116.0" r="2" fill="#ff6b35" filter="url(#strong-glow)">
-    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-  </circle>
-
-  <rect x="830" y="125" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
+  <rect x="808" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
     <title>2026-01-10: No activity</title>
   </rect>
 
-  <rect x="830" y="140" width="12" height="12" rx="1"
-        fill="#2a2a2a" opacity="0.15">
-    <title>2026-01-11: No activity</title>
+  <rect x="808" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-11: 1 enforcement</title>
   </rect>
 
-  <text x="95" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Feb</text>
+  <text x="122" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">FEB</text>
 
-  <text x="155" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Mar</text>
+  <text x="178" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">MAR</text>
 
-  <text x="230" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Apr</text>
+  <text x="248" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">APR</text>
 
-  <text x="290" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">May</text>
+  <text x="304" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">MAY</text>
 
-  <text x="350" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Jun</text>
+  <text x="360" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">JUN</text>
 
-  <text x="425" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Jul</text>
+  <text x="430" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">JUL</text>
 
-  <text x="485" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Aug</text>
+  <text x="486" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">AUG</text>
 
-  <text x="560" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Sep</text>
+  <text x="556" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">SEP</text>
 
-  <text x="620" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Oct</text>
+  <text x="612" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">OCT</text>
 
-  <text x="680" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Nov</text>
+  <text x="668" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">NOV</text>
 
-  <text x="755" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Dec</text>
+  <text x="738" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">DEC</text>
 
-  <text x="815" y="40" fill="#333333" font-family="monospace" font-size="10" text-anchor="start" opacity="0.6">Jan</text>
+  <text x="794" y="70" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        text-anchor="start" opacity="0.6" letter-spacing="1">JAN</text>
 
-  <!-- Title -->
-  <text x="440.0" y="25" fill="#ff6b35" filter="url(#circuit-glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" text-anchor="middle">
-    ACTIVITY CIRCUIT - ENFORCEMENT HISTORY
-  </text>
+  <!-- Legend -->
+  <text x="80" y="203" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9"
+        text-anchor="start" opacity="0.6">LESS</text>
 
-  <text x="440.0" y="185" fill="#333333"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle" opacity="0.6">
-    Total Enforcements: 1336 | Peak Activity: 10/day
+  <rect x="120" y="194" width="11" height="11" rx="2"
+        fill="#2a2a2a" opacity="0.3" filter="none"/>
+
+  <rect x="135" y="194" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)"/>
+
+  <rect x="150" y="194" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)"/>
+
+  <rect x="165" y="194" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)"/>
+
+  <rect x="180" y="194" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)"/>
+
+  <text x="205" y="203" fill="#333333"
+        font-family="'Courier New', monospace" font-size="9"
+        text-anchor="start" opacity="0.6">MORE</text>
+
+  <!-- Statistics Panel -->
+  <rect x="0" y="198" width="848" height="40" fill="#2a2a2a" opacity="0.7"/>
+  <line x1="0" y1="198" x2="848" y2="198" stroke="#ff6b35" stroke-width="1" opacity="0.4"/>
+  <text x="424.0" y="218" fill="#333333"
+        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+    <tspan fill="#ff6b35" font-weight="bold">661</tspan> TOTAL ENFORCEMENTS  •
+    <tspan fill="#ff6b35" font-weight="bold">12</tspan> PEAK ACTIVITY  •
+    <tspan fill="#ff6b35" font-weight="bold">212</tspan> ACTIVE DAYS  •
+    <tspan fill="#ff6b35" font-weight="bold">58.1%</tspan> UPTIME
   </text>
 </svg>
