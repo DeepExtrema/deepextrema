@@ -8,77 +8,8 @@
 
 <!-- SYSTEM_AUTHORITY -->
 <div align="center">
-
-<h2><code>S Y S T E M&nbsp;&nbsp;&nbsp;A R C H I T E C T</code></h2>
-
-**DeepExtrema** — *Authority encoded as infrastructure*
-
+  <img src="assets/system_authority.svg" alt="System Authority Panel" width="100%" />
 </div>
-
-<br>
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║                      OPERATIONAL MANDATE                             ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-I work on AI systems, primarily around agent-based and multi-agent designs, data quality workflows, and operational ML systems. My projects range from software-only systems to robotics-adjacent work, including LiDAR-based perception. I tend to approach problems from first principles and spend most of my time thinking about system behavior, reliability, and how things hold up outside of ideal conditions.
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  CURRENT PROCESSES                                                   ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-<table>
-<tr>
-<td width="50%">
-
-**ARES**
-`2D LiDAR + ML hand-gesture control`
-
-</td>
-<td width="50%">
-
-**SHERLOCK**
-`Agentic data analysis → report + ML models`
-
-</td>
-</tr>
-</table>
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  COLLABORATION PROTOCOLS                                             ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-- `[AUTHORIZED]` Open-source research builds: agentic analytics, robotics perception
-- `[LOCATION]` NYC in-person preferred, remote authorized
-- `[REQUIRED]` Architecture review + pair programming + tests/evals
-- `[CONSTRAINT]` Reproducible builds only
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  ACTIVE LEARNING DOMAINS                                             ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-**FRAMEWORKS:** LangChain, agent systems, LLM architectures
-**LANGUAGES:** JavaScript, TypeScript
-**SYSTEMS:** ROS2, Rust
-
-```
-╔══════════════════════════════════════════════════════════════════════╗
-║  EXPERTISE JURISDICTIONS                                             ║
-╚══════════════════════════════════════════════════════════════════════╝
-```
-
-✓ Agent orchestration + evaluation frameworks
-✓ LiDAR perception + gesture classification
-✓ Production ML systems (FastAPI • Docker • Kubernetes)
-
 <!-- /SYSTEM_AUTHORITY -->
 
 <br>
@@ -92,9 +23,9 @@ I work on AI systems, primarily around agent-based and multi-agent designs, data
 
 *Access control status and authorization levels across governed systems*
 
-| SYSTEM | STATUS | AUTHORIZATION | LAST ENFORCEMENT |
-|--------|--------|---------------|------------------|
-| ERROR | System unavailable | - | - |
+<div align="center">
+  <img src="assets/governance_matrix.svg" alt="Governance Matrix" width="100%" />
+</div>
 <!-- /GOVERNANCE_MATRIX -->
 
 <br>

@@ -43,8 +43,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🔒 Generate Governance Matrix
-        run: python scripts/governance_matrix.py
+      - name: 👤 Generate System Authority Panel
+        run: python scripts/system_authority.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🔒 Generate Governance Matrix Visual
+        run: python scripts/governance_matrix_visual.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

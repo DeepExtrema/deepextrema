@@ -36,8 +36,8 @@ def create_chain_link_svg(cx: float, cy: float, width: float, height: float, rot
 
 def create_tech_node(x: float, y: float, tech_name: str, usage_percent: float, index: int) -> str:
     """Create a technology node with neon box and label."""
-    box_width = 140
-    box_height = 50
+    box_width = 180
+    box_height = 70
 
     # Color based on usage
     if usage_percent > 40:
@@ -128,7 +128,7 @@ def create_connecting_chain(x1: float, y1: float, x2: float, y2: float, num_link
 def generate_dependency_chains_svg(language_stats: dict) -> str:
     """Generate dependency chains visualization."""
     width = 1200
-    height = 500
+    height = 650
 
     # Get top languages
     sorted_langs = sorted(language_stats.items(), key=lambda x: x[1], reverse=True)[:7]
@@ -209,8 +209,8 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
 
     # Position nodes in a hex/circular pattern
     center_x = width / 2
-    center_y = height / 2 + 20
-    radius = 160
+    center_y = height / 2 + 30
+    radius = 220
 
     node_positions = []
     num_nodes = len(normalized_langs)
