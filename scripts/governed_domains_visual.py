@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.utils import update_readme_section, ASSETS_DIR
 from src.github_api import get_github_client
+from src.cache import get_with_cache
 
 
 # Neon colors
@@ -69,7 +70,7 @@ def generate_governed_domains_svg(language_stats: dict) -> str:
   <rect x="50" y="20" width="1100" height="50" fill="{PANEL_COLOR}" opacity="0.8"/>
   <line x1="50" y1="20" x2="1150" y2="20" stroke="{NEON_PRIMARY}" stroke-width="2" filter="url(#glow)"/>
   <text x="{width/2}" y="52" fill="{NEON_PRIMARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="20" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="38" font-weight="bold"
         text-anchor="middle" letter-spacing="3">
     GOVERNED DOMAINS
   </text>''')
@@ -96,7 +97,7 @@ def generate_governed_domains_svg(language_stats: dict) -> str:
 
   <!-- Category header -->
   <text x="{x + 15}" y="{y + 25}" fill="{NEON_PRIMARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" letter-spacing="1">
     {data['icon']} {category.upper()}
   </text>
 
@@ -111,7 +112,7 @@ def generate_governed_domains_svg(language_stats: dict) -> str:
 
             svg_parts.append(f'''
   <text x="{tech_x}" y="{tech_y}" fill="{color}"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     {tech}
   </text>''')
 
@@ -129,7 +130,7 @@ def generate_governed_domains_svg(language_stats: dict) -> str:
   <rect x="0" y="{height - 40}" width="{width}" height="40" fill="{PANEL_COLOR}" opacity="0.8"/>
   <line x1="0" y1="{height - 40}" x2="{width}" y2="{height - 40}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.5"/>
   <text x="{width/2}" y="{height - 15}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     TOTAL DOMAINS: <tspan fill="{NEON_PRIMARY}" font-weight="bold">{total_domains}</tspan> •
     ACTIVE: <tspan fill="{NEON_PRIMARY}" font-weight="bold">{active_domains}</tspan> •
     CATEGORIES: <tspan fill="{NEON_PRIMARY}" font-weight="bold">{len(TECH_CATEGORIES)}</tspan>
@@ -144,12 +145,15 @@ def main():
     """Generate governed domains visual and update README."""
     print("⚡ Generating Governed Domains Visual...")
 
-    try:
+    def fetch_language_stats():
         client = get_github_client()
-        language_stats = client.get_language_stats()
+        return client.get_language_stats()
+
+    language_stats = get_with_cache("governed_domains_languages", fetch_language_stats)
+
+    if language_stats:
         print(f"  ✓ Fetched language stats")
-    except Exception as e:
-        print(f"  Warning: Could not fetch language stats: {e}")
+    else:
         language_stats = {}
 
     svg_content = generate_governed_domains_svg(language_stats)

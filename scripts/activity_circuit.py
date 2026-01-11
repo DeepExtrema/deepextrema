@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.utils import ASSETS_DIR
 from src.github_api import get_github_client
+from src.cache import get_with_cache
 
 
 # Neon colors
@@ -141,11 +142,11 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
   <rect x="{margin_left - 10}" y="15" width="{grid_width + 20}" height="50" fill="#2a2a2a" opacity="0.8"/>
   <line x1="{margin_left - 10}" y1="15" x2="{margin_left + grid_width + 10}" y2="15" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.6"/>
   <text x="{width/2}" y="40" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
-        font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="2">
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold" text-anchor="middle" letter-spacing="2">
     ACTIVITY CIRCUIT
   </text>
   <text x="{width/2}" y="53" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="10" text-anchor="middle" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="23" text-anchor="middle" letter-spacing="1">
     POLICY ENFORCEMENT PATTERNS • 52 WEEK OPERATIONAL HISTORY
   </text>''')
 
@@ -156,7 +157,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
         y = margin_top + day_idx * (cell_size + cell_gap) + cell_size / 2
         svg_parts.append(f'''
   <text x="{margin_left - 15}" y="{y + 4}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">{label}</text>''')
 
     # Generate contribution cells
@@ -253,7 +254,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
             month_label = temp_date.strftime("%b").upper()
             svg_parts.append(f'''
   <text x="{x}" y="{margin_top - 10}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="9" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold"
         text-anchor="start" opacity="0.6" letter-spacing="1">{month_label}</text>''')
             last_month = temp_date.month
 
@@ -269,7 +270,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
     svg_parts.append(f'''
   <!-- Legend -->
   <text x="{legend_x}" y="{legend_y}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="9"
+        font-family="'Courier New', monospace" font-size="30"
         text-anchor="start" opacity="0.6">LESS</text>''')
 
     legend_colors = [
@@ -288,7 +289,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
 
     svg_parts.append(f'''
   <text x="{legend_x + 40 + 5 * (cell_size + 4) + 10}" y="{legend_y}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="9"
+        font-family="'Courier New', monospace" font-size="30"
         text-anchor="start" opacity="0.6">MORE</text>''')
 
     # Statistics panel
@@ -302,7 +303,7 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
   <rect x="0" y="{height - 40}" width="{width}" height="40" fill="#2a2a2a" opacity="0.7"/>
   <line x1="0" y1="{height - 40}" x2="{width}" y2="{height - 40}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.4"/>
   <text x="{width/2}" y="{stats_y}" fill="{text_color}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     <tspan fill="{NEON_PRIMARY}" font-weight="bold">{total_contributions}</tspan> TOTAL ENFORCEMENTS  •
     <tspan fill="{NEON_PRIMARY}" font-weight="bold">{max_contributions}</tspan> PEAK ACTIVITY  •
     <tspan fill="{NEON_PRIMARY}" font-weight="bold">{active_days}</tspan> ACTIVE DAYS  •
@@ -318,13 +319,14 @@ def main():
     """Generate activity circuit visualization and update README."""
     print("⚙️  Generating Activity Circuit Visualization...")
 
-    try:
+    def fetch_contributions():
         client = get_github_client()
-        contributions = client.get_contribution_calendar()
+        return client.get_contribution_calendar()
+
+    contributions = get_with_cache("activity_circuit_contributions", fetch_contributions)
+
+    if contributions:
         print(f"  ✓ Fetched contribution data")
-    except Exception as e:
-        print(f"  Warning: Could not fetch contributions: {e}")
-        contributions = {}
 
     if not contributions:
         print("  Using sample contribution data")

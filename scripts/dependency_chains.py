@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.utils import update_readme_section, ASSETS_DIR
 from src.github_api import get_github_client
+from src.cache import get_with_cache
 
 
 # Neon colors
@@ -71,7 +72,7 @@ def create_tech_node(x: float, y: float, tech_name: str, usage_percent: float, i
 
     # Tech name (larger, bold)
     node_svg.append(f'''<text x="{x}" y="{y - 8}" fill="{color}" filter="url(#text-glow)"
-         font-family="'Courier New', monospace" font-size="14" font-weight="bold"
+         font-family="'Courier New', monospace" font-size="17" font-weight="bold"
          text-anchor="middle">{tech_name}</text>''')
 
     # Usage bar
@@ -91,7 +92,7 @@ def create_tech_node(x: float, y: float, tech_name: str, usage_percent: float, i
 
     # Percentage text
     node_svg.append(f'''<text x="{x}" y="{y + 24}" fill="{TEXT_DIM}"
-         font-family="'Courier New', monospace" font-size="11"
+         font-family="'Courier New', monospace" font-size="17"
          text-anchor="middle">{usage_percent:.1f}%</text>''')
 
     return "\n".join(node_svg)
@@ -252,11 +253,11 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
   <rect x="{width/2 - 280}" y="15" width="560" height="45" fill="#2a2a2a" opacity="0.8"/>
   <line x1="{width/2 - 280}" y1="15" x2="{width/2 + 280}" y2="15" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.6"/>
   <text x="{width/2}" y="40" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
-        font-family="'Courier New', monospace" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="2">
+        font-family="'Courier New', monospace" font-size="30" font-weight="bold" text-anchor="middle" letter-spacing="2">
     DEPENDENCY CHAINS
   </text>
   <text x="{width/2}" y="53" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="10" text-anchor="middle" letter-spacing="1">
+        font-family="'Courier New', monospace" font-size="23" text-anchor="middle" letter-spacing="1">
     BINDING AGREEMENTS ENFORCED ACROSS GOVERNED DOMAINS
   </text>''')
 
@@ -266,7 +267,7 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
   <rect x="0" y="{height - 35}" width="{width}" height="35" fill="#2a2a2a" opacity="0.7"/>
   <line x1="0" y1="{height - 35}" x2="{width}" y2="{height - 35}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.4"/>
   <text x="{width/2}" y="{height - 12}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     {len(normalized_langs)} PRIMARY DOMAINS • {len(node_positions) * (len(node_positions) - 1) // 2} ENFORCED LINKAGES
   </text>''')
 
@@ -279,15 +280,15 @@ def main():
     """Generate dependency chains visualization and update README."""
     print("🔗 Generating Dependency Chains Visualization...")
 
-    try:
+    def fetch_language_stats():
         client = get_github_client()
-        language_stats = client.get_language_stats()
-        print(f"  ✓ Fetched language stats: {len(language_stats)} languages")
-    except Exception as e:
-        print(f"  Warning: Could not fetch language stats: {e}")
-        language_stats = {}
+        return client.get_language_stats()
 
-    if not language_stats:
+    language_stats = get_with_cache("dependency_chains_languages", fetch_language_stats)
+
+    if language_stats:
+        print(f"  ✓ Fetched language stats: {len(language_stats)} languages")
+    else:
         print("  Using default technology stack")
         language_stats = {
             "Python": 35.0,

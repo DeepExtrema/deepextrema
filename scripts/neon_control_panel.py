@@ -19,6 +19,7 @@ from src.utils import (
     ASSETS_DIR,
 )
 from src.github_api import get_github_client
+from src.cache import get_with_cache
 
 
 # Industrial Neon Color Palette
@@ -269,14 +270,14 @@ def generate_neon_control_panel(total_stars: int, total_repos: int, total_commit
         x = metric_spacing * (i + 1)
         svg_parts.append(f'''
   <text x="{x}" y="{status_y}" fill="{NEON_COLORS['neon_primary']}" filter="url(#neon-glow)"
-        font-family="'Courier New', monospace" font-size="14" font-weight="bold" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" font-weight="bold" text-anchor="middle">
     {metric}
   </text>''')
 
     # System status indicator
     svg_parts.append(f'''
   <text x="{width/2}" y="{status_y + 25}" fill="{NEON_COLORS['text']}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle" opacity="0.6">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle" opacity="0.6">
     GOVERNANCE STATUS: OPERATIONAL
   </text>''')
 
@@ -300,17 +301,23 @@ def main():
     """Generate neon control panel and update README."""
     print("⚙️  Generating Industrial Neon Control Panel...")
 
-    try:
-        # Get GitHub data
+    def fetch_stats():
         client = get_github_client()
-        stats = client.get_repo_stats()
-        activity = client.get_activity_metrics()
+        return client.get_repo_stats()
 
-        total_stars = stats["total_stars"]
-        total_repos = stats["total_repos"]
+    def fetch_activity():
+        client = get_github_client()
+        return client.get_activity_metrics()
+
+    stats = get_with_cache("neon_control_panel_stats", fetch_stats)
+    activity = get_with_cache("neon_control_panel_activity", fetch_activity)
+
+    if stats and activity:
+        total_stars = stats.get("total_stars", 0)
+        total_repos = stats.get("total_repos", 0)
         total_commits = activity.get("total_commits", 0)
-    except Exception as e:
-        print(f"  Warning: Could not fetch GitHub stats: {e}")
+        print(f"  ✓ Fetched GitHub stats")
+    else:
         total_stars = 0
         total_repos = 0
         total_commits = 0

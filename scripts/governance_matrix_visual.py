@@ -13,6 +13,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.utils import update_readme_section, ASSETS_DIR
 from src.github_api import get_github_client
+from src.cache import get_with_cache
 
 
 # Neon colors
@@ -74,7 +75,7 @@ def generate_governance_matrix_svg(repos: list) -> str:
   <rect x="50" y="20" width="1100" height="50" fill="{PANEL_COLOR}" opacity="0.8"/>
   <line x1="50" y1="20" x2="1150" y2="20" stroke="{NEON_PRIMARY}" stroke-width="2" filter="url(#glow)"/>
   <text x="{width/2}" y="52" fill="{NEON_PRIMARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="20" font-weight="bold"
+        font-family="'Courier New', monospace" font-size="38" font-weight="bold"
         text-anchor="middle" letter-spacing="3">
     GOVERNANCE MATRIX
   </text>''')
@@ -113,37 +114,37 @@ def generate_governance_matrix_svg(repos: list) -> str:
 
   <!-- Repo name -->
   <text x="{x + 30}" y="{y + 20}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="13" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
     {repo['name'][:22]}
   </text>
 
   <!-- Status text -->
   <text x="{x + 10}" y="{y + 45}" fill="{status_color}"
-        font-family="'Courier New', monospace" font-size="10" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
     {status}
   </text>
 
   <!-- Language -->
   <text x="{x + 10}" y="{y + 65}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     LANG: {repo.get('language', 'N/A') or 'N/A'}
   </text>
 
   <!-- Stars -->
   <text x="{x + 10}" y="{y + 82}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="9">
+        font-family="'Courier New', monospace" font-size="30">
     ⭐ {repo['stars']}
   </text>
 
   <!-- Updated -->
   <text x="{x + 10}" y="{y + 99}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="8">
+        font-family="'Courier New', monospace" font-size="17">
     UPDATED: {repo['updated_at'][:10] if repo['updated_at'] else 'N/A'}
   </text>
 
   <!-- Auth level -->
   <text x="{x + 10}" y="{y + box_height - 20}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="8">
+        font-family="'Courier New', monospace" font-size="17">
     {'🔒 RESTRICTED' if repo.get('private') else '🌐 PUBLIC'}
   </text>''')
 
@@ -151,7 +152,7 @@ def generate_governance_matrix_svg(repos: list) -> str:
         # No data fallback
         svg_parts.append(f'''
   <text x="{width/2}" y="{height/2}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="14" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     NO SYSTEMS UNDER ACTIVE GOVERNANCE
   </text>''')
 
@@ -165,7 +166,7 @@ def generate_governance_matrix_svg(repos: list) -> str:
   <rect x="0" y="{height - 40}" width="{width}" height="40" fill="{PANEL_COLOR}" opacity="0.8"/>
   <line x1="0" y1="{height - 40}" x2="{width}" y2="{height - 40}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.5"/>
   <text x="{width/2}" y="{height - 15}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle">
+        font-family="'Courier New', monospace" font-size="17" text-anchor="middle">
     <tspan fill="{NEON_GREEN}" font-weight="bold">{active_count}</tspan> ACTIVE •
     <tspan fill="{NEON_YELLOW}" font-weight="bold">{standby_count}</tspan> STANDBY •
     <tspan fill="{NEON_RED}" font-weight="bold">{dormant_count}</tspan> DORMANT •
@@ -181,13 +182,23 @@ def main():
     """Generate governance matrix and update README."""
     print("⚙️  Generating Governance Matrix Visual...")
 
-    try:
+    def fetch_repos():
         client = get_github_client()
-        repos = client.get_user_repos(max_repos=20, sort="updated")
+        return client.get_user_repos(max_repos=20, sort="updated")
+
+    repos = get_with_cache("governance_matrix_repos", fetch_repos)
+
+    if repos:
         print(f"  ✓ Fetched {len(repos)} repositories")
-    except Exception as e:
-        print(f"  Warning: Could not fetch repositories: {e}")
-        repos = []
+    else:
+        # Final fallback with sample data
+        print("  Using fallback sample data")
+        repos = [
+            {"name": "DeepExtrema", "language": "Python", "stars": 10,
+             "updated_at": "2026-01-10T00:00:00Z", "private": False},
+            {"name": "ARES", "language": "Python", "stars": 5,
+             "updated_at": "2026-01-08T00:00:00Z", "private": False},
+        ]
 
     svg_content = generate_governance_matrix_svg(repos)
 
