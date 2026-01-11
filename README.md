@@ -39,10 +39,9 @@
 
 *Recent authorization events and system modifications*
 
-```
-> ERROR: Unable to retrieve enforcement log
-> System monitoring temporarily unavailable
-```
+<div align="center">
+  <img src="assets/enforcement_log.svg" alt="Enforcement Log" width="100%" />
+</div>
 <!-- /ENFORCEMENT_LOG -->
 
 <br>
@@ -84,22 +83,9 @@
 
 *Technologies under system authority*
 
-### CORE ENFORCEMENT LAYERS
-
-**Languages:** JavaScript • Python • Rust • Markdown
-
-**Infrastructure:** Cloudflare • Firebase • Vercel
-
-**Runtime Systems:** FastAPI • Node.js
-
-**Data Governance:** MySQL • Neo4J • Redis • Supabase
-
-**Analysis & ML:** Matplotlib • Keras • NumPy • Pandas • Plotly • scikit-learn • SciPy • TensorFlow
-
-**Orchestration:** Kubernetes • GitHub • Prometheus • Raspberry Pi
-
-**Auxiliary:** Canva • Notion • Twilio
-
+<div align="center">
+  <img src="assets/governed_domains.svg" alt="Governed Domains" width="100%" />
+</div>
 <!-- /TECH_JURISDICTION -->
 
 <br>
