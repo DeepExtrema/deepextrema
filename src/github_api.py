@@ -349,7 +349,7 @@ class GitHubClient:
         }
     
     # ========== Activity Metrics ==========
-    
+
     def get_activity_metrics(self, days: int = 30) -> Dict[str, Any]:
         """Get aggregated activity metrics."""
         commits = self.get_recent_commits(days=days)
@@ -358,16 +358,17 @@ class GitHubClient:
         open_prs = self.get_open_prs()
         open_issues = self.get_open_issues()
         active_repos = self.get_active_repos(days=days)
-        
+
         # Group commits by day
         commits_by_day = {}
         for commit in commits:
             if commit["date"]:
                 day = commit["date"].strftime("%Y-%m-%d")
                 commits_by_day[day] = commits_by_day.get(day, 0) + 1
-        
+
         return {
             "period_days": days,
+            "total_commits": len(commits),
             "commits_count": len(commits),
             "commits_by_day": commits_by_day,
             "merged_prs_count": len(merged_prs),
@@ -377,6 +378,85 @@ class GitHubClient:
             "active_repos_count": len(active_repos),
             "active_repos": active_repos[:5],
         }
+
+    def get_user_repos(self, max_repos: int = 20, sort: str = "updated") -> List[Dict[str, Any]]:
+        """Get user repositories with metadata."""
+        repos = self.get_repos()
+
+        # Convert to dict format
+        repo_list = []
+        for repo in repos[:max_repos]:
+            repo_list.append({
+                "name": repo.name,
+                "full_name": repo.full_name,
+                "description": repo.description,
+                "url": repo.html_url,
+                "updated_at": repo.updated_at.isoformat() if repo.updated_at else None,
+                "created_at": repo.created_at.isoformat() if repo.created_at else None,
+                "stars": repo.stargazers_count,
+                "forks": repo.forks_count,
+                "language": repo.language,
+                "private": repo.private,
+                "fork": repo.fork,
+            })
+
+        # Sort based on criteria
+        if sort == "updated":
+            repo_list.sort(key=lambda x: x["updated_at"] or "", reverse=True)
+        elif sort == "stars":
+            repo_list.sort(key=lambda x: x["stars"], reverse=True)
+        elif sort == "created":
+            repo_list.sort(key=lambda x: x["created_at"] or "", reverse=True)
+
+        return repo_list
+
+    def get_language_stats(self) -> Dict[str, float]:
+        """Get language statistics across all repositories."""
+        repos = self.get_repos()
+        language_bytes = {}
+
+        for repo in repos:
+            try:
+                langs = repo.get_languages()
+                for lang, bytes_count in langs.items():
+                    language_bytes[lang] = language_bytes.get(lang, 0) + bytes_count
+            except GithubException:
+                continue
+
+        # Convert to percentages
+        total_bytes = sum(language_bytes.values())
+        if total_bytes == 0:
+            return {}
+
+        language_percentages = {
+            lang: (bytes_count / total_bytes) * 100
+            for lang, bytes_count in language_bytes.items()
+        }
+
+        # Sort by percentage
+        sorted_langs = dict(sorted(language_percentages.items(),
+                                   key=lambda x: x[1], reverse=True))
+
+        return sorted_langs
+
+    def get_contribution_calendar(self, days: int = 365) -> Dict[str, int]:
+        """Get contribution calendar (commits by date)."""
+        cutoff = get_utc_now() - timedelta(days=days)
+        repos = self.get_repos()
+
+        contributions = {}
+
+        for repo in repos:
+            try:
+                commits = repo.get_commits(since=cutoff)
+                for commit in commits:
+                    if commit.commit.author and commit.commit.author.date:
+                        date_key = commit.commit.author.date.strftime("%Y-%m-%d")
+                        contributions[date_key] = contributions.get(date_key, 0) + 1
+            except GithubException:
+                continue
+
+        return contributions
 
 
 def get_github_client() -> GitHubClient:
