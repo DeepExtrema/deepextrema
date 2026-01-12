@@ -45,9 +45,9 @@
 
 <br>
 
-**The Sun**
+**Voyager 1**
 
-Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
+The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 
-> *Curiosity compounds like interest, but pays in discoveries.*
+> *Ship early, iterate often, sleep eventually.*
 
 <br>
 <br>
