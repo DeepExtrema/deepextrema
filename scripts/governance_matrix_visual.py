@@ -114,38 +114,38 @@ def generate_governance_matrix_svg(repos: list) -> str:
 
   <!-- Repo name -->
   <text x="{x + 30}" y="{y + 20}" fill="{NEON_SECONDARY}" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
-    {repo['name'][:22]}
+        font-family="'Courier New', monospace" font-size="16" font-weight="bold">
+    {repo['name'][:18]}
   </text>
 
   <!-- Status text -->
-  <text x="{x + 10}" y="{y + 45}" fill="{status_color}"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
+  <text x="{x + 10}" y="{y + 42}" fill="{status_color}"
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
     {status}
   </text>
 
   <!-- Language -->
   <text x="{x + 10}" y="{y + 65}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="30">
-    LANG: {repo.get('language', 'N/A') or 'N/A'}
+        font-family="'Courier New', monospace" font-size="13">
+    LANG: {repo.get('language', 'N/A')[:8] or 'N/A'}
   </text>
 
   <!-- Stars -->
-  <text x="{x + 10}" y="{y + 82}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="30">
+  <text x="{x + 10}" y="{y + 85}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="13">
     ⭐ {repo['stars']}
   </text>
 
   <!-- Updated -->
-  <text x="{x + 10}" y="{y + 99}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="17">
+  <text x="{x + 10}" y="{y + 105}" fill="{TEXT_DIM}"
+        font-family="'Courier New', monospace" font-size="11">
     UPDATED: {repo['updated_at'][:10] if repo['updated_at'] else 'N/A'}
   </text>
 
   <!-- Auth level -->
-  <text x="{x + 10}" y="{y + box_height - 20}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="17">
-    {'🔒 RESTRICTED' if repo.get('private') else '🌐 PUBLIC'}
+  <text x="{x + 10}" y="{y + box_height - 25}" fill="{TEXT_DIM}"
+        font-family="'Courier New', monospace" font-size="11">
+    {'🔒 PRIVATE' if repo.get('private') else '🌐 PUBLIC'}
   </text>''')
 
     else:

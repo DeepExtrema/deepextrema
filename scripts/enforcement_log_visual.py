@@ -143,14 +143,14 @@ def generate_enforcement_log_svg(commits: list) -> str:
 
   <!-- Commit message -->
   <text x="140" y="{y + 20}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
-    {commit['message'][:70]}
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
+    {commit['message'][:65]}
   </text>
 
   <!-- Metadata -->
   <text x="140" y="{y + 37}" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="30">
-    {commit['repo'][:20]} • {commit['sha']} • {time_ago}
+        font-family="'Courier New', monospace" font-size="11">
+    {commit['repo'][:18]} • {commit['sha']} • {time_ago}
   </text>''')
 
     else:

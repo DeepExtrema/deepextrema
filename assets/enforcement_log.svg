@@ -77,13 +77,13 @@
 
   <!-- Commit message -->
   <text x="140" y="120" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
     Fix authentication bug
   </text>
 
   <!-- Metadata -->
   <text x="140" y="137" fill="#888888"
-        font-family="'Courier New', monospace" font-size="30">
+        font-family="'Courier New', monospace" font-size="11">
     ARES • abc123 • 0m ago
   </text>
 
@@ -105,13 +105,13 @@
 
   <!-- Commit message -->
   <text x="140" y="175" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
     Add new ML pipeline
   </text>
 
   <!-- Metadata -->
   <text x="140" y="192" fill="#888888"
-        font-family="'Courier New', monospace" font-size="30">
+        font-family="'Courier New', monospace" font-size="11">
     Sherlock • def456 • 0m ago
   </text>
 

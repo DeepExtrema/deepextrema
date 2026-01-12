@@ -139,14 +139,14 @@ def generate_activity_circuit_svg(contributions: dict, theme: str = "dark") -> s
     # Title panel
     svg_parts.append(f'''
   <!-- Title Panel -->
-  <rect x="{margin_left - 10}" y="15" width="{grid_width + 20}" height="50" fill="#2a2a2a" opacity="0.8"/>
+  <rect x="{margin_left - 10}" y="15" width="{grid_width + 20}" height="45" fill="#2a2a2a" opacity="0.8"/>
   <line x1="{margin_left - 10}" y1="15" x2="{margin_left + grid_width + 10}" y2="15" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.6"/>
-  <text x="{width/2}" y="40" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold" text-anchor="middle" letter-spacing="2">
+  <text x="{width/2}" y="37" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
+        font-family="'Courier New', monospace" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="2">
     ACTIVITY CIRCUIT
   </text>
-  <text x="{width/2}" y="53" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="23" text-anchor="middle" letter-spacing="1">
+  <text x="{width/2}" y="50" fill="{TEXT_DIM}"
+        font-family="'Courier New', monospace" font-size="10" text-anchor="middle" letter-spacing="1">
     POLICY ENFORCEMENT PATTERNS • 52 WEEK OPERATIONAL HISTORY
   </text>''')
 

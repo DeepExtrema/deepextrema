@@ -68,37 +68,37 @@
 
   <!-- Repo name -->
   <text x="90" y="120" fill="#ff8c42" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="16" font-weight="bold">
     DeepExtrema
   </text>
 
   <!-- Status text -->
-  <text x="70" y="145" fill="#4ade80"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
+  <text x="70" y="142" fill="#4ade80"
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
     ACTIVE
   </text>
 
   <!-- Language -->
   <text x="70" y="165" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30">
+        font-family="'Courier New', monospace" font-size="13">
     LANG: Python
   </text>
 
   <!-- Stars -->
-  <text x="70" y="182" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30">
+  <text x="70" y="185" fill="#cccccc"
+        font-family="'Courier New', monospace" font-size="13">
     ⭐ 10
   </text>
 
   <!-- Updated -->
-  <text x="70" y="199" fill="#888888"
-        font-family="'Courier New', monospace" font-size="17">
+  <text x="70" y="205" fill="#888888"
+        font-family="'Courier New', monospace" font-size="11">
     UPDATED: 2026-01-10
   </text>
 
   <!-- Auth level -->
-  <text x="70" y="240" fill="#888888"
-        font-family="'Courier New', monospace" font-size="17">
+  <text x="70" y="235" fill="#888888"
+        font-family="'Courier New', monospace" font-size="11">
     🌐 PUBLIC
   </text>
 
@@ -113,37 +113,37 @@
 
   <!-- Repo name -->
   <text x="370" y="120" fill="#ff8c42" filter="url(#glow)"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
+        font-family="'Courier New', monospace" font-size="16" font-weight="bold">
     ARES
   </text>
 
   <!-- Status text -->
-  <text x="350" y="145" fill="#4ade80"
-        font-family="'Courier New', monospace" font-size="23" font-weight="bold">
+  <text x="350" y="142" fill="#4ade80"
+        font-family="'Courier New', monospace" font-size="14" font-weight="bold">
     ACTIVE
   </text>
 
   <!-- Language -->
   <text x="350" y="165" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30">
+        font-family="'Courier New', monospace" font-size="13">
     LANG: Python
   </text>
 
   <!-- Stars -->
-  <text x="350" y="182" fill="#cccccc"
-        font-family="'Courier New', monospace" font-size="30">
+  <text x="350" y="185" fill="#cccccc"
+        font-family="'Courier New', monospace" font-size="13">
     ⭐ 5
   </text>
 
   <!-- Updated -->
-  <text x="350" y="199" fill="#888888"
-        font-family="'Courier New', monospace" font-size="17">
+  <text x="350" y="205" fill="#888888"
+        font-family="'Courier New', monospace" font-size="11">
     UPDATED: 2026-01-08
   </text>
 
   <!-- Auth level -->
-  <text x="350" y="240" fill="#888888"
-        font-family="'Courier New', monospace" font-size="17">
+  <text x="350" y="235" fill="#888888"
+        font-family="'Courier New', monospace" font-size="11">
     🌐 PUBLIC
   </text>
 

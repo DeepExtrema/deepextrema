@@ -250,14 +250,14 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
     # Add title with industrial styling
     svg_parts.append(f'''
   <!-- Title Panel -->
-  <rect x="{width/2 - 280}" y="15" width="560" height="45" fill="#2a2a2a" opacity="0.8"/>
-  <line x1="{width/2 - 280}" y1="15" x2="{width/2 + 280}" y2="15" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.6"/>
-  <text x="{width/2}" y="40" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
-        font-family="'Courier New', monospace" font-size="30" font-weight="bold" text-anchor="middle" letter-spacing="2">
+  <rect x="{width/2 - 320}" y="15" width="640" height="40" fill="#2a2a2a" opacity="0.8"/>
+  <line x1="{width/2 - 320}" y1="15" x2="{width/2 + 320}" y2="15" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.6"/>
+  <text x="{width/2}" y="37" fill="{NEON_PRIMARY}" filter="url(#text-glow)"
+        font-family="'Courier New', monospace" font-size="24" font-weight="bold" text-anchor="middle" letter-spacing="2">
     DEPENDENCY CHAINS
   </text>
-  <text x="{width/2}" y="53" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="23" text-anchor="middle" letter-spacing="1">
+  <text x="{width/2}" y="50" fill="{TEXT_DIM}"
+        font-family="'Courier New', monospace" font-size="11" text-anchor="middle" letter-spacing="1">
     BINDING AGREEMENTS ENFORCED ACROSS GOVERNED DOMAINS
   </text>''')
 

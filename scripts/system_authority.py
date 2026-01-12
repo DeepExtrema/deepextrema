@@ -202,10 +202,10 @@ def generate_system_authority_svg(recent_repos: list) -> str:
   </text>
 
   <text x="650" y="{y_offset + 50}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="16">
-    <tspan x="650" dy="0">[AUTHORIZED] OSS research: agentic analytics, robotics</tspan>
+        font-family="'Courier New', monospace" font-size="14">
+    <tspan x="650" dy="0">[AUTHORIZED] OSS research: agentic, robotics</tspan>
     <tspan x="650" dy="22">[LOCATION] NYC preferred • Remote OK</tspan>
-    <tspan x="650" dy="22">[REQUIRED] Architecture review • Pair programming</tspan>
+    <tspan x="650" dy="22">[REQUIRED] Architecture • Pair programming</tspan>
   </text>''')
 
     svg_parts.append('</svg>')

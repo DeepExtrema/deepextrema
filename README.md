@@ -50,22 +50,6 @@
 
 <br>
 
-<!-- COMPLIANCE_DASHBOARD -->
-## 🔒 COMPLIANCE DASHBOARD
-
-*System health metrics, compliance scoring, and security enforcement*
-
-<div align="center">
-  <img src="assets/compliance_dashboard.svg" alt="Compliance Dashboard" width="100%" />
-</div>
-<!-- /COMPLIANCE_DASHBOARD -->
-
-<br>
-
----
-
-<br>
-
 <!-- TECH_JURISDICTION -->
 ## ⚡ GOVERNED DOMAINS
 

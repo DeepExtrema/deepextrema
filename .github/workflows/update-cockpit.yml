@@ -58,11 +58,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 📊 Generate Compliance Dashboard Visual
-        run: python scripts/compliance_dashboard_visual.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: ⚡ Generate Governed Domains Visual
         run: python scripts/governed_domains_visual.py
         env:
