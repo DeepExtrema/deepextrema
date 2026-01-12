@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Dependency Chains Visualization Generator
-Creates polished industrial visualization of technology dependencies as literal chains.
+Creates clean, clear industrial visualization of technology dependencies.
 """
 
 import sys
@@ -26,100 +26,82 @@ TEXT_DIM = "#888888"
 
 
 def create_tech_node(x: float, y: float, tech_name: str, usage_percent: float) -> str:
-    """Create a polished technology node with metallic appearance."""
-    box_width = 200
-    box_height = 90
+    """Create a clean, readable technology node."""
+    box_width = 220
+    box_height = 100
 
     # Color based on usage
     if usage_percent > 30:
         color = NEON_PRIMARY
-        stroke_width = 5
-        glow = "strong-glow"
+        stroke_width = 3
     elif usage_percent > 15:
         color = NEON_SECONDARY
-        stroke_width = 4
-        glow = "medium-glow"
+        stroke_width = 2.5
     else:
         color = NEON_TERTIARY
-        stroke_width = 3
-        glow = "soft-glow"
+        stroke_width = 2
 
     node_svg = []
 
-    # Multiple shadow layers for depth
-    for offset in [6, 4, 2]:
-        node_svg.append(f'''<rect x="{x - box_width/2 + offset}" y="{y - box_height/2 + offset}"
-             width="{box_width}" height="{box_height}" rx="8"
-             fill="#000" opacity="{0.15 * offset}"/>''')
+    # Single shadow layer
+    node_svg.append(f'''<rect x="{x - box_width/2 + 4}" y="{y - box_height/2 + 4}"
+         width="{box_width}" height="{box_height}" rx="8"
+         fill="#000" opacity="0.3"/>''')
 
-    # Dark backing panel
+    # Dark backing
     node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
          width="{box_width}" height="{box_height}" rx="8"
-         fill="#0a0a0a"/>''')
+         fill="#0d0d0d"/>''')
 
-    # Metal panel gradient
+    # Subtle metal gradient
     node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
          width="{box_width}" height="{box_height}" rx="8"
-         fill="url(#metalGrad)" opacity="0.8"/>''')
+         fill="url(#metalGrad)" opacity="0.4"/>''')
 
-    # Main glowing border
+    # Main border with subtle glow
     node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
          width="{box_width}" height="{box_height}" rx="8"
-         fill="none" stroke="{color}" stroke-width="{stroke_width}" filter="url(#{glow})"/>''')
+         fill="none" stroke="{color}" stroke-width="{stroke_width}" filter="url(#subtle-glow)"/>''')
 
-    # Inner border for depth
-    node_svg.append(f'''<rect x="{x - box_width/2 + 6}" y="{y - box_height/2 + 6}"
-         width="{box_width - 12}" height="{box_height - 12}" rx="5"
-         fill="none" stroke="{color}" stroke-width="1.5" opacity="0.4"/>''')
-
-    # Corner bolts/rivets (larger and more detailed)
+    # Corner rivets (simple, 3 layers)
     rivet_offset = 12
     for rx in [x - box_width/2 + rivet_offset, x + box_width/2 - rivet_offset]:
         for ry in [y - box_height/2 + rivet_offset, y + box_height/2 - rivet_offset]:
-            # Outer ring
-            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="6" fill="url(#rivetGrad)"/>')
-            # Middle ring
-            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="4" fill="#1a1a1a"/>')
-            # Inner highlight
-            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="2" fill="#555"/>')
-            # Center dot
-            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="0.8" fill="#888"/>')
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="5" fill="url(#rivetGrad)"/>')
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="2.5" fill="#1a1a1a"/>')
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="1" fill="#555"/>')
 
-    # Tech name with stronger glow
-    node_svg.append(f'''<text x="{x}" y="{y - 10}" fill="{color}" filter="url(#{glow})"
-         font-family="'Courier New', monospace" font-size="20" font-weight="bold"
+    # Tech name - NO FILTER on text, just clean color
+    node_svg.append(f'''<text x="{x}" y="{y - 12}" fill="{color}"
+         font-family="'Courier New', monospace" font-size="22" font-weight="bold"
          text-anchor="middle">{tech_name}</text>''')
 
-    # Usage bar with border
-    bar_width = box_width - 50
-    bar_height = 10
+    # Usage bar
+    bar_width = box_width - 60
+    bar_height = 12
     bar_x = x - bar_width / 2
-    bar_y = y + 12
+    bar_y = y + 14
 
-    # Bar background with border
+    # Bar background
     node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="{bar_height}"
-         rx="5" fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>''')
+         rx="6" fill="#0a0a0a" stroke="#333" stroke-width="1"/>''')
 
-    # Filled bar with multiple layers for glow
+    # Filled bar - single layer
     filled_width = (usage_percent / 100) * bar_width
     if filled_width > 0:
-        # Background glow
         node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{filled_width}" height="{bar_height}"
-             rx="5" fill="{color}" opacity="0.3" filter="url(#{glow})"/>''')
-        # Main fill
-        node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{filled_width}" height="{bar_height}"
-             rx="5" fill="{color}" filter="url(#{glow})" opacity="0.95"/>''')
+             rx="6" fill="{color}" opacity="0.9"/>''')
 
-    # Percentage text
-    node_svg.append(f'''<text x="{x}" y="{y + 32}" fill="{TEXT_COLOR}"
-         font-family="'Courier New', monospace" font-size="14" font-weight="bold"
+    # Percentage text - larger and clearer
+    node_svg.append(f'''<text x="{x}" y="{y + 36}" fill="{TEXT_COLOR}"
+         font-family="'Courier New', monospace" font-size="16" font-weight="bold"
          text-anchor="middle">{usage_percent:.1f}%</text>''')
 
     return "\n".join(node_svg)
 
 
-def create_chain_link(x1: float, y1: float, x2: float, y2: float, num_links: int = 12) -> str:
-    """Create realistic chain connecting two technology nodes."""
+def create_chain_link(x1: float, y1: float, x2: float, y2: float, num_links: int = 15) -> str:
+    """Create clear, visible chain links."""
     chain_parts = []
 
     dx = (x2 - x1) / num_links
@@ -133,52 +115,36 @@ def create_chain_link(x1: float, y1: float, x2: float, y2: float, num_links: int
         # Alternate link orientation
         link_angle = angle + (math.pi/2 if i % 2 == 0 else 0)
 
-        # Thicker, more prominent links
-        w = 18
-        h = 28
+        # Moderate sized links
+        w = 16
+        h = 24
 
-        # Multiple shadow layers for depth
-        for s_offset in [3, 2, 1]:
-            chain_parts.append(f'''
-  <ellipse cx="{cx + s_offset}" cy="{cy + s_offset}" rx="{w/2}" ry="{h/2}"
-           transform="rotate({math.degrees(link_angle)} {cx + s_offset} {cy + s_offset})"
-           fill="#000" opacity="{0.2 * s_offset}"/>''')
-
-        # Outer glow halo
+        # Single shadow
         chain_parts.append(f'''
-  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 + 2}" ry="{h/2 + 2}"
-           transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="{NEON_PRIMARY}" stroke-width="2"
-           filter="url(#strong-glow)" opacity="0.5"/>''')
+  <ellipse cx="{cx + 2}" cy="{cy + 2}" rx="{w/2}" ry="{h/2}"
+           transform="rotate({math.degrees(link_angle)} {cx + 2} {cy + 2})"
+           fill="#000" opacity="0.3"/>''')
 
-        # Main link body
+        # Main link body - clear and visible
         chain_parts.append(f'''
   <ellipse cx="{cx}" cy="{cy}" rx="{w/2}" ry="{h/2}"
            transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="{NEON_PRIMARY}" stroke-width="5"
-           filter="url(#strong-glow)" opacity="0.95"/>''')
+           fill="none" stroke="{NEON_PRIMARY}" stroke-width="4"
+           filter="url(#subtle-glow)" opacity="0.95"/>''')
 
-        # Inner highlight
+        # Inner highlight - NO FILTER for clarity
         chain_parts.append(f'''
   <ellipse cx="{cx}" cy="{cy}" rx="{w/2 - 2}" ry="{h/2 - 2}"
            transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="{NEON_SECONDARY}" stroke-width="2.5"
-           filter="url(#medium-glow)" opacity="0.8"/>''')
-
-        # Inner core glow
-        chain_parts.append(f'''
-  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 - 4}" ry="{h/2 - 4}"
-           transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="#ffaa66" stroke-width="1.5"
-           filter="url(#soft-glow)" opacity="0.6"/>''')
+           fill="none" stroke="{NEON_SECONDARY}" stroke-width="2" opacity="0.7"/>''')
 
     return "\n".join(chain_parts)
 
 
 def generate_dependency_chains_svg(language_stats: dict) -> str:
-    """Generate polished dependency chains visualization."""
+    """Generate clean dependency chains visualization."""
     width = 1200
-    height = 700
+    height = 750  # Increased from 700
 
     # Get top languages
     sorted_langs = sorted(language_stats.items(), key=lambda x: x[1], reverse=True)[:7]
@@ -201,7 +167,7 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
 
     svg_parts = []
 
-    # SVG header with enhanced filters
+    # SVG header with minimal filters
     svg_parts.append(f'''<svg width="{width}" height="{height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Metal gradient -->
@@ -218,34 +184,10 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
       <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
     </radialGradient>
 
-    <!-- Strong glow -->
-    <filter id="strong-glow" x="-150%" y="-150%" width="400%" height="400%">
-      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+    <!-- Subtle glow only -->
+    <filter id="subtle-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Medium glow -->
-    <filter id="medium-glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Soft glow -->
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
@@ -255,20 +197,18 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
   <!-- Background -->
   <rect width="{width}" height="{height}" fill="{BG_COLOR}"/>
 
-  <!-- Industrial grid pattern -->''')
+  <!-- Very subtle grid pattern -->''')
 
-    # Add subtle grid
-    for x in range(0, width, 50):
-        opacity = 0.12 if x % 100 == 0 else 0.05
-        svg_parts.append(f'<line x1="{x}" y1="0" x2="{x}" y2="{height}" stroke="#2a2a2a" stroke-width="1" opacity="{opacity}"/>')
-    for y in range(0, height, 50):
-        opacity = 0.12 if y % 100 == 0 else 0.05
-        svg_parts.append(f'<line x1="0" y1="{y}" x2="{width}" y2="{y}" stroke="#2a2a2a" stroke-width="1" opacity="{opacity}"/>')
+    # Add minimal grid
+    for x in range(0, width, 100):
+        svg_parts.append(f'<line x1="{x}" y1="0" x2="{x}" y2="{height}" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>')
+    for y in range(0, height, 100):
+        svg_parts.append(f'<line x1="0" y1="{y}" x2="{width}" y2="{y}" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>')
 
-    # Position nodes in circular pattern
+    # Position nodes with more space
     center_x = width / 2
-    center_y = height / 2 + 50
-    radius = 260
+    center_y = height / 2 + 20  # Adjusted for better vertical centering
+    radius = 280  # Increased from 260
 
     node_positions = []
     num_nodes = len(normalized_langs)
@@ -288,14 +228,14 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
         next_i = (i + 1) % len(node_positions)
         x2, y2, name2, pct2 = node_positions[next_i]
 
-        chain_svg = create_chain_link(x1, y1, x2, y2, num_links=14)
+        chain_svg = create_chain_link(x1, y1, x2, y2, num_links=15)
         svg_parts.append(chain_svg)
 
         # Add cross-connections for major languages
         if pct1 > 25 and i < len(node_positions) - 2:
             cross_i = (i + 2) % len(node_positions)
             x3, y3, _, _ = node_positions[cross_i]
-            chain_svg = create_chain_link(x1, y1, x3, y3, num_links=16)
+            chain_svg = create_chain_link(x1, y1, x3, y3, num_links=18)
             svg_parts.append(chain_svg)
 
     # Draw technology nodes on top
@@ -304,28 +244,28 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
         node_svg = create_tech_node(x, y, tech_name, usage_pct)
         svg_parts.append(node_svg)
 
-    # Title panel
+    # Clean title panel
     svg_parts.append(f'''
   <!-- Title Panel -->
-  <rect x="{width/2 - 380}" y="20" width="760" height="55" fill="#1a1a1a" opacity="0.9" rx="4"/>
-  <rect x="{width/2 - 380}" y="20" width="760" height="55" fill="none" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.4" rx="4"/>
-  <text x="{width/2}" y="48" fill="{NEON_PRIMARY}" filter="url(#strong-glow)"
-        font-family="'Courier New', monospace" font-size="26" font-weight="bold" text-anchor="middle" letter-spacing="3">
+  <rect x="{width/2 - 400}" y="30" width="800" height="60" fill="#1a1a1a" opacity="0.8" rx="6"/>
+  <rect x="{width/2 - 400}" y="30" width="800" height="60" fill="none" stroke="{NEON_PRIMARY}" stroke-width="2" opacity="0.3" rx="6"/>
+  <text x="{width/2}" y="58" fill="{NEON_PRIMARY}" filter="url(#subtle-glow)"
+        font-family="'Courier New', monospace" font-size="28" font-weight="bold" text-anchor="middle" letter-spacing="3">
     DEPENDENCY CHAINS
   </text>
-  <text x="{width/2}" y="65" fill="{TEXT_DIM}"
-        font-family="'Courier New', monospace" font-size="11" text-anchor="middle" letter-spacing="1">
+  <text x="{width/2}" y="78" fill="{TEXT_DIM}"
+        font-family="'Courier New', monospace" font-size="12" text-anchor="middle" letter-spacing="1">
     BINDING AGREEMENTS ENFORCED ACROSS GOVERNED DOMAINS
   </text>''')
 
-    # Footer
+    # Footer with proper clearance - moved much higher
     total_linkages = len(node_positions) + sum(1 for _, _, _, pct in node_positions if pct > 25)
     svg_parts.append(f'''
   <!-- Footer Panel -->
-  <rect x="0" y="{height - 45}" width="{width}" height="45" fill="#1a1a1a" opacity="0.8"/>
-  <line x1="0" y1="{height - 45}" x2="{width}" y2="{height - 45}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.5"/>
-  <text x="{width/2}" y="{height - 18}" fill="{TEXT_COLOR}"
-        font-family="'Courier New', monospace" font-size="13" text-anchor="middle">
+  <rect x="0" y="{height - 70}" width="{width}" height="70" fill="#1a1a1a" opacity="0.75"/>
+  <line x1="0" y1="{height - 70}" x2="{width}" y2="{height - 70}" stroke="{NEON_PRIMARY}" stroke-width="1" opacity="0.4"/>
+  <text x="{width/2}" y="{height - 32}" fill="{TEXT_COLOR}"
+        font-family="'Courier New', monospace" font-size="16" text-anchor="middle" font-weight="bold">
     {len(normalized_langs)} PRIMARY DOMAINS • {total_linkages} ENFORCED LINKAGES
   </text>''')
 
