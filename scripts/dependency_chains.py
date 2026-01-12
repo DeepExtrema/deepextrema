@@ -27,76 +27,92 @@ TEXT_DIM = "#888888"
 
 def create_tech_node(x: float, y: float, tech_name: str, usage_percent: float) -> str:
     """Create a polished technology node with metallic appearance."""
-    box_width = 180
-    box_height = 80
+    box_width = 200
+    box_height = 90
 
     # Color based on usage
     if usage_percent > 30:
         color = NEON_PRIMARY
-        stroke_width = 4
+        stroke_width = 5
         glow = "strong-glow"
     elif usage_percent > 15:
         color = NEON_SECONDARY
-        stroke_width = 3
+        stroke_width = 4
         glow = "medium-glow"
     else:
         color = NEON_TERTIARY
-        stroke_width = 2.5
+        stroke_width = 3
         glow = "soft-glow"
 
     node_svg = []
 
-    # Shadow
-    node_svg.append(f'''<rect x="{x - box_width/2 + 3}" y="{y - box_height/2 + 3}"
-         width="{box_width}" height="{box_height}" rx="6"
-         fill="#000" opacity="0.4"/>''')
+    # Multiple shadow layers for depth
+    for offset in [6, 4, 2]:
+        node_svg.append(f'''<rect x="{x - box_width/2 + offset}" y="{y - box_height/2 + offset}"
+             width="{box_width}" height="{box_height}" rx="8"
+             fill="#000" opacity="{0.15 * offset}"/>''')
 
-    # Metal panel gradient backing
+    # Dark backing panel
     node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
-         width="{box_width}" height="{box_height}" rx="6"
-         fill="url(#metalGrad)"/>''')
+         width="{box_width}" height="{box_height}" rx="8"
+         fill="#0a0a0a"/>''')
 
-    # Main border
+    # Metal panel gradient
     node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
-         width="{box_width}" height="{box_height}" rx="6"
+         width="{box_width}" height="{box_height}" rx="8"
+         fill="url(#metalGrad)" opacity="0.8"/>''')
+
+    # Main glowing border
+    node_svg.append(f'''<rect x="{x - box_width/2}" y="{y - box_height/2}"
+         width="{box_width}" height="{box_height}" rx="8"
          fill="none" stroke="{color}" stroke-width="{stroke_width}" filter="url(#{glow})"/>''')
 
-    # Inner panel detail
-    node_svg.append(f'''<rect x="{x - box_width/2 + 5}" y="{y - box_height/2 + 5}"
-         width="{box_width - 10}" height="{box_height - 10}" rx="4"
-         fill="none" stroke="{color}" stroke-width="1" opacity="0.3"/>''')
+    # Inner border for depth
+    node_svg.append(f'''<rect x="{x - box_width/2 + 6}" y="{y - box_height/2 + 6}"
+         width="{box_width - 12}" height="{box_height - 12}" rx="5"
+         fill="none" stroke="{color}" stroke-width="1.5" opacity="0.4"/>''')
 
-    # Corner rivets
-    rivet_offset = 10
+    # Corner bolts/rivets (larger and more detailed)
+    rivet_offset = 12
     for rx in [x - box_width/2 + rivet_offset, x + box_width/2 - rivet_offset]:
         for ry in [y - box_height/2 + rivet_offset, y + box_height/2 - rivet_offset]:
-            node_svg.append(f'''<circle cx="{rx}" cy="{ry}" r="4" fill="url(#rivetGrad)"/>
-            <circle cx="{rx}" cy="{ry}" r="2" fill="#1a1a1a"/>
-            <circle cx="{rx}" cy="{ry}" r="0.8" fill="#555"/>''')
+            # Outer ring
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="6" fill="url(#rivetGrad)"/>')
+            # Middle ring
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="4" fill="#1a1a1a"/>')
+            # Inner highlight
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="2" fill="#555"/>')
+            # Center dot
+            node_svg.append(f'<circle cx="{rx}" cy="{ry}" r="0.8" fill="#888"/>')
 
-    # Tech name
-    node_svg.append(f'''<text x="{x}" y="{y - 8}" fill="{color}" filter="url(#{glow})"
-         font-family="'Courier New', monospace" font-size="18" font-weight="bold"
+    # Tech name with stronger glow
+    node_svg.append(f'''<text x="{x}" y="{y - 10}" fill="{color}" filter="url(#{glow})"
+         font-family="'Courier New', monospace" font-size="20" font-weight="bold"
          text-anchor="middle">{tech_name}</text>''')
 
-    # Usage bar background
-    bar_width = box_width - 40
-    bar_height = 8
+    # Usage bar with border
+    bar_width = box_width - 50
+    bar_height = 10
     bar_x = x - bar_width / 2
-    bar_y = y + 10
+    bar_y = y + 12
 
+    # Bar background with border
     node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="{bar_height}"
-         rx="4" fill="#1a1a1a" stroke="#333" stroke-width="1"/>''')
+         rx="5" fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>''')
 
-    # Filled bar with glow
+    # Filled bar with multiple layers for glow
     filled_width = (usage_percent / 100) * bar_width
     if filled_width > 0:
+        # Background glow
         node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{filled_width}" height="{bar_height}"
-             rx="4" fill="{color}" filter="url(#{glow})" opacity="0.9"/>''')
+             rx="5" fill="{color}" opacity="0.3" filter="url(#{glow})"/>''')
+        # Main fill
+        node_svg.append(f'''<rect x="{bar_x}" y="{bar_y}" width="{filled_width}" height="{bar_height}"
+             rx="5" fill="{color}" filter="url(#{glow})" opacity="0.95"/>''')
 
     # Percentage text
-    node_svg.append(f'''<text x="{x}" y="{y + 28}" fill="{TEXT_COLOR}"
-         font-family="'Courier New', monospace" font-size="13"
+    node_svg.append(f'''<text x="{x}" y="{y + 32}" fill="{TEXT_COLOR}"
+         font-family="'Courier New', monospace" font-size="14" font-weight="bold"
          text-anchor="middle">{usage_percent:.1f}%</text>''')
 
     return "\n".join(node_svg)
@@ -117,29 +133,44 @@ def create_chain_link(x1: float, y1: float, x2: float, y2: float, num_links: int
         # Alternate link orientation
         link_angle = angle + (math.pi/2 if i % 2 == 0 else 0)
 
-        # Link dimensions
-        w = 14
-        h = 22
+        # Thicker, more prominent links
+        w = 18
+        h = 28
 
-        # Shadow
+        # Multiple shadow layers for depth
+        for s_offset in [3, 2, 1]:
+            chain_parts.append(f'''
+  <ellipse cx="{cx + s_offset}" cy="{cy + s_offset}" rx="{w/2}" ry="{h/2}"
+           transform="rotate({math.degrees(link_angle)} {cx + s_offset} {cy + s_offset})"
+           fill="#000" opacity="{0.2 * s_offset}"/>''')
+
+        # Outer glow halo
         chain_parts.append(f'''
-  <ellipse cx="{cx + 1.5}" cy="{cy + 1.5}" rx="{w/2}" ry="{h/2}"
-           transform="rotate({math.degrees(link_angle)} {cx + 1.5} {cy + 1.5})"
-           fill="#000" opacity="0.3"/>''')
+  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 + 2}" ry="{h/2 + 2}"
+           transform="rotate({math.degrees(link_angle)} {cx} {cy})"
+           fill="none" stroke="{NEON_PRIMARY}" stroke-width="2"
+           filter="url(#strong-glow)" opacity="0.5"/>''')
 
-        # Outer link
+        # Main link body
         chain_parts.append(f'''
   <ellipse cx="{cx}" cy="{cy}" rx="{w/2}" ry="{h/2}"
            transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="{NEON_PRIMARY}" stroke-width="4"
-           filter="url(#medium-glow)" opacity="0.85"/>''')
+           fill="none" stroke="{NEON_PRIMARY}" stroke-width="5"
+           filter="url(#strong-glow)" opacity="0.95"/>''')
 
-        # Inner glow
+        # Inner highlight
         chain_parts.append(f'''
-  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 - 1.5}" ry="{h/2 - 1.5}"
+  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 - 2}" ry="{h/2 - 2}"
            transform="rotate({math.degrees(link_angle)} {cx} {cy})"
-           fill="none" stroke="{NEON_SECONDARY}" stroke-width="2"
-           filter="url(#soft-glow)" opacity="0.7"/>''')
+           fill="none" stroke="{NEON_SECONDARY}" stroke-width="2.5"
+           filter="url(#medium-glow)" opacity="0.8"/>''')
+
+        # Inner core glow
+        chain_parts.append(f'''
+  <ellipse cx="{cx}" cy="{cy}" rx="{w/2 - 4}" ry="{h/2 - 4}"
+           transform="rotate({math.degrees(link_angle)} {cx} {cy})"
+           fill="none" stroke="#ffaa66" stroke-width="1.5"
+           filter="url(#soft-glow)" opacity="0.6"/>''')
 
     return "\n".join(chain_parts)
 
@@ -188,7 +219,19 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
     </radialGradient>
 
     <!-- Strong glow -->
-    <filter id="strong-glow" x="-100%" y="-100%" width="300%" height="300%">
+    <filter id="strong-glow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Medium glow -->
+    <filter id="medium-glow" x="-100%" y="-100%" width="300%" height="300%">
       <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
@@ -198,20 +241,11 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
       </feMerge>
     </filter>
 
-    <!-- Medium glow -->
-    <filter id="medium-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <!-- Soft glow -->
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Soft glow -->
-    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
@@ -233,8 +267,8 @@ def generate_dependency_chains_svg(language_stats: dict) -> str:
 
     # Position nodes in circular pattern
     center_x = width / 2
-    center_y = height / 2 + 40
-    radius = 240
+    center_y = height / 2 + 50
+    radius = 260
 
     node_positions = []
     num_nodes = len(normalized_langs)
