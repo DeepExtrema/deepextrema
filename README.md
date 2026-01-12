@@ -1,7 +1,9 @@
 <!-- NEON_HEADER -->
+<!-- NEON_HEADER -->
 <div align="center">
   <img src="assets/neon_control_panel.svg" alt="Industrial Governance Control Panel" width="100%" />
 </div>
+<!-- /NEON_HEADER -->
 <!-- /NEON_HEADER -->
 
 <br>
