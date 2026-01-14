@@ -97,28 +97,18 @@
         font-family="'Courier New', monospace" font-size="13" font-weight="bold"
         text-anchor="end" opacity="0.7" letter-spacing="1">FRI</text>
   <!-- Circuit Traces -->
-<line x1="309.5" y1="155.5" x2="309.5" y2="169.5"
+<line x1="323.5" y1="85.5" x2="323.5" y2="99.5"
                      stroke="#ff6b35" stroke-width="1" opacity="0.2"/>
   <!-- Contribution Cells -->
 
-  <rect x="80" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-13: 2 enforcements</title>
-  </rect>
-
-  <rect x="80" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-14: 1 enforcement</title>
-  </rect>
-
   <rect x="80" y="108" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-01-15: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-15: 2 enforcements</title>
   </rect>
 
   <rect x="80" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-01-16: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-16: 1 enforcement</title>
   </rect>
 
   <rect x="80" y="136" width="11" height="11" rx="2"
@@ -126,39 +116,39 @@
     <title>2025-01-17: 3 enforcements</title>
   </rect>
 
-  <rect x="80" y="150" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-01-18: No activity</title>
+  <rect x="80" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-18: 3 enforcements</title>
   </rect>
 
   <rect x="80" y="164" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-01-19: 5 enforcements</title>
+    <title>2025-01-19: 3 enforcements</title>
   </rect>
 
-  <rect x="94" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-20: 2 enforcements</title>
+  <rect x="94" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-20: No activity</title>
   </rect>
 
   <rect x="94" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-21: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-21: 5 enforcements</title>
   </rect>
 
-  <rect x="94" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-01-22: No activity</title>
+  <rect x="94" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-22: 2 enforcements</title>
   </rect>
 
   <rect x="94" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-01-23: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-23: 2 enforcements</title>
   </rect>
 
-  <rect x="94" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-24: 1 enforcement</title>
+  <rect x="94" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-01-24: No activity</title>
   </rect>
 
   <rect x="94" y="150" width="11" height="11" rx="2"
@@ -166,29 +156,29 @@
     <title>2025-01-25: 5 enforcements</title>
   </rect>
 
-  <rect x="94" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-01-26: No activity</title>
+  <rect x="94" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-26: 1 enforcement</title>
   </rect>
 
   <rect x="108" y="80" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-01-27: 3 enforcements</title>
+    <title>2025-01-27: 5 enforcements</title>
   </rect>
 
-  <rect x="108" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-01-28: 1 enforcement</title>
-  </rect>
-
-  <rect x="108" y="108" width="11" height="11" rx="1"
+  <rect x="108" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-01-29: No activity</title>
+    <title>2025-01-28: No activity</title>
+  </rect>
+
+  <rect x="108" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-01-29: 3 enforcements</title>
   </rect>
 
   <rect x="108" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-01-30: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-01-30: 1 enforcement</title>
   </rect>
 
   <rect x="108" y="136" width="11" height="11" rx="1"
@@ -196,9 +186,9 @@
     <title>2025-01-31: No activity</title>
   </rect>
 
-  <rect x="108" y="150" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-01: No activity</title>
+  <rect x="108" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-02-01: 8 enforcements</title>
   </rect>
 
   <rect x="108" y="164" width="11" height="11" rx="1"
@@ -206,9 +196,9 @@
     <title>2025-02-02: No activity</title>
   </rect>
 
-  <rect x="122" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-02-03: 8 enforcements</title>
+  <rect x="122" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-03: No activity</title>
   </rect>
 
   <rect x="122" y="94" width="11" height="11" rx="1"
@@ -217,8 +207,8 @@
   </rect>
 
   <rect x="122" y="108" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-05: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-02-05: 8 enforcements</title>
   </rect>
 
   <rect x="122" y="122" width="11" height="11" rx="1"
@@ -228,7 +218,7 @@
 
   <rect x="122" y="136" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-07: 5 enforcements</title>
+    <title>2025-02-07: 3 enforcements</title>
   </rect>
 
   <rect x="122" y="150" width="11" height="11" rx="1"
@@ -238,7 +228,7 @@
 
   <rect x="122" y="164" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-09: 3 enforcements</title>
+    <title>2025-02-09: 5 enforcements</title>
   </rect>
 
   <rect x="136" y="80" width="11" height="11" rx="1"
@@ -246,9 +236,9 @@
     <title>2025-02-10: No activity</title>
   </rect>
 
-  <rect x="136" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-11: No activity</title>
+  <rect x="136" y="94" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-11: 3 enforcements</title>
   </rect>
 
   <rect x="136" y="108" width="11" height="11" rx="1"
@@ -256,66 +246,66 @@
     <title>2025-02-12: No activity</title>
   </rect>
 
-  <rect x="136" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-02-13: 1 enforcement</title>
+  <rect x="136" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-13: No activity</title>
   </rect>
 
-  <rect x="136" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-14: 5 enforcements</title>
+  <rect x="136" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-14: No activity</title>
   </rect>
 
   <rect x="136" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-15: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-02-15: 1 enforcement</title>
   </rect>
 
-  <rect x="136" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-16: No activity</title>
+  <rect x="136" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-16: 5 enforcements</title>
   </rect>
 
   <rect x="150" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
-    <title>2025-02-17: 12 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-02-17: 5 enforcements</title>
   </rect>
-
-  <circle cx="155.5" cy="85.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
   <rect x="150" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
     <title>2025-02-18: No activity</title>
   </rect>
 
-  <rect x="150" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-19: No activity</title>
+  <rect x="150" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-02-19: 12 enforcements</title>
   </rect>
+
+  <circle cx="155.5" cy="113.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
   <rect x="150" y="122" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
     <title>2025-02-20: No activity</title>
   </rect>
 
-  <rect x="150" y="136" width="11" height="11" rx="2"
+  <rect x="150" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-21: No activity</title>
+  </rect>
+
+  <rect x="150" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-22: No activity</title>
+  </rect>
+
+  <rect x="150" y="164" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-02-21: 5 enforcements</title>
+    <title>2025-02-23: 5 enforcements</title>
   </rect>
 
-  <rect x="150" y="150" width="11" height="11" rx="2"
+  <rect x="164" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-02-22: 2 enforcements</title>
-  </rect>
-
-  <rect x="150" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-23: No activity</title>
-  </rect>
-
-  <rect x="164" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-02-24: No activity</title>
+    <title>2025-02-24: 2 enforcements</title>
   </rect>
 
   <rect x="164" y="94" width="11" height="11" rx="1"
@@ -323,14 +313,14 @@
     <title>2025-02-25: No activity</title>
   </rect>
 
-  <rect x="164" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-02-26: 1 enforcement</title>
+  <rect x="164" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-26: No activity</title>
   </rect>
 
-  <rect x="164" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-02-27: 1 enforcement</title>
+  <rect x="164" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-02-27: No activity</title>
   </rect>
 
   <rect x="164" y="136" width="11" height="11" rx="2"
@@ -338,9 +328,9 @@
     <title>2025-02-28: 1 enforcement</title>
   </rect>
 
-  <rect x="164" y="150" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-01: No activity</title>
+  <rect x="164" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-01: 1 enforcement</title>
   </rect>
 
   <rect x="164" y="164" width="11" height="11" rx="2"
@@ -348,19 +338,19 @@
     <title>2025-03-02: 1 enforcement</title>
   </rect>
 
-  <rect x="178" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-03: 1 enforcement</title>
+  <rect x="178" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-03: No activity</title>
   </rect>
 
-  <rect x="178" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-04: No activity</title>
+  <rect x="178" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-04: 1 enforcement</title>
   </rect>
 
   <rect x="178" y="108" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-05: 2 enforcements</title>
+    <title>2025-03-05: 1 enforcement</title>
   </rect>
 
   <rect x="178" y="122" width="11" height="11" rx="1"
@@ -370,7 +360,7 @@
 
   <rect x="178" y="136" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-07: 1 enforcement</title>
+    <title>2025-03-07: 2 enforcements</title>
   </rect>
 
   <rect x="178" y="150" width="11" height="11" rx="1"
@@ -383,29 +373,29 @@
     <title>2025-03-09: 1 enforcement</title>
   </rect>
 
-  <rect x="192" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-10: 2 enforcements</title>
+  <rect x="192" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-10: No activity</title>
   </rect>
 
   <rect x="192" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-11: 2 enforcements</title>
+    <title>2025-03-11: 1 enforcement</title>
   </rect>
 
   <rect x="192" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-12: 2 enforcements</title>
+  </rect>
+
+  <rect x="192" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-13: 2 enforcements</title>
+  </rect>
+
+  <rect x="192" y="136" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-12: 5 enforcements</title>
-  </rect>
-
-  <rect x="192" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-13: No activity</title>
-  </rect>
-
-  <rect x="192" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-14: No activity</title>
+    <title>2025-03-14: 5 enforcements</title>
   </rect>
 
   <rect x="192" y="150" width="11" height="11" rx="1"
@@ -413,39 +403,39 @@
     <title>2025-03-15: No activity</title>
   </rect>
 
-  <rect x="192" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-16: 5 enforcements</title>
+  <rect x="192" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-16: No activity</title>
   </rect>
 
-  <rect x="206" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-17: 3 enforcements</title>
+  <rect x="206" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-03-17: No activity</title>
   </rect>
 
   <rect x="206" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-03-18: 8 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-18: 5 enforcements</title>
   </rect>
 
   <rect x="206" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-19: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-19: 3 enforcements</title>
   </rect>
 
   <rect x="206" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-20: 2 enforcements</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-03-20: 8 enforcements</title>
   </rect>
 
-  <rect x="206" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-21: No activity</title>
+  <rect x="206" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-21: 1 enforcement</title>
   </rect>
 
   <rect x="206" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-22: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-22: 2 enforcements</title>
   </rect>
 
   <rect x="206" y="164" width="11" height="11" rx="1"
@@ -454,8 +444,8 @@
   </rect>
 
   <rect x="220" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-03-24: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-03-24: 3 enforcements</title>
   </rect>
 
   <rect x="220" y="94" width="11" height="11" rx="1"
@@ -463,9 +453,9 @@
     <title>2025-03-25: No activity</title>
   </rect>
 
-  <rect x="220" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-03-26: No activity</title>
+  <rect x="220" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-03-26: 1 enforcement</title>
   </rect>
 
   <rect x="220" y="122" width="11" height="11" rx="1"
@@ -483,44 +473,44 @@
     <title>2025-03-29: No activity</title>
   </rect>
 
-  <rect x="220" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-30: 3 enforcements</title>
-  </rect>
-
-  <rect x="234" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-03-31: 5 enforcements</title>
-  </rect>
-
-  <rect x="234" y="94" width="11" height="11" rx="1"
+  <rect x="220" y="164" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-01: No activity</title>
+    <title>2025-03-30: No activity</title>
   </rect>
 
-  <rect x="234" y="108" width="11" height="11" rx="1"
+  <rect x="234" y="80" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-02: No activity</title>
+    <title>2025-03-31: No activity</title>
   </rect>
 
-  <rect x="234" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-03: 2 enforcements</title>
-  </rect>
-
-  <rect x="234" y="136" width="11" height="11" rx="2"
+  <rect x="234" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-04: 5 enforcements</title>
+    <title>2025-04-01: 3 enforcements</title>
+  </rect>
+
+  <rect x="234" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-02: 5 enforcements</title>
+  </rect>
+
+  <rect x="234" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-03: No activity</title>
+  </rect>
+
+  <rect x="234" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-04: No activity</title>
   </rect>
 
   <rect x="234" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-05: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-05: 2 enforcements</title>
   </rect>
 
   <rect x="234" y="164" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-06: 3 enforcements</title>
+    <title>2025-04-06: 5 enforcements</title>
   </rect>
 
   <rect x="248" y="80" width="11" height="11" rx="2"
@@ -535,57 +525,57 @@
 
   <rect x="248" y="108" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-09: 3 enforcements</title>
+    <title>2025-04-09: 5 enforcements</title>
   </rect>
 
   <rect x="248" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-10: 3 enforcements</title>
+  </rect>
+
+  <rect x="248" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-11: 3 enforcements</title>
+  </rect>
+
+  <rect x="248" y="150" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-10: 2 enforcements</title>
+    <title>2025-04-12: 2 enforcements</title>
   </rect>
 
-  <rect x="248" y="136" width="11" height="11" rx="1"
+  <rect x="248" y="164" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-11: No activity</title>
+    <title>2025-04-13: No activity</title>
   </rect>
 
-  <rect x="248" y="150" width="11" height="11" rx="1"
+  <rect x="262" y="80" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-12: No activity</title>
+    <title>2025-04-14: No activity</title>
   </rect>
 
-  <rect x="248" y="164" width="11" height="11" rx="2"
+  <rect x="262" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-13: 2 enforcements</title>
-  </rect>
-
-  <rect x="262" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-14: 1 enforcement</title>
-  </rect>
-
-  <rect x="262" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-15: No activity</title>
+    <title>2025-04-15: 2 enforcements</title>
   </rect>
 
   <rect x="262" y="108" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-16: 5 enforcements</title>
-  </rect>
-
-  <rect x="262" y="122" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-17: 1 enforcement</title>
+    <title>2025-04-16: 1 enforcement</title>
   </rect>
 
-  <rect x="262" y="136" width="11" height="11" rx="1"
+  <rect x="262" y="122" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-18: No activity</title>
+    <title>2025-04-17: No activity</title>
+  </rect>
+
+  <rect x="262" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-18: 5 enforcements</title>
   </rect>
 
   <rect x="262" y="150" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-19: 2 enforcements</title>
+    <title>2025-04-19: 1 enforcement</title>
   </rect>
 
   <rect x="262" y="164" width="11" height="11" rx="1"
@@ -594,8 +584,8 @@
   </rect>
 
   <rect x="276" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-21: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-21: 2 enforcements</title>
   </rect>
 
   <rect x="276" y="94" width="11" height="11" rx="1"
@@ -605,7 +595,7 @@
 
   <rect x="276" y="108" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-23: 5 enforcements</title>
+    <title>2025-04-23: 3 enforcements</title>
   </rect>
 
   <rect x="276" y="122" width="11" height="11" rx="1"
@@ -613,9 +603,9 @@
     <title>2025-04-24: No activity</title>
   </rect>
 
-  <rect x="276" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-25: No activity</title>
+  <rect x="276" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-04-25: 5 enforcements</title>
   </rect>
 
   <rect x="276" y="150" width="11" height="11" rx="1"
@@ -623,24 +613,24 @@
     <title>2025-04-26: No activity</title>
   </rect>
 
-  <rect x="276" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-04-27: 1 enforcement</title>
-  </rect>
-
-  <rect x="290" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-28: 5 enforcements</title>
-  </rect>
-
-  <rect x="290" y="94" width="11" height="11" rx="1"
+  <rect x="276" y="164" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-04-29: No activity</title>
+    <title>2025-04-27: No activity</title>
+  </rect>
+
+  <rect x="290" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-04-28: No activity</title>
+  </rect>
+
+  <rect x="290" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-04-29: 1 enforcement</title>
   </rect>
 
   <rect x="290" y="108" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-04-30: 3 enforcements</title>
+    <title>2025-04-30: 5 enforcements</title>
   </rect>
 
   <rect x="290" y="122" width="11" height="11" rx="1"
@@ -649,13 +639,13 @@
   </rect>
 
   <rect x="290" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-02: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-02: 3 enforcements</title>
   </rect>
 
-  <rect x="290" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-05-03: 8 enforcements</title>
+  <rect x="290" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-03: No activity</title>
   </rect>
 
   <rect x="290" y="164" width="11" height="11" rx="2"
@@ -664,53 +654,53 @@
   </rect>
 
   <rect x="304" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-05: 2 enforcements</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-05: 8 enforcements</title>
   </rect>
 
   <rect x="304" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-05-06: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-06: 1 enforcement</title>
   </rect>
 
-  <rect x="304" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-05-07: No activity</title>
+  <rect x="304" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-07: 2 enforcements</title>
   </rect>
 
   <rect x="304" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-08: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-08: 3 enforcements</title>
   </rect>
 
-  <rect x="304" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-09: 2 enforcements</title>
+  <rect x="304" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-09: No activity</title>
   </rect>
 
   <rect x="304" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-05-10: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-10: 1 enforcement</title>
   </rect>
 
   <rect x="304" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-05-11: 8 enforcements</title>
-  </rect>
-
-  <rect x="318" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-05-12: No activity</title>
-  </rect>
-
-  <rect x="318" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-05-13: No activity</title>
-  </rect>
-
-  <rect x="318" y="108" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-14: 2 enforcements</title>
+    <title>2025-05-11: 2 enforcements</title>
+  </rect>
+
+  <rect x="318" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-12: 8 enforcements</title>
+  </rect>
+
+  <rect x="318" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-05-13: 8 enforcements</title>
+  </rect>
+
+  <rect x="318" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-14: No activity</title>
   </rect>
 
   <rect x="318" y="122" width="11" height="11" rx="1"
@@ -718,14 +708,14 @@
     <title>2025-05-15: No activity</title>
   </rect>
 
-  <rect x="318" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-05-16: No activity</title>
+  <rect x="318" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-16: 2 enforcements</title>
   </rect>
 
-  <rect x="318" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-05-17: 3 enforcements</title>
+  <rect x="318" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-17: No activity</title>
   </rect>
 
   <rect x="318" y="164" width="11" height="11" rx="1"
@@ -734,8 +724,8 @@
   </rect>
 
   <rect x="332" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-19: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-19: 3 enforcements</title>
   </rect>
 
   <rect x="332" y="94" width="11" height="11" rx="1"
@@ -748,9 +738,9 @@
     <title>2025-05-21: 2 enforcements</title>
   </rect>
 
-  <rect x="332" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-05-22: 3 enforcements</title>
+  <rect x="332" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-05-22: No activity</title>
   </rect>
 
   <rect x="332" y="136" width="11" height="11" rx="2"
@@ -759,23 +749,23 @@
   </rect>
 
   <rect x="332" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-24: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-24: 3 enforcements</title>
   </rect>
 
   <rect x="332" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-25: 1 enforcement</title>
+    <title>2025-05-25: 2 enforcements</title>
   </rect>
 
-  <rect x="346" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-05-26: No activity</title>
+  <rect x="346" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-26: 1 enforcement</title>
   </rect>
 
   <rect x="346" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-27: 2 enforcements</title>
+    <title>2025-05-27: 1 enforcement</title>
   </rect>
 
   <rect x="346" y="108" width="11" height="11" rx="1"
@@ -784,8 +774,8 @@
   </rect>
 
   <rect x="346" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-05-29: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-05-29: 2 enforcements</title>
   </rect>
 
   <rect x="346" y="136" width="11" height="11" rx="1"
@@ -794,13 +784,13 @@
   </rect>
 
   <rect x="346" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-05-31: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-05-31: 3 enforcements</title>
   </rect>
 
-  <rect x="346" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-01: 1 enforcement</title>
+  <rect x="346" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-01: No activity</title>
   </rect>
 
   <rect x="360" y="80" width="11" height="11" rx="2"
@@ -810,22 +800,22 @@
 
   <rect x="360" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-03: 2 enforcements</title>
+    <title>2025-06-03: 1 enforcement</title>
   </rect>
 
   <rect x="360" y="108" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-04: 2 enforcements</title>
+    <title>2025-06-04: 1 enforcement</title>
   </rect>
 
-  <rect x="360" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-05: No activity</title>
+  <rect x="360" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-05: 2 enforcements</title>
   </rect>
 
   <rect x="360" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-06-06: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-06: 2 enforcements</title>
   </rect>
 
   <rect x="360" y="150" width="11" height="11" rx="1"
@@ -833,9 +823,9 @@
     <title>2025-06-07: No activity</title>
   </rect>
 
-  <rect x="360" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-08: No activity</title>
+  <rect x="360" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-06-08: 8 enforcements</title>
   </rect>
 
   <rect x="374" y="80" width="11" height="11" rx="1"
@@ -843,9 +833,9 @@
     <title>2025-06-09: No activity</title>
   </rect>
 
-  <rect x="374" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-10: 1 enforcement</title>
+  <rect x="374" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-10: No activity</title>
   </rect>
 
   <rect x="374" y="108" width="11" height="11" rx="1"
@@ -855,7 +845,7 @@
 
   <rect x="374" y="122" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-12: 2 enforcements</title>
+    <title>2025-06-12: 1 enforcement</title>
   </rect>
 
   <rect x="374" y="136" width="11" height="11" rx="1"
@@ -864,73 +854,73 @@
   </rect>
 
   <rect x="374" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-14: 5 enforcements</title>
-  </rect>
-
-  <rect x="374" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-15: 1 enforcement</title>
+    <title>2025-06-14: 2 enforcements</title>
   </rect>
 
-  <rect x="388" y="80" width="11" height="11" rx="1"
+  <rect x="374" y="164" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-16: No activity</title>
+    <title>2025-06-15: No activity</title>
+  </rect>
+
+  <rect x="388" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-16: 5 enforcements</title>
   </rect>
 
   <rect x="388" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-17: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-17: 1 enforcement</title>
   </rect>
 
-  <rect x="388" y="108" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-18: 5 enforcements</title>
+  <rect x="388" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-18: No activity</title>
   </rect>
 
   <rect x="388" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-19: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-19: 5 enforcements</title>
   </rect>
 
   <rect x="388" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-06-20: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-20: 5 enforcements</title>
   </rect>
 
   <rect x="388" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-21: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-21: 2 enforcements</title>
   </rect>
 
   <rect x="388" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-22: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-06-22: 1 enforcement</title>
   </rect>
 
-  <rect x="402" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-23: No activity</title>
+  <rect x="402" y="80" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-23: 5 enforcements</title>
   </rect>
 
   <rect x="402" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-24: 3 enforcements</title>
+    <title>2025-06-24: 5 enforcements</title>
   </rect>
 
-  <rect x="402" y="108" width="11" height="11" rx="2"
+  <rect x="402" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-06-25: No activity</title>
+  </rect>
+
+  <rect x="402" y="122" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-25: 5 enforcements</title>
+    <title>2025-06-26: 3 enforcements</title>
   </rect>
 
-  <rect x="402" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-26: No activity</title>
-  </rect>
-
-  <rect x="402" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-06-27: No activity</title>
+  <rect x="402" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-06-27: 5 enforcements</title>
   </rect>
 
   <rect x="402" y="150" width="11" height="11" rx="1"
@@ -938,59 +928,59 @@
     <title>2025-06-28: No activity</title>
   </rect>
 
-  <rect x="402" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-29: 5 enforcements</title>
-  </rect>
-
-  <rect x="416" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-06-30: 5 enforcements</title>
-  </rect>
-
-  <rect x="416" y="94" width="11" height="11" rx="1"
+  <rect x="402" y="164" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-01: No activity</title>
+    <title>2025-06-29: No activity</title>
   </rect>
 
-  <rect x="416" y="108" width="11" height="11" rx="1"
+  <rect x="416" y="80" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-02: No activity</title>
+    <title>2025-06-30: No activity</title>
   </rect>
 
-  <rect x="416" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-03: 1 enforcement</title>
-  </rect>
-
-  <rect x="416" y="136" width="11" height="11" rx="2"
+  <rect x="416" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-07-04: 5 enforcements</title>
+    <title>2025-07-01: 5 enforcements</title>
+  </rect>
+
+  <rect x="416" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-02: 5 enforcements</title>
+  </rect>
+
+  <rect x="416" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-03: No activity</title>
+  </rect>
+
+  <rect x="416" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-04: No activity</title>
   </rect>
 
   <rect x="416" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-07-05: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-05: 1 enforcement</title>
   </rect>
 
-  <rect x="416" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-06: No activity</title>
+  <rect x="416" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-06: 5 enforcements</title>
   </rect>
 
   <rect x="430" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-07: 1 enforcement</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-07: 8 enforcements</title>
   </rect>
 
-  <rect x="430" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-07-08: 3 enforcements</title>
-  </rect>
-
-  <rect x="430" y="108" width="11" height="11" rx="1"
+  <rect x="430" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-09: No activity</title>
+    <title>2025-07-08: No activity</title>
+  </rect>
+
+  <rect x="430" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-09: 1 enforcement</title>
   </rect>
 
   <rect x="430" y="122" width="11" height="11" rx="2"
@@ -1004,18 +994,18 @@
   </rect>
 
   <rect x="430" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-12: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-12: 3 enforcements</title>
   </rect>
 
-  <rect x="430" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-13: 1 enforcement</title>
+  <rect x="430" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-13: No activity</title>
   </rect>
 
   <rect x="444" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-07-14: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-14: 1 enforcement</title>
   </rect>
 
   <rect x="444" y="94" width="11" height="11" rx="2"
@@ -1023,29 +1013,29 @@
     <title>2025-07-15: 1 enforcement</title>
   </rect>
 
-  <rect x="444" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-16: No activity</title>
+  <rect x="444" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-16: 8 enforcements</title>
   </rect>
 
   <rect x="444" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-07-17: 3 enforcements</title>
-  </rect>
-
-  <rect x="444" y="136" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-18: 1 enforcement</title>
+    <title>2025-07-17: 1 enforcement</title>
   </rect>
 
-  <rect x="444" y="150" width="11" height="11" rx="1"
+  <rect x="444" y="136" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-19: No activity</title>
+    <title>2025-07-18: No activity</title>
   </rect>
 
-  <rect x="444" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-20: No activity</title>
+  <rect x="444" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-19: 3 enforcements</title>
+  </rect>
+
+  <rect x="444" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-20: 1 enforcement</title>
   </rect>
 
   <rect x="458" y="80" width="11" height="11" rx="1"
@@ -1053,79 +1043,79 @@
     <title>2025-07-21: No activity</title>
   </rect>
 
-  <rect x="458" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-07-22: 8 enforcements</title>
+  <rect x="458" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-22: No activity</title>
   </rect>
 
-  <rect x="458" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-23: 1 enforcement</title>
+  <rect x="458" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-07-23: No activity</title>
   </rect>
 
   <rect x="458" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-24: 1 enforcement</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-07-24: 8 enforcements</title>
   </rect>
 
   <rect x="458" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
-    <title>2025-07-25: 12 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-25: 1 enforcement</title>
   </rect>
-
-  <circle cx="463.5" cy="141.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
   <rect x="458" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-07-26: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-07-26: 1 enforcement</title>
   </rect>
 
-  <rect x="458" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-27: No activity</title>
+  <rect x="458" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-07-27: 12 enforcements</title>
   </rect>
+
+  <circle cx="463.5" cy="169.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
   <rect x="472" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-07-28: 2 enforcements</title>
-  </rect>
-
-  <rect x="472" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-07-29: 5 enforcements</title>
+    <title>2025-07-28: 3 enforcements</title>
   </rect>
 
-  <rect x="472" y="108" width="11" height="11" rx="1"
+  <rect x="472" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-30: No activity</title>
+    <title>2025-07-29: No activity</title>
   </rect>
 
-  <rect x="472" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-07-31: No activity</title>
-  </rect>
-
-  <rect x="472" y="136" width="11" height="11" rx="2"
+  <rect x="472" y="108" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-01: 1 enforcement</title>
+    <title>2025-07-30: 2 enforcements</title>
   </rect>
 
-  <rect x="472" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
-    <title>2025-08-02: 12 enforcements</title>
+  <rect x="472" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-07-31: 5 enforcements</title>
   </rect>
 
-  <circle cx="477.5" cy="155.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+  <rect x="472" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-01: No activity</title>
+  </rect>
+
+  <rect x="472" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-02: No activity</title>
+  </rect>
 
   <rect x="472" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
     <title>2025-08-03: 1 enforcement</title>
   </rect>
 
-  <rect x="486" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-04: No activity</title>
+  <rect x="486" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-08-04: 12 enforcements</title>
   </rect>
+
+  <circle cx="491.5" cy="85.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
 
   <rect x="486" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
@@ -1148,38 +1138,38 @@
   </rect>
 
   <rect x="486" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-08-09: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-09: 1 enforcement</title>
   </rect>
 
-  <rect x="486" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-10: 3 enforcements</title>
+  <rect x="486" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-10: No activity</title>
   </rect>
 
   <rect x="500" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-11: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-08-11: 8 enforcements</title>
   </rect>
 
   <rect x="500" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-12: 1 enforcement</title>
-  </rect>
-
-  <rect x="500" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-13: No activity</title>
-  </rect>
-
-  <rect x="500" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-14: No activity</title>
-  </rect>
-
-  <rect x="500" y="136" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-15: 3 enforcements</title>
+    <title>2025-08-12: 3 enforcements</title>
+  </rect>
+
+  <rect x="500" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-13: 3 enforcements</title>
+  </rect>
+
+  <rect x="500" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-14: 1 enforcement</title>
+  </rect>
+
+  <rect x="500" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-15: No activity</title>
   </rect>
 
   <rect x="500" y="150" width="11" height="11" rx="1"
@@ -1188,68 +1178,68 @@
   </rect>
 
   <rect x="500" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-17: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-17: 3 enforcements</title>
   </rect>
 
-  <rect x="514" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-18: 1 enforcement</title>
+  <rect x="514" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-18: No activity</title>
   </rect>
 
   <rect x="514" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-19: 2 enforcements</title>
+    <title>2025-08-19: 1 enforcement</title>
   </rect>
 
-  <rect x="514" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-20: No activity</title>
+  <rect x="514" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-20: 1 enforcement</title>
   </rect>
 
   <rect x="514" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-21: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-21: 2 enforcements</title>
   </rect>
 
-  <rect x="514" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-22: 3 enforcements</title>
-  </rect>
-
-  <rect x="514" y="150" width="11" height="11" rx="1"
+  <rect x="514" y="136" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-23: No activity</title>
+    <title>2025-08-22: No activity</title>
+  </rect>
+
+  <rect x="514" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-23: 3 enforcements</title>
   </rect>
 
   <rect x="514" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-24: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-24: 3 enforcements</title>
   </rect>
 
-  <rect x="528" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-08-25: 3 enforcements</title>
+  <rect x="528" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-25: No activity</title>
   </rect>
 
   <rect x="528" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-08-26: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-26: 1 enforcement</title>
   </rect>
 
   <rect x="528" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-27: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-08-27: 3 enforcements</title>
   </rect>
 
   <rect x="528" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-28: 1 enforcement</title>
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-08-28: 8 enforcements</title>
   </rect>
 
-  <rect x="528" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-08-29: No activity</title>
+  <rect x="528" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-08-29: 2 enforcements</title>
   </rect>
 
   <rect x="528" y="150" width="11" height="11" rx="2"
@@ -1257,9 +1247,9 @@
     <title>2025-08-30: 1 enforcement</title>
   </rect>
 
-  <rect x="528" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-08-31: 1 enforcement</title>
+  <rect x="528" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-08-31: No activity</title>
   </rect>
 
   <rect x="542" y="80" width="11" height="11" rx="2"
@@ -1268,43 +1258,43 @@
   </rect>
 
   <rect x="542" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-09-02: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-02: 1 enforcement</title>
   </rect>
 
   <rect x="542" y="108" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-03: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-03: 1 enforcement</title>
   </rect>
 
-  <rect x="542" y="122" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-04: No activity</title>
+  <rect x="542" y="122" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-09-04: 8 enforcements</title>
   </rect>
 
   <rect x="542" y="136" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-05: 3 enforcements</title>
+    <title>2025-09-05: 5 enforcements</title>
   </rect>
 
-  <rect x="542" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-06: 2 enforcements</title>
-  </rect>
-
-  <rect x="542" y="164" width="11" height="11" rx="1"
+  <rect x="542" y="150" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-07: No activity</title>
+    <title>2025-09-06: No activity</title>
   </rect>
 
-  <rect x="556" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-08: No activity</title>
+  <rect x="542" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-07: 3 enforcements</title>
   </rect>
 
-  <rect x="556" y="94" width="11" height="11" rx="2"
+  <rect x="556" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-09: 2 enforcements</title>
+    <title>2025-09-08: 2 enforcements</title>
+  </rect>
+
+  <rect x="556" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-09: No activity</title>
   </rect>
 
   <rect x="556" y="108" width="11" height="11" rx="1"
@@ -1314,64 +1304,64 @@
 
   <rect x="556" y="122" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-11: 1 enforcement</title>
+    <title>2025-09-11: 2 enforcements</title>
   </rect>
 
-  <rect x="556" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-12: 2 enforcements</title>
-  </rect>
-
-  <rect x="556" y="150" width="11" height="11" rx="1"
+  <rect x="556" y="136" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-13: No activity</title>
+    <title>2025-09-12: No activity</title>
+  </rect>
+
+  <rect x="556" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-13: 1 enforcement</title>
   </rect>
 
   <rect x="556" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
-    <title>2025-09-14: 12 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-14: 2 enforcements</title>
   </rect>
 
-  <circle cx="561.5" cy="169.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
-
-  <rect x="570" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-15: 3 enforcements</title>
+  <rect x="570" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-15: No activity</title>
   </rect>
 
   <rect x="570" y="94" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-16: 2 enforcements</title>
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-09-16: 12 enforcements</title>
   </rect>
 
-  <rect x="570" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-17: No activity</title>
+  <circle cx="575.5" cy="99.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+
+  <rect x="570" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-17: 3 enforcements</title>
   </rect>
 
   <rect x="570" y="122" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-18: 1 enforcement</title>
+    <title>2025-09-18: 2 enforcements</title>
   </rect>
 
-  <rect x="570" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-19: 5 enforcements</title>
+  <rect x="570" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-19: No activity</title>
   </rect>
 
   <rect x="570" y="150" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-20: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-20: 1 enforcement</title>
   </rect>
 
-  <rect x="570" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-21: No activity</title>
+  <rect x="570" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-21: 5 enforcements</title>
   </rect>
 
   <rect x="584" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-22: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-09-22: 3 enforcements</title>
   </rect>
 
   <rect x="584" y="94" width="11" height="11" rx="1"
@@ -1379,34 +1369,34 @@
     <title>2025-09-23: No activity</title>
   </rect>
 
-  <rect x="584" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-24: No activity</title>
+  <rect x="584" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-09-24: 1 enforcement</title>
   </rect>
 
-  <rect x="584" y="122" width="11" height="11" rx="2"
+  <rect x="584" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-25: No activity</title>
+  </rect>
+
+  <rect x="584" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-09-26: No activity</title>
+  </rect>
+
+  <rect x="584" y="150" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-09-25: 5 enforcements</title>
+    <title>2025-09-27: 5 enforcements</title>
   </rect>
 
-  <rect x="584" y="136" width="11" height="11" rx="2"
+  <rect x="584" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-26: 1 enforcement</title>
+    <title>2025-09-28: 1 enforcement</title>
   </rect>
 
-  <rect x="584" y="150" width="11" height="11" rx="1"
+  <rect x="598" y="80" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-27: No activity</title>
-  </rect>
-
-  <rect x="584" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-09-28: No activity</title>
-  </rect>
-
-  <rect x="598" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-09-29: 1 enforcement</title>
+    <title>2025-09-29: No activity</title>
   </rect>
 
   <rect x="598" y="94" width="11" height="11" rx="1"
@@ -1414,9 +1404,9 @@
     <title>2025-09-30: No activity</title>
   </rect>
 
-  <rect x="598" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-01: No activity</title>
+  <rect x="598" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-01: 1 enforcement</title>
   </rect>
 
   <rect x="598" y="122" width="11" height="11" rx="1"
@@ -1424,29 +1414,29 @@
     <title>2025-10-02: No activity</title>
   </rect>
 
-  <rect x="598" y="136" width="11" height="11" rx="2"
+  <rect x="598" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-03: No activity</title>
+  </rect>
+
+  <rect x="598" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-04: No activity</title>
+  </rect>
+
+  <rect x="598" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-03: 2 enforcements</title>
+    <title>2025-10-05: 2 enforcements</title>
   </rect>
 
-  <rect x="598" y="150" width="11" height="11" rx="2"
+  <rect x="612" y="80" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-04: 3 enforcements</title>
+    <title>2025-10-06: 3 enforcements</title>
   </rect>
 
-  <rect x="598" y="164" width="11" height="11" rx="1"
+  <rect x="612" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-05: No activity</title>
-  </rect>
-
-  <rect x="612" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-06: No activity</title>
-  </rect>
-
-  <rect x="612" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-07: 3 enforcements</title>
+    <title>2025-10-07: No activity</title>
   </rect>
 
   <rect x="612" y="108" width="11" height="11" rx="1"
@@ -1455,8 +1445,8 @@
   </rect>
 
   <rect x="612" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-09: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-09: 3 enforcements</title>
   </rect>
 
   <rect x="612" y="136" width="11" height="11" rx="1"
@@ -1475,23 +1465,23 @@
   </rect>
 
   <rect x="626" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-13: 5 enforcements</title>
-  </rect>
-
-  <rect x="626" y="94" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-14: 1 enforcement</title>
+    <title>2025-10-13: 2 enforcements</title>
   </rect>
 
-  <rect x="626" y="108" width="11" height="11" rx="1"
+  <rect x="626" y="94" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-15: No activity</title>
+    <title>2025-10-14: No activity</title>
+  </rect>
+
+  <rect x="626" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-15: 5 enforcements</title>
   </rect>
 
   <rect x="626" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
-    <title>2025-10-16: 8 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-16: 1 enforcement</title>
   </rect>
 
   <rect x="626" y="136" width="11" height="11" rx="1"
@@ -1500,23 +1490,23 @@
   </rect>
 
   <rect x="626" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.85" filter="url(#high-glow)">
+    <title>2025-10-18: 8 enforcements</title>
+  </rect>
+
+  <rect x="626" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-19: No activity</title>
+  </rect>
+
+  <rect x="640" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-18: 2 enforcements</title>
+    <title>2025-10-20: 2 enforcements</title>
   </rect>
 
-  <rect x="626" y="164" width="11" height="11" rx="2"
+  <rect x="640" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-19: 5 enforcements</title>
-  </rect>
-
-  <rect x="640" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-20: No activity</title>
-  </rect>
-
-  <rect x="640" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-21: No activity</title>
+    <title>2025-10-21: 5 enforcements</title>
   </rect>
 
   <rect x="640" y="108" width="11" height="11" rx="1"
@@ -1524,24 +1514,24 @@
     <title>2025-10-22: No activity</title>
   </rect>
 
-  <rect x="640" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-23: 2 enforcements</title>
-  </rect>
-
-  <rect x="640" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-24: 2 enforcements</title>
-  </rect>
-
-  <rect x="640" y="150" width="11" height="11" rx="1"
+  <rect x="640" y="122" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-25: No activity</title>
+    <title>2025-10-23: No activity</title>
+  </rect>
+
+  <rect x="640" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-10-24: No activity</title>
+  </rect>
+
+  <rect x="640" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-25: 2 enforcements</title>
   </rect>
 
   <rect x="640" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-26: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-26: 2 enforcements</title>
   </rect>
 
   <rect x="654" y="80" width="11" height="11" rx="1"
@@ -1551,82 +1541,82 @@
 
   <rect x="654" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-28: 5 enforcements</title>
+    <title>2025-10-28: 3 enforcements</title>
   </rect>
 
-  <rect x="654" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-10-29: 1 enforcement</title>
-  </rect>
-
-  <rect x="654" y="122" width="11" height="11" rx="1"
+  <rect x="654" y="108" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-10-30: No activity</title>
+    <title>2025-10-29: No activity</title>
+  </rect>
+
+  <rect x="654" y="122" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-10-30: 5 enforcements</title>
   </rect>
 
   <rect x="654" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-10-31: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-10-31: 1 enforcement</title>
   </rect>
 
-  <rect x="654" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-01: 2 enforcements</title>
+  <rect x="654" y="150" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-01: No activity</title>
   </rect>
 
   <rect x="654" y="164" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-02: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-02: 5 enforcements</title>
   </rect>
 
   <rect x="668" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-03: 1 enforcement</title>
+    <title>2025-11-03: 2 enforcements</title>
   </rect>
 
   <rect x="668" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-04: 3 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-04: 1 enforcement</title>
   </rect>
 
-  <rect x="668" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-05: No activity</title>
+  <rect x="668" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-05: 1 enforcement</title>
   </rect>
 
   <rect x="668" y="122" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-06: 5 enforcements</title>
+    <title>2025-11-06: 3 enforcements</title>
   </rect>
 
-  <rect x="668" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-07: 2 enforcements</title>
-  </rect>
-
-  <rect x="668" y="150" width="11" height="11" rx="1"
+  <rect x="668" y="136" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-08: No activity</title>
+    <title>2025-11-07: No activity</title>
+  </rect>
+
+  <rect x="668" y="150" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-08: 5 enforcements</title>
   </rect>
 
   <rect x="668" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-09: 1 enforcement</title>
+    <title>2025-11-09: 2 enforcements</title>
   </rect>
 
-  <rect x="682" y="80" width="11" height="11" rx="2"
+  <rect x="682" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-10: No activity</title>
+  </rect>
+
+  <rect x="682" y="94" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-11: 1 enforcement</title>
+  </rect>
+
+  <rect x="682" y="108" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-10: 5 enforcements</title>
-  </rect>
-
-  <rect x="682" y="94" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-11: No activity</title>
-  </rect>
-
-  <rect x="682" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-12: No activity</title>
+    <title>2025-11-12: 5 enforcements</title>
   </rect>
 
   <rect x="682" y="122" width="11" height="11" rx="1"
@@ -1634,9 +1624,9 @@
     <title>2025-11-13: No activity</title>
   </rect>
 
-  <rect x="682" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-14: 2 enforcements</title>
+  <rect x="682" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-14: No activity</title>
   </rect>
 
   <rect x="682" y="150" width="11" height="11" rx="1"
@@ -1644,49 +1634,49 @@
     <title>2025-11-15: No activity</title>
   </rect>
 
-  <rect x="682" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-16: No activity</title>
+  <rect x="682" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-16: 2 enforcements</title>
   </rect>
 
-  <rect x="696" y="80" width="11" height="11" rx="2"
+  <rect x="696" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-17: No activity</title>
+  </rect>
+
+  <rect x="696" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-18: No activity</title>
+  </rect>
+
+  <rect x="696" y="108" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-17: 5 enforcements</title>
+    <title>2025-11-19: 5 enforcements</title>
   </rect>
 
-  <rect x="696" y="94" width="11" height="11" rx="2"
+  <rect x="696" y="122" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-18: 1 enforcement</title>
+    <title>2025-11-20: 1 enforcement</title>
   </rect>
 
-  <rect x="696" y="108" width="11" height="11" rx="1"
+  <rect x="696" y="136" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-19: No activity</title>
+    <title>2025-11-21: No activity</title>
   </rect>
 
-  <rect x="696" y="122" width="11" height="11" rx="1"
+  <rect x="696" y="150" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-20: No activity</title>
+    <title>2025-11-22: No activity</title>
   </rect>
 
-  <rect x="696" y="136" width="11" height="11" rx="2"
+  <rect x="696" y="164" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-21: 2 enforcements</title>
-  </rect>
-
-  <rect x="696" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-11-22: 2 enforcements</title>
-  </rect>
-
-  <rect x="696" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-23: No activity</title>
+    <title>2025-11-23: 2 enforcements</title>
   </rect>
 
   <rect x="710" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-24: 5 enforcements</title>
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-11-24: 2 enforcements</title>
   </rect>
 
   <rect x="710" y="94" width="11" height="11" rx="1"
@@ -1694,9 +1684,9 @@
     <title>2025-11-25: No activity</title>
   </rect>
 
-  <rect x="710" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-11-26: No activity</title>
+  <rect x="710" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-11-26: 5 enforcements</title>
   </rect>
 
   <rect x="710" y="122" width="11" height="11" rx="1"
@@ -1714,49 +1704,49 @@
     <title>2025-11-29: No activity</title>
   </rect>
 
-  <rect x="710" y="164" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-11-30: 5 enforcements</title>
+  <rect x="710" y="164" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-11-30: No activity</title>
   </rect>
 
-  <rect x="724" y="80" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-01: 3 enforcements</title>
+  <rect x="724" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-01: No activity</title>
   </rect>
 
   <rect x="724" y="94" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-02: 3 enforcements</title>
+    <title>2025-12-02: 5 enforcements</title>
   </rect>
 
-  <rect x="724" y="108" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-03: No activity</title>
+  <rect x="724" y="108" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-03: 3 enforcements</title>
   </rect>
 
   <rect x="724" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-12-04: 1 enforcement</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-04: 3 enforcements</title>
   </rect>
 
-  <rect x="724" y="136" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-12-05: 1 enforcement</title>
+  <rect x="724" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-05: No activity</title>
   </rect>
 
   <rect x="724" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-06: 1 enforcement</title>
+  </rect>
+
+  <rect x="724" y="164" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-07: 1 enforcement</title>
+  </rect>
+
+  <rect x="738" y="80" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-06: 3 enforcements</title>
-  </rect>
-
-  <rect x="724" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-07: No activity</title>
-  </rect>
-
-  <rect x="738" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-08: No activity</title>
+    <title>2025-12-08: 3 enforcements</title>
   </rect>
 
   <rect x="738" y="94" width="11" height="11" rx="1"
@@ -1764,9 +1754,9 @@
     <title>2025-12-09: No activity</title>
   </rect>
 
-  <rect x="738" y="108" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-12-10: 2 enforcements</title>
+  <rect x="738" y="108" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-10: No activity</title>
   </rect>
 
   <rect x="738" y="122" width="11" height="11" rx="1"
@@ -1774,9 +1764,9 @@
     <title>2025-12-11: No activity</title>
   </rect>
 
-  <rect x="738" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-12: No activity</title>
+  <rect x="738" y="136" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-12: 2 enforcements</title>
   </rect>
 
   <rect x="738" y="150" width="11" height="11" rx="1"
@@ -1804,56 +1794,56 @@
     <title>2025-12-17: No activity</title>
   </rect>
 
-  <rect x="752" y="122" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-18: 3 enforcements</title>
+  <rect x="752" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-18: No activity</title>
   </rect>
 
-  <rect x="752" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-19: 5 enforcements</title>
+  <rect x="752" y="136" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-19: No activity</title>
   </rect>
 
   <rect x="752" y="150" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-20: 5 enforcements</title>
+    <title>2025-12-20: 3 enforcements</title>
   </rect>
 
-  <rect x="752" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-21: No activity</title>
+  <rect x="752" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-21: 5 enforcements</title>
   </rect>
 
   <rect x="766" y="80" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
-    <title>2025-12-22: 12 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-22: 5 enforcements</title>
   </rect>
 
-  <circle cx="771.5" cy="85.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
-
-  <rect x="766" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-23: 3 enforcements</title>
+  <rect x="766" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-23: No activity</title>
   </rect>
 
   <rect x="766" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="1.0" filter="url(#max-glow)">
+    <title>2025-12-24: 12 enforcements</title>
+  </rect>
+
+  <circle cx="771.5" cy="113.5" r="2" fill="#ff6b35" filter="url(#max-glow)"/>
+
+  <rect x="766" y="122" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-24: 3 enforcements</title>
+    <title>2025-12-25: 3 enforcements</title>
   </rect>
 
-  <rect x="766" y="122" width="11" height="11" rx="1"
+  <rect x="766" y="136" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2025-12-26: 3 enforcements</title>
+  </rect>
+
+  <rect x="766" y="150" width="11" height="11" rx="1"
         fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-25: No activity</title>
-  </rect>
-
-  <rect x="766" y="136" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-26: No activity</title>
-  </rect>
-
-  <rect x="766" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2025-12-27: 2 enforcements</title>
+    <title>2025-12-27: No activity</title>
   </rect>
 
   <rect x="766" y="164" width="11" height="11" rx="1"
@@ -1861,14 +1851,14 @@
     <title>2025-12-28: No activity</title>
   </rect>
 
-  <rect x="780" y="80" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2025-12-29: No activity</title>
+  <rect x="780" y="80" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2025-12-29: 2 enforcements</title>
   </rect>
 
-  <rect x="780" y="94" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2025-12-30: 3 enforcements</title>
+  <rect x="780" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2025-12-30: No activity</title>
   </rect>
 
   <rect x="780" y="108" width="11" height="11" rx="1"
@@ -1878,7 +1868,7 @@
 
   <rect x="780" y="122" width="11" height="11" rx="2"
         fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2026-01-01: 5 enforcements</title>
+    <title>2026-01-01: 3 enforcements</title>
   </rect>
 
   <rect x="780" y="136" width="11" height="11" rx="1"
@@ -1887,8 +1877,8 @@
   </rect>
 
   <rect x="780" y="150" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2026-01-03: 2 enforcements</title>
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2026-01-03: 5 enforcements</title>
   </rect>
 
   <rect x="780" y="164" width="11" height="11" rx="1"
@@ -1898,7 +1888,7 @@
 
   <rect x="794" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2026-01-05: 1 enforcement</title>
+    <title>2026-01-05: 2 enforcements</title>
   </rect>
 
   <rect x="794" y="94" width="11" height="11" rx="1"
@@ -1911,29 +1901,39 @@
     <title>2026-01-07: 1 enforcement</title>
   </rect>
 
-  <rect x="794" y="122" width="11" height="11" rx="2"
-        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2026-01-08: 1 enforcement</title>
+  <rect x="794" y="122" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2026-01-08: No activity</title>
   </rect>
 
   <rect x="794" y="136" width="11" height="11" rx="2"
-        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
-    <title>2026-01-09: 3 enforcements</title>
-  </rect>
-
-  <rect x="794" y="150" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2026-01-10: No activity</title>
-  </rect>
-
-  <rect x="794" y="164" width="11" height="11" rx="1"
-        fill="#2a2a2a" opacity="0.2">
-    <title>2026-01-11: No activity</title>
-  </rect>
-
-  <rect x="808" y="80" width="11" height="11" rx="2"
         fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
-    <title>2026-01-12: 1 enforcement</title>
+    <title>2026-01-09: 1 enforcement</title>
+  </rect>
+
+  <rect x="794" y="150" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-10: 1 enforcement</title>
+  </rect>
+
+  <rect x="794" y="164" width="11" height="11" rx="2"
+        fill="#ff8c42" opacity="0.7" filter="url(#med-glow)">
+    <title>2026-01-11: 3 enforcements</title>
+  </rect>
+
+  <rect x="808" y="80" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2026-01-12: No activity</title>
+  </rect>
+
+  <rect x="808" y="94" width="11" height="11" rx="1"
+        fill="#2a2a2a" opacity="0.2">
+    <title>2026-01-13: No activity</title>
+  </rect>
+
+  <rect x="808" y="108" width="11" height="11" rx="2"
+        fill="#ff6b35" opacity="0.5" filter="url(#low-glow)">
+    <title>2026-01-14: 1 enforcement</title>
   </rect>
 
   <text x="108" y="70" fill="#333333"
