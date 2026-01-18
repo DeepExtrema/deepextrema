@@ -45,9 +45,9 @@
 
 <br>
 
-**Neutron Stars**
+**The Sun**
 
-A teaspoon of neutron star material weighs about 6 billion tons.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-**[huggingface/transformers](https://github.com/huggingface/transformers)**
+**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
 
-🤗 Transformers: the model-definition framework for state-...
+Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 <br>
@@ -73,7 +73,7 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-> *Depth first; scale later.*
+> *The frontier rewards those who show up.*
 
 <br>
 <br>
