@@ -45,9 +45,9 @@
 
 <br>
 
-**The Sun**
+**Neutron Stars**
 
-Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
+A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-Tensors and Dynamic neural networks in Python with strong...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
