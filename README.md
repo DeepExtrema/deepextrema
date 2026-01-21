@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**Black Holes**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <br>
 <br>
