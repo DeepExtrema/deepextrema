@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
 
-An Open Source Machine Learning Framework for Everyone
+Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 <br>
