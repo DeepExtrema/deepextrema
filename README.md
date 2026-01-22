@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[pytorch/pytorch](https://github.com/pytorch/pytorch)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-Tensors and Dynamic neural networks in Python with strong...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
@@ -73,7 +73,7 @@ Tensors and Dynamic neural networks in Python with strong...
 
 <br>
 
-> *Embrace the unknown, pioneer the next horizon.*
+> *Every system starts as a question.*
 
 <br>
 <br>
