@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <br>
 <br>
