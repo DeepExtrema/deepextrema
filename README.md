@@ -59,9 +59,9 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-**[huggingface/transformers](https://github.com/huggingface/transformers)**
+**[f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)**
 
-🤗 Transformers: the model-definition framework for state-...
+Share, discover, and collect prompts from the community. ...
 
 <br>
 <br>
