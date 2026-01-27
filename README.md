@@ -45,9 +45,9 @@
 
 <br>
 
-**Black Holes**
+**The Sun**
 
-Time slows down near a black hole due to extreme gravitational effects.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ Share, discover, and collect prompts from the community. ...
 
 <br>
 
-> *The frontier rewards those who show up.*
+> *Curiosity compounds like interest, but pays in discoveries.*
 
 <br>
 <br>
