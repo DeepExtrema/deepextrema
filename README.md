@@ -45,9 +45,9 @@
 
 <br>
 
-**The Sun**
+**Voyager 1**
 
-Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
+The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
@@ -73,7 +73,7 @@ a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *The frontier rewards those who show up.*
+> *Curiosity compounds like interest, but pays in discoveries.*
 
 <br>
 <br>
