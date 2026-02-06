@@ -59,9 +59,9 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+**[f/prompts.chat](https://github.com/f/prompts.chat)**
 
-An Open Source Machine Learning Framework for Everyone
+a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 <br>
