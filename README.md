@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Depth first; scale later.*
+> *The frontier rewards those who show up.*
 
 <br>
 <br>
