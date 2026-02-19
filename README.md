@@ -45,9 +45,9 @@
 
 <br>
 
-**The Sun**
+**Black Holes**
 
-Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
+Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
