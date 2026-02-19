@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**The Sun**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+**[f/prompts.chat](https://github.com/f/prompts.chat)**
 
-An Open Source Machine Learning Framework for Everyone
+a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 <br>
