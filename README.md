@@ -45,9 +45,9 @@
 
 <br>
 
-**Neutron Stars**
+**Voyager 1**
 
-A teaspoon of neutron star material weighs about 6 billion tons.
+The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
