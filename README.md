@@ -59,9 +59,9 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
