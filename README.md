@@ -45,9 +45,9 @@
 
 <br>
 
-**Neutron Stars**
+**Black Holes**
 
-A teaspoon of neutron star material weighs about 6 billion tons.
+Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-**[huggingface/transformers](https://github.com/huggingface/transformers)**
+**[f/prompts.chat](https://github.com/f/prompts.chat)**
 
-🤗 Transformers: the model-definition framework for state-...
+a.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 <br>
