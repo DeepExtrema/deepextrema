@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <br>
 <br>
