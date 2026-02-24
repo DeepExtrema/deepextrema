@@ -59,9 +59,9 @@ A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-An Open Source Machine Learning Framework for Everyone
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Every system starts as a question.*
+> *Debug reality; deploy ambition.*
 
 <br>
 <br>
