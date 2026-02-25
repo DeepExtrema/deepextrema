@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**Black Holes**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <br>
 <br>
