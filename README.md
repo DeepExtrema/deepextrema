@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Build for the timeline you want to live in.*
+> *Depth first; scale later.*
 
 <br>
 <br>
