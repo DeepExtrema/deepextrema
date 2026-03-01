@@ -1,0 +1,111 @@
+<svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+  <!-- Glow filters -->
+  <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-medium" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-hot" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Noise texture -->
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+
+  <!-- Scanline pattern -->
+  <pattern id="scanlines" width="1" height="2" patternUnits="userSpaceOnUse">
+    <rect width="1" height="1" fill="white" opacity="0.01"/>
+  </pattern>
+
+  <!-- Dot grid pattern -->
+  <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.5" fill="#0d1a2a"/>
+  </pattern>
+
+  <!-- Vignette radial gradient -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#050a12" stop-opacity="0.6"/>
+  </radialGradient>
+</defs>
+  <style>
+  @keyframes radar-sweep {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.3; }
+  }
+  @keyframes blink {
+    0%, 49%  { opacity: 1; }
+    50%, 100%{ opacity: 0; }
+  }
+  @keyframes glow-breathe {
+    0%, 100% { filter: url(#glow-medium); }
+    50%      { filter: url(#glow-hot); }
+  }
+  .radar-sweep  { animation: radar-sweep 4s linear infinite; }
+  .pulse-live   { animation: pulse 2s ease infinite; }
+  .blink-cursor { animation: blink 1s step-end infinite; }
+  .glow-breathe { animation: glow-breathe 8s ease infinite; }
+</style>
+  <!-- Deep space background -->
+  <rect width="900" height="160" fill="#050a12"/>
+  <!-- Dot grid -->
+  <rect width="900" height="160" fill="url(#dotgrid)"/>
+  <!-- Scanlines -->
+  <rect width="900" height="160" fill="url(#scanlines)"/>
+  <g class="star-field"><circle cx="363.6" cy="32.0" r="0.5" fill="white" opacity="0.24"/><circle cx="683.9" cy="40.2" r="0.6" fill="white" opacity="0.39"/><circle cx="484.8" cy="150.1" r="0.7" fill="white" opacity="0.30"/><circle cx="551.9" cy="34.7" r="1.1" fill="white" opacity="0.28"/><circle cx="349.3" cy="109.2" r="0.4" fill="white" opacity="0.38"/><circle cx="765.0" cy="54.2" r="1.2" fill="white" opacity="0.34"/><circle cx="697.0" cy="75.0" r="0.7" fill="white" opacity="0.24"/><circle cx="6.9" cy="32.6" r="1.2" fill="white" opacity="0.34"/><circle cx="415.9" cy="144.0" r="0.8" fill="white" opacity="0.49"/><circle cx="321.8" cy="34.5" r="1.1" fill="white" opacity="0.21"/><circle cx="712.7" cy="95.3" r="1.2" fill="white" opacity="0.48"/><circle cx="594.3" cy="5.9" r="0.3" fill="white" opacity="0.32"/><circle cx="737.7" cy="13.0" r="0.7" fill="white" opacity="0.18"/><circle cx="278.8" cy="0.9" r="0.6" fill="white" opacity="0.33"/><circle cx="180.7" cy="126.0" r="0.3" fill="white" opacity="0.22"/></g>
+
+  <g class="panel">
+    <!-- Outer viewport -->
+    <rect x="16" y="8" width="868" height="136"
+          fill="none" stroke="#1a2840" stroke-width="1"
+          stroke-dasharray="3,6" opacity="0.4"/>
+
+    <!-- Inner panel background -->
+    <rect x="24" y="16" width="852" height="120"
+          fill="#0b1120" stroke="#1a2840" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <line x1="24" y1="44" x2="876" y2="44"
+          stroke="#1a2840" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="36" y="34" font-family="'Courier New', 'Consolas', monospace"
+          font-size="10" fill="#ffaa22"
+          filter="url(#glow-soft)" letter-spacing="0.15em"
+          text-anchor="start">[ COMMS CHANNEL ]</text>
+    <text x="864" y="34" font-family="'Courier New', 'Consolas', monospace"
+          font-size="7" fill="#2a3a50"
+          text-anchor="end">19:46Z</text>
+
+    <!-- Status bar -->
+    <line x1="24" y1="112" x2="876" y2="112"
+          stroke="#1a2840" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="36" y="128" font-family="'Courier New', 'Consolas', monospace"
+          font-size="7" fill="#2a3a50"
+          letter-spacing="0.05em">COMMS ARRAY: 3 CHANNELS  │  ALL FREQUENCIES CLEAR  │  DEEP EXTREMA COMMAND OUT</text>
+  </g>
+  <path d="M 52,62.0 L 54,64.9 L 56,66.0 L 58,64.7 L 60,61.8 L 62,59.0 L 64,58.0 L 66,59.5 L 68,62.5 L 70,65.2 L 72,66.0 L 74,64.3 L 76,61.3 L 78,58.7 L 80,58.1 L 82,59.9 L 84,62.9 L 86,65.4 L 88,65.9 L 90,63.9" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.5" filter="url(#glow-soft)"/>
+  <text x="44" y="80" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#ffaa22" filter="url(#glow-soft)">◈ DISCORD</text>
+  <text x="52" y="96" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">FREQ 147.5MHz</text>
+  <text x="52" y="110" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#33ff88" filter="url(#glow-soft)">CHANNEL OPEN</text>
+  <path d="M 316,62.0 L 318,64.9 L 320,66.0 L 322,64.7 L 324,61.8 L 326,59.0 L 328,58.0 L 330,59.5 L 332,62.5 L 334,65.2 L 336,66.0 L 338,64.3 L 340,61.3 L 342,58.7 L 344,58.1 L 346,59.9 L 348,62.9 L 350,65.4 L 352,65.9 L 354,63.9" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.5" filter="url(#glow-soft)"/>
+  <text x="308" y="80" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#ffaa22" filter="url(#glow-soft)">◈ LINKEDIN</text>
+  <text x="316" y="96" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">FREQ 278.3MHz</text>
+  <text x="316" y="110" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#33ff88" filter="url(#glow-soft)">UPLINK READY</text>
+  <path d="M 580,62.0 L 582,64.9 L 584,66.0 L 586,64.7 L 588,61.8 L 590,59.0 L 592,58.0 L 594,59.5 L 596,62.5 L 598,65.2 L 600,66.0 L 602,64.3 L 604,61.3 L 606,58.7 L 608,58.1 L 610,59.9 L 612,62.9 L 614,65.4 L 616,65.9 L 618,63.9" fill="none" stroke="#00ddff" stroke-width="1" opacity="0.5" filter="url(#glow-soft)"/>
+  <text x="572" y="80" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#ffaa22" filter="url(#glow-soft)">◈ X</text>
+  <text x="580" y="96" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">FREQ 240.4MHz</text>
+  <text x="580" y="110" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#33ff88" filter="url(#glow-soft)">MONITORING</text>
+  <!-- Vignette overlay -->
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+</svg>

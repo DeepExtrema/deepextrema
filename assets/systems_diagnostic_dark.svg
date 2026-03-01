@@ -1,0 +1,171 @@
+<svg width="900" height="354" viewBox="0 0 900 354" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+  <!-- Glow filters -->
+  <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-medium" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-hot" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Noise texture -->
+  <filter id="noise">
+    <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+
+  <!-- Scanline pattern -->
+  <pattern id="scanlines" width="1" height="2" patternUnits="userSpaceOnUse">
+    <rect width="1" height="1" fill="white" opacity="0.01"/>
+  </pattern>
+
+  <!-- Dot grid pattern -->
+  <pattern id="dotgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="12" cy="12" r="0.5" fill="#0d1a2a"/>
+  </pattern>
+
+  <!-- Vignette radial gradient -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="60%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="#050a12" stop-opacity="0.6"/>
+  </radialGradient>
+</defs>
+  <style>
+  @keyframes radar-sweep {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.3; }
+  }
+  @keyframes blink {
+    0%, 49%  { opacity: 1; }
+    50%, 100%{ opacity: 0; }
+  }
+  @keyframes glow-breathe {
+    0%, 100% { filter: url(#glow-medium); }
+    50%      { filter: url(#glow-hot); }
+  }
+  .radar-sweep  { animation: radar-sweep 4s linear infinite; }
+  .pulse-live   { animation: pulse 2s ease infinite; }
+  .blink-cursor { animation: blink 1s step-end infinite; }
+  .glow-breathe { animation: glow-breathe 8s ease infinite; }
+</style>
+  <!-- Deep space background -->
+  <rect width="900" height="354" fill="#050a12"/>
+  <!-- Dot grid -->
+  <rect width="900" height="354" fill="url(#dotgrid)"/>
+  <!-- Scanlines -->
+  <rect width="900" height="354" fill="url(#scanlines)"/>
+  <g class="star-field"><circle cx="719.2" cy="115.4" r="0.5" fill="white" opacity="0.44"/><circle cx="103.6" cy="168.6" r="0.8" fill="white" opacity="0.36"/><circle cx="130.9" cy="223.3" r="0.8" fill="white" opacity="0.45"/><circle cx="25.5" cy="338.8" r="0.5" fill="white" opacity="0.43"/><circle cx="456.6" cy="295.8" r="0.5" fill="white" opacity="0.26"/><circle cx="78.5" cy="275.7" r="0.8" fill="white" opacity="0.22"/><circle cx="172.5" cy="28.7" r="0.5" fill="white" opacity="0.35"/><circle cx="393.9" cy="249.3" r="0.4" fill="white" opacity="0.44"/><circle cx="883.9" cy="261.9" r="1.0" fill="white" opacity="0.45"/><circle cx="85.4" cy="163.3" r="0.4" fill="white" opacity="0.42"/><circle cx="484.2" cy="37.7" r="0.7" fill="white" opacity="0.42"/><circle cx="496.8" cy="43.0" r="1.1" fill="white" opacity="0.17"/><circle cx="758.8" cy="344.8" r="1.0" fill="white" opacity="0.48"/><circle cx="477.9" cy="77.6" r="0.7" fill="white" opacity="0.41"/><circle cx="691.7" cy="136.1" r="1.2" fill="white" opacity="0.16"/><circle cx="446.2" cy="14.0" r="0.6" fill="white" opacity="0.50"/><circle cx="106.1" cy="348.9" r="1.1" fill="white" opacity="0.39"/><circle cx="50.4" cy="166.9" r="0.9" fill="white" opacity="0.18"/><circle cx="268.4" cy="32.5" r="1.1" fill="white" opacity="0.47"/><circle cx="831.3" cy="265.8" r="0.8" fill="white" opacity="0.17"/><circle cx="433.3" cy="269.3" r="1.0" fill="white" opacity="0.16"/><circle cx="7.4" cy="31.2" r="1.1" fill="white" opacity="0.19"/><circle cx="351.2" cy="168.5" r="1.1" fill="white" opacity="0.20"/><circle cx="235.4" cy="273.3" r="0.4" fill="white" opacity="0.21"/><circle cx="22.6" cy="339.2" r="0.5" fill="white" opacity="0.33"/><circle cx="341.2" cy="347.5" r="0.9" fill="white" opacity="0.36"/><circle cx="440.6" cy="94.8" r="1.1" fill="white" opacity="0.19"/><circle cx="559.6" cy="104.4" r="0.5" fill="white" opacity="0.31"/><circle cx="170.2" cy="209.5" r="0.4" fill="white" opacity="0.16"/><circle cx="127.2" cy="31.8" r="1.1" fill="white" opacity="0.33"/></g>
+
+  <g class="panel">
+    <!-- Outer viewport -->
+    <rect x="16" y="8" width="868" height="320"
+          fill="none" stroke="#1a2840" stroke-width="1"
+          stroke-dasharray="3,6" opacity="0.4"/>
+
+    <!-- Inner panel background -->
+    <rect x="24" y="16" width="852" height="304"
+          fill="#0b1120" stroke="#1a2840" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <line x1="24" y1="44" x2="876" y2="44"
+          stroke="#1a2840" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="36" y="34" font-family="'Courier New', 'Consolas', monospace"
+          font-size="10" fill="#ffaa22"
+          filter="url(#glow-soft)" letter-spacing="0.15em"
+          text-anchor="start">[ SYSTEMS DIAGNOSTIC ]</text>
+    <text x="864" y="34" font-family="'Courier New', 'Consolas', monospace"
+          font-size="7" fill="#2a3a50"
+          text-anchor="end">19:46Z</text>
+
+    <!-- Status bar -->
+    <line x1="24" y1="296" x2="876" y2="296"
+          stroke="#1a2840" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="36" y="312" font-family="'Courier New', 'Consolas', monospace"
+          font-size="7" fill="#2a3a50"
+          letter-spacing="0.05em">6 ONLINE  │  0 STANDBY  │  PRIMARY: Python · TypeScript</text>
+  </g>
+  <g>
+    <rect x="44" y="60" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="54" cy="74" r="3" fill="#33ff88" filter="url(#glow-soft)"/>
+    <text x="64" y="78" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">PYTHON CORE</text>
+    <text x="54" y="98" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">█████████░ 90%</text>
+    <text x="54" y="116" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 8 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 54,150 L 54.0,128.0 L 76.5,143.7 L 99.1,125.9 L 121.6,141.3 L 144.2,139.5 L 166.7,131.6 L 189.3,125.0 L 211.8,129.5 L 234.4,129.8 L 256.9,143.1 L 279.5,125.0 L 302.0,126.5 L 302,150 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 54.0,128.0 L 76.5,143.7 L 99.1,125.9 L 121.6,141.3 L 144.2,139.5 L 166.7,131.6 L 189.3,125.0 L 211.8,129.5 L 234.4,129.8 L 256.9,143.1 L 279.5,125.0 L 302.0,126.5" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <g>
+    <rect x="324" y="60" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="334" cy="74" r="3" fill="#33ff88" filter="url(#glow-soft)"/>
+    <text x="344" y="78" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">TS COMPILER</text>
+    <text x="334" y="98" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">████░░░░░░ 40%</text>
+    <text x="334" y="116" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 5 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 334,150 L 334.0,130.0 L 356.5,137.5 L 379.1,129.4 L 401.6,131.2 L 424.2,132.5 L 446.7,138.8 L 469.3,125.0 L 491.8,147.5 L 514.4,138.1 L 536.9,133.8 L 559.5,138.1 L 582.0,129.4 L 582,150 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 334.0,130.0 L 356.5,137.5 L 379.1,129.4 L 401.6,131.2 L 424.2,132.5 L 446.7,138.8 L 469.3,125.0 L 491.8,147.5 L 514.4,138.1 L 536.9,133.8 L 559.5,138.1 L 582.0,129.4" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <g>
+    <rect x="604" y="60" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="614" cy="74" r="3" fill="#33ff88" filter="url(#glow-soft)"/>
+    <text x="624" y="78" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">JS RUNTIME</text>
+    <text x="614" y="98" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">███░░░░░░░ 30%</text>
+    <text x="614" y="116" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 4 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 614,150 L 614.0,125.0 L 636.5,147.6 L 659.1,128.2 L 681.6,136.3 L 704.2,133.9 L 726.7,137.9 L 749.3,144.4 L 771.8,147.6 L 794.4,133.9 L 816.9,135.5 L 839.5,139.5 L 862.0,146.8 L 862,150 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 614.0,125.0 L 636.5,147.6 L 659.1,128.2 L 681.6,136.3 L 704.2,133.9 L 726.7,137.9 L 749.3,144.4 L 771.8,147.6 L 794.4,133.9 L 816.9,135.5 L 839.5,139.5 L 862.0,146.8" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <g>
+    <rect x="44" y="172" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="54" cy="186" r="3" fill="#ffaa22" filter="url(#glow-soft)"/>
+    <text x="64" y="190" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">RUST ENGINE</text>
+    <text x="54" y="210" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">█░░░░░░░░░ 16%</text>
+    <text x="54" y="228" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 2 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 54,262 L 54.0,245.8 L 76.5,257.6 L 99.1,247.3 L 121.6,251.7 L 144.2,238.5 L 166.7,250.2 L 189.3,247.3 L 211.8,262.0 L 234.4,245.8 L 256.9,238.5 L 279.5,248.8 L 302.0,237.0 L 302,262 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 54.0,245.8 L 76.5,257.6 L 99.1,247.3 L 121.6,251.7 L 144.2,238.5 L 166.7,250.2 L 189.3,247.3 L 211.8,262.0 L 234.4,245.8 L 256.9,238.5 L 279.5,248.8 L 302.0,237.0" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <g>
+    <rect x="324" y="172" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="334" cy="186" r="3" fill="#ffaa22" filter="url(#glow-soft)"/>
+    <text x="344" y="190" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">SHELL INTERFACE</text>
+    <text x="334" y="210" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">█░░░░░░░░░ 10%</text>
+    <text x="334" y="228" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 3 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 334,262 L 334.0,248.4 L 356.5,248.4 L 379.1,257.5 L 401.6,239.3 L 424.2,259.7 L 446.7,262.0 L 469.3,250.6 L 491.8,239.3 L 514.4,237.0 L 536.9,239.3 L 559.5,243.8 L 582.0,259.7 L 582,262 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 334.0,248.4 L 356.5,248.4 L 379.1,257.5 L 401.6,239.3 L 424.2,259.7 L 446.7,262.0 L 469.3,250.6 L 491.8,239.3 L 514.4,237.0 L 536.9,239.3 L 559.5,243.8 L 582.0,259.7" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <g>
+    <rect x="604" y="172" width="268" height="100" fill="#101828" stroke="#1a2840" stroke-width="0.5"/>
+    <circle cx="614" cy="186" r="3" fill="#ffaa22" filter="url(#glow-soft)"/>
+    <text x="624" y="190" font-family="'Courier New', 'Consolas', monospace" font-size="10" fill="#ffaa22" letter-spacing="0.1em">MARKUP ARRAY</text>
+    <text x="614" y="210" font-family="'Courier New', 'Consolas', monospace" font-size="13" fill="#33ff88" filter="url(#glow-soft)">░░░░░░░░░░ 8%</text>
+    <text x="614" y="228" font-family="'Courier New', 'Consolas', monospace" font-size="7" fill="#2a3a50">DEPLOYED IN: 3 MISSIONS</text>
+    <g class="waveform">
+    <path d="M 614,262 L 614.0,257.8 L 636.5,253.7 L 659.1,257.8 L 681.6,257.8 L 704.2,241.2 L 726.7,262.0 L 749.3,262.0 L 771.8,237.0 L 794.4,245.3 L 816.9,241.2 L 839.5,249.5 L 862.0,249.5 L 862,262 Z" fill="#33ff88" opacity="0.08"/>
+    <path d="M 614.0,257.8 L 636.5,253.7 L 659.1,257.8 L 681.6,257.8 L 704.2,241.2 L 726.7,262.0 L 749.3,262.0 L 771.8,237.0 L 794.4,245.3 L 816.9,241.2 L 839.5,249.5 L 862.0,249.5" fill="none" stroke="#33ff88"
+          stroke-width="1.5" filter="url(#glow-soft)"/>
+  </g>
+  </g>
+  <!-- Vignette overlay -->
+  <rect width="100%" height="100%" fill="url(#vignette)"/>
+</svg>
