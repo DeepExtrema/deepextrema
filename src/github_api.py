@@ -459,6 +459,96 @@ class GitHubClient:
         return contributions
 
 
+    # ========== Deep Space Command Methods ==========
+
+    def get_commit_history(self, days: int = 90) -> list:
+        """Get daily commit counts for the last N days.
+        Returns list of (date_str, count) tuples sorted chronologically.
+        """
+        cutoff = get_utc_now() - timedelta(days=days)
+        repos = self.get_repos()
+        daily = {}
+
+        for repo in repos:
+            try:
+                commits = repo.get_commits(since=cutoff)
+                for commit in commits:
+                    if commit.commit and commit.commit.author:
+                        author = commit.commit.author.name or ""
+                        msg = commit.commit.message or ""
+                        if not is_bot_commit(msg, author):
+                            date_str = commit.commit.author.date.strftime("%Y-%m-%d")
+                            daily[date_str] = daily.get(date_str, 0) + 1
+            except GithubException:
+                continue
+
+        # Fill in missing days with 0
+        result = []
+        current = cutoff.date()
+        end = get_utc_now().date()
+        while current <= end:
+            ds = current.strftime("%Y-%m-%d")
+            result.append((ds, daily.get(ds, 0)))
+            current += timedelta(days=1)
+        return result
+
+    def get_streak(self) -> dict:
+        """Calculate current streak and longest streak from commit history."""
+        from .cache import get_with_cache
+        history = get_with_cache("commit_history_365", self.get_commit_history, 365)
+        if not history:
+            return {"current": 0, "longest": 0}
+
+        current_streak = 0
+        longest_streak = 0
+        temp_streak = 0
+
+        for _, count in history:
+            if count > 0:
+                temp_streak += 1
+            else:
+                if temp_streak > longest_streak:
+                    longest_streak = temp_streak
+                temp_streak = 0
+        longest_streak = max(longest_streak, temp_streak)
+
+        # Current streak: count backwards from today
+        for _, count in reversed(history):
+            if count > 0:
+                current_streak += 1
+            else:
+                break
+
+        return {
+            "current": current_streak,
+            "longest": max(longest_streak, current_streak),
+        }
+
+    def get_language_percentages(self) -> list:
+        """Get languages sorted by usage percentage across all repos.
+        Returns list of (language, percentage, repo_count) tuples.
+        """
+        lang_bytes = {}
+        lang_repos = {}
+        for repo in self.get_repos():
+            try:
+                languages = repo.get_languages()
+                for lang, bytes_count in languages.items():
+                    lang_bytes[lang] = lang_bytes.get(lang, 0) + bytes_count
+                    if lang not in lang_repos:
+                        lang_repos[lang] = set()
+                    lang_repos[lang].add(repo.name)
+            except GithubException:
+                continue
+
+        total = sum(lang_bytes.values()) or 1
+        result = [
+            (lang, (bytes_count / total) * 100, len(lang_repos.get(lang, set())))
+            for lang, bytes_count in lang_bytes.items()
+        ]
+        return sorted(result, key=lambda x: x[1], reverse=True)
+
+
 def get_github_client() -> GitHubClient:
     """Factory function to create a GitHub client."""
     return GitHubClient()
