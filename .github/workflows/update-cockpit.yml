@@ -1,9 +1,9 @@
-name: Deep Extrema Command — Update Systems
+name: ⚙️ Update Governance Systems
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *'  # Every 6 hours
+  workflow_dispatch:  # Manual trigger
   push:
     branches: [main]
     paths:
@@ -18,51 +18,69 @@ env:
   PYTHONPATH: ${{ github.workspace }}
 
 jobs:
-  update-command-center:
+  update-governance:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: Install Dependencies
+      - name: 📦 Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate Command Header
-        run: python scripts/command_header.py
+      # ========================================
+      # Pipeline 1: Governance Core Systems
+      # ========================================
+
+      - name: ⚙️ Generate Neon Control Panel
+        run: python scripts/neon_control_panel.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Mission Log
-        run: python scripts/mission_log.py
+      - name: 👤 Generate System Authority Panel
+        run: python scripts/system_authority.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Flight Telemetry
-        run: python scripts/flight_telemetry.py
+      - name: 🔒 Generate Governance Matrix Visual
+        run: python scripts/governance_matrix_visual.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Systems Diagnostic
-        run: python scripts/systems_diagnostic.py
+      - name: 🔗 Generate Enforcement Log Visual
+        run: python scripts/enforcement_log_visual.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate Comms Channel
-        run: python scripts/comms_channel.py
+      - name: ⚡ Generate Governed Domains Visual
+        run: python scripts/governed_domains_visual.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and Push
+      - name: 🔗 Generate Dependency Chains
+        run: python scripts/dependency_chains.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: ⚡ Generate Activity Circuit
+        run: python scripts/activity_circuit.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ========================================
+      # Commit and Push
+      # ========================================
+
+      - name: 💾 Commit and Push Changes
         run: |
-          git config --local user.name "Deep-Extrema-Bot"
-          git config --local user.email "deep-extrema-bot@users.noreply.github.com"
+          git config --local user.name "Governance-Bot ⚙️"
+          git config --local user.email "governance-bot@users.noreply.github.com"
           git add README.md assets/ data/ || true
-          git diff --staged --quiet || git commit -m "Update Deep Space Command systems — $(date +'%Y-%m-%d %H:%M UTC')"
+          git diff --staged --quiet || git commit -m "⚙️ Update Governance Systems - $(date +'%Y-%m-%d %H:%M UTC')"
           git push || echo "Nothing to push"
