@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**The Sun**
 
-The most distant human-made object, over 14 billion miles from Earth.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
