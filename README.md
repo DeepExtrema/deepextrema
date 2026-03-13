@@ -73,7 +73,7 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <br>
 <br>
