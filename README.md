@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
 
-f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+An Open Source Machine Learning Framework for Everyone
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *Build for the timeline you want to live in.*
+> *Depth first; scale later.*
 
 <br>
 <br>
