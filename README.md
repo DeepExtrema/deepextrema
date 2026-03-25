@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**Neutron Stars**
 
-The most distant human-made object, over 14 billion miles from Earth.
+A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *Curiosity compounds like interest, but pays in discoveries.*
+> *Ship early, iterate often, sleep eventually.*
 
 <br>
 <br>
