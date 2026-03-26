@@ -45,9 +45,9 @@
 
 <br>
 
-**Black Holes**
+**Neutron Stars**
 
-Time slows down near a black hole due to extreme gravitational effects.
+A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <br>
 <br>
