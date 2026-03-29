@@ -16,473 +16,473 @@
   <!-- Background -->
   <rect width="1200" height="200" fill="url(#cosmic-bg)"/>
 
-  <circle cx="135" cy="84" r="0.6778184727284271" fill="#FFFFFF" opacity="0.44">
-    <animate attributeName="opacity" values="0.44;0.74;0.44" 
-             dur="4.5s" begin="2.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="112" cy="36" r="0.9488639469630216" fill="#FFFFFF" opacity="0.40">
-    <animate attributeName="opacity" values="0.40;0.70;0.40" 
-             dur="5.2s" begin="2.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1110" cy="80" r="0.9048872330478321" fill="#FFFFFF" opacity="0.48">
+  <circle cx="155" cy="127" r="0.552484399750574" fill="#FFFFFF" opacity="0.48">
     <animate attributeName="opacity" values="0.48;0.78;0.48" 
-             dur="4.2s" begin="0.1s" repeatCount="indefinite"/>
+             dur="6.0s" begin="2.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1069" cy="115" r="0.7203822815191415" fill="#FFFFFF" opacity="0.43">
-    <animate attributeName="opacity" values="0.43;0.73;0.43" 
-             dur="5.3s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1102" cy="143" r="0.6479772843744684" fill="#FFFFFF" opacity="0.49">
-    <animate attributeName="opacity" values="0.49;0.79;0.49" 
-             dur="4.4s" begin="0.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1065" cy="146" r="0.816324063783455" fill="#FFFFFF" opacity="0.46">
-    <animate attributeName="opacity" values="0.46;0.76;0.46" 
-             dur="5.6s" begin="1.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="200" cy="128" r="0.7935475438044884" fill="#FFFFFF" opacity="0.41">
-    <animate attributeName="opacity" values="0.41;0.71;0.41" 
-             dur="4.3s" begin="1.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="411" cy="50" r="0.9255350733785741" fill="#FFFFFF" opacity="0.38">
-    <animate attributeName="opacity" values="0.38;0.68;0.38" 
-             dur="4.4s" begin="0.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="875" cy="17" r="0.67191943188822" fill="#FFFFFF" opacity="0.49">
-    <animate attributeName="opacity" values="0.49;0.79;0.49" 
-             dur="4.7s" begin="2.7s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="456" cy="52" r="0.7687677422769067" fill="#FFFFFF" opacity="0.34">
-    <animate attributeName="opacity" values="0.34;0.64;0.34" 
-             dur="4.4s" begin="2.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1022" cy="88" r="0.9079150786252396" fill="#FFFFFF" opacity="0.45">
-    <animate attributeName="opacity" values="0.45;0.75;0.45" 
-             dur="5.0s" begin="1.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="739" cy="103" r="0.5211998522692629" fill="#FFFFFF" opacity="0.31">
-    <animate attributeName="opacity" values="0.31;0.61;0.31" 
-             dur="4.9s" begin="1.0s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1186" cy="118" r="0.9278182044089452" fill="#FFFFFF" opacity="0.42">
-    <animate attributeName="opacity" values="0.42;0.72;0.42" 
-             dur="5.6s" begin="1.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1021" cy="23" r="0.9943787188920172" fill="#FFFFFF" opacity="0.36">
-    <animate attributeName="opacity" values="0.36;0.66;0.36" 
-             dur="4.5s" begin="2.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="91" cy="110" r="0.5601621969931025" fill="#FFFFFF" opacity="0.41">
-    <animate attributeName="opacity" values="0.41;0.71;0.41" 
-             dur="5.2s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="914" cy="18" r="0.8424397074851877" fill="#FFFFFF" opacity="0.44">
-    <animate attributeName="opacity" values="0.44;0.74;0.44" 
-             dur="5.2s" begin="0.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="698" cy="108" r="0.7607571100827122" fill="#FFFFFF" opacity="0.40">
-    <animate attributeName="opacity" values="0.40;0.70;0.40" 
-             dur="5.0s" begin="0.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="716" cy="114" r="0.5339490887936161" fill="#FFFFFF" opacity="0.38">
-    <animate attributeName="opacity" values="0.38;0.68;0.38" 
-             dur="5.1s" begin="0.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="87" cy="59" r="0.5738750183459975" fill="#FFFFFF" opacity="0.35">
-    <animate attributeName="opacity" values="0.35;0.65;0.35" 
-             dur="5.8s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="905" cy="141" r="0.6173848336176002" fill="#FFFFFF" opacity="0.43">
-    <animate attributeName="opacity" values="0.43;0.73;0.43" 
-             dur="4.9s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="297" cy="120" r="0.9335883591989845" fill="#FFFFFF" opacity="0.35">
-    <animate attributeName="opacity" values="0.35;0.65;0.35" 
-             dur="6.0s" begin="0.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="667" cy="51" r="0.8068744223341251" fill="#FFFFFF" opacity="0.42">
-    <animate attributeName="opacity" values="0.42;0.72;0.42" 
-             dur="4.8s" begin="1.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="534" cy="139" r="0.7875933529420881" fill="#FFFFFF" opacity="0.36">
-    <animate attributeName="opacity" values="0.36;0.66;0.36" 
-             dur="4.2s" begin="1.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1065" cy="153" r="0.6419014375846965" fill="#FFFFFF" opacity="0.32">
-    <animate attributeName="opacity" values="0.32;0.62;0.32" 
-             dur="4.6s" begin="1.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="736" cy="32" r="0.7857040363790291" fill="#FFFFFF" opacity="0.41">
-    <animate attributeName="opacity" values="0.41;0.71;0.41" 
-             dur="5.1s" begin="1.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="883" cy="93" r="0.5980650306187645" fill="#FFFFFF" opacity="0.48">
-    <animate attributeName="opacity" values="0.48;0.78;0.48" 
-             dur="5.4s" begin="1.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="495" cy="98" r="0.8157026712356954" fill="#FFFFFF" opacity="0.49">
-    <animate attributeName="opacity" values="0.49;0.79;0.49" 
-             dur="4.1s" begin="2.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="40" cy="84" r="0.6604661191504229" fill="#FFFFFF" opacity="0.45">
-    <animate attributeName="opacity" values="0.45;0.75;0.45" 
-             dur="4.1s" begin="1.3s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1022" cy="143" r="0.5891834932970694" fill="#FFFFFF" opacity="0.37">
+  <circle cx="1097" cy="149" r="0.8623858318519119" fill="#FFFFFF" opacity="0.37">
     <animate attributeName="opacity" values="0.37;0.67;0.37" 
-             dur="4.9s" begin="1.0s" repeatCount="indefinite"/>
+             dur="4.9s" begin="2.6s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="395" cy="84" r="0.87558308510238" fill="#FFFFFF" opacity="0.41">
-    <animate attributeName="opacity" values="0.41;0.71;0.41" 
-             dur="5.2s" begin="2.8s" repeatCount="indefinite"/>
+  <circle cx="733" cy="118" r="0.944257900735409" fill="#FFFFFF" opacity="0.45">
+    <animate attributeName="opacity" values="0.45;0.75;0.45" 
+             dur="5.6s" begin="2.1s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="88" cy="102" r="0.8506318072540985" fill="#FFFFFF" opacity="0.47">
-    <animate attributeName="opacity" values="0.47;0.77;0.47" 
-             dur="5.0s" begin="1.8s" repeatCount="indefinite"/>
+  <circle cx="761" cy="67" r="0.9077715008872325" fill="#FFFFFF" opacity="0.40">
+    <animate attributeName="opacity" values="0.40;0.70;0.40" 
+             dur="4.6s" begin="0.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="506" cy="140" r="0.5889859865866196" fill="#FFFFFF" opacity="0.42">
-    <animate attributeName="opacity" values="0.42;0.72;0.42" 
-             dur="4.0s" begin="0.9s" repeatCount="indefinite"/>
+  <circle cx="317" cy="16" r="0.6581773259960082" fill="#FFFFFF" opacity="0.38">
+    <animate attributeName="opacity" values="0.38;0.68;0.38" 
+             dur="5.5s" begin="0.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1094" cy="16" r="0.9907670777739597" fill="#FFFFFF" opacity="0.39">
-    <animate attributeName="opacity" values="0.39;0.69;0.39" 
-             dur="4.7s" begin="2.8s" repeatCount="indefinite"/>
+  <circle cx="278" cy="93" r="0.5944047259391384" fill="#FFFFFF" opacity="0.33">
+    <animate attributeName="opacity" values="0.33;0.63;0.33" 
+             dur="5.9s" begin="1.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="88" cy="125" r="0.6730645673102109" fill="#FFFFFF" opacity="0.49">
+  <circle cx="64" cy="48" r="0.6877167871384073" fill="#FFFFFF" opacity="0.43">
+    <animate attributeName="opacity" values="0.43;0.73;0.43" 
+             dur="5.9s" begin="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1112" cy="58" r="0.9094936480680023" fill="#FFFFFF" opacity="0.49">
     <animate attributeName="opacity" values="0.49;0.79;0.49" 
-             dur="4.9s" begin="2.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="737" cy="132" r="0.7375597793677099" fill="#FFFFFF" opacity="0.42">
-    <animate attributeName="opacity" values="0.42;0.72;0.42" 
              dur="4.5s" begin="2.3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="148" cy="119" r="0.5809528139518754" fill="#FFFFFF" opacity="0.31">
+  <circle cx="684" cy="71" r="0.8632848078658759" fill="#FFFFFF" opacity="0.31">
     <animate attributeName="opacity" values="0.31;0.61;0.31" 
-             dur="5.2s" begin="0.2s" repeatCount="indefinite"/>
+             dur="5.5s" begin="1.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="883" cy="82" r="0.9759438862656853" fill="#FFFFFF" opacity="0.34">
-    <animate attributeName="opacity" values="0.34;0.64;0.34" 
-             dur="4.8s" begin="2.3s" repeatCount="indefinite"/>
+  <circle cx="265" cy="62" r="0.8435663322293583" fill="#FFFFFF" opacity="0.49">
+    <animate attributeName="opacity" values="0.49;0.79;0.49" 
+             dur="4.3s" begin="0.0s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="679" cy="72" r="0.7623424778323242" fill="#FFFFFF" opacity="0.48">
+  <circle cx="1042" cy="151" r="0.6515808661371068" fill="#FFFFFF" opacity="0.40">
+    <animate attributeName="opacity" values="0.40;0.70;0.40" 
+             dur="4.0s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1042" cy="97" r="0.8481277430313021" fill="#FFFFFF" opacity="0.46">
+    <animate attributeName="opacity" values="0.46;0.76;0.46" 
+             dur="5.3s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="753" cy="41" r="0.9833747466467442" fill="#FFFFFF" opacity="0.31">
+    <animate attributeName="opacity" values="0.31;0.61;0.31" 
+             dur="5.7s" begin="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="844" cy="96" r="0.9549380807575083" fill="#FFFFFF" opacity="0.38">
+    <animate attributeName="opacity" values="0.38;0.68;0.38" 
+             dur="4.1s" begin="0.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1173" cy="33" r="0.7111812347346541" fill="#FFFFFF" opacity="0.48">
     <animate attributeName="opacity" values="0.48;0.78;0.48" 
-             dur="4.1s" begin="1.4s" repeatCount="indefinite"/>
+             dur="5.4s" begin="1.3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="216" cy="10" r="0.9032467686576815" fill="#FFFFFF" opacity="0.43">
-    <animate attributeName="opacity" values="0.43;0.73;0.43" 
-             dur="5.8s" begin="1.9s" repeatCount="indefinite"/>
+  <circle cx="253" cy="15" r="0.623458537351081" fill="#FFFFFF" opacity="0.46">
+    <animate attributeName="opacity" values="0.46;0.76;0.46" 
+             dur="4.5s" begin="0.0s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="119" cy="13" r="0.8466221348815381" fill="#FFFFFF" opacity="0.31">
+  <circle cx="85" cy="18" r="0.898067894295567" fill="#FFFFFF" opacity="0.33">
+    <animate attributeName="opacity" values="0.33;0.63;0.33" 
+             dur="4.2s" begin="2.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1180" cy="30" r="0.9402073012052112" fill="#FFFFFF" opacity="0.41">
+    <animate attributeName="opacity" values="0.41;0.71;0.41" 
+             dur="4.1s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="711" cy="114" r="0.5254660858151907" fill="#FFFFFF" opacity="0.41">
+    <animate attributeName="opacity" values="0.41;0.71;0.41" 
+             dur="5.2s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="843" cy="22" r="0.8844030905504259" fill="#FFFFFF" opacity="0.50">
+    <animate attributeName="opacity" values="0.50;0.80;0.50" 
+             dur="6.0s" begin="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="510" cy="117" r="0.6354046546863507" fill="#FFFFFF" opacity="0.37">
+    <animate attributeName="opacity" values="0.37;0.67;0.37" 
+             dur="5.4s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="982" cy="133" r="0.7457711251431536" fill="#FFFFFF" opacity="0.44">
+    <animate attributeName="opacity" values="0.44;0.74;0.44" 
+             dur="5.6s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="391" cy="113" r="0.6106198104639908" fill="#FFFFFF" opacity="0.35">
+    <animate attributeName="opacity" values="0.35;0.65;0.35" 
+             dur="5.9s" begin="2.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="157" cy="39" r="0.5113480689522605" fill="#FFFFFF" opacity="0.44">
+    <animate attributeName="opacity" values="0.44;0.74;0.44" 
+             dur="5.6s" begin="1.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="345" cy="64" r="0.8418817364783737" fill="#FFFFFF" opacity="0.50">
+    <animate attributeName="opacity" values="0.50;0.80;0.50" 
+             dur="4.6s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="569" cy="129" r="0.9238828124235761" fill="#FFFFFF" opacity="0.36">
+    <animate attributeName="opacity" values="0.36;0.66;0.36" 
+             dur="4.8s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="397" cy="38" r="0.7034870035946454" fill="#FFFFFF" opacity="0.46">
+    <animate attributeName="opacity" values="0.46;0.76;0.46" 
+             dur="4.0s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="351" cy="47" r="0.7414040809651277" fill="#FFFFFF" opacity="0.49">
+    <animate attributeName="opacity" values="0.49;0.79;0.49" 
+             dur="4.2s" begin="0.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="28" cy="74" r="0.8937068792680283" fill="#FFFFFF" opacity="0.32">
+    <animate attributeName="opacity" values="0.32;0.62;0.32" 
+             dur="4.9s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="890" cy="75" r="0.5743662635228464" fill="#FFFFFF" opacity="0.42">
+    <animate attributeName="opacity" values="0.42;0.72;0.42" 
+             dur="4.3s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="505" cy="51" r="0.9352922536631023" fill="#FFFFFF" opacity="0.49">
+    <animate attributeName="opacity" values="0.49;0.79;0.49" 
+             dur="4.4s" begin="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="442" cy="77" r="0.7470159136019857" fill="#FFFFFF" opacity="0.31">
     <animate attributeName="opacity" values="0.31;0.61;0.31" 
-             dur="5.2s" begin="1.3s" repeatCount="indefinite"/>
+             dur="4.7s" begin="2.1s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="447" cy="92" r="1.0832096775683873" fill="#FFFFFF" opacity="0.59">
-    <animate attributeName="opacity" values="0.59;0.89;0.59" 
-             dur="3.8s" begin="2.4s" repeatCount="indefinite"/>
+  <circle cx="938" cy="130" r="0.6837767759767999" fill="#FFFFFF" opacity="0.49">
+    <animate attributeName="opacity" values="0.49;0.79;0.49" 
+             dur="4.9s" begin="1.3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="972" cy="154" r="1.3703076008939896" fill="#FFFFFF" opacity="0.65">
+  <circle cx="594" cy="129" r="0.6254742065553167" fill="#FFFFFF" opacity="0.38">
+    <animate attributeName="opacity" values="0.38;0.68;0.38" 
+             dur="5.1s" begin="2.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="559" cy="150" r="0.5457872044399328" fill="#FFFFFF" opacity="0.34">
+    <animate attributeName="opacity" values="0.34;0.64;0.34" 
+             dur="4.3s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="668" cy="110" r="0.9310243496935743" fill="#FFFFFF" opacity="0.34">
+    <animate attributeName="opacity" values="0.34;0.64;0.34" 
+             dur="5.7s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="225" cy="141" r="0.7314516350825704" fill="#FFFFFF" opacity="0.36">
+    <animate attributeName="opacity" values="0.36;0.66;0.36" 
+             dur="5.7s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="327" cy="85" r="0.988772370742979" fill="#FFFFFF" opacity="0.39">
+    <animate attributeName="opacity" values="0.39;0.69;0.39" 
+             dur="4.0s" begin="2.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="593" cy="94" r="0.6419550411721875" fill="#FFFFFF" opacity="0.38">
+    <animate attributeName="opacity" values="0.38;0.68;0.38" 
+             dur="4.0s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="779" cy="158" r="0.5960247146115316" fill="#FFFFFF" opacity="0.40">
+    <animate attributeName="opacity" values="0.40;0.70;0.40" 
+             dur="4.5s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="388" cy="79" r="1.0941114510750605" fill="#FFFFFF" opacity="0.65">
     <animate attributeName="opacity" values="0.65;0.95;0.65" 
              dur="4.4s" begin="2.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="262" cy="87" r="1.457813849308824" fill="#FFFFFF" opacity="0.69">
-    <animate attributeName="opacity" values="0.69;0.99;0.69" 
-             dur="4.7s" begin="2.2s" repeatCount="indefinite"/>
+  <circle cx="24" cy="39" r="1.4918073814135289" fill="#FFFFFF" opacity="0.54">
+    <animate attributeName="opacity" values="0.54;0.84;0.54" 
+             dur="4.1s" begin="1.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="410" cy="64" r="1.228338026001025" fill="#FFFFFF" opacity="0.68">
-    <animate attributeName="opacity" values="0.68;0.98;0.68" 
-             dur="3.3s" begin="0.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="226" cy="86" r="1.4054129898480618" fill="#FFFFFF" opacity="0.51">
-    <animate attributeName="opacity" values="0.51;0.81;0.51" 
-             dur="3.0s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="709" cy="103" r="1.1426105132814321" fill="#FFFFFF" opacity="0.59">
+  <circle cx="369" cy="65" r="1.281861515000629" fill="#FFFFFF" opacity="0.59">
     <animate attributeName="opacity" values="0.59;0.89;0.59" 
-             dur="4.6s" begin="0.7s" repeatCount="indefinite"/>
+             dur="4.9s" begin="0.2s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="902" cy="92" r="1.4159489821680054" fill="#FFFFFF" opacity="0.53">
-    <animate attributeName="opacity" values="0.53;0.83;0.53" 
+  <circle cx="1081" cy="98" r="1.385890722003146" fill="#FFFFFF" opacity="0.60">
+    <animate attributeName="opacity" values="0.60;0.90;0.60" 
              dur="4.7s" begin="0.3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="947" cy="25" r="1.058243705460362" fill="#FFFFFF" opacity="0.69">
-    <animate attributeName="opacity" values="0.69;0.99;0.69" 
-             dur="3.3s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="398" cy="17" r="1.4980699784161076" fill="#FFFFFF" opacity="0.55">
+  <circle cx="863" cy="50" r="1.1149710180882297" fill="#FFFFFF" opacity="0.55">
     <animate attributeName="opacity" values="0.55;0.85;0.55" 
-             dur="4.6s" begin="0.5s" repeatCount="indefinite"/>
+             dur="3.2s" begin="1.1s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="282" cy="112" r="1.1032296664663148" fill="#FFFFFF" opacity="0.54">
-    <animate attributeName="opacity" values="0.54;0.84;0.54" 
-             dur="4.9s" begin="2.7s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="656" cy="114" r="1.1677405261659475" fill="#FFFFFF" opacity="0.51">
-    <animate attributeName="opacity" values="0.51;0.81;0.51" 
-             dur="4.5s" begin="2.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1110" cy="67" r="1.4503984613325493" fill="#FFFFFF" opacity="0.51">
-    <animate attributeName="opacity" values="0.51;0.81;0.51" 
-             dur="4.3s" begin="1.7s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="556" cy="137" r="1.3207129049563129" fill="#FFFFFF" opacity="0.64">
-    <animate attributeName="opacity" values="0.64;0.94;0.64" 
-             dur="3.5s" begin="0.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="884" cy="18" r="1.2057508925985352" fill="#FFFFFF" opacity="0.52">
-    <animate attributeName="opacity" values="0.52;0.82;0.52" 
-             dur="4.9s" begin="2.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1111" cy="52" r="1.3671476702558818" fill="#FFFFFF" opacity="0.66">
-    <animate attributeName="opacity" values="0.66;0.96;0.66" 
-             dur="4.9s" begin="0.0s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="656" cy="62" r="1.0948769413709685" fill="#FFFFFF" opacity="0.67">
-    <animate attributeName="opacity" values="0.67;0.97;0.67" 
-             dur="4.7s" begin="1.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="54" cy="56" r="1.3637572622250995" fill="#FFFFFF" opacity="0.68">
+  <circle cx="95" cy="98" r="1.150915119657208" fill="#FFFFFF" opacity="0.68">
     <animate attributeName="opacity" values="0.68;0.98;0.68" 
-             dur="4.4s" begin="1.1s" repeatCount="indefinite"/>
+             dur="4.8s" begin="1.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="339" cy="130" r="1.0858780582865861" fill="#FFFFFF" opacity="0.61">
-    <animate attributeName="opacity" values="0.61;0.91;0.61" 
-             dur="4.4s" begin="2.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="417" cy="106" r="1.3368614589910932" fill="#FFFFFF" opacity="0.51">
-    <animate attributeName="opacity" values="0.51;0.81;0.51" 
-             dur="4.1s" begin="2.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="428" cy="158" r="1.2638171798129623" fill="#FFFFFF" opacity="0.58">
-    <animate attributeName="opacity" values="0.58;0.88;0.58" 
-             dur="4.2s" begin="0.0s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="281" cy="44" r="1.136974591236667" fill="#FFFFFF" opacity="0.53">
-    <animate attributeName="opacity" values="0.53;0.83;0.53" 
-             dur="3.5s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="411" cy="100" r="1.1152962444586891" fill="#FFFFFF" opacity="0.56">
-    <animate attributeName="opacity" values="0.56;0.86;0.56" 
-             dur="3.2s" begin="0.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="327" cy="11" r="1.1478910948428016" fill="#FFFFFF" opacity="0.64">
-    <animate attributeName="opacity" values="0.64;0.94;0.64" 
-             dur="3.1s" begin="1.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="900" cy="156" r="1.4445357215148502" fill="#FFFFFF" opacity="0.58">
-    <animate attributeName="opacity" values="0.58;0.88;0.58" 
-             dur="4.8s" begin="0.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="69" cy="37" r="1.0076451820280252" fill="#FFFFFF" opacity="0.54">
-    <animate attributeName="opacity" values="0.54;0.84;0.54" 
-             dur="3.1s" begin="2.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1033" cy="40" r="1.370168869015983" fill="#FFFFFF" opacity="0.57">
-    <animate attributeName="opacity" values="0.57;0.87;0.57" 
-             dur="4.2s" begin="2.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="545" cy="98" r="1.4544631681912983" fill="#FFFFFF" opacity="0.64">
-    <animate attributeName="opacity" values="0.64;0.94;0.64" 
-             dur="4.7s" begin="2.9s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1146" cy="41" r="1.0171010577284276" fill="#FFFFFF" opacity="0.59">
+  <circle cx="751" cy="71" r="1.3892679627514548" fill="#FFFFFF" opacity="0.59">
     <animate attributeName="opacity" values="0.59;0.89;0.59" 
-             dur="4.5s" begin="1.1s" repeatCount="indefinite"/>
+             dur="4.5s" begin="1.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="480" cy="11" r="1.4283424857488962" fill="#FFFFFF" opacity="0.56">
-    <animate attributeName="opacity" values="0.56;0.86;0.56" 
-             dur="4.0s" begin="1.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="570" cy="122" r="1.2733499324028363" fill="#FFFFFF" opacity="0.61">
-    <animate attributeName="opacity" values="0.61;0.91;0.61" 
-             dur="3.8s" begin="1.5s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="590" cy="91" r="2.0649249204767326" fill="#FFFFFF" opacity="0.89">
-    <animate attributeName="opacity" values="0.89;1.00;0.89" 
-             dur="2.3s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="812" cy="80" r="2.36259425121366" fill="#FFFFFF" opacity="0.90">
-    <animate attributeName="opacity" values="0.90;1.00;0.90" 
-             dur="3.7s" begin="0.8s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="259" cy="72" r="2.2293779817165937" fill="#FFFFFF" opacity="0.81">
-    <animate attributeName="opacity" values="0.81;1.00;0.81" 
-             dur="3.6s" begin="1.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="961" cy="149" r="2.1796613010141037" fill="#FFFFFF" opacity="0.97">
-    <animate attributeName="opacity" values="0.97;1.00;0.97" 
-             dur="3.2s" begin="0.1s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="669" cy="154" r="2.197912810716251" fill="#FFFFFF" opacity="0.87">
-    <animate attributeName="opacity" values="0.87;1.00;0.87" 
+  <circle cx="865" cy="53" r="1.1540998760307077" fill="#FFFFFF" opacity="0.66">
+    <animate attributeName="opacity" values="0.66;0.96;0.66" 
              dur="3.1s" begin="0.9s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1092" cy="97" r="1.9068816438310052" fill="#FFFFFF" opacity="0.92">
-    <animate attributeName="opacity" values="0.92;1.00;0.92" 
-             dur="2.4s" begin="2.2s" repeatCount="indefinite"/>
+  <circle cx="288" cy="152" r="1.4273235247290175" fill="#FFFFFF" opacity="0.60">
+    <animate attributeName="opacity" values="0.60;0.90;0.60" 
+             dur="3.3s" begin="0.1s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1023" cy="41" r="1.9804788350384057" fill="#FFFFFF" opacity="0.95">
-    <animate attributeName="opacity" values="0.95;1.00;0.95" 
-             dur="2.2s" begin="0.4s" repeatCount="indefinite"/>
+  <circle cx="660" cy="80" r="1.30398788897152" fill="#FFFFFF" opacity="0.66">
+    <animate attributeName="opacity" values="0.66;0.96;0.66" 
+             dur="3.3s" begin="1.9s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="895" cy="71" r="1.752021697348308" fill="#FFFFFF" opacity="0.71">
-    <animate attributeName="opacity" values="0.71;1.00;0.71" 
-             dur="2.6s" begin="1.9s" repeatCount="indefinite"/>
+  <circle cx="1144" cy="154" r="1.1250483650613223" fill="#FFFFFF" opacity="0.56">
+    <animate attributeName="opacity" values="0.56;0.86;0.56" 
+             dur="3.9s" begin="2.8s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="286" cy="160" r="1.7322208656247042" fill="#FFFFFF" opacity="0.91">
-    <animate attributeName="opacity" values="0.91;1.00;0.91" 
-             dur="4.0s" begin="1.6s" repeatCount="indefinite"/>
+  <circle cx="438" cy="63" r="1.1606730605069826" fill="#FFFFFF" opacity="0.64">
+    <animate attributeName="opacity" values="0.64;0.94;0.64" 
+             dur="4.5s" begin="2.0s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="994" cy="118" r="2.3420633188394033" fill="#FFFFFF" opacity="0.86">
-    <animate attributeName="opacity" values="0.86;1.00;0.86" 
+  <circle cx="654" cy="115" r="1.4384457933849628" fill="#FFFFFF" opacity="0.62">
+    <animate attributeName="opacity" values="0.62;0.92;0.62" 
+             dur="4.2s" begin="2.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1103" cy="34" r="1.1320731102273158" fill="#FFFFFF" opacity="0.70">
+    <animate attributeName="opacity" values="0.70;1.00;0.70" 
+             dur="5.0s" begin="2.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1085" cy="130" r="1.1654018761895426" fill="#FFFFFF" opacity="0.61">
+    <animate attributeName="opacity" values="0.61;0.91;0.61" 
+             dur="4.3s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="428" cy="134" r="1.1978653106779595" fill="#FFFFFF" opacity="0.61">
+    <animate attributeName="opacity" values="0.61;0.91;0.61" 
+             dur="4.3s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="468" cy="128" r="1.484589071387222" fill="#FFFFFF" opacity="0.51">
+    <animate attributeName="opacity" values="0.51;0.81;0.51" 
+             dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="273" cy="123" r="1.2347870108334782" fill="#FFFFFF" opacity="0.52">
+    <animate attributeName="opacity" values="0.52;0.82;0.52" 
+             dur="4.2s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="696" cy="47" r="1.101854501327424" fill="#FFFFFF" opacity="0.69">
+    <animate attributeName="opacity" values="0.69;0.99;0.69" 
+             dur="4.1s" begin="1.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="529" cy="58" r="1.4889980059651369" fill="#FFFFFF" opacity="0.65">
+    <animate attributeName="opacity" values="0.65;0.95;0.65" 
+             dur="3.5s" begin="0.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1167" cy="10" r="1.4739037248222513" fill="#FFFFFF" opacity="0.61">
+    <animate attributeName="opacity" values="0.61;0.91;0.61" 
+             dur="3.3s" begin="2.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="178" cy="135" r="1.0075405229811494" fill="#FFFFFF" opacity="0.56">
+    <animate attributeName="opacity" values="0.56;0.86;0.56" 
+             dur="3.4s" begin="0.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="802" cy="28" r="1.190717746808664" fill="#FFFFFF" opacity="0.69">
+    <animate attributeName="opacity" values="0.69;0.99;0.69" 
+             dur="4.6s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="918" cy="106" r="1.093121397542851" fill="#FFFFFF" opacity="0.54">
+    <animate attributeName="opacity" values="0.54;0.84;0.54" 
+             dur="3.4s" begin="0.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="138" cy="158" r="1.2291285915548402" fill="#FFFFFF" opacity="0.65">
+    <animate attributeName="opacity" values="0.65;0.95;0.65" 
+             dur="4.3s" begin="2.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="741" cy="53" r="1.372432946089303" fill="#FFFFFF" opacity="0.63">
+    <animate attributeName="opacity" values="0.63;0.93;0.63" 
+             dur="4.8s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="291" cy="40" r="1.390216910626124" fill="#FFFFFF" opacity="0.68">
+    <animate attributeName="opacity" values="0.68;0.98;0.68" 
+             dur="3.2s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="752" cy="89" r="1.2345959682524694" fill="#FFFFFF" opacity="0.69">
+    <animate attributeName="opacity" values="0.69;0.99;0.69" 
+             dur="4.5s" begin="2.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="748" cy="151" r="1.4314158774051493" fill="#FFFFFF" opacity="0.51">
+    <animate attributeName="opacity" values="0.51;0.81;0.51" 
+             dur="3.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="935" cy="35" r="1.1380699780299506" fill="#FFFFFF" opacity="0.69">
+    <animate attributeName="opacity" values="0.69;0.99;0.69" 
+             dur="4.0s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="451" cy="51" r="2.1001825984105245" fill="#FFFFFF" opacity="0.76">
+    <animate attributeName="opacity" values="0.76;1.00;0.76" 
+             dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="866" cy="51" r="1.7689282366277463" fill="#FFFFFF" opacity="0.87">
+    <animate attributeName="opacity" values="0.87;1.00;0.87" 
+             dur="3.2s" begin="0.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="523" cy="53" r="2.142815411195288" fill="#FFFFFF" opacity="0.84">
+    <animate attributeName="opacity" values="0.84;1.00;0.84" 
+             dur="2.9s" begin="1.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="497" cy="70" r="1.6630616171923944" fill="#FFFFFF" opacity="0.75">
+    <animate attributeName="opacity" values="0.75;1.00;0.75" 
+             dur="3.7s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="996" cy="122" r="2.1051162820939444" fill="#FFFFFF" opacity="0.94">
+    <animate attributeName="opacity" values="0.94;1.00;0.94" 
+             dur="3.0s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="674" cy="158" r="2.334766634969446" fill="#FFFFFF" opacity="0.72">
+    <animate attributeName="opacity" values="0.72;1.00;0.72" 
+             dur="2.6s" begin="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="311" cy="47" r="2.2395203258581424" fill="#FFFFFF" opacity="0.73">
+    <animate attributeName="opacity" values="0.73;1.00;0.73" 
+             dur="3.5s" begin="0.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1168" cy="75" r="2.2147358227819027" fill="#FFFFFF" opacity="0.83">
+    <animate attributeName="opacity" values="0.83;1.00;0.83" 
+             dur="3.3s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="628" cy="108" r="2.1004659023315764" fill="#FFFFFF" opacity="0.98">
+    <animate attributeName="opacity" values="0.98;1.00;0.98" 
+             dur="2.4s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1125" cy="95" r="1.6883658976994917" fill="#FFFFFF" opacity="0.98">
+    <animate attributeName="opacity" values="0.98;1.00;0.98" 
+             dur="3.0s" begin="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="793" cy="128" r="2.458012613672592" fill="#FFFFFF" opacity="0.73">
+    <animate attributeName="opacity" values="0.73;1.00;0.73" 
+             dur="3.4s" begin="1.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="732" cy="128" r="1.6121134363118297" fill="#FFFFFF" opacity="0.85">
+    <animate attributeName="opacity" values="0.85;1.00;0.85" 
              dur="3.3s" begin="0.4s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="543" cy="88" r="2.435729629694814" fill="#FFFFFF" opacity="0.82">
+  <circle cx="767" cy="37" r="2.370399087641488" fill="#FFFFFF" opacity="0.81">
+    <animate attributeName="opacity" values="0.81;1.00;0.81" 
+             dur="3.3s" begin="0.1s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="906" cy="128" r="2.143568383114812" fill="#FFFFFF" opacity="0.91">
+    <animate attributeName="opacity" values="0.91;1.00;0.91" 
+             dur="3.6s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="894" cy="150" r="2.2834385586584114" fill="#FFFFFF" opacity="0.82">
     <animate attributeName="opacity" values="0.82;1.00;0.82" 
-             dur="2.5s" begin="2.1s" repeatCount="indefinite"/>
+             dur="3.4s" begin="1.0s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1023" cy="58" r="1.8331748172152622" fill="#FFFFFF" opacity="0.74">
-    <animate attributeName="opacity" values="0.74;1.00;0.74" 
-             dur="4.0s" begin="0.3s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="19" cy="33" r="1.654068024630138" fill="#FFFFFF" opacity="0.88">
-    <animate attributeName="opacity" values="0.88;1.00;0.88" 
-             dur="3.1s" begin="0.6s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="1055" cy="92" r="2.4527602306060423" fill="#FFFFFF" opacity="0.82">
-    <animate attributeName="opacity" values="0.82;1.00;0.82" 
-             dur="2.5s" begin="0.7s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="985" cy="15" r="2.3352807311960415" fill="#FFFFFF" opacity="0.89">
-    <animate attributeName="opacity" values="0.89;1.00;0.89" 
-             dur="2.4s" begin="2.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="503" cy="26" r="2.457723080866204" fill="#FFFFFF" opacity="0.79">
-    <animate attributeName="opacity" values="0.79;1.00;0.79" 
-             dur="2.6s" begin="0.4s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="903" cy="89" r="1.6492211630703597" fill="#FFFFFF" opacity="0.83">
-    <animate attributeName="opacity" values="0.83;1.00;0.83" 
-             dur="3.2s" begin="1.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <circle cx="497" cy="108" r="2.145933867144617" fill="#FFFFFF" opacity="0.75">
+  <circle cx="1030" cy="117" r="1.8269796846972974" fill="#FFFFFF" opacity="0.75">
     <animate attributeName="opacity" values="0.75;1.00;0.75" 
-             dur="2.4s" begin="2.2s" repeatCount="indefinite"/>
+             dur="2.7s" begin="2.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="1091" cy="119" r="2.2224434721924933" fill="#FFFFFF" opacity="0.77">
-    <animate attributeName="opacity" values="0.77;1.00;0.77" 
-             dur="2.7s" begin="0.0s" repeatCount="indefinite"/>
+  <circle cx="445" cy="29" r="2.3964799312805227" fill="#FFFFFF" opacity="0.84">
+    <animate attributeName="opacity" values="0.84;1.00;0.84" 
+             dur="3.1s" begin="1.7s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="825" cy="52" r="1.859693810250643" fill="#FFFFFF" opacity="0.92">
-    <animate attributeName="opacity" values="0.92;1.00;0.92" 
-             dur="2.8s" begin="0.9s" repeatCount="indefinite"/>
+  <circle cx="939" cy="147" r="2.2124696859447868" fill="#FFFFFF" opacity="0.90">
+    <animate attributeName="opacity" values="0.90;1.00;0.90" 
+             dur="2.3s" begin="2.6s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="62" cy="117" r="1.9855704136438508" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
+  <circle cx="469" cy="42" r="2.403060192228323" fill="#FFFFFF" opacity="0.96">
+    <animate attributeName="opacity" values="0.96;1.00;0.96" 
+             dur="2.3s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="350" cy="54" r="1.932057841918775" fill="#FFFFFF" opacity="0.78">
+    <animate attributeName="opacity" values="0.78;1.00;0.78" 
+             dur="3.0s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="686" cy="72" r="1.941489459416421" fill="#3B82F6" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="222" cy="133" r="1.9269868496207265" fill="#3B82F6" filter="url(#glow)" opacity="0.8">
+  <circle cx="847" cy="123" r="1.8926628064969944" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="935" cy="102" r="2.1551458331249487" fill="#3B82F6" filter="url(#glow)" opacity="0.8">
+  <circle cx="458" cy="136" r="2.133855716828121" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="448" cy="144" r="2.141925969861423" fill="#3B82F6" filter="url(#glow)" opacity="0.8">
+  <circle cx="1041" cy="42" r="2.0653645045270945" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
-  <circle cx="344" cy="93" r="1.5462290051788523" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
+  <circle cx="724" cy="41" r="2.1823886755575033" fill="#8B5CF6" filter="url(#glow)" opacity="0.8">
     <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
   </circle>
 
@@ -519,7 +519,7 @@
   <rect x="0" y="170" width="1200" height="30" fill="#0B0C10" opacity="0.7"/>
   <text x="600" y="185" fill="#9CA3AF" 
         font-family="monospace" font-size="11" text-anchor="middle" opacity="0.6">
-    Last Sync: 2026-03-29 01:42 UTC | Repos: 0 | ⭐ 0
+    Last Sync: 2026-03-29 06:54 UTC | Repos: 0 | ⭐ 0
   </text>
   
   <!-- Shooting star animation -->
