@@ -45,9 +45,9 @@
 
 <br>
 
-**Voyager 1**
+**Neutron Stars**
 
-The most distant human-made object, over 14 billion miles from Earth.
+A teaspoon of neutron star material weighs about 6 billion tons.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <br>
 <br>
