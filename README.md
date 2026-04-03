@@ -73,7 +73,7 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <br>
 <br>
