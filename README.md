@@ -45,9 +45,9 @@
 
 <br>
 
-**Neutron Stars**
+**The Sun**
 
-A teaspoon of neutron star material weighs about 6 billion tons.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <br>
 <br>
