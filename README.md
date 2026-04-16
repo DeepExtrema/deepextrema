@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-An Open Source Machine Learning Framework for Everyone
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
@@ -73,7 +73,7 @@ An Open Source Machine Learning Framework for Everyone
 
 <br>
 
-> *Depth first; scale later.*
+> *The frontier rewards those who show up.*
 
 <br>
 <br>
