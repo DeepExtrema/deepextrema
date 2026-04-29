@@ -45,9 +45,9 @@
 
 <br>
 
-**Black Holes**
+**The Sun**
 
-Time slows down near a black hole due to extreme gravitational effects.
+Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
 
 <br>
 <br>
@@ -59,9 +59,9 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
