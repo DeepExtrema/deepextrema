@@ -59,9 +59,9 @@ The most distant human-made object, over 14 billion miles from Earth.
 
 <br>
 
-**[huggingface/transformers](https://github.com/huggingface/transformers)**
+**[f/prompts.chat](https://github.com/f/prompts.chat)**
 
-🤗 Transformers: the model-definition framework for state-...
+f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 <br>
