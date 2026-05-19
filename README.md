@@ -59,9 +59,9 @@ Time slows down near a black hole due to extreme gravitational effects.
 
 <br>
 
-**[f/prompts.chat](https://github.com/f/prompts.chat)**
+**[huggingface/transformers](https://github.com/huggingface/transformers)**
 
-f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
+🤗 Transformers: the model-definition framework for state-...
 
 <br>
 <br>
@@ -73,7 +73,7 @@ f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...
 
 <br>
 
-> *The frontier rewards those who show up.*
+> *Curiosity compounds like interest, but pays in discoveries.*
 
 <br>
 <br>
