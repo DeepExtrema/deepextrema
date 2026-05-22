@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Parallax · Sighting Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg:           #000000;
+  --bg-panel:     #0a0805;
+  --bg-raised:    #100c06;
+  --line:         #2d2210;
+  --line-hard:    #403014;
+  --ink-dim:      #6b5a3a;
+  --ink-mid:      #a89465;
+  --ink:          #dcc998;
+  --ink-bright:   #f5e6b8;
+  --gold:         #d4a85a;
+  --gold-bright:  #f0d089;
+  --gold-deep:    #7d5d2a;
+  --green:        #e0c478;
+  --crimson:      #c75028;
+  --plex:         'IBM Plex Serif', Georgia, serif;
+  --mono:         'JetBrains Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0; background: #000;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+/* Star field bg */
+body {
+  background:
+    radial-gradient(1px 1px at 12% 18%,  rgba(245,230,184,0.5),  transparent 50%),
+    radial-gradient(1px 1px at 28% 76%,  rgba(212,168,90,0.45),  transparent 50%),
+    radial-gradient(1px 1px at 47% 32%,  rgba(245,230,184,0.4),  transparent 50%),
+    radial-gradient(1px 1px at 63% 89%,  rgba(212,168,90,0.5),  transparent 50%),
+    radial-gradient(1px 1px at 81% 14%,  rgba(245,230,184,0.45), transparent 50%),
+    radial-gradient(1px 1px at 92% 64%,  rgba(212,168,90,0.35), transparent 50%),
+    radial-gradient(2px 2px at 18% 48%,  rgba(245,230,184,0.6), transparent 50%),
+    radial-gradient(2px 2px at 71% 27%,  rgba(245,230,184,0.55), transparent 50%),
+    radial-gradient(2px 2px at 38% 92%,  rgba(212,168,90,0.45),  transparent 50%),
+    radial-gradient(1px 1px at 8% 84%,   rgba(212,168,90,0.45),  transparent 50%),
+    radial-gradient(1px 1px at 55% 12%,  rgba(245,230,184,0.45), transparent 50%),
+    #000000;
+  background-size: 1600px 1200px, 1400px 1100px, 1200px 1300px, 1500px 1000px,
+                   1600px 1400px, 1300px 1200px, 1800px 1500px, 1400px 1300px,
+                   1500px 1400px, 1200px 1100px, 1600px 1500px, 100% 100%;
+}
+
+.frame {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+}
+
+/* HEADER ============================================== */
+.head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+  flex-shrink: 0;
+}
+.head-left { display: flex; align-items: baseline; gap: 16px; }
+.head .voy-mark {
+  width: 28px; height: 28px;
+  transform: translateY(6px);
+}
+.head .voy-mark svg { width: 100%; height: 100%; display: block; }
+.head .crumb {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.3em;
+  color: var(--gold); text-transform: uppercase;
+}
+.head h1 {
+  font-family: var(--plex); font-size: 22px; font-weight: 500;
+  color: var(--ink-bright); margin: 0; letter-spacing: -0.01em;
+}
+.head h1 em { font-style: italic; color: var(--gold); font-weight: 400; }
+.head .right {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+  color: var(--ink-dim); text-transform: uppercase;
+  display: flex; gap: 24px; align-items: baseline;
+}
+.head .right b { color: var(--ink-bright); font-weight: 500; }
+.head .right .live {
+  display: inline-block; width: 5px; height: 5px; border-radius: 50%;
+  background: var(--green); margin-right: 5px; vertical-align: 1px;
+  animation: pulse 1.4s infinite;
+}
+@keyframes pulse { 0%,100% {opacity:1} 50% {opacity:.3} }
+
+/* STAGE ============================================== */
+.stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 0;
+  padding: 40px 0;
+}
+
+/* INTRO ============================================== */
+.intro {
+  text-align: center;
+  max-width: 600px;
+  position: relative;
+}
+.intro .mark {
+  margin: 0 auto 32px;
+  width: 80px;
+}
+.intro .mark svg { width: 100%; }
+.intro h2 {
+  font-family: var(--plex);
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: var(--ink-bright);
+  margin: 0;
+  line-height: 1;
+}
+.intro h2 em { font-style: italic; color: var(--gold); }
+.intro .lede {
+  font-family: var(--plex);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink);
+  margin-top: 20px;
+  line-height: 1.5;
+}
+.intro .lede::before { content: '“ '; color: var(--gold); }
+.intro .lede::after { content: ' ”'; color: var(--gold); }
+.intro .rules {
+  margin-top: 28px;
+  text-align: left;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-mid);
+  letter-spacing: 0.04em;
+  line-height: 1.9;
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+  padding: 18px 0;
+}
+.intro .rules .step {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+}
+.intro .rules .step .n { color: var(--gold); }
+.intro .btn {
+  margin-top: 32px;
+  font-family: var(--mono);
+  font-size: 13px; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--ink-bright);
+  background: rgba(212,168,90,0.08);
+  border: 1px solid var(--gold);
+  padding: 14px 36px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.intro .btn:hover { background: var(--gold); color: var(--bg); }
+
+.game[hidden], .intro[hidden], .end[hidden] { display: none !important; }
+
+/* GAME ============================================== */
+.game {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  position: relative;
+}
+
+.viewports {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+}
+.vp {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+.vp canvas {
+  width: 320px; height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, #0a0805 0%, #000000 80%);
+  cursor: crosshair;
+  display: block;
+  border: 1px solid var(--gold);
+  box-shadow: 0 0 0 6px rgba(212,168,90,0.04), 0 0 30px rgba(212,168,90,0.08);
+}
+.vp .vp-label {
+  position: absolute;
+  top: -28px; left: 50%; transform: translateX(-50%);
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.3em;
+  color: var(--gold); text-transform: uppercase;
+  white-space: nowrap;
+}
+.vp .vp-sub {
+  position: absolute;
+  bottom: -22px; left: 50%; transform: translateX(-50%);
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.25em;
+  color: var(--ink-dim); text-transform: uppercase;
+}
+.vp.locked canvas { box-shadow: 0 0 0 6px rgba(212,168,90,0.1), 0 0 50px rgba(212,168,90,0.25); }
+.vp.misaligned canvas { border-color: var(--crimson); box-shadow: 0 0 0 6px rgba(199,80,40,0.12); }
+
+.baseline {
+  position: absolute;
+  width: 60px;
+  top: 50%;
+  left: 50%; transform: translate(-50%, -50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  pointer-events: none;
+}
+.baseline .au {
+  font-family: var(--mono); font-size: 9px; letter-spacing: 0.18em;
+  color: var(--ink-dim); text-transform: uppercase;
+}
+.baseline .au b { color: var(--gold); }
+.baseline .line {
+  width: 60px; height: 1px; background: var(--gold); opacity: 0.5;
+}
+.baseline .tick {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--gold); margin-top: -10px;
+}
+
+/* HUD ============================================== */
+.hud {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-top: 32px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+}
+.hud .cell { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+.hud .cell .k { font-size: 9px; color: var(--ink-dim); }
+.hud .cell .v {
+  font-family: var(--plex); font-size: 28px; font-weight: 500;
+  color: var(--ink-bright); letter-spacing: -0.01em; line-height: 1;
+}
+.hud .cell .v.blue { color: var(--gold); }
+.hud .cell .v small {
+  font-family: var(--mono); font-size: 10px; color: var(--ink-mid);
+  margin-left: 4px; letter-spacing: 0.1em;
+}
+.hud .sep {
+  width: 1px; height: 30px; background: var(--line);
+}
+
+/* RESULT ============================================ */
+.result {
+  position: absolute;
+  bottom: 24px; left: 50%; transform: translateX(-50%);
+  min-width: 560px;
+  max-width: 720px;
+  border: 1px solid var(--gold);
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ink-mid);
+  text-transform: uppercase;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.result.show { opacity: 1; pointer-events: auto; }
+.result.fail { border-color: var(--crimson); }
+.result .verdict {
+  font-family: var(--plex);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--ink-bright);
+  letter-spacing: -0.005em;
+  text-transform: none;
+}
+.result.fail .verdict { color: var(--crimson); }
+.result .math {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--gold); letter-spacing: 0.16em;
+}
+.result .math b { color: var(--ink-bright); font-weight: 500; }
+.result .actions { margin-left: auto; display: flex; gap: 12px; }
+.result .btn-sm {
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--gold-bright);
+  background: transparent;
+  border: 1px solid var(--gold);
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.result .btn-sm.primary { background: var(--gold); color: var(--bg); }
+.result .btn-sm:hover { background: var(--gold); color: var(--bg); }
+
+/* FOOTER ============================================ */
+.foot {
+  display: flex; justify-content: space-between;
+  font-family: var(--mono); font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--ink-dim); text-transform: uppercase;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.foot kbd {
+  display: inline-block;
+  border: 1px solid var(--line-hard);
+  background: var(--bg-raised);
+  color: var(--ink-bright);
+  padding: 2px 6px;
+  font-family: var(--mono);
+  font-size: 10px;
+  margin-right: 4px;
+}
+
+/* END SCREEN ======================================== */
+.end { text-align: center; max-width: 600px; }
+.end h2 {
+  font-family: var(--plex); font-size: 56px; font-weight: 500;
+  color: var(--ink-bright); letter-spacing: -0.025em; margin: 0;
+}
+.end h2 em { font-style: italic; color: var(--gold); }
+.end .summary {
+  display: flex; justify-content: center; gap: 48px;
+  margin: 32px 0;
+}
+.end .summary .cell { display: flex; flex-direction: column; gap: 6px; }
+.end .summary .k { font-family: var(--mono); font-size: 10px; letter-spacing: 0.22em; color: var(--ink-dim); text-transform: uppercase; }
+.end .summary .v { font-family: var(--plex); font-size: 56px; color: var(--gold); font-weight: 500; line-height: 1; }
+.end .verdict {
+  font-family: var(--plex); font-style: italic; font-size: 19px;
+  color: var(--ink); margin: 0 auto 32px;
+  max-width: 50ch;
+}
+.end .verdict::before { content: '“ '; color: var(--gold); }
+.end .verdict::after { content: ' ”'; color: var(--gold); }
+
+@media (max-width: 760px) {
+  .viewports { flex-direction: column; gap: 32px; }
+  .baseline { display: none; }
+  .vp { width: 280px; height: 280px; }
+  .vp canvas { width: 280px; height: 280px; }
+  .head h1 { font-size: 16px; }
+  .head .right { gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="head">
+    <div class="head-left">
+      <div class="voy-mark">
+        <svg viewBox="0 0 40 40" stroke="#d4a85a" fill="none" stroke-width="1">
+          <circle cx="20" cy="20" r="11"/>
+          <line x1="9" y1="20" x2="31" y2="20"/>
+          <line x1="20" y1="9" x2="20" y2="31"/>
+          <circle cx="17" cy="18.5" r="1" fill="#d4a85a"/>
+          <circle cx="23" cy="18.5" r="1" fill="#d4a85a"/>
+        </svg>
+      </div>
+      <div>
+        <div class="crumb">§ 08 · PARALLAX</div>
+        <h1>Sighting <em>simulator</em></h1>
+      </div>
+    </div>
+    <div class="right">
+      <span><span class="live"></span><b id="hud-status">CALIBRATING</b></span>
+      <span>OBS · <b id="hud-obs">00</b></span>
+      <span>SCORE · <b id="hud-score">00</b></span>
+      <span>T+ <b id="hud-time">90.0</b>s</span>
+    </div>
+  </div>
+
+  <!-- STAGE -->
+  <div class="stage">
+
+    <!-- INTRO -->
+    <section id="intro" class="intro">
+      <div class="mark">
+        <svg viewBox="0 0 80 100" stroke="#d4a85a" stroke-width="0.7" fill="none">
+          <circle cx="40" cy="20" r="14"/>
+          <line x1="26" y1="20" x2="54" y2="20"/>
+          <line x1="40" y1="6" x2="40" y2="34"/>
+          <circle cx="34" cy="18" r="1.2" fill="#d4a85a"/>
+          <circle cx="46" cy="18" r="1.2" fill="#d4a85a"/>
+          <line x1="34" y1="40" x2="46" y2="40"/>
+          <line x1="36" y1="46" x2="44" y2="46"/>
+          <line x1="38" y1="52" x2="42" y2="52"/>
+          <circle cx="40" cy="58" r="2"/>
+          <path d="M 40 62 L 4 100 M 40 62 L 76 100"/>
+          <path d="M 4 100 Q 40 82 76 100"/>
+        </svg>
+      </div>
+      <h2>Parallax <em>sighting</em></h2>
+      <p class="lede">All distance begins with two points.</p>
+      <div class="rules">
+        <div class="step"><span class="n">①</span><span>Two viewports show the same patch of sky, six months apart. Nearby stars appear to shift against the distant background.</span></div>
+        <div class="step"><span class="n">②</span><span>Find the one star that has moved. Click it in the <b style="color:var(--gold)">left</b> viewport, then click the matching shifted star in the <b style="color:var(--gold)">right</b> viewport.</span></div>
+        <div class="step"><span class="n">③</span><span>Hit <b>MEASURE</b>. We compute the parallax angle and read out the star's distance.</span></div>
+        <div class="step"><span class="n">④</span><span>You have ninety seconds. Calibrate the cosmos.</span></div>
+      </div>
+      <button class="btn" id="begin">▸ Begin observation</button>
+    </section>
+
+    <!-- GAME -->
+    <section id="game" class="game" hidden>
+      <div class="viewports">
+        <div class="vp" id="vp-left">
+          <div class="vp-label">Earth · January</div>
+          <canvas id="canvas-left" width="640" height="640"></canvas>
+          <div class="vp-sub">Viewport · L</div>
+        </div>
+        <div class="baseline">
+          <div class="au">Baseline<br><b>2 AU</b></div>
+          <div class="line"></div>
+          <div class="tick"></div>
+        </div>
+        <div class="vp" id="vp-right">
+          <div class="vp-label">Earth · July</div>
+          <canvas id="canvas-right" width="640" height="640"></canvas>
+          <div class="vp-sub">Viewport · R</div>
+        </div>
+      </div>
+
+      <div class="hud">
+        <div class="cell">
+          <span class="k">Sighted</span>
+          <span class="v"><span id="sight-l">·</span> / <span id="sight-r">·</span></span>
+        </div>
+        <div class="sep"></div>
+        <div class="cell">
+          <span class="k">Lock attempts</span>
+          <span class="v" id="cell-attempts">0</span>
+        </div>
+        <div class="sep"></div>
+        <div class="cell">
+          <span class="k">Streak</span>
+          <span class="v blue" id="cell-streak">0</span>
+        </div>
+      </div>
+
+      <!-- Result panel -->
+      <div class="result" id="result">
+        <div>
+          <div class="verdict" id="result-verdict">Locked</div>
+          <div class="math" id="result-math">Δθ = · &nbsp;|&nbsp; d = · pc &nbsp;|&nbsp; <b>· ly</b></div>
+        </div>
+        <div class="actions">
+          <button class="btn-sm" id="btn-reset">↻ Reset</button>
+          <button class="btn-sm primary" id="btn-next">▸ Next ⏎</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- END -->
+    <section id="end" class="end" hidden>
+      <h2>Observation <em>complete</em></h2>
+      <div class="summary">
+        <div class="cell">
+          <span class="k">Stars measured</span>
+          <span class="v" id="end-score">0</span>
+        </div>
+        <div class="cell">
+          <span class="k">Best streak</span>
+          <span class="v" id="end-streak">0</span>
+        </div>
+        <div class="cell">
+          <span class="k">Total observations</span>
+          <span class="v" id="end-obs">0</span>
+        </div>
+      </div>
+      <p class="verdict" id="end-verdict">A respectable session.</p>
+      <button class="btn" id="restart">▸ Begin again</button>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="foot">
+    <div>
+      <kbd>CLICK</kbd>sight star ·
+      <kbd>SPACE</kbd>measure ·
+      <kbd>⏎</kbd>next ·
+      <kbd>R</kbd>reset
+    </div>
+    <div>SIGNAL · OUTBOUND · DEEPEXTREMA / PARALLAX</div>
+  </div>
+</div>
+
+<script>
+(() => {
+  // ──────────────────────────────────────────────
+  // PARALLAX // SIGHTING SIMULATOR
+  // ──────────────────────────────────────────────
+  const GOLD          = '#d4a85a';
+  const GOLD_BRIGHT   = '#f5e6b8';
+  const GOLD_DEEP     = '#7d5d2a';
+  const CRIMSON       = '#c75028';
+  const STAR_COUNT    = 36;
+  const TARGET_HIT_R  = 22;       // px tolerance in canvas coords
+  const PARALLAX_PX   = () => 28 + Math.random() * 22;  // 28-50 px shift
+  const SESSION_SEC   = 90;
+  const CANVAS_SIZE   = 640;      // logical canvas dimensions
+
+  const $ = (id) => document.getElementById(id);
+  const canvasL = $('canvas-left');
+  const canvasR = $('canvas-right');
+  const ctxL = canvasL.getContext('2d');
+  const ctxR = canvasR.getContext('2d');
+
+  // game state ---------------------------------------------------
+  const state = {
+    phase: 'intro',         // intro | observing | resolved | end
+    score: 0,
+    obs: 0,
+    streak: 0,
+    bestStreak: 0,
+    attempts: 0,
+    timeLeft: SESSION_SEC,
+    startTs: 0,
+    rafId: 0,
+    target: null,           // { jan:{x,y}, jul:{x,y}, parallaxPx }
+    bgStars: [],            // [{x,y,r}]
+    sighting: { L: null, R: null }, // {x,y} in canvas coords
+  };
+
+  // entry points -------------------------------------------------
+  $('begin').addEventListener('click', startSession);
+  $('restart').addEventListener('click', startSession);
+  $('btn-next').addEventListener('click', nextObservation);
+  $('btn-reset').addEventListener('click', resetObservation);
+  canvasL.addEventListener('click', (e) => onClick('L', e));
+  canvasR.addEventListener('click', (e) => onClick('R', e));
+  window.addEventListener('keydown', (e) => {
+    if (state.phase === 'observing') {
+      if (e.code === 'Space') { e.preventDefault(); attemptMeasure(); }
+      if (e.code === 'KeyR')  { e.preventDefault(); resetObservation(); }
+    } else if (state.phase === 'resolved') {
+      if (e.code === 'Enter' || e.code === 'Space') { e.preventDefault(); nextObservation(); }
+    }
+  });
+
+  // ──────────────────────────────────────────────
+  // SESSION
+  // ──────────────────────────────────────────────
+  function startSession() {
+    $('intro').hidden = true;
+    $('end').hidden = true;
+    $('game').hidden = false;
+    state.score = 0;
+    state.obs = 0;
+    state.streak = 0;
+    state.bestStreak = 0;
+    state.attempts = 0;
+    state.timeLeft = SESSION_SEC;
+    state.startTs = performance.now();
+    state.phase = 'observing';
+    nextObservation();
+    tickLoop();
+  }
+
+  function tickLoop() {
+    const tick = () => {
+      const elapsed = (performance.now() - state.startTs) / 1000;
+      state.timeLeft = Math.max(0, SESSION_SEC - elapsed);
+      $('hud-time').textContent = state.timeLeft.toFixed(1);
+      if (state.timeLeft <= 0) {
+        endSession();
+        return;
+      }
+      state.rafId = requestAnimationFrame(tick);
+    };
+    state.rafId = requestAnimationFrame(tick);
+  }
+
+  function endSession() {
+    cancelAnimationFrame(state.rafId);
+    state.phase = 'end';
+    $('game').hidden = true;
+    $('end').hidden = false;
+    $('end-score').textContent = state.score;
+    $('end-streak').textContent = state.bestStreak;
+    $('end-obs').textContent = state.obs;
+    const ratio = state.obs > 0 ? state.score / state.obs : 0;
+    $('end-verdict').textContent = endVerdict(state.score, ratio);
+    $('hud-status').textContent = 'STANDBY';
+  }
+
+  function endVerdict(score, ratio) {
+    if (score === 0)        return 'The stars revealed nothing — but you watched.';
+    if (score < 3)          return 'A first contact. Calibration takes time.';
+    if (ratio > 0.9)        return 'Astronomer-grade precision. The cosmos owes you an explanation.';
+    if (ratio > 0.7)        return 'A steady hand. Hipparcos would approve.';
+    if (score >= 8)         return 'Productive cycle. Many distances logged.';
+    return 'A respectable session. The frontier rewards those who show up.';
+  }
+
+  // ──────────────────────────────────────────────
+  // OBSERVATION
+  // ──────────────────────────────────────────────
+  function nextObservation() {
+    state.obs += 1;
+    state.attempts = 0;
+    state.sighting = { L: null, R: null };
+    state.phase = 'observing';
+    $('hud-obs').textContent = String(state.obs).padStart(2, '0');
+    $('hud-score').textContent = String(state.score).padStart(2, '0');
+    $('hud-status').textContent = 'OBSERVING';
+    $('cell-attempts').textContent = '0';
+    $('cell-streak').textContent = state.streak;
+    $('sight-l').textContent = '·';
+    $('sight-r').textContent = '·';
+    $('result').classList.remove('show', 'fail');
+    $('vp-left').classList.remove('locked', 'misaligned');
+    $('vp-right').classList.remove('locked', 'misaligned');
+
+    generateField();
+    drawBoth();
+  }
+
+  function resetObservation() {
+    if (state.phase !== 'observing') return;
+    state.sighting = { L: null, R: null };
+    $('sight-l').textContent = '·';
+    $('sight-r').textContent = '·';
+    $('result').classList.remove('show', 'fail');
+    $('vp-left').classList.remove('misaligned');
+    $('vp-right').classList.remove('misaligned');
+    drawBoth();
+  }
+
+  function generateField() {
+    const c = CANVAS_SIZE / 2;
+    const radius = CANVAS_SIZE / 2 - 30;
+    // Background stars — same in both viewports
+    const bg = [];
+    while (bg.length < STAR_COUNT) {
+      const r = Math.random() * radius;
+      const a = Math.random() * Math.PI * 2;
+      bg.push({
+        x: c + Math.cos(a) * r,
+        y: c + Math.sin(a) * r,
+        r: 1 + Math.random() * 1.8,
+        brightness: 0.5 + Math.random() * 0.4,
+      });
+    }
+    state.bgStars = bg;
+
+    // Pick target position (somewhere central-ish so it has room to shift)
+    const inner = radius * 0.7;
+    const ta = Math.random() * Math.PI * 2;
+    const tr = inner * Math.sqrt(Math.random()) * 0.7;
+    const tx = c + Math.cos(ta) * tr;
+    const ty = c + Math.sin(ta) * tr;
+
+    const shift = PARALLAX_PX();
+    const direction = Math.random() < 0.5 ? -1 : 1;  // shift left or right (mostly horizontal — Earth's orbital plane)
+    state.target = {
+      jan:        { x: tx, y: ty },
+      jul:        { x: tx + shift * direction, y: ty + (Math.random() - 0.5) * 4 },
+      parallaxPx: Math.abs(shift),
+    };
+  }
+
+  // ──────────────────────────────────────────────
+  // DRAW
+  // ──────────────────────────────────────────────
+  function drawBoth() {
+    drawViewport(ctxL, 'L');
+    drawViewport(ctxR, 'R');
+  }
+
+  function drawViewport(ctx, side) {
+    const W = CANVAS_SIZE, H = CANVAS_SIZE;
+    ctx.clearRect(0, 0, W, H);
+
+    // crosshair guide
+    ctx.strokeStyle = 'rgba(125,93,42,0.4)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, H/2); ctx.lineTo(W, H/2);
+    ctx.moveTo(W/2, 0); ctx.lineTo(W/2, H);
+    ctx.stroke();
+
+    // concentric reticle rings
+    ctx.strokeStyle = 'rgba(45,34,16,0.6)';
+    ctx.setLineDash([4, 4]);
+    for (let r of [W*0.18, W*0.32]) {
+      ctx.beginPath(); ctx.arc(W/2, H/2, r, 0, Math.PI*2); ctx.stroke();
+    }
+    ctx.setLineDash([]);
+
+    // background stars (shared between viewports)
+    for (const s of state.bgStars) {
+      ctx.fillStyle = `rgba(212,168,90,${s.brightness})`;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI*2);
+      ctx.fill();
+    }
+
+    // target star (different position in each viewport)
+    const t = side === 'L' ? state.target.jan : state.target.jul;
+    // halo
+    const grad = ctx.createRadialGradient(t.x, t.y, 0, t.x, t.y, 18);
+    grad.addColorStop(0, 'rgba(245,230,184,0.55)');
+    grad.addColorStop(0.5, 'rgba(212,168,90,0.18)');
+    grad.addColorStop(1, 'rgba(212,168,90,0)');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(t.x, t.y, 18, 0, Math.PI*2);
+    ctx.fill();
+    // core
+    ctx.fillStyle = GOLD_BRIGHT;
+    ctx.beginPath();
+    ctx.arc(t.x, t.y, 3.5, 0, Math.PI*2);
+    ctx.fill();
+
+    // sighting marker if placed
+    const s = state.sighting[side];
+    if (s) {
+      ctx.strokeStyle = state.phase === 'resolved' && !s.correct
+        ? CRIMSON
+        : GOLD;
+      ctx.lineWidth = 1.5;
+      ctx.setLineDash([]);
+      const L = 14;
+      ctx.beginPath();
+      ctx.moveTo(s.x - L, s.y); ctx.lineTo(s.x - 4, s.y);
+      ctx.moveTo(s.x + 4, s.y); ctx.lineTo(s.x + L, s.y);
+      ctx.moveTo(s.x, s.y - L); ctx.lineTo(s.x, s.y - 4);
+      ctx.moveTo(s.x, s.y + 4); ctx.lineTo(s.x, s.y + L);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, 16, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, 2, 0, Math.PI * 2);
+      ctx.fillStyle = state.phase === 'resolved' && !s.correct ? CRIMSON : GOLD;
+      ctx.fill();
+    }
+  }
+
+  // ──────────────────────────────────────────────
+  // CLICK HANDLING
+  // ──────────────────────────────────────────────
+  function onClick(side, e) {
+    if (state.phase !== 'observing') return;
+    const canvas = side === 'L' ? canvasL : canvasR;
+    const rect = canvas.getBoundingClientRect();
+    const scale = CANVAS_SIZE / rect.width;
+    const x = (e.clientX - rect.left) * scale;
+    const y = (e.clientY - rect.top) * scale;
+
+    // Snap to nearest star (target or background) within a small radius
+    const candidates = [
+      { x, y, isTarget: true,  ref: side === 'L' ? state.target.jan : state.target.jul, dist: distTo(x, y, side === 'L' ? state.target.jan : state.target.jul) },
+      ...state.bgStars.map(s => ({ x: s.x, y: s.y, isTarget: false, ref: s, dist: distTo(x, y, s) })),
+    ];
+    candidates.sort((a, b) => a.dist - b.dist);
+    const nearest = candidates[1]; // skip the synthetic first
+    // Use raw click unless a star is very close
+    const SNAP_R = 14;
+    let placeX = x, placeY = y, isTarget = false;
+    if (nearest.dist < SNAP_R) {
+      placeX = nearest.ref.x;
+      placeY = nearest.ref.y;
+      isTarget = nearest.isTarget;
+    } else {
+      // direct distance to target
+      const targetRef = side === 'L' ? state.target.jan : state.target.jul;
+      if (distTo(x, y, targetRef) < TARGET_HIT_R) {
+        placeX = targetRef.x;
+        placeY = targetRef.y;
+        isTarget = true;
+      }
+    }
+
+    state.sighting[side] = { x: placeX, y: placeY, isTarget };
+    $(`sight-${side.toLowerCase()}`).textContent = '◉';
+    drawBoth();
+
+    // Auto-measure if both placed
+    if (state.sighting.L && state.sighting.R) {
+      setTimeout(attemptMeasure, 220);
+    }
+  }
+
+  function distTo(x, y, p) {
+    return Math.hypot(x - p.x, y - p.y);
+  }
+
+  // ──────────────────────────────────────────────
+  // MEASURE
+  // ──────────────────────────────────────────────
+  function attemptMeasure() {
+    if (state.phase !== 'observing') return;
+    if (!state.sighting.L || !state.sighting.R) return;
+    state.attempts += 1;
+    $('cell-attempts').textContent = state.attempts;
+
+    const success = state.sighting.L.isTarget && state.sighting.R.isTarget;
+    state.phase = 'resolved';
+
+    if (success) {
+      state.score += 1;
+      state.streak += 1;
+      state.bestStreak = Math.max(state.bestStreak, state.streak);
+      $('hud-score').textContent = String(state.score).padStart(2, '0');
+      $('hud-status').textContent = 'LOCKED';
+      $('cell-streak').textContent = state.streak;
+
+      // compute "real" parallax & distance for narrative
+      // 22 px ≈ 1.0 arcsec → distance = 1/parallax pc
+      const arcsec = state.target.parallaxPx / 22;
+      const pc     = (1 / arcsec).toFixed(2);
+      const ly     = (pc * 3.262).toFixed(2);
+
+      $('vp-left').classList.add('locked');
+      $('vp-right').classList.add('locked');
+      const verdicts = [
+        'Sighting locked.',
+        'Distance confirmed.',
+        'Parallax achieved.',
+        'Triangulation accepted.',
+        'Sky compiled.',
+      ];
+      $('result-verdict').textContent = verdicts[Math.floor(Math.random()*verdicts.length)];
+      $('result-math').innerHTML = `Δθ = ${arcsec.toFixed(2)}″  |  d = ${pc} pc  |  <b>≈ ${ly} ly</b>`;
+      $('result').classList.remove('fail');
+
+      // overlay the parallax triangle between viewports
+      drawConnectingTriangle(true);
+    } else {
+      state.streak = 0;
+      $('cell-streak').textContent = '0';
+      $('hud-status').textContent = 'MISALIGNED';
+      $('vp-left').classList.add('misaligned');
+      $('vp-right').classList.add('misaligned');
+      $('result-verdict').textContent = 'Misaligned.';
+      $('result-math').innerHTML = `Different stars sighted in each viewport. Both clicks must land on the <b>one</b> that has moved.`;
+      $('result').classList.add('fail');
+      drawBoth();
+    }
+
+    $('result').classList.add('show');
+  }
+
+  function drawConnectingTriangle(success) {
+    // Redraw both canvases first
+    drawBoth();
+    // Then add an overlay highlight on the actual target
+    const drawTargetRing = (ctx, side) => {
+      const t = side === 'L' ? state.target.jan : state.target.jul;
+      ctx.strokeStyle = success ? GOLD_BRIGHT : CRIMSON;
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.arc(t.x, t.y, 22, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.setLineDash([2, 3]);
+      ctx.beginPath();
+      ctx.arc(t.x, t.y, 32, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    };
+    drawTargetRing(ctxL, 'L');
+    drawTargetRing(ctxR, 'R');
+  }
+
+})();
+</script>
+
+</body>
+</html>
