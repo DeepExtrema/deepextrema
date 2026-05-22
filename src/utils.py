@@ -146,18 +146,23 @@ def read_readme() -> str:
 def update_readme_section(section_name: str, new_content: str) -> None:
     """Update a specific section in README.md marked by HTML comments.
     
-    Sections are marked like:
-    <!-- SECTION_NAME -->
-    content here
-    <!-- /SECTION_NAME -->
+    Supports:
+    <!-- SECTION_NAME_START --> ... <!-- SECTION_NAME_END -->
+    or
+    <!-- SECTION_NAME --> ... <!-- /SECTION_NAME -->
     """
     readme = read_readme()
     
-    # Pattern to match section including markers
-    pattern = rf"(<!-- {section_name} -->).*?(<!-- /{section_name} -->)"
-    replacement = rf"\1\n{new_content}\n\2"
-    
-    new_readme = re.sub(pattern, replacement, readme, flags=re.DOTALL)
+    # Try the _START / _END pattern first
+    pattern_start_end = rf"(<!-- {section_name}_START -->).*?(<!-- {section_name}_END -->)"
+    if re.search(pattern_start_end, readme, flags=re.DOTALL):
+        replacement = rf"\1\n{new_content}\n\2"
+        new_readme = re.sub(pattern_start_end, replacement, readme, flags=re.DOTALL)
+    else:
+        # Fall back to original pattern
+        pattern_orig = rf"(<!-- {section_name} -->).*?(<!-- /{section_name} -->)"
+        replacement = rf"\1\n{new_content}\n\2"
+        new_readme = re.sub(pattern_orig, replacement, readme, flags=re.DOTALL)
     
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(new_readme)

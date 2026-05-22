@@ -214,47 +214,33 @@ def main():
     
     readme_content = f'''
 <table>
-<tr></tr>
 <tr>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 🌌 Space{space_stale}
+**🜨 SPACE**{space_stale}
 
-<br>
+{space.get('title', 'Signal')} — {truncate_string(space.get('description', ''), 80)}
 
-**{space.get('title', 'Signal')}**
+<sub>NASA APOD · {space.get('date', '')}</sub>
 
-{truncate_string(space.get('description', ''), 80)}
-
-<br>
-<br>
 </td>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 🤖 AI{ai_stale}
+**◇ AI**{ai_stale}
 
-<br>
+[{ai.get('name', 'Model')}]({ai.get('url', '#')})
 
-**[{ai.get('name', 'Model')}]({ai.get('url', '#')})**
+<sub>HF TRENDING · {ai.get('description', 'MODEL').upper()}</sub>
 
-{ai.get('description', 'Trending model')}
-
-<br>
-<br>
 </td>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 💬 Phrase
-
-<br>
+**✺ PHRASE**
 
 > *{phrase.get('text', 'Loading...')}*
 
-<br>
-<br>
+<sub>{phrase.get('source', 'GENERATED').upper()} · DAILY</sub>
+
 </td>
 </tr>
 </table>

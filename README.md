@@ -1,111 +1,185 @@
-<!-- CONSTELLATION_HEADER -->
+<!--
+  ============================================================
+  DEEPEXTREMA · OPERATOR PROFILE
+  Auto-updated every 6h by .github/workflows/update-cockpit.yml
+  Do not hand-edit content between START/END markers.
+  Voyager golden record aesthetic — pure black, soft gold.
+  ============================================================
+-->
+
 <div align="center">
-  <img src="assets/constellation_header.svg" alt="Cosmic Header" width="100%" />
+
+<!-- HEADER_START -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="readme-assets/header.svg">
+  <source media="(prefers-color-scheme: light)" srcset="readme-assets/header.svg">
+  <img alt="DeepExtrema — Signal outbound" src="readme-assets/header.svg" width="100%">
+</picture>
+<!-- HEADER_END -->
+
 </div>
-<!-- /CONSTELLATION_HEADER -->
+
+<!-- LEDE_START -->
+
+> *Building autonomous systems for the deep frontier — orbital tooling, ML pipelines, signal infrastructure. Forward-deployed consciousness.*
+
+<!-- LEDE_END -->
+
+<div align="center">
+
+`STATUS · OPERATIONAL`  `SECTOR · ORBITAL TOOLING`  `TZ · UTC+02:00`  `SINCE · 2021`  `LAST SYNC · 06H AGO`
+
+[**GitHub**](https://github.com/DeepExtrema)  ·  [**Site**](https://deepextrema.dev)  ·  [**Email**](mailto:hi@deepextrema.dev)  ·  [**X / Twitter**](https://x.com/deepextrema)
+
+</div>
+
+<div align="center">
+  <img src="readme-assets/divider.svg" alt="—" width="100%">
+</div>
+
+<!-- TELEMETRY_START -->
+<sub align="center">
+<b>TELEMETRY ·</b>
+COMMITS·30D <code>184</code>  ·
+PR·MERGED <code>23</code>  ·
+ISSUES·CLOSED <code>41</code>  ·
+ACTIVE·REPOS <code>6</code>  ·
+STARS·TOTAL <code>1.3K</code>  ·
+WORKFLOWS <code>✓✓✓✓✗✓✓✓✓✓</code>  ·
+RATE·LIMIT <code>4870/5000</code>
+</sub>
+<!-- TELEMETRY_END -->
 
 <br>
 
-<h1 align="center">🌌 DeepExtrema</h1>
+## § 02 · Current transmissions
 
-<h3 align="center">🧠 Founder | Builder | Explorer</h3>
-
-<p align="center">
-  <em>Forward-deployed consciousness. </em>
-</p>
+<!-- CURRENT_FOCUS_START -->
+<div align="center">
+  <img src="readme-assets/current-transmissions.svg" alt="Current transmissions" width="100%">
+</div>
+<!-- CURRENT_FOCUS_END -->
 
 <br>
- 💫 About Me:
-🛠️ I’m currently working on: ARES (2D LiDAR + ML hand-gesture control) + Sherlock (agentic data analysis → report + optional baseline ML models)<br><br>🤝 I’m looking to collaborate on: OSS + research-y builds around agentic analytics and robotics perception (NYC in-person preferred, remote OK)<br><br>🧠 I’m looking for help with: architecture review + pair programming + tests/evals (reproducible builds only)<br><br>🌱 I’m currently learning: LangChain/agent frameworks, LLM systems, JS/TS, ROS2 + Rust<br><br>💬 Ask me about: agent orchestration + evals, LiDAR perception/gesture classification, shipping ML systems (FastAPI/Docker/K8s)<br><br>⚡ Fun fact: my favorite game is Terra Invicta
 
+## § 03 · Project timeline
 
-## 🌐 Socials:
-[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/@deepextrema) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/taimoorawan/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/@deepextrema) 
+<!-- TIMELINE_START -->
+<div align="center">
+  <img src="readme-assets/timeline.svg" alt="Project timeline 2021–present" width="100%">
+</div>
+<!-- TIMELINE_END -->
 
-# 💻 Tech Stack:
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![Scipy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=@deepextrema&theme=cobalt&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=@deepextrema&theme=cobalt&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=@deepextrema&theme=cobalt&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<br>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+## § 04 · Commit clock
 
----
-<!-- SIGNAL_FEED -->
+<!-- CLOCK_START -->
+<div align="center">
+  <img src="readme-assets/clock.svg" alt="24h commit clock" width="100%">
+</div>
+<!-- CLOCK_END -->
+
+<br>
+
+## § 05 · Transmission record
+
+<!-- HEATMAP_START -->
+<div align="center">
+  <img src="readme-assets/heatmap.svg" alt="365-day transmission record" width="100%">
+</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="dist/github-snake-dark.svg">
+  <img alt="Contribution graph as a snake game" src="dist/github-snake.svg">
+</picture>
+<!-- HEATMAP_END -->
+
+<br>
+
+## § 06 · Operating stack
+
+<!-- The Voyager record carried gold, copper, and 116 images.
+     This one carries five languages and a strong opinion. -->
+
+| | | |
+|---|---|---|
+| **Languages**  | Python 3.11 · TypeScript · Rust · Go · ROS 2 | *what I write* |
+| **ML / Data**  | PyTorch · NumPy · Polars · DuckDB · TFDV       | *what I train* |
+| **Robotics**   | 2D LiDAR · OpenCV · ROS 2 · Raspberry Pi       | *what I ship to physical things* |
+| **Infra**      | Docker · GitHub Actions · FastAPI · Postgres   | *what runs at 3am* |
+| **Craft**      | Vim · tmux · zsh · Linear · Obsidian           | *how I think* |
+
+<br>
+
+## § 07 · Signal feed
+
+<!-- SIGNAL_FEED_START -->
 
 <table>
-<tr></tr>
 <tr>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 🌌 Space (stale)
+**🜨 SPACE**
 
-<br>
+The Nebulous Realm of WR 134 — This cosmic snapshot covers a field of view over twice as wide as the full Mo...
 
-**The Sun**
+<sub>NASA APOD · 2026-05-22</sub>
 
-Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.
-
-<br>
-<br>
 </td>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 🤖 AI
+**◇ AI** (stale)
 
-<br>
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-**[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)**
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
-An Open Source Machine Learning Framework for Everyone
-
-<br>
-<br>
 </td>
-<td align="center" width="33%">
-<br>
+<td width="33%" align="center" valign="top">
 
-### 💬 Phrase
-
-<br>
+**✺ PHRASE**
 
 > *Every system starts as a question.*
 
-<br>
-<br>
+<sub>CURATED · DAILY</sub>
+
 </td>
 </tr>
 </table>
 
-<!-- /SIGNAL_FEED -->
+<!-- SIGNAL_FEED_END -->
 
 <br>
 
+## § 08 · Parallax sighting
 
-<br>
+<!-- PARALLAX_START -->
 
-<!-- SNAKE -->
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dist/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="dist/github-snake.svg" />
-    <img alt="github-snake" src="dist/github-snake.svg" />
-  </picture>
+  <a href="https://deepextrema.github.io/parallax-sighting/" title="Open the parallax sighting simulator">
+    <img src="readme-assets/parallax-mini.svg" alt="Parallax sighting simulator — click to open" width="100%">
+  </a>
 </div>
-<!-- /SNAKE -->
+
+<sub><div align="center">
+A small in-browser instrument. Two viewports six months apart — find the star that has shifted, sight it in both, measure the parallax angle.
+</div></sub>
+
+<!-- PARALLAX_END -->
 
 <br>
 
----
+<div align="center">
+  <img src="readme-assets/footer-mark.svg" alt="—" width="100%">
+</div>
 
-<br>
+<!-- FOOTER_START -->
+<div align="center">
 
-<p align="center">
-  <em>Built with curiosity, powered by code 🌌</em>
-</p>
+<sub>
+LAST BUILD <code>2026-05-22 20:41 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3245af6</code>
+</sub>
 
-<br>
+</div>
+<!-- FOOTER_END -->

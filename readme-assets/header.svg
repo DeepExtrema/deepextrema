@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0a0805"></stop>
+      <stop offset="100%" stop-color="#000000"></stop>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="380" fill="url(#bg)"></rect>
+  <g class="stars"><circle cx="228" cy="12" r="0.7" fill="#d4a85a" opacity="0.41"/><circle cx="285" cy="377" r="0.5" fill="#d4a85a" opacity="0.52"/><circle cx="1116" cy="44" r="0.8" fill="#d4a85a" opacity="0.36"/><circle cx="191" cy="111" r="0.6" fill="#d4a85a" opacity="0.48"/><circle cx="54" cy="287" r="0.6" fill="#d4a85a" opacity="0.53"/><circle cx="1116" cy="214" r="0.6" fill="#d4a85a" opacity="0.46"/><circle cx="569" cy="3" r="0.6" fill="#d4a85a" opacity="0.52"/><circle cx="696" cy="142" r="0.6" fill="#d4a85a" opacity="0.40"/><circle cx="689" cy="52" r="0.5" fill="#d4a85a" opacity="0.44"/><circle cx="735" cy="176" r="0.7" fill="#d4a85a" opacity="0.55"/><circle cx="940" cy="274" r="0.5" fill="#d4a85a" opacity="0.59"/><circle cx="775" cy="40" r="0.7" fill="#d4a85a" opacity="0.56"/><circle cx="740" cy="295" r="0.6" fill="#d4a85a" opacity="0.53"/><circle cx="93" cy="338" r="0.6" fill="#d4a85a" opacity="0.54"/><circle cx="163" cy="119" r="0.5" fill="#d4a85a" opacity="0.45"/><circle cx="928" cy="325" r="0.7" fill="#d4a85a" opacity="0.39"/><circle cx="727" cy="107" r="0.7" fill="#d4a85a" opacity="0.53"/><circle cx="146" cy="311" r="0.6" fill="#d4a85a" opacity="0.48"/><circle cx="501" cy="83" r="0.8" fill="#d4a85a" opacity="0.44"/><circle cx="1140" cy="112" r="0.7" fill="#d4a85a" opacity="0.56"/><circle cx="114" cy="117" r="0.5" fill="#d4a85a" opacity="0.55"/><circle cx="821" cy="137" r="0.5" fill="#d4a85a" opacity="0.40"/><circle cx="1161" cy="367" r="0.7" fill="#d4a85a" opacity="0.40"/><circle cx="1022" cy="202" r="0.8" fill="#d4a85a" opacity="0.39"/><circle cx="285" cy="126" r="0.7" fill="#d4a85a" opacity="0.54"/><circle cx="877" cy="298" r="0.8" fill="#d4a85a" opacity="0.44"/><circle cx="283" cy="260" r="0.8" fill="#d4a85a" opacity="0.37"/><circle cx="96" cy="56" r="0.6" fill="#d4a85a" opacity="0.51"/><circle cx="864" cy="305" r="0.5" fill="#d4a85a" opacity="0.45"/><circle cx="958" cy="270" r="0.7" fill="#d4a85a" opacity="0.59"/><circle cx="23" cy="348" r="0.5" fill="#d4a85a" opacity="0.52"/><circle cx="1099" cy="136" r="0.7" fill="#d4a85a" opacity="0.38"/><circle cx="890" cy="80" r="0.8" fill="#d4a85a" opacity="0.35"/><circle cx="539" cy="256" r="0.6" fill="#d4a85a" opacity="0.48"/><circle cx="217" cy="320" r="0.7" fill="#d4a85a" opacity="0.56"/><circle cx="1039" cy="311" r="0.6" fill="#d4a85a" opacity="0.39"/><circle cx="330" cy="276" r="0.5" fill="#d4a85a" opacity="0.50"/><circle cx="1000" cy="9" r="0.5" fill="#d4a85a" opacity="0.58"/><circle cx="629" cy="122" r="0.5" fill="#d4a85a" opacity="0.41"/><circle cx="1161" cy="40" r="0.5" fill="#d4a85a" opacity="0.53"/><circle cx="141" cy="272" r="0.6" fill="#d4a85a" opacity="0.38"/><circle cx="973" cy="281" r="0.6" fill="#d4a85a" opacity="0.42"/><circle cx="866" cy="108" r="0.6" fill="#d4a85a" opacity="0.53"/><circle cx="817" cy="343" r="0.7" fill="#d4a85a" opacity="0.46"/><circle cx="1059" cy="231" r="0.5" fill="#d4a85a" opacity="0.41"/></g>
+
+  <!-- Left geometric background lines -->
+  <g stroke="#d4a85a" stroke-width="0.6" opacity="0.5">
+    <line x1="120" y1="20" x2="120" y2="80"></line>
+    <line x1="165" y1="60" x2="165" y2="105"></line>
+    <line x1="210" y1="35" x2="210" y2="120"></line>
+    <line x1="80" y1="160" x2="80" y2="220"></line>
+    <line x1="245" y1="190" x2="245" y2="260"></line>
+  </g>
+
+  <!-- Right geometric background lines -->
+  <g stroke="#d4a85a" stroke-width="0.6" opacity="0.5">
+    <line x1="990" y1="40" x2="990" y2="100"></line>
+    <line x1="1040" y1="20" x2="1040" y2="85"></line>
+    <line x1="1080" y1="60" x2="1080" y2="125"></line>
+    <line x1="1130" y1="180" x2="1130" y2="245"></line>
+    <line x1="945" y1="200" x2="945" y2="265"></line>
+  </g>
+
+  <!-- Center geometric mark -->
+  <g transform="translate(600 90)" stroke="#d4a85a" stroke-width="0.9" fill="none">
+    <circle cx="0" cy="-50" r="1.6" fill="#d4a85a"></circle>
+    <line x1="0" y1="-46" x2="0" y2="-28"></line>
+    
+    <circle cx="0" cy="0" r="22"></circle>
+    <line x1="-22" y1="0" x2="22" y2="0"></line>
+    <line x1="0" y1="-22" x2="0" y2="22"></line>
+    <circle cx="-7" cy="-3" r="1.6" fill="#d4a85a"></circle>
+    <circle cx="7" cy="-3" r="1.6" fill="#d4a85a"></circle>
+    
+    <line x1="-10" y1="32" x2="10" y2="32"></line>
+    <line x1="-7" y1="40" x2="7" y2="40"></line>
+    <line x1="-4" y1="48" x2="4" y2="48"></line>
+    <circle cx="0" cy="56" r="3"></circle>
+    
+    <path d="M 0 64 L -180 200 M 0 64 L 180 200"></path>
+    <path d="M -180 200 Q 0 130 180 200" stroke-width="1.1"></path>
+  </g>
+
+  <!-- Title & Subtitle -->
+  <g font-family="'IBM Plex Serif', Georgia, serif" text-anchor="middle">
+    <text x="600" y="290" font-size="72" fill="#f5e6b8" font-weight="500" letter-spacing="-1.5">Deep<tspan font-style="italic" fill="#d4a85a">Extrema</tspan></text>
+    <text x="600" y="335" font-size="14" fill="#a89465" font-family="'JetBrains Mono', ui-monospace, monospace" letter-spacing="6">DEEP · FRONTIER · STATUS 04</text>
+  </g>
+</svg>
