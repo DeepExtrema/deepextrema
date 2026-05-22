@@ -115,39 +115,37 @@ RATE·LIMIT <code>4870/5000</code>
 ## § 07 · Signal feed
 
 <!-- SIGNAL_FEED_START -->
-
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
 
 **🜨 SPACE**
 
-The Nebulous Realm of WR 134 — This cosmic snapshot covers a field of view over twice as wide as the full Mo...
+NGC 1300 — a barred spiral galaxy 61M light-years away in Eridanus.
 
-<sub>NASA APOD · 2026-05-22</sub>
+<sub>NASA APOD · 2026-05-19</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-**◇ AI** (stale)
+**◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[meta-llama/Llama-3.3-70B](https://huggingface.co/meta-llama/Llama-3.3-70B)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · TEXT-GEN</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Every system starts as a question.*
+> *Build for the timeline you want to live in.*
 
-<sub>CURATED · DAILY</sub>
+<sub>GENERATED · DAILY</sub>
 
 </td>
 </tr>
 </table>
-
 <!-- SIGNAL_FEED_END -->
 
 <br>
@@ -178,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-22 20:41 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3245af6</code>
+LAST BUILD <code>2026-05-20 14:00 UTC</code>  ·  NEXT SYNC <code>+5h 47m</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>a3f12b9</code>
 </sub>
 
 </div>

@@ -2,7 +2,7 @@
   <defs>
     <pattern id="tstars" width="240" height="240" patternUnits="userSpaceOnUse">
       <circle cx="20" cy="40" r="0.7" fill="#d4a85a" opacity="0.45"></circle>
-      <circle cx="120" cy="180" r="0.5" fill="#f5e6b8" opacity="0.4"></circle>
+      <circle cx="120" cy="180" r="0.5" fill="#f0d089" opacity="0.4"></circle>
       <circle cx="200" cy="80" r="0.6" fill="#d4a85a" opacity="0.35"></circle>
       <circle cx="80" cy="220" r="0.5" fill="#a89465" opacity="0.4"></circle>
     </pattern>
@@ -10,81 +10,88 @@
   <rect width="1200" height="420" fill="#000000"></rect>
   <rect width="1200" height="420" fill="url(#tstars)"></rect>
 
-  <!-- Title -->
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#d4a85a" font-size="12" letter-spacing="3">
+  
+  <g font-family="&#39;JetBrains Mono&#39;, monospace" fill="#d4a85a" font-size="12" letter-spacing="3">
     <text x="60" y="44">§ 03  ·  PROJECT  TIMELINE  ·  2021–PRESENT</text>
-    <text x="1140" y="44" text-anchor="end" fill="#6b5a3a">8 REPOS  ·  4 LIVE</text>
+    <text x="1140" y="44" text-anchor="end" fill="#6b5a3a">14 REPOS  ·  5 LIVE</text>
   </g>
 
-  <!-- Year Ticks -->
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#a89465" font-size="11" letter-spacing="2">
-    <text x="190.0" y="86">2021</text>
-    <text x="348.3" y="86">2022</text>
-    <text x="506.5" y="86">2023</text>
-    <text x="664.8" y="86">2024</text>
-    <text x="823.5" y="86">2025</text>
-    <text x="981.7" y="86">2026</text>
+  
+  <g font-family="&#39;JetBrains Mono&#39;, monospace" fill="#a89465" font-size="11" letter-spacing="2">
+    <text x="190" y="86">2021</text>
+    <text x="400" y="86">2022</text>
+    <text x="610" y="86">2023</text>
+    <text x="820" y="86">2024</text>
+    <text x="1030" y="86">2025</text>
   </g>
-  <g stroke="#0a0805" stroke-width="1">
-    <line x1="190.0" y1="92" x2="190.0" y2="380"></line>
-    <line x1="348.3" y1="92" x2="348.3" y2="380"></line>
-    <line x1="506.5" y1="92" x2="506.5" y2="380"></line>
-    <line x1="664.8" y1="92" x2="664.8" y2="380"></line>
-    <line x1="823.5" y1="92" x2="823.5" y2="380"></line>
-    <line x1="981.7" y1="92" x2="981.7" y2="380"></line>
+  <g stroke="#2d2210" stroke-width="1">
+    <line x1="190" y1="92" x2="190" y2="380"></line>
+    <line x1="400" y1="92" x2="400" y2="380"></line>
+    <line x1="610" y1="92" x2="610" y2="380"></line>
+    <line x1="820" y1="92" x2="820" y2="380"></line>
+    <line x1="1030" y1="92" x2="1030" y2="380"></line>
   </g>
-  <line x1="190" y1="92" x2="1140" y2="92" stroke="#6b5a3a" stroke-width="0.8" opacity="0.5"></line>
+  <line x1="190" y1="92" x2="1140" y2="92" stroke="#403014" stroke-width="0.8"></line>
 
-  <!-- NOW Marker -->
-  <line x1="1043.2" y1="92" x2="1043.2" y2="380" stroke="#f5e6b8" stroke-width="0.6" stroke-dasharray="3 3"></line>
-  <text x="1043.2" y="105" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#f5e6b8" font-size="9" letter-spacing="3">NOW</text>
+  
+  <line x1="1050" y1="92" x2="1050" y2="380" stroke="#e0c478" stroke-width="0.6" stroke-dasharray="3 3"></line>
+  <text x="1050" y="105" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" fill="#e0c478" font-size="9" letter-spacing="3">NOW</text>
 
-  <!-- Timeline Bars -->
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#f5e6b8">
-    <!-- Row 0: cosmic-cockpit -->
+  
+  <g font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#f5e6b8">
+
+    
     <text x="180" y="142" text-anchor="end">cosmic-cockpit</text>
-    <rect x="868.6" y="130" width="174.3" height="16" fill="#d4a85a" stroke="#f5e6b8" stroke-width="0.8"></rect>
-    <text x="875.6" y="142" fill="#0a0805" font-size="9" letter-spacing="1">PY · LIVE</text>
+    <rect x="855" y="130" width="195" height="16" fill="#d4a85a" stroke="#f5e6b8"></rect>
+    <text x="862" y="142" fill="#0a0805" font-size="9" letter-spacing="1">PY · LIVE</text>
     <text x="1060" y="142" font-size="10" fill="#d4a85a">248★</text>
-    <!-- Row 1: orbital-tooling -->
-    <text x="180" y="172" text-anchor="end">orbital-tooling</text>
-    <rect x="787.5" y="160" width="255.0" height="16" fill="#d4a85a" stroke="#f5e6b8" stroke-width="0.8"></rect>
-    <text x="794.5" y="172" fill="#0a0805" font-size="9" letter-spacing="1">RS · LIVE</text>
-    <text x="1060" y="172" font-size="10" fill="#d4a85a">184★</text>
-    <!-- Row 2: signal-grid -->
-    <text x="180" y="202" text-anchor="end">signal-grid</text>
-    <rect x="765.4" y="190" width="275.8" height="16" fill="#d4a85a" stroke="#f5e6b8" stroke-width="0.8"></rect>
-    <text x="772.4" y="202" fill="#0a0805" font-size="9" letter-spacing="1">TS · LIVE</text>
-    <text x="1060" y="202" font-size="10" fill="#d4a85a">95★</text>
-    <!-- Row 3: extrema-ml -->
-    <text x="180" y="232" text-anchor="end">extrema-ml</text>
-    <rect x="730.7" y="220" width="311.3" height="16" fill="#d4a85a" stroke="#f5e6b8" stroke-width="0.8"></rect>
-    <text x="737.7" y="232" fill="#0a0805" font-size="9" letter-spacing="1">PY · LIVE</text>
-    <text x="1060" y="232" font-size="10" fill="#d4a85a">612★</text>
-    <!-- Row 4: pylon -->
+
+    
+    <text x="180" y="172" text-anchor="end">extrema-ml</text>
+    <rect x="668" y="160" width="382" height="16" fill="#d4a85a" stroke="#f5e6b8"></rect>
+    <text x="675" y="172" fill="#0a0805" font-size="9" letter-spacing="1">PY · LIVE</text>
+    <text x="1060" y="172" font-size="10" fill="#d4a85a">612★</text>
+
+    
+    <text x="180" y="202" text-anchor="end">orbital-tooling</text>
+    <rect x="757" y="190" width="293" height="16" fill="#d4a85a" stroke="#f5e6b8"></rect>
+    <text x="764" y="202" fill="#0a0805" font-size="9" letter-spacing="1">RS · LIVE</text>
+    <text x="1060" y="202" font-size="10" fill="#d4a85a">184★</text>
+
+    
+    <text x="180" y="232" text-anchor="end">signal-grid</text>
+    <rect x="700" y="220" width="350" height="16" fill="#d4a85a" stroke="#f5e6b8"></rect>
+    <text x="707" y="232" fill="#0a0805" font-size="9" letter-spacing="1">TS · LIVE</text>
+    <text x="1060" y="232" font-size="10" fill="#d4a85a">95★</text>
+
+    
     <text x="180" y="262" text-anchor="end">pylon</text>
-    <rect x="611.9" y="250" width="349.5" height="16" fill="#2a1f0c" stroke="#7d5d2a" stroke-width="0.8"></rect>
-    <text x="618.9" y="262" fill="#d4a85a" font-size="9" letter-spacing="1">GO · ARCHIVED</text>
+    <rect x="525" y="250" width="475" height="16" fill="#2a1f0c" stroke="#7d5d2a"></rect>
+    <text x="532" y="262" fill="#d4a85a" font-size="9" letter-spacing="1">GO · ARCHIVED</text>
     <text x="1060" y="262" font-size="10" fill="#a89465">71★</text>
-    <!-- Row 5: meridian -->
+
+    
     <text x="180" y="292" text-anchor="end">meridian</text>
-    <rect x="538.2" y="280" width="245.0" height="16" fill="#2a1f0c" stroke="#7d5d2a" stroke-width="0.8"></rect>
-    <text x="545.2" y="292" fill="#d4a85a" font-size="9" letter-spacing="1">PY · ARCHIVED</text>
+    <rect x="438" y="280" width="320" height="16" fill="#2a1f0c" stroke="#7d5d2a"></rect>
+    <text x="445" y="292" fill="#d4a85a" font-size="9" letter-spacing="1">PY · ARCHIVED</text>
     <text x="1060" y="292" font-size="10" fill="#a89465">43★</text>
-    <!-- Row 6: helios-dispatch -->
+
+    
     <text x="180" y="322" text-anchor="end">helios-dispatch</text>
-    <rect x="480.1" y="310" width="214.6" height="16" fill="#2a1f0c" stroke="#7d5d2a" stroke-width="0.8"></rect>
-    <text x="487.1" y="322" fill="#d4a85a" font-size="9" letter-spacing="1">TS · ARCHIVED</text>
+    <rect x="380" y="310" width="296" height="16" fill="#2a1f0c" stroke="#7d5d2a"></rect>
+    <text x="387" y="322" fill="#d4a85a" font-size="9" letter-spacing="1">TS · ARCHIVED</text>
     <text x="1060" y="322" font-size="10" fill="#a89465">28★</text>
-    <!-- Row 7: starboard-cli -->
+
+    
     <text x="180" y="352" text-anchor="end">starboard-cli</text>
-    <rect x="369.9" y="340" width="256.7" height="16" fill="#2a1f0c" stroke="#7d5d2a" stroke-width="0.8"></rect>
-    <text x="376.9" y="352" fill="#d4a85a" font-size="9" letter-spacing="1">GO · ARCHIVED</text>
+    <rect x="246" y="340" width="370" height="16" fill="#2a1f0c" stroke="#7d5d2a"></rect>
+    <text x="253" y="352" fill="#d4a85a" font-size="9" letter-spacing="1">GO · ARCHIVED</text>
     <text x="1060" y="352" font-size="10" fill="#a89465">19★</text>
+
   </g>
 
-  <!-- Legend -->
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#6b5a3a" letter-spacing="2">
+  
+  <g font-family="&#39;JetBrains Mono&#39;, monospace" font-size="10" fill="#6b5a3a" letter-spacing="2">
     <rect x="60" y="390" width="14" height="6" fill="#d4a85a"></rect>
     <text x="82" y="397">LIVE</text>
 

@@ -1,84 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" width="720" height="380">
   <rect width="720" height="380" fill="#000000"></rect>
-  <g class="stars"><circle cx="213" cy="5" r="0.5" fill="#d4a85a" opacity="0.39"/><circle cx="244" cy="8" r="0.5" fill="#d4a85a" opacity="0.57"/><circle cx="697" cy="75" r="0.7" fill="#d4a85a" opacity="0.41"/><circle cx="346" cy="238" r="0.7" fill="#d4a85a" opacity="0.42"/><circle cx="269" cy="176" r="0.6" fill="#d4a85a" opacity="0.58"/><circle cx="211" cy="181" r="0.7" fill="#d4a85a" opacity="0.41"/><circle cx="523" cy="215" r="0.6" fill="#d4a85a" opacity="0.49"/><circle cx="429" cy="250" r="0.5" fill="#d4a85a" opacity="0.47"/><circle cx="368" cy="224" r="0.7" fill="#d4a85a" opacity="0.58"/><circle cx="661" cy="230" r="0.8" fill="#d4a85a" opacity="0.54"/><circle cx="67" cy="251" r="0.5" fill="#d4a85a" opacity="0.40"/><circle cx="546" cy="88" r="0.5" fill="#d4a85a" opacity="0.42"/><circle cx="506" cy="77" r="0.5" fill="#d4a85a" opacity="0.57"/><circle cx="404" cy="24" r="0.5" fill="#d4a85a" opacity="0.47"/><circle cx="568" cy="151" r="0.8" fill="#d4a85a" opacity="0.58"/></g>
 
-  <!-- Title -->
-  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
+  
+  <g font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
     <text x="36" y="36">§ 04  ·  COMMIT  CLOCK  ·  24H  UTC</text>
-    <text x="684" y="36" text-anchor="end" fill="#6b5a3a">LAST 90 DAYS · 634 COMMITS</text>
+    <text x="684" y="36" text-anchor="end" fill="#6b5a3a">LAST 90 DAYS · 558 COMMITS</text>
   </g>
 
-  <!-- Clock Center -->
+  
   <g transform="translate(170 210)">
-    <circle r="120" fill="none" stroke="#0a0805"></circle>
-    <circle r="55" fill="none" stroke="#0a0805"></circle>
+    
+    <circle r="120" fill="none" stroke="#2d2210"></circle>
+    <circle r="55" fill="none" stroke="#2d2210"></circle>
 
-    <!-- Clock Ticks -->
-    <g stroke="#d4a85a" stroke-width="1" opacity="0.6">
+    
+    
+    <g stroke="#d4a85a" stroke-width="1">
       <line x1="0" y1="-126" x2="0" y2="-134"></line>
       <line x1="126" y1="0" x2="134" y2="0"></line>
       <line x1="0" y1="126" x2="0" y2="134"></line>
       <line x1="-126" y1="0" x2="-134" y2="0"></line>
     </g>
-    <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" fill="#a89465" letter-spacing="2" text-anchor="middle">
+    <g font-family="&#39;JetBrains Mono&#39;, monospace" font-size="10" fill="#a89465" letter-spacing="2" text-anchor="middle">
       <text x="0" y="-142">00</text>
       <text x="148" y="4">06</text>
       <text x="0" y="156">12</text>
       <text x="-148" y="4">18</text>
     </g>
 
-    <!-- Radial Bars -->
-    <g stroke="#6b5a3a" stroke-width="0.5">
-      <path d="M 0.0 -55.0 L 0.0 -74.4" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 14.2 -53.1 L 17.6 -65.6" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 27.5 -47.6 L 30.7 -53.2" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 38.9 -38.9 L 41.2 -41.2" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 47.6 -27.5 L 48.8 -28.1" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 53.1 -14.2 L 53.8 -14.4" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 55.0 0.0 L 55.6 0.0" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 53.1 14.2 L 54.4 14.6" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 47.6 27.5 L 50.4 29.1" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 38.9 38.9 L 42.6 42.6" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 27.5 47.6 L 31.4 54.4" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 14.2 53.1 L 16.7 62.5" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M 0.0 55.0 L 0.0 67.9" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -14.2 53.1 L -17.2 64.4" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -27.5 47.6 L -32.4 56.0" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -38.9 38.9 L -49.0 49.0" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -47.6 27.5 L -63.3 36.6" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -53.1 14.2 L -75.0 20.1" stroke="#7d5d2a" stroke-width="6"></path>
-      <path d="M -55.0 0.0 L -84.1 0.0" stroke="#d4a85a" stroke-width="6"></path>
-      <path d="M -53.1 -14.2 L -90.6 -24.3" stroke="#d4a85a" stroke-width="6"></path>
-      <path d="M -47.6 -27.5 L -89.7 -51.8" stroke="#d4a85a" stroke-width="6"></path>
-      <path d="M -38.9 -38.9 L -77.8 -77.8" stroke="#f5e6b8" stroke-width="6"></path>
-      <path d="M -27.5 -47.6 L -50.1 -86.9" stroke="#d4a85a" stroke-width="6"></path>
-      <path d="M -14.2 -53.1 L -22.6 -84.4" stroke="#d4a85a" stroke-width="6"></path>
+    
+    
+    <g stroke="#403014" stroke-width="0.5">
+      
+      <path d="M 0 -55 L 0 -110" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 14.3 -53.1 L 27.0 -100.1" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 27.5 -47.6 L 35.0 -60.5" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 38.9 -38.9 L 41.0 -41.0" stroke="#2a1f0c" stroke-width="6"></path>
+      
+      <path d="M 47.6 -27.5 L 49.0 -28.3" stroke="#2a1f0c" stroke-width="6"></path>
+      
+      <path d="M 53.1 -14.3 L 54.0 -14.5" stroke="#2a1f0c" stroke-width="6"></path>
+      
+      <path d="M 55 0 L 56 0" stroke="#2a1f0c" stroke-width="6"></path>
+      
+      <path d="M 53.1 14.3 L 55.5 14.9" stroke="#2a1f0c" stroke-width="6"></path>
+      
+      <path d="M 47.6 27.5 L 51.5 29.7" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 38.9 38.9 L 45.2 45.2" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 27.5 47.6 L 36.8 63.7" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 14.3 53.1 L 21.0 78.0" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M 0 55 L 0 88" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -14.3 53.1 L -23.6 87.5" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -27.5 47.6 L -42.5 73.6" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -38.9 38.9 L -53.7 53.7" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -47.6 27.5 L -65.4 37.7" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -53.1 14.3 L -71.5 19.2" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -55 0 L -82 0" stroke="#7d5d2a" stroke-width="6"></path>
+      
+      <path d="M -53.1 -14.3 L -92.0 -24.7" stroke="#d4a85a" stroke-width="6"></path>
+      
+      <path d="M -47.6 -27.5 L -98.1 -56.6" stroke="#d4a85a" stroke-width="6"></path>
+      
+      <path d="M -38.9 -38.9 L -82.0 -82.0" stroke="#f5e6b8" stroke-width="6"></path>
+      
+      <path d="M -27.5 -47.6 L -54.0 -93.5" stroke="#d4a85a" stroke-width="6"></path>
+      
+      <path d="M -14.3 -53.1 L -27.0 -100.1" stroke="#d4a85a" stroke-width="6"></path>
     </g>
 
-    <!-- Center Ring -->
+    
     <circle r="38" fill="#000000" stroke="#d4a85a"></circle>
-    <text y="-4" text-anchor="middle" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">21:00</text>
-    <text y="14" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="8" fill="#6b5a3a" letter-spacing="3">PEAK · UTC</text>
+    <text y="-4" text-anchor="middle" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">21:00</text>
+    <text y="14" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="8" fill="#6b5a3a" letter-spacing="3">PEAK · UTC</text>
   </g>
 
-  <!-- Right Details -->
-  <g transform="translate(380 110)" font-family="'JetBrains Mono', ui-monospace, monospace" fill="#a89465" font-size="10" letter-spacing="2">
+  
+  <g transform="translate(380 110)" font-family="&#39;JetBrains Mono&#39;, monospace" fill="#a89465" font-size="10" letter-spacing="2">
     <g>
       <text fill="#6b5a3a">PRODUCTIVE WINDOW</text>
-      <text y="22" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">20:00 – 22:00<tspan fill="#d4a85a" font-size="11" font-family="'JetBrains Mono', ui-monospace, monospace" letter-spacing="2">  UTC</tspan></text>
+      <text y="22" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">20:00 – 23:00<tspan fill="#d4a85a" font-size="11" font-family="&#39;JetBrains Mono&#39;, monospace" letter-spacing="2">  UTC</tspan></text>
     </g>
     <g transform="translate(0 60)">
       <text fill="#6b5a3a">PEAK HOUR · 21:00</text>
-      <text y="22" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">13<tspan font-size="14" fill="#a89465">% of all commits</tspan></text>
+      <text y="22" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">14<tspan font-size="14" fill="#a89465">% of all commits</tspan></text>
     </g>
     <g transform="translate(0 120)">
-      <text fill="#6b5a3a">QUIETEST · 04–06</text>
-      <text y="22" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">04 · 05 · 06</text>
+      <text fill="#6b5a3a">QUIETEST · 04–07</text>
+      <text y="22" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="22" fill="#f5e6b8" font-weight="500">04 · 05 · 06</text>
     </g>
     <g transform="translate(0 190)">
-      <line x1="0" y1="-4" x2="280" y2="-4" stroke="#0a0805" stroke-dasharray="2 3"></line>
-      <text y="14" font-family="'IBM Plex Serif', Georgia, serif" font-size="14" fill="#dcc998" font-style="italic">"Evening observer.</text>
-      <text y="34" font-family="'IBM Plex Serif', Georgia, serif" font-size="14" fill="#dcc998" font-style="italic">Transmitting signals as twilight falls."</text>
+      <line x1="0" y1="-4" x2="280" y2="-4" stroke="#2d2210" stroke-dasharray="2 3"></line>
+      <text y="14" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="14" fill="#dcc998" font-style="italic">&#34;Night-shift operator.</text>
+      <text y="34" font-family="&#39;IBM Plex Serif&#39;, Georgia, serif" font-size="14" fill="#dcc998" font-style="italic">The frontier is quieter after dark.&#34;</text>
     </g>
   </g>
 </svg>
