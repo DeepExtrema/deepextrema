@@ -1,0 +1,38 @@
+{
+  "top_3": [
+    {
+      "name": "cosmic-cockpit",
+      "description": "Self-updating profile pipeline. Pulls 7 sources every 6 hours.",
+      "stars": 248,
+      "language": "Python",
+      "commits_30d": 47,
+      "commits_14d": 15,
+      "open_prs": 1,
+      "archived": false,
+      "score": 47
+    },
+    {
+      "name": "extrema-ml",
+      "description": "Time-series anomaly detection. Online, no GPU required.",
+      "stars": 612,
+      "language": "Python",
+      "commits_30d": 28,
+      "commits_14d": 10,
+      "open_prs": 2,
+      "archived": false,
+      "score": 34
+    },
+    {
+      "name": "orbital-tooling",
+      "description": "Edge-deploy primitives. Low-bandwidth, high-latency.",
+      "stars": 184,
+      "language": "Rust",
+      "commits_30d": 19,
+      "commits_14d": 5,
+      "open_prs": 0,
+      "archived": false,
+      "score": 15
+    }
+  ],
+  "timestamp": "2026-05-22T23:53:05.199Z"
+}

@@ -18,14 +18,10 @@ const {
 } = require('../src/voyagerConstants');
 
 const token = process.env.GITHUB_TOKEN;
-let octokitInstance = null;
-
-function getOctokit() {
-  if (!octokitInstance && token) {
-    const { Octokit } = require('@octokit/rest');
-    octokitInstance = new Octokit({ auth: token });
-  }
-  return octokitInstance;
+let octokit = null;
+if (token) {
+  const { Octokit } = require('@octokit/rest');
+  octokit = new Octokit({ auth: token });
 }
 
 // Helper: Seeded Random Generator
@@ -305,12 +301,12 @@ function injectMarkdown(text, marker, newContent) {
 
   const regexA = new RegExp(`(<!--\\s*${marker}_START\\s*-->)[\\s\\S]*?(<!--\\s*${marker}_END\\s*-->)`, 'i');
   if (regexA.test(text)) {
-    return text.replace(regexA, `$1\n${newContent}\n$2`);
+    return text.replace(regexA, (_, g1, g2) => `${g1}\n${newContent}\n${g2}`);
   }
 
   const regexB = new RegExp(`(<!--\\s*${marker}\\s*-->)[\\s\\S]*?(<!--\\s*/${marker}\\s*-->)`, 'i');
   if (regexB.test(text)) {
-    return text.replace(regexB, `$1\n${newContent}\n$2`);
+    return text.replace(regexB, (_, g1, g2) => `${g1}\n${newContent}\n${g2}`);
   }
 
   return text;

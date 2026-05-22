@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>184</code>  ·
-PR·MERGED <code>23</code>  ·
-ISSUES·CLOSED <code>41</code>  ·
-ACTIVE·REPOS <code>6</code>  ·
-STARS·TOTAL <code>1.3K</code>  ·
-WORKFLOWS <code>✓✓✓✓✗✓✓✓✓✓</code>  ·
-RATE·LIMIT <code>4870/5000</code>
+COMMITS·30D <code>14</code>  ·
+PR·MERGED <code>4</code>  ·
+ISSUES·CLOSED <code>9</code>  ·
+ACTIVE·REPOS <code>3</code>  ·
+STARS·TOTAL <code>455</code>  ·
+WORKFLOWS <code>✅✅✅✅❌✅✅✅❌✅</code>  ·
+RATE·LIMIT <code>4999/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -121,27 +121,27 @@ RATE·LIMIT <code>4870/5000</code>
 
 **🜨 SPACE**
 
-NGC 1300 — a barred spiral galaxy 61M light-years away in Eridanus.
+The Nebulous Realm of WR 134 — This cosmic snapshot covers a field of view over twice as wide as the full Mo...
 
-<sub>NASA APOD · 2026-05-19</sub>
+<sub>NASA APOD · 2026-05-22</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
-**◇ AI**
+**◇ AI** (stale)
 
-[meta-llama/Llama-3.3-70B](https://huggingface.co/meta-llama/Llama-3.3-70B)
+[Transformers](https://huggingface.co/docs/transformers)
 
-<sub>HF TRENDING · TEXT-GEN</sub>
+<sub>HF TRENDING · STATE-OF-THE-ART NLP LIBRARY</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Build for the timeline you want to live in.*
+> *Every system starts as a question.*
 
-<sub>GENERATED · DAILY</sub>
+<sub>CURATED · DAILY</sub>
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-20 14:00 UTC</code>  ·  NEXT SYNC <code>+5h 47m</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>a3f12b9</code>
+LAST BUILD <code>2026-05-22 23:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3b9c1e4</code>
 </sub>
 
 </div>
