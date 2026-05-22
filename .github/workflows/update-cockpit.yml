@@ -15,9 +15,6 @@ on:
 permissions:
   contents: write
 
-env:
-  PYTHONPATH: ${{ github.workspace }}
-
 jobs:
   update-cockpit:
     runs-on: ubuntu-latest
@@ -25,53 +22,24 @@ jobs:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python
-        uses: actions/setup-python@v5
+      - name: 📥 Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          node-version: 20
+          cache: 'npm'
 
       - name: 📦 Install Dependencies
-        run: pip install -r requirements.txt
+        run: npm ci
 
-      # ── Fast sections (every 6h) ───────────────────────
-      - name: ✺ Flight telemetry        # update telemetry markdown
-        run: python scripts/flight_telemetry.py
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: ▸ Current transmissions   # § 02 SVG
-        run: python scripts/current_focus.py
-        continue-on-error: true
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: 📡 Signal feed             # § 07 markdown
-        run: python scripts/signal_feed.py
-        continue-on-error: true
+      - name: 🜨 Generate Voyager Cockpit
+        run: node scripts/generateAll.js
         env:
-          GITHUB_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
-          NASA_API_KEY:     ${{ secrets.NASA_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}
           HUGGINGFACE_TOKEN: ${{ secrets.HUGGINGFACE_TOKEN }}
-          OPENAI_API_KEY:   ${{ secrets.OPENAI_API_KEY }}
-
-      # ── Slow sections (only on the daily cron) ────────
-      - name: 🜨 Voyager header (weekly subtitle rotation)
-        if: github.event.schedule == '0 5 * * *' || github.event_name == 'workflow_dispatch'
-        run: python scripts/voyager_header.py
-
-      - name: ◇ Project timeline        # § 03 SVG
-        if: github.event.schedule == '0 5 * * *' || github.event_name == 'workflow_dispatch'
-        run: python scripts/project_timeline.py
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: 🕐 Commit clock            # § 04 SVG
-        if: github.event.schedule == '0 5 * * *' || github.event_name == 'workflow_dispatch'
-        run: python scripts/commit_clock.py
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
-
-      - name: ▦ Heatmap                  # § 05 SVG
-        if: github.event.schedule == '0 5 * * *' || github.event_name == 'workflow_dispatch'
-        run: python scripts/heatmap.py
-        env: { GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} }
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_EVENT_SCHEDULE: ${{ github.event.schedule }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
 
       - name: 🐍 Contribution snake     # bonus visual under heatmap
         if: github.event.schedule == '0 5 * * *' || github.event_name == 'workflow_dispatch'
@@ -81,10 +49,6 @@ jobs:
           outputs: |
             dist/github-snake.svg?palette=github-dark
             dist/github-snake-dark.svg?palette=github-dark
-
-      # ── Always last ────────────────────────────────────
-      - name: ⌑ Footer stamp
-        run: python scripts/stamp_footer.py
 
       # ── Commit ────────────────────────────────────────
       - name: 💾 Commit changes
