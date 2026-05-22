@@ -1,10 +1,16 @@
 {
-  "timestamp": "2026-05-22T23:53:05.199Z",
+  "timestamp": "2026-05-22T23:59:13.643Z",
   "space": {
     "title": "The Nebulous Realm of WR 134",
     "description": "This cosmic snapshot covers a field of view over twice as wide as the full Moon within the bounda...",
     "date": "2026-05-22",
     "url": "https://apod.nasa.gov/apod/image/2605/WR134morrone1024.jpg",
+    "stale": false
+  },
+  "ai": {
+    "name": "f/prompts.chat",
+    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
+    "url": "https://github.com/f/prompts.chat",
     "stale": false
   }
 }

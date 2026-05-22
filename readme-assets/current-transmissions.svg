@@ -4,7 +4,7 @@
 
   <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
     <text x="36" y="32">§ 02  ·  CURRENT  TRANSMISSIONS</text>
-    <text x="1164" y="32" text-anchor="end" fill="#6b5a3a">REFRESHED · 23:53 UTC</text>
+    <text x="1164" y="32" text-anchor="end" fill="#6b5a3a">REFRESHED · 23:59 UTC</text>
   </g>
 
   <!-- Dividers -->
@@ -14,30 +14,30 @@
   </g>
 
   <g transform="translate(60 80)">
-    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ INFRASTRUCTURE</text>
-    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">cosmic-cockpit</text>
-    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Self-updating profile pipeline.</text>
-    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Pulls 7 sources every 6 hours.</text>
+    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ PRIMARY</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">deepextrema</text>
+    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">No description provided.</text>
+    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
     <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
-      <text y="118">PYTHON · 248★ · 47 COMMITS · LIVE</text>
+      <text y="118">JAVASCRIPT · 0★ · 100 COMMITS · LIVE</text>
     </g>
   </g>
   <g transform="translate(450 80)">
-    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ PRIMARY</text>
-    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">extrema-ml</text>
-    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Time-series anomaly detection.</text>
-    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Online, no GPU required.</text>
+    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ EXPERIMENT</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">Sherlock-Multiagent-Data-Scientist</text>
+    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">No description provided.</text>
+    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
     <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
-      <text y="118">PYTHON · 612★ · 28 COMMITS · LIVE</text>
+      <text y="118">PYTHON · 1★ · 0 COMMITS · LIVE</text>
     </g>
   </g>
   <g transform="translate(826 80)">
-    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ INFRASTRUCTURE</text>
-    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">orbital-tooling</text>
-    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Edge-deploy primitives.</text>
-    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Low-bandwidth, high-latency.</text>
+    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ EXPERIMENT</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">AskMyPaper</text>
+    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Hybrid RAG over PDF documents</text>
+    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
     <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
-      <text y="118">RUST · 184★ · 19 COMMITS · LIVE</text>
+      <text y="118">PYTHON · 0★ · 3 COMMITS · LIVE</text>
     </g>
   </g>
 </svg>

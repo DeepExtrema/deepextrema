@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>14</code>  ·
-PR·MERGED <code>4</code>  ·
-ISSUES·CLOSED <code>9</code>  ·
-ACTIVE·REPOS <code>3</code>  ·
-STARS·TOTAL <code>455</code>  ·
-WORKFLOWS <code>✅✅✅✅❌✅✅✅❌✅</code>  ·
-RATE·LIMIT <code>4999/5000</code>
+COMMITS·30D <code>24</code>  ·
+PR·MERGED <code>0</code>  ·
+ISSUES·CLOSED <code>0</code>  ·
+ACTIVE·REPOS <code>4</code>  ·
+STARS·TOTAL <code>4</code>  ·
+WORKFLOWS <code>⏳❌✅✅✅✅✅✅✅✅</code>  ·
+RATE·LIMIT <code>4989/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -128,11 +128,11 @@ The Nebulous Realm of WR 134 — This cosmic snapshot covers a field of view ove
 </td>
 <td width="33%" align="center" valign="top">
 
-**◇ AI** (stale)
+**◇ AI**
 
-[Transformers](https://huggingface.co/docs/transformers)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · STATE-OF-THE-ART NLP LIBRARY</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-22 23:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3b9c1e4</code>
+LAST BUILD <code>2026-05-22 23:59 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e1b2ede</code>
 </sub>
 
 </div>

@@ -1,38 +1,38 @@
 {
   "top_3": [
     {
-      "name": "cosmic-cockpit",
-      "description": "Self-updating profile pipeline. Pulls 7 sources every 6 hours.",
-      "stars": 248,
-      "language": "Python",
-      "commits_30d": 47,
-      "commits_14d": 15,
-      "open_prs": 1,
-      "archived": false,
-      "score": 47
-    },
-    {
-      "name": "extrema-ml",
-      "description": "Time-series anomaly detection. Online, no GPU required.",
-      "stars": 612,
-      "language": "Python",
-      "commits_30d": 28,
-      "commits_14d": 10,
-      "open_prs": 2,
-      "archived": false,
-      "score": 34
-    },
-    {
-      "name": "orbital-tooling",
-      "description": "Edge-deploy primitives. Low-bandwidth, high-latency.",
-      "stars": 184,
-      "language": "Rust",
-      "commits_30d": 19,
-      "commits_14d": 5,
+      "name": "deepextrema",
+      "description": "No description provided.",
+      "stars": 0,
+      "language": "JavaScript",
+      "commits_30d": 100,
+      "commits_14d": 67,
       "open_prs": 0,
       "archived": false,
-      "score": 15
+      "score": 201
+    },
+    {
+      "name": "Sherlock-Multiagent-Data-Scientist",
+      "description": "No description provided.",
+      "stars": 1,
+      "language": "Python",
+      "commits_30d": 0,
+      "commits_14d": 0,
+      "open_prs": 14,
+      "archived": false,
+      "score": 28
+    },
+    {
+      "name": "AskMyPaper",
+      "description": "Hybrid RAG over PDF documents",
+      "stars": 0,
+      "language": "Python",
+      "commits_30d": 3,
+      "commits_14d": 2,
+      "open_prs": 0,
+      "archived": false,
+      "score": 6
     }
   ],
-  "timestamp": "2026-05-22T23:53:05.199Z"
+  "timestamp": "2026-05-22T23:59:13.643Z"
 }
