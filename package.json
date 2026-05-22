@@ -1,0 +1,26 @@
+{
+  "name": "voyager-readme",
+  "version": "1.0.0",
+  "description": "<!--\r   ============================================================\r   DEEPEXTREMA · OPERATOR PROFILE\r   Auto-updated every 6h by .github/workflows/update-cockpit.yml\r   Do not hand-edit content between START/END markers.\r   Voyager golden record aesthetic — pure black, soft gold.\r   ============================================================\r -->",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  },
+  "dependencies": {
+    "@octokit/graphql": "^9.0.3",
+    "@octokit/rest": "^22.0.1",
+    "dotenv": "^17.4.2",
+    "react": "^19.2.6",
+    "satori": "^0.26.0"
+  }
+}
