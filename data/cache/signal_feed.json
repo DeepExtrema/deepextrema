@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-23T07:32:12.398Z",
+  "timestamp": "2026-05-23T08:11:32.103Z",
   "space": {
     "title": "Messier 2",
     "description": "After the Crab Nebula, this giant star cluster is the second entry in 18th century astronomer Cha...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "f/prompts.chat",
-    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
-    "url": "https://github.com/f/prompts.chat",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
