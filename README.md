@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>3</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅✅✅✅❌✅</code>  ·
-RATE·LIMIT <code>4989/5000</code>
+WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅❌</code>  ·
+RATE·LIMIT <code>4979/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ A Martian Eclipse: Phobos Crosses the Sun — What's that passing in front of th
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-24 07:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>f43afa8</code>
+LAST BUILD <code>2026-05-24 08:23 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>ede3272</code>
 </sub>
 
 </div>
