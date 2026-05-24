@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>4</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅✅❌✅✅✅</code>  ·
-RATE·LIMIT <code>4990/5000</code>
+WORKFLOWS <code>⏳✅✅✅✅✅✅❌✅✅</code>  ·
+RATE·LIMIT <code>4991/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4990/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 Messier 2 — After the Crab Nebula, this giant star cluster is the second entry in 18th ce...
 
@@ -139,7 +139,7 @@ Messier 2 — After the Crab Nebula, this giant star cluster is the second entry
 
 **✺ PHRASE**
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-23 19:03 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>20ca980</code>
+LAST BUILD <code>2026-05-24 02:46 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3102cf0</code>
 </sub>
 
 </div>
