@@ -44,9 +44,9 @@ COMMITS·30D <code>24</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
-STARS·TOTAL <code>4</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅✅✅❌✅✅</code>  ·
-RATE·LIMIT <code>4991/5000</code>
+STARS·TOTAL <code>3</code>  ·
+WORKFLOWS <code>⏳✅✅✅✅✅✅✅❌✅</code>  ·
+RATE·LIMIT <code>4989/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,11 +119,11 @@ RATE·LIMIT <code>4991/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-Messier 2 — After the Crab Nebula, this giant star cluster is the second entry in 18th ce...
+A Martian Eclipse: Phobos Crosses the Sun — What's that passing in front of the Sun? It looks like a moon, but it can't b...
 
-<sub>NASA APOD · 2026-05-23</sub>
+<sub>NASA APOD · 2026-05-24</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-24 02:46 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3102cf0</code>
+LAST BUILD <code>2026-05-24 07:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>f43afa8</code>
 </sub>
 
 </div>
