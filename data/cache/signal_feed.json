@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-24T19:10:20.946Z",
+  "timestamp": "2026-05-25T02:54:59.651Z",
   "space": {
     "title": "A Martian Eclipse: Phobos Crosses the Sun",
     "description": "What's that passing in front of the Sun? It looks like a moon, but it can't be Earth's Moon, beca...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
