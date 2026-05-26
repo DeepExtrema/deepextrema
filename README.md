@@ -130,16 +130,16 @@ Thackeray's Globules — What are these strange space globs?  Situated in rich s
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Depth first; scale later.*
+> *The frontier rewards those who show up.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-25 19:22 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>6e9fe27</code>
+LAST BUILD <code>2026-05-26 02:42 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>730a090</code>
 </sub>
 
 </div>
