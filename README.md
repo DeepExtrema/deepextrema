@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>3</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4994/5000</code>
+RATE·LIMIT <code>4988/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ NGC 3660 and Burçin's Galaxy — The upper galaxy might be more photogenic, but
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-26 14:56 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>8b9eaf1</code>
+LAST BUILD <code>2026-05-26 20:02 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>216229c</code>
 </sub>
 
 </div>

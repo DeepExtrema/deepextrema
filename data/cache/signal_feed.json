@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-26T14:56:59.221Z",
+  "timestamp": "2026-05-26T20:02:44.884Z",
   "space": {
     "title": "NGC 3660 and Burçin's Galaxy",
     "description": "The upper galaxy might be more photogenic, but the lower galaxy is more unusual.  The galaxy up t...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
