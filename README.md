@@ -119,7 +119,7 @@ RATE·LIMIT <code>4990/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 NGC 3660 and Burçin's Galaxy — The upper galaxy might be more photogenic, but the lower galaxy is more unusu...
 
@@ -130,9 +130,9 @@ NGC 3660 and Burçin's Galaxy — The upper galaxy might be more photogenic, but
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-27 02:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>a251b90</code>
+LAST BUILD <code>2026-05-27 08:38 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>95c0f11</code>
 </sub>
 
 </div>
