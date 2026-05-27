@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-27T09:37:15.833Z",
+  "timestamp": "2026-05-27T15:26:05.755Z",
   "space": {
     "title": "PK 164 +31.1: The Headphone Nebula",
     "description": "What is a pair of headphones doing in the sky? Today’s image features the Headphone Nebula, also ...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
