@@ -44,7 +44,7 @@ COMMITS·30D <code>44</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
-STARS·TOTAL <code>5</code>  ·
+STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
 RATE·LIMIT <code>4990/5000</code>
 </sub>
@@ -130,9 +130,9 @@ PK 164 +31.1: The Headphone Nebula — What is a pair of headphones doing in the
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-27 15:26 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>183e10a</code>
+LAST BUILD <code>2026-05-27 20:08 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>acdb1de</code>
 </sub>
 
 </div>
