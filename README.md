@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>24</code>  ·
+COMMITS·30D <code>44</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
-ACTIVE·REPOS <code>4</code>  ·
-STARS·TOTAL <code>3</code>  ·
+ACTIVE·REPOS <code>5</code>  ·
+STARS·TOTAL <code>5</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4990/5000</code>
+RATE·LIMIT <code>4981/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,11 +119,11 @@ RATE·LIMIT <code>4990/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-NGC 3660 and Burçin's Galaxy — The upper galaxy might be more photogenic, but the lower galaxy is more unusu...
+PK 164 +31.1: The Headphone Nebula — What is a pair of headphones doing in the sky? Today’s image features the Hea...
 
-<sub>NASA APOD · 2026-05-26</sub>
+<sub>NASA APOD · 2026-05-27</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-27 08:38 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>95c0f11</code>
+LAST BUILD <code>2026-05-27 09:37 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>0c3c9e2</code>
 </sub>
 
 </div>
