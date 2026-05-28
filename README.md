@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4986/5000</code>
+RATE·LIMIT <code>4989/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4986/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-PK 164 +31.1: The Headphone Nebula — What is a pair of headphones doing in the sky? Today’s image features the Hea...
+NGC 1514: The Crystal Ball Nebula — What do you see in this crystal ball?   The featured image shows NGC 1514, kn...
 
-<sub>NASA APOD · 2026-05-27</sub>
+<sub>NASA APOD · 2026-05-28</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-28 02:41 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e2e3f8e</code>
+LAST BUILD <code>2026-05-28 08:42 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>5ce8b7a</code>
 </sub>
 
 </div>
