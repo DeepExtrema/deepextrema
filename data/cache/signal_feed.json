@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-28T15:39:04.342Z",
+  "timestamp": "2026-05-28T20:13:18.001Z",
   "space": {
     "title": "NGC 1514: The Crystal Ball Nebula",
     "description": "What do you see in this crystal ball?   The featured image shows NGC 1514, known as the Crystal B...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "huggingface/transformers",
-    "description": "🤗 Transformers: the model-definition framework for state...",
-    "url": "https://github.com/huggingface/transformers",
+    "name": "tensorflow/tensorflow",
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "url": "https://github.com/tensorflow/tensorflow",
     "stale": false
   }
 }

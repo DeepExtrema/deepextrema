@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4992/5000</code>
+RATE·LIMIT <code>4990/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ NGC 1514: The Crystal Ball Nebula — What do you see in this crystal ball?   Th
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-28 15:39 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>89dde8b</code>
+LAST BUILD <code>2026-05-28 20:13 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>48e6dd4</code>
 </sub>
 
 </div>
