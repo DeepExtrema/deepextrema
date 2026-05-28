@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-28T09:53:55.183Z",
+  "timestamp": "2026-05-28T15:39:04.342Z",
   "space": {
     "title": "NGC 1514: The Crystal Ball Nebula",
     "description": "What do you see in this crystal ball?   The featured image shows NGC 1514, known as the Crystal B...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "f/prompts.chat",
-    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
-    "url": "https://github.com/f/prompts.chat",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
