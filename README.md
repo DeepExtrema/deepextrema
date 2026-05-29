@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4990/5000</code>
+RATE·LIMIT <code>4986/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -121,18 +121,18 @@ RATE·LIMIT <code>4990/5000</code>
 
 **🜨 SPACE**
 
-NGC 1514: The Crystal Ball Nebula — What do you see in this crystal ball?   The featured image shows NGC 1514, kn...
+Messier 104 — A gorgeous spiral galaxy, Messier 104 is famous for its nearly edge-on profil...
 
-<sub>NASA APOD · 2026-05-28</sub>
+<sub>NASA APOD · 2026-05-29</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-29 02:44 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>077c036</code>
+LAST BUILD <code>2026-05-29 08:42 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>7f4ddd7</code>
 </sub>
 
 </div>
