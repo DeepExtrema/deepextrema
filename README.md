@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4988/5000</code>
+RATE·LIMIT <code>4987/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,16 +130,16 @@ Messier 104 — A gorgeous spiral galaxy, Messier 104 is famous for its nearly e
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Embrace the unknown, pioneer the next horizon.*
+> *Every system starts as a question.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-29 20:13 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>5243101</code>
+LAST BUILD <code>2026-05-30 02:38 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e76019c</code>
 </sub>
 
 </div>
