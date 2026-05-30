@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4987/5000</code>
+RATE·LIMIT <code>4988/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -121,18 +121,18 @@ RATE·LIMIT <code>4987/5000</code>
 
 **🜨 SPACE**
 
-Messier 104 — A gorgeous spiral galaxy, Messier 104 is famous for its nearly edge-on profil...
+Supermoon Versus Micromoon — What is so micro about tonight's blue micromoon?  Just after sunset, a full m...
 
-<sub>NASA APOD · 2026-05-29</sub>
+<sub>NASA APOD · 2026-05-30</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-30 02:38 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e76019c</code>
+LAST BUILD <code>2026-05-30 07:41 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>21d15ab</code>
 </sub>
 
 </div>
