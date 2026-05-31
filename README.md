@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4991/5000</code>
+RATE·LIMIT <code>4992/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in th
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-31 13:26 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>659e3ef</code>
+LAST BUILD <code>2026-05-31 19:08 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4fd1719</code>
 </sub>
 
 </div>
