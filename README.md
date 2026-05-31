@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4976/5000</code>
+RATE·LIMIT <code>4991/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4976/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-Supermoon Versus Micromoon — What is so micro about tonight's blue micromoon?  Just after sunset, a full m...
+Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in the Eagle Nebula.  They are gravitationally cont...
 
-<sub>NASA APOD · 2026-05-30</sub>
+<sub>NASA APOD · 2026-05-31</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-31 08:39 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>83deea0</code>
+LAST BUILD <code>2026-05-31 13:26 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>659e3ef</code>
 </sub>
 
 </div>
