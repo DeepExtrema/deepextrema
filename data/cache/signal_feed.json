@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-31T19:08:24.085Z",
+  "timestamp": "2026-06-01T03:31:48.959Z",
   "space": {
     "title": "Eagle Nebula Pillars in Infrared from Hubble",
     "description": "Newborn stars are forming in the Eagle Nebula.  They are gravitationally contracting in pillars o...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }

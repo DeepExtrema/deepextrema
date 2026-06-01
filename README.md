@@ -130,16 +130,16 @@ Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in th
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Debug reality; deploy ambition.*
+> *Build for the timeline you want to live in.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-05-31 19:08 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4fd1719</code>
+LAST BUILD <code>2026-06-01 03:31 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>39266c4</code>
 </sub>
 
 </div>
