@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4987/5000</code>
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4987/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in the Eagle Nebula.  They are gravitationally cont...
+Saturn at Night — Telescopic views of Saturn and its beautiful rings often make it the star of ...
 
-<sub>NASA APOD · 2026-05-31</sub>
+<sub>NASA APOD · 2026-06-01</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-01 10:20 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>25fe0af</code>
+LAST BUILD <code>2026-06-01 11:22 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>02ef60b</code>
 </sub>
 
 </div>
