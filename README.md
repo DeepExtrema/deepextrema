@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4992/5000</code>
+RATE·LIMIT <code>4987/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4992/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in the Eagle Nebula.  They are gravitationally cont...
 
@@ -130,9 +130,9 @@ Eagle Nebula Pillars in Infrared from Hubble — Newborn stars are forming in th
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-01 03:31 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>39266c4</code>
+LAST BUILD <code>2026-06-01 10:20 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>25fe0af</code>
 </sub>
 
 </div>
