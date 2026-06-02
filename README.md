@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>5</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4992/5000</code>
+RATE·LIMIT <code>4986/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -139,7 +139,7 @@ Saturn at Night — Telescopic views of Saturn and its beautiful rings often mak
 
 **✺ PHRASE**
 
-> *Build for the timeline you want to live in.*
+> *Depth first; scale later.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-01 21:26 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>d900868</code>
+LAST BUILD <code>2026-06-02 03:28 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>35d56af</code>
 </sub>
 
 </div>
