@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳✅❌✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4989/5000</code>
+WORKFLOWS <code>⏳✅✅❌✅✅✅✅✅✅</code>  ·
+RATE·LIMIT <code>4992/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4989/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
 The Vela Supernova Remnant — The explosion is over, but the consequences continue.  About twelve thousand ...
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-02 16:13 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>dc07fcf</code>
+LAST BUILD <code>2026-06-02 20:40 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>6c5f3a3</code>
 </sub>
 
 </div>
