@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-03T09:26:38.906Z",
+  "timestamp": "2026-06-03T10:49:45.487Z",
   "space": {
-    "title": "The Vela Supernova Remnant",
-    "description": "The explosion is over, but the consequences continue.  About twelve thousand years ago, a relativ...",
-    "date": "2026-06-02",
-    "url": "https://apod.nasa.gov/apod/image/2606/Vela_Mtanous_960.jpg",
+    "title": "Andromeda Through Gas and Dust",
+    "description": "Over 1000 years ago, Persian astronomer Abd al-Rahman al-Sufi published humanity’s oldest known r...",
+    "date": "2026-06-03",
+    "url": "https://apod.nasa.gov/apod/image/2606/andromeda_1024.png",
     "stale": false
   },
   "ai": {
-    "name": "huggingface/transformers",
-    "description": "🤗 Transformers: the model-definition framework for state...",
-    "url": "https://github.com/huggingface/transformers",
+    "name": "f/prompts.chat",
+    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
+    "url": "https://github.com/f/prompts.chat",
     "stale": false
   }
 }

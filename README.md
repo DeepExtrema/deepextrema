@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅❌✅✅✅✅</code>  ·
-RATE·LIMIT <code>4984/5000</code>
+WORKFLOWS <code>⏳✅✅✅✅✅❌✅✅✅</code>  ·
+RATE·LIMIT <code>4986/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4984/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-The Vela Supernova Remnant — The explosion is over, but the consequences continue.  About twelve thousand ...
+Andromeda Through Gas and Dust — Over 1000 years ago, Persian astronomer Abd al-Rahman al-Sufi published human...
 
-<sub>NASA APOD · 2026-06-02</sub>
+<sub>NASA APOD · 2026-06-03</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-03 09:26 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>08d14de</code>
+LAST BUILD <code>2026-06-03 10:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4e35488</code>
 </sub>
 
 </div>
