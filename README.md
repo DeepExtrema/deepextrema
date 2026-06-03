@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅✅❌✅✅✅</code>  ·
-RATE·LIMIT <code>4986/5000</code>
+WORKFLOWS <code>⏳✅✅✅✅✅✅❌✅✅</code>  ·
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ Andromeda Through Gas and Dust — Over 1000 years ago, Persian astronomer Abd a
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-03 10:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4e35488</code>
+LAST BUILD <code>2026-06-03 16:28 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>a58c1e8</code>
 </sub>
 
 </div>
