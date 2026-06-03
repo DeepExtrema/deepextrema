@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳✅✅❌✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4992/5000</code>
+WORKFLOWS <code>⏳✅✅✅❌✅✅✅✅✅</code>  ·
+RATE·LIMIT <code>4995/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4992/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 The Vela Supernova Remnant — The explosion is over, but the consequences continue.  About twelve thousand ...
 
@@ -130,16 +130,16 @@ The Vela Supernova Remnant — The explosion is over, but the consequences conti
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Depth first; scale later.*
+> *The frontier rewards those who show up.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-02 20:40 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>6c5f3a3</code>
+LAST BUILD <code>2026-06-03 03:36 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>7f0d6b3</code>
 </sub>
 
 </div>
