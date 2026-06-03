@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-03T03:36:31.326Z",
+  "timestamp": "2026-06-03T09:26:38.906Z",
   "space": {
     "title": "The Vela Supernova Remnant",
     "description": "The explosion is over, but the consequences continue.  About twelve thousand years ago, a relativ...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
