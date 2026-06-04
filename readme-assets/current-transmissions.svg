@@ -4,7 +4,7 @@
 
   <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
     <text x="36" y="32">§ 02  ·  CURRENT  TRANSMISSIONS</text>
-    <text x="1164" y="32" text-anchor="end" fill="#6b5a3a">REFRESHED · 20:51 UTC</text>
+    <text x="1164" y="32" text-anchor="end" fill="#6b5a3a">REFRESHED · 03:31 UTC</text>
   </g>
 
   <!-- Dividers -->
@@ -24,20 +24,20 @@
   </g>
   <g transform="translate(450 80)">
     <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ EXPERIMENT</text>
-    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">Parallax-Proto-Strategy</text>
-    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">No description provided.</text>
-    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
-    <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
-      <text y="118">HTML · 3★ · 27 COMMITS · LIVE</text>
-    </g>
-  </g>
-  <g transform="translate(826 80)">
-    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ EXPERIMENT</text>
     <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">Sherlock-Multiagent-Data-Scientist</text>
     <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">No description provided.</text>
     <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
     <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
       <text y="118">PYTHON · 0★ · 0 COMMITS · LIVE</text>
+    </g>
+  </g>
+  <g transform="translate(826 80)">
+    <text font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#d4a85a" letter-spacing="3">▸ EXPERIMENT</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="24" fill="#f5e6b8" font-weight="500">AskMyPaper</text>
+    <text y="62" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic">Hybrid RAG over PDF documents</text>
+    <text y="82" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic"></text>
+    <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" fill="#6b5a3a" letter-spacing="2">
+      <text y="118">PYTHON · 0★ · 3 COMMITS · LIVE</text>
     </g>
   </g>
 </svg>
