@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>23</code>  ·
+COMMITS·30D <code>43</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4985/5000</code>
+RATE·LIMIT <code>4986/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,11 +119,11 @@ RATE·LIMIT <code>4985/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-Andromeda Through Gas and Dust — Over 1000 years ago, Persian astronomer Abd al-Rahman al-Sufi published human...
+A Planetary Nebula with Cosmic Buckyballs — What is happening inside this unusual nebula?   Planetary nebula Tc 1, captur...
 
-<sub>NASA APOD · 2026-06-03</sub>
+<sub>NASA APOD · 2026-06-04</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-04 08:48 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>b73c1d7</code>
+LAST BUILD <code>2026-06-04 09:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>96c0e93</code>
 </sub>
 
 </div>
