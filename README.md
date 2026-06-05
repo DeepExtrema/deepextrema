@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>43</code>  ·
+COMMITS·30D <code>42</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
-ACTIVE·REPOS <code>4</code>  ·
+ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4988/5000</code>
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,16 +130,16 @@ A Planetary Nebula with Cosmic Buckyballs — What is happening inside this unus
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Curiosity compounds like interest, but pays in discoveries.*
+> *Ship early, iterate often, sleep eventually.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-04 19:58 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>97f616b</code>
+LAST BUILD <code>2026-06-05 02:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4162674</code>
 </sub>
 
 </div>

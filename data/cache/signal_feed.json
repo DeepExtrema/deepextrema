@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-04T19:58:46.894Z",
+  "timestamp": "2026-06-05T02:53:38.679Z",
   "space": {
     "title": "A Planetary Nebula with Cosmic Buckyballs",
     "description": "What is happening inside this unusual nebula?   Planetary nebula Tc 1, captured here in exquisite...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "huggingface/transformers",
-    "description": "🤗 Transformers: the model-definition framework for state...",
-    "url": "https://github.com/huggingface/transformers",
+    "name": "tensorflow/tensorflow",
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "url": "https://github.com/tensorflow/tensorflow",
     "stale": false
   }
 }
