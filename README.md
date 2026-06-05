@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4980/5000</code>
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4980/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 The Hydra Cluster of Galaxies — Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels...
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-05 09:37 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>d51d454</code>
+LAST BUILD <code>2026-06-05 14:37 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>569b38b</code>
 </sub>
 
 </div>
