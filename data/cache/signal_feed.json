@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-05T02:53:38.679Z",
+  "timestamp": "2026-06-05T08:43:16.909Z",
   "space": {
-    "title": "A Planetary Nebula with Cosmic Buckyballs",
-    "description": "What is happening inside this unusual nebula?   Planetary nebula Tc 1, captured here in exquisite...",
-    "date": "2026-06-04",
-    "url": "https://apod.nasa.gov/apod/image/2606/buckyballs_1024.jpg",
+    "title": "The Hydra Cluster of Galaxies",
+    "description": "Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels in the foreground o...",
+    "date": "2026-06-05",
+    "url": "https://apod.nasa.gov/apod/image/2606/HydraClusterSampaio1024.jpg",
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }

@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4993/5000</code>
+RATE·LIMIT <code>4990/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -121,18 +121,18 @@ RATE·LIMIT <code>4993/5000</code>
 
 **🜨 SPACE**
 
-A Planetary Nebula with Cosmic Buckyballs — What is happening inside this unusual nebula?   Planetary nebula Tc 1, captur...
+The Hydra Cluster of Galaxies — Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels...
 
-<sub>NASA APOD · 2026-06-04</sub>
+<sub>NASA APOD · 2026-06-05</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-05 02:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>4162674</code>
+LAST BUILD <code>2026-06-05 08:43 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3bffbef</code>
 </sub>
 
 </div>
