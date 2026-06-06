@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4988/5000</code>
+RATE·LIMIT <code>4991/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4988/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 The Hydra Cluster of Galaxies — Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels...
 
@@ -130,16 +130,16 @@ The Hydra Cluster of Galaxies — Within our own Milky Way galaxy, two bright, s
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Ship early, iterate often, sleep eventually.*
+> *Embrace the unknown, pioneer the next horizon.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-05 19:47 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>89d4dc5</code>
+LAST BUILD <code>2026-06-06 02:40 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>f0e7fee</code>
 </sub>
 
 </div>
