@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4995/5000</code>
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,11 +119,11 @@ RATE·LIMIT <code>4995/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-The Hydra Cluster of Galaxies — Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels...
+Charon: Moon of Pluto — A darkened and mysterious north polar region known to some as Mordor Macula c...
 
-<sub>NASA APOD · 2026-06-05</sub>
+<sub>NASA APOD · 2026-06-06</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-06 13:21 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>2731010</code>
+LAST BUILD <code>2026-06-06 19:13 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>2e86b1d</code>
 </sub>
 
 </div>
