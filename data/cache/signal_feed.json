@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-07T08:23:25.183Z",
+  "timestamp": "2026-06-07T08:49:26.340Z",
   "space": {
     "title": "Jupiter and Venus from Earth",
     "description": "It was visible around the world. The sunset conjunction of Jupiter (left) and Venus (right) in 20...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "huggingface/transformers",
-    "description": "🤗 Transformers: the model-definition framework for state...",
-    "url": "https://github.com/huggingface/transformers",
+    "name": "tensorflow/tensorflow",
+    "description": "An Open Source Machine Learning Framework for Everyone",
+    "url": "https://github.com/tensorflow/tensorflow",
     "stale": false
   }
 }
