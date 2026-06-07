@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-07T02:59:00.639Z",
+  "timestamp": "2026-06-07T08:23:25.183Z",
   "space": {
-    "title": "Charon: Moon of Pluto",
-    "description": "A darkened and mysterious north polar region known to some as Mordor Macula caps this premier vie...",
-    "date": "2026-06-06",
-    "url": "https://apod.nasa.gov/apod/image/2606/charon_then_now_1024.jpg",
+    "title": "Jupiter and Venus from Earth",
+    "description": "It was visible around the world. The sunset conjunction of Jupiter (left) and Venus (right) in 20...",
+    "date": "2026-06-07",
+    "url": "https://apod.nasa.gov/apod/image/2606/JupiterPersonVenus_Nikodem_960.jpg",
     "stale": false
   },
   "ai": {
-    "name": "f/prompts.chat",
-    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
-    "url": "https://github.com/f/prompts.chat",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
