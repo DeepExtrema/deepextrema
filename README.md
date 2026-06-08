@@ -45,7 +45,7 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳❌✅✅✅✅✅✅✅✅</code>  ·
+WORKFLOWS <code>⏳✅❌✅✅✅✅✅✅✅</code>  ·
 RATE·LIMIT <code>4988/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4988/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-Jupiter and Venus from Earth — It was visible around the world. The sunset conjunction of Jupiter (left) and...
+Comet R3 PanSTARRS Through Time — What happens to a comet as it leaves our inner Solar System?  Now, the arriva...
 
-<sub>NASA APOD · 2026-06-07</sub>
+<sub>NASA APOD · 2026-06-08</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-08 03:28 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>9e2d1bb</code>
+LAST BUILD <code>2026-06-08 09:22 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>91ac637</code>
 </sub>
 
 </div>
