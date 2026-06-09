@@ -45,8 +45,8 @@ PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
-WORKFLOWS <code>⏳✅✅✅✅✅✅✅❌✅</code>  ·
-RATE·LIMIT <code>4986/5000</code>
+WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅❌</code>  ·
+RATE·LIMIT <code>4994/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4986/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 Thor's Helmet — Thor not only has his own day (Thursday), but a helmet in the heavens.  Popul...
 
@@ -130,9 +130,9 @@ Thor's Helmet — Thor not only has his own day (Thursday), but a helmet in the 
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-09 09:33 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>86869b7</code>
+LAST BUILD <code>2026-06-09 14:38 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e00003e</code>
 </sub>
 
 </div>
