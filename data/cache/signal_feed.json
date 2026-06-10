@@ -1,16 +1,16 @@
 {
-  "timestamp": "2026-06-10T02:53:14.423Z",
+  "timestamp": "2026-06-10T08:49:16.564Z",
   "space": {
-    "title": "Thor's Helmet",
-    "description": "Thor not only has his own day (Thursday), but a helmet in the heavens.  Popularly called Thor's H...",
-    "date": "2026-06-09",
-    "url": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_960.jpg",
+    "title": "The Eagle Nebula and Friends",
+    "description": "What looks as if it is going to swallow the great Pillars of Creation? The Eagle Nebula (M16) is ...",
+    "date": "2026-06-10",
+    "url": "https://apod.nasa.gov/apod/image/2606/eagle_1024.jpg",
     "stale": false
   },
   "ai": {
-    "name": "f/prompts.chat",
-    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and coll...",
-    "url": "https://github.com/f/prompts.chat",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }

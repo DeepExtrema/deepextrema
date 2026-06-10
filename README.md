@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4993/5000</code>
+RATE·LIMIT <code>4989/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -121,18 +121,18 @@ RATE·LIMIT <code>4993/5000</code>
 
 **🜨 SPACE**
 
-Thor's Helmet — Thor not only has his own day (Thursday), but a helmet in the heavens.  Popul...
+The Eagle Nebula and Friends — What looks as if it is going to swallow the great Pillars of Creation? The Ea...
 
-<sub>NASA APOD · 2026-06-09</sub>
+<sub>NASA APOD · 2026-06-10</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[huggingface/transformers](https://github.com/huggingface/transformers)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-10 02:53 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>fcc933e</code>
+LAST BUILD <code>2026-06-10 08:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>9961c41</code>
 </sub>
 
 </div>
