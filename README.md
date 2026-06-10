@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4989/5000</code>
+RATE·LIMIT <code>4979/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4989/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE**
+**🜨 SPACE** (stale)
 
 The Eagle Nebula and Friends — What looks as if it is going to swallow the great Pillars of Creation? The Ea...
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-10 08:49 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>9961c41</code>
+LAST BUILD <code>2026-06-10 09:48 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>d834a1b</code>
 </sub>
 
 </div>
