@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4993/5000</code>
+RATE·LIMIT <code>4989/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,20 +119,20 @@ RATE·LIMIT <code>4993/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
-The Eagle Nebula and Friends — What looks as if it is going to swallow the great Pillars of Creation? The Ea...
+The Mermaid Nebula Supernova Remnant — Could the Little Mermaid turn into stardust instead of seafoam?   It would se...
 
-<sub>NASA APOD · 2026-06-10</sub>
+<sub>NASA APOD · 2026-06-11</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **◇ AI**
 
-[f/prompts.chat](https://github.com/f/prompts.chat)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-11 10:15 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>453d0c1</code>
+LAST BUILD <code>2026-06-11 15:46 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>3715638</code>
 </sub>
 
 </div>
