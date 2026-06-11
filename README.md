@@ -46,7 +46,7 @@ ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4988/5000</code>
+RATE·LIMIT <code>4993/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -130,9 +130,9 @@ The Eagle Nebula and Friends — What looks as if it is going to swallow the gre
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-11 09:12 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>cad42a5</code>
+LAST BUILD <code>2026-06-11 10:15 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>453d0c1</code>
 </sub>
 
 </div>
