@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-11T15:46:08.111Z",
+  "timestamp": "2026-06-11T20:14:15.314Z",
   "space": {
     "title": "The Mermaid Nebula Supernova Remnant",
     "description": "Could the Little Mermaid turn into stardust instead of seafoam?   It would seem so in this beauti...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
