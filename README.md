@@ -40,7 +40,7 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>42</code>  ·
+COMMITS·30D <code>41</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
 ACTIVE·REPOS <code>3</code>  ·
@@ -130,16 +130,16 @@ The Mermaid Nebula Supernova Remnant — Could the Little Mermaid turn into star
 
 **◇ AI**
 
-[huggingface/transformers](https://github.com/huggingface/transformers)
+[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
 
-<sub>HF TRENDING · 🤗 TRANSFORMERS: THE MODEL-DEFINITION FRAMEWORK FOR STATE...</sub>
+<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *The frontier rewards those who show up.*
+> *Curiosity compounds like interest, but pays in discoveries.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-11 20:14 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>7dd04f4</code>
+LAST BUILD <code>2026-06-12 03:25 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>f8bf3bf</code>
 </sub>
 
 </div>
