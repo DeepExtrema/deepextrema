@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ quiet: true });
 const { Octokit } = require('@octokit/rest');
 const { graphql } = require('@octokit/graphql');
 

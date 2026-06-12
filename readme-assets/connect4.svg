@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+  <rect width="1200" height="520" fill="#000000"></rect>
+  <g class="stars"><circle cx="1063" cy="425" r="0.8" fill="#d4a85a" opacity="0.54"/><circle cx="674" cy="375" r="0.7" fill="#d4a85a" opacity="0.36"/><circle cx="844" cy="406" r="0.7" fill="#d4a85a" opacity="0.43"/><circle cx="890" cy="493" r="0.8" fill="#d4a85a" opacity="0.57"/><circle cx="219" cy="70" r="0.7" fill="#d4a85a" opacity="0.56"/><circle cx="196" cy="230" r="0.6" fill="#d4a85a" opacity="0.47"/><circle cx="805" cy="21" r="0.7" fill="#d4a85a" opacity="0.54"/><circle cx="520" cy="382" r="0.5" fill="#d4a85a" opacity="0.58"/><circle cx="570" cy="92" r="0.8" fill="#d4a85a" opacity="0.40"/><circle cx="409" cy="397" r="0.6" fill="#d4a85a" opacity="0.36"/><circle cx="1176" cy="96" r="0.7" fill="#d4a85a" opacity="0.59"/><circle cx="367" cy="339" r="0.5" fill="#d4a85a" opacity="0.37"/><circle cx="502" cy="407" r="0.8" fill="#d4a85a" opacity="0.44"/><circle cx="587" cy="80" r="0.8" fill="#d4a85a" opacity="0.50"/><circle cx="386" cy="278" r="0.7" fill="#d4a85a" opacity="0.55"/><circle cx="684" cy="397" r="0.8" fill="#d4a85a" opacity="0.47"/><circle cx="754" cy="161" r="0.7" fill="#d4a85a" opacity="0.49"/><circle cx="227" cy="256" r="0.5" fill="#d4a85a" opacity="0.36"/></g>
+
+  <!-- Title -->
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
+    <text x="36" y="36">§ 10  ·  TACTICAL  RELAY  ·  CONNECT  FOUR</text>
+    <text x="1164" y="36" text-anchor="end" fill="#6b5a3a">GAME 1 · MOVE 0</text>
+  </g>
+
+  <!-- Board -->
+  <g transform="translate(70 76)">
+    <rect x="-14" y="-14" width="462" height="400" fill="none" stroke="#7d5d2a" stroke-width="1" opacity="0.55" rx="6"/>
+    <g>
+      <circle cx="31" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="31" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="31" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="93" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="31" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="155" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="31" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="217" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="31" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="279" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="31" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="93" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="155" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="217" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="279" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="341" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+      <circle cx="403" cy="341" r="24" fill="#0a0805" stroke="#1a1308" stroke-width="1.5"/>
+    </g>
+    <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" letter-spacing="2">
+      <text x="31" y="398" text-anchor="middle" fill="#6b5a3a">A</text>
+      <text x="93" y="398" text-anchor="middle" fill="#6b5a3a">B</text>
+      <text x="155" y="398" text-anchor="middle" fill="#6b5a3a">C</text>
+      <text x="217" y="398" text-anchor="middle" fill="#6b5a3a">D</text>
+      <text x="279" y="398" text-anchor="middle" fill="#6b5a3a">E</text>
+      <text x="341" y="398" text-anchor="middle" fill="#6b5a3a">F</text>
+      <text x="403" y="398" text-anchor="middle" fill="#6b5a3a">G</text>
+    </g>
+  </g>
+
+  <!-- Right panel -->
+  <g transform="translate(600 100)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="2">
+    <text fill="#6b5a3a">STATUS</text>
+    <text y="30" font-family="'IBM Plex Serif', Georgia, serif" font-size="26" fill="#f5e6b8" font-weight="500" letter-spacing="0">YOUR MOVE</text>
+    <text y="52" font-family="'IBM Plex Serif', Georgia, serif" font-size="13" fill="#a89465" font-style="italic" letter-spacing="0">The relay awaits a drop.</text>
+
+    <g transform="translate(0 92)">
+      <text fill="#6b5a3a">SCOREBOARD</text>
+      <g transform="translate(0 28)">
+        <text font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8">0<tspan font-size="11" fill="#6b5a3a" font-family="'JetBrains Mono', ui-monospace, monospace">  CREW</tspan></text>
+        <text x="150" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8">0<tspan font-size="11" fill="#6b5a3a" font-family="'JetBrains Mono', ui-monospace, monospace">  PROBE</tspan></text>
+        <text x="320" font-family="'IBM Plex Serif', Georgia, serif" font-size="22" fill="#f5e6b8">0<tspan font-size="11" fill="#6b5a3a" font-family="'JetBrains Mono', ui-monospace, monospace">  DRAWS</tspan></text>
+      </g>
+    </g>
+
+    <g transform="translate(0 172)">
+      <text fill="#6b5a3a">CALL SIGNS</text>
+      <g transform="translate(0 24)">
+        <circle cx="7" cy="-4" r="7" fill="#d4a85a" stroke="#f5e6b8"/>
+        <text x="24" fill="#a89465">CREW · VISITORS · YOU</text>
+        <circle cx="7" cy="22" r="7" fill="#7d5d2a" stroke="#a37a3a"/>
+        <text x="24" y="26" fill="#a89465">PROBE · HOUSE AI · ACTIONS</text>
+      </g>
+    </g>
+
+    <g transform="translate(0 252)">
+      <text fill="#6b5a3a">LAST TRANSMISSION</text>
+      <text y="22" fill="#dcc998" letter-spacing="1">AWAITING FIRST CONTACT</text>
+    </g>
+
+    <g transform="translate(0 312)">
+      <line x1="0" y1="-12" x2="540" y2="-12" stroke="#0a0805" stroke-dasharray="2 3"></line>
+      <text fill="#6b5a3a">FLIGHT CREW · RECENT OPERATORS</text>
+      <text y="22" fill="#a89465" letter-spacing="1">NO SIGHTINGS YET</text>
+    </g>
+
+    <g transform="translate(0 372)">
+      <text font-family="'IBM Plex Serif', Georgia, serif" font-size="14" fill="#dcc998" font-style="italic" letter-spacing="0">"Drop a disc with the ▼ links below —</text>
+      <text y="20" font-family="'IBM Plex Serif', Georgia, serif" font-size="14" fill="#dcc998" font-style="italic" letter-spacing="0">a GitHub Action plays the reply."</text>
+    </g>
+  </g>
+</svg>

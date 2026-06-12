@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ quiet: true });
 const fs = require('fs');
 const path = require('path');
 
@@ -601,7 +601,7 @@ async function main() {
   ${generateStars(1200, 220, 15, 10)}
 
   <g font-family="${FONT_MONO}" font-size="11" fill="${GOLD}" letter-spacing="3">
-    <text x="36" y="32">§ 02  ·  CURRENT  TRANSMISSIONS</text>
+    <text x="36" y="32">§ 01  ·  CURRENT  TRANSMISSIONS</text>
     <text x="1164" y="32" text-anchor="end" fill="${INK_DIM}">REFRESHED · ${nowUtc}</text>
   </g>
 
@@ -1064,9 +1064,12 @@ LAST BUILD <code>${lastBuildStr}</code>  ·  NEXT SYNC <code>+6h</code>  ·  WOR
   }
 }
 
-// Exports for tests and CLI execution
+// Exports for tests, sibling generators and CLI execution
 module.exports = {
   injectMarkdown,
+  generateStars,
+  formatNumber,
+  truncateString,
   main
 };
 

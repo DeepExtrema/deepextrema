@@ -1,0 +1,57 @@
+name: 🎮 Tactical Relay · Connect Four
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+# Serialize moves so two simultaneous drops can't corrupt the board.
+concurrency:
+  group: connect-four
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, 'c4|drop|')
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: 📥 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 🎮 Play the move
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          PLAYER: ${{ github.event.issue.user.login }}
+        run: |
+          COLUMN="${ISSUE_TITLE##*|}"
+          node scripts/connect4.js move "$COLUMN" "$PLAYER" > /tmp/c4-comment.md
+          cat /tmp/c4-comment.md
+
+      - name: 💾 Commit board update
+        run: |
+          git config --local user.name "voyager-bot 🜨"
+          git config --local user.email "voyager-bot@users.noreply.github.com"
+          git add README.md readme-assets/connect4.svg data/game/ || true
+          git diff --staged --quiet || git commit -m "🎮 c4 · move by @${{ github.event.issue.user.login }}"
+          git pull --rebase origin main || true
+          git push || echo "nothing to push"
+
+      - name: 💬 Reply and close issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --body-file /tmp/c4-comment.md
+          gh issue close "${{ github.event.issue.number }}" --repo "${{ github.repository }}" --reason completed
