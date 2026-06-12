@@ -121,9 +121,9 @@ RATE·LIMIT <code>4991/5000</code>
 
 **🜨 SPACE**
 
-The Mermaid Nebula Supernova Remnant — Could the Little Mermaid turn into stardust instead of seafoam?   It would se...
+Venus and Jupiter: Conjunction from Avebury — To see Venus and Jupiter together this month, you won't need binoculars or ev...
 
-<sub>NASA APOD · 2026-06-11</sub>
+<sub>NASA APOD · 2026-06-12</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-12 03:25 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>f8bf3bf</code>
+LAST BUILD <code>2026-06-12 08:56 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>21bc9b1</code>
 </sub>
 
 </div>
