@@ -1,0 +1,54 @@
+name: 🛠 Update Instruments
+
+on:
+  schedule:
+    - cron: '30 4 * * *'   # daily, offset from the cockpit runs
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/featured.yaml'
+      - 'scripts/featuredProjects.js'
+      - 'scripts/languageStats.js'
+      - '.github/workflows/update-instruments.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-instruments
+
+jobs:
+  update-instruments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 📥 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Dependencies
+        run: npm ci
+
+      - name: 🗂 Generate Notable Instruments
+        run: node scripts/featuredProjects.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📊 Generate Instrument Panel
+        run: node scripts/languageStats.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 💾 Commit changes
+        run: |
+          git config --local user.name "voyager-bot 🜨"
+          git config --local user.email "voyager-bot@users.noreply.github.com"
+          git add README.md readme-assets/ data/cache/ || true
+          git diff --staged --quiet || git commit -m "🛠 instruments · $(date +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main || true
+          git push || echo "nothing to push"

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" width="1200" height="280">
+  <rect width="1200" height="280" fill="#000000"></rect>
+  <g class="stars"><circle cx="154" cy="262" r="0.8" fill="#d4a85a" opacity="0.52"/><circle cx="700" cy="145" r="0.7" fill="#d4a85a" opacity="0.52"/><circle cx="530" cy="34" r="0.7" fill="#d4a85a" opacity="0.36"/><circle cx="1007" cy="237" r="0.7" fill="#d4a85a" opacity="0.38"/><circle cx="915" cy="242" r="0.6" fill="#d4a85a" opacity="0.55"/><circle cx="1130" cy="273" r="0.6" fill="#d4a85a" opacity="0.44"/><circle cx="481" cy="233" r="0.7" fill="#d4a85a" opacity="0.36"/><circle cx="819" cy="234" r="0.6" fill="#d4a85a" opacity="0.43"/><circle cx="886" cy="189" r="0.5" fill="#d4a85a" opacity="0.51"/><circle cx="578" cy="156" r="0.8" fill="#d4a85a" opacity="0.39"/><circle cx="12" cy="29" r="0.5" fill="#d4a85a" opacity="0.58"/><circle cx="598" cy="250" r="0.7" fill="#d4a85a" opacity="0.49"/><circle cx="897" cy="193" r="0.7" fill="#d4a85a" opacity="0.39"/><circle cx="494" cy="94" r="0.7" fill="#d4a85a" opacity="0.41"/></g>
+
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" fill="#d4a85a" letter-spacing="3">
+    <text x="36" y="36">§ 06  ·  INSTRUMENT  PANEL  ·  LANGUAGE  DISTRIBUTION</text>
+    <text x="1164" y="36" text-anchor="end" fill="#6b5a3a">BYTES · ALL REPOS</text>
+  </g>
+
+  <g>
+    <rect x="35" y="83" width="1130" height="18" fill="none" stroke="#0a0805" stroke-width="1"/>
+    <rect x="36.0" y="84" width="730.9" height="16" fill="#f5e6b8"/>
+    <rect x="766.9" y="84" width="204.2" height="16" fill="#d4a85a"/>
+    <rect x="971.1" y="84" width="81.5" height="16" fill="#a37a3a"/>
+    <rect x="1052.6" y="84" width="53.6" height="16" fill="#7d5d2a"/>
+    <rect x="1106.3" y="84" width="29.6" height="16" fill="#5a4220"/>
+    <rect x="1135.9" y="84" width="11.1" height="16" fill="#3a2c14"/>
+    <rect x="1147.0" y="84" width="17.0" height="16" fill="#241b0c"/>
+  </g>
+
+  <g transform="translate(0 134)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9" letter-spacing="1.5">
+    <g transform="translate(36 0)">
+      <rect y="-8" width="10" height="10" fill="#f5e6b8"/>
+      <text x="18" fill="#a89465">PYTHON 64.8%</text>
+    </g>
+    <g transform="translate(174 0)">
+      <rect y="-8" width="10" height="10" fill="#d4a85a"/>
+      <text x="18" fill="#a89465">JAVASCRIPT 18.1%</text>
+    </g>
+    <g transform="translate(342 0)">
+      <rect y="-8" width="10" height="10" fill="#a37a3a"/>
+      <text x="18" fill="#a89465">HTML 7.2%</text>
+    </g>
+    <g transform="translate(458 0)">
+      <rect y="-8" width="10" height="10" fill="#7d5d2a"/>
+      <text x="18" fill="#a89465">CSS 4.8%</text>
+    </g>
+    <g transform="translate(568 0)">
+      <rect y="-8" width="10" height="10" fill="#5a4220"/>
+      <text x="18" fill="#a89465">TYPESCRIPT 2.6%</text>
+    </g>
+    <g transform="translate(728 0)">
+      <rect y="-8" width="10" height="10" fill="#3a2c14"/>
+      <text x="18" fill="#a89465">SCSS 1.0%</text>
+    </g>
+    <g transform="translate(845 0)">
+      <rect y="-8" width="10" height="10" fill="#241b0c"/>
+      <text x="18" fill="#a89465">OTHER 1.5%</text>
+    </g>
+  </g>
+
+  <line x1="36" y1="166" x2="1164" y2="166" stroke="#0a0805" stroke-dasharray="2 3"/>
+
+  <g transform="translate(36 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="2">
+    <text fill="#6b5a3a">FOLLOWERS</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="26" fill="#f5e6b8" font-weight="500" letter-spacing="0">23</text>
+  </g>
+  <g transform="translate(326 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="2">
+    <text fill="#6b5a3a">STARS · TOTAL</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="26" fill="#f5e6b8" font-weight="500" letter-spacing="0">6</text>
+  </g>
+  <g transform="translate(616 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="2">
+    <text fill="#6b5a3a">PUBLIC REPOS</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="26" fill="#f5e6b8" font-weight="500" letter-spacing="0">18</text>
+  </g>
+  <g transform="translate(906 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" letter-spacing="2">
+    <text fill="#6b5a3a">LONGEST STREAK</text>
+    <text y="32" font-family="'IBM Plex Serif', Georgia, serif" font-size="26" fill="#f5e6b8" font-weight="500" letter-spacing="0">7<tspan font-size="12" fill="#6b5a3a" font-family="'JetBrains Mono', ui-monospace, monospace" letter-spacing="2"> DAYS</tspan></text>
+  </g>
+</svg>
