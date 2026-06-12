@@ -46,9 +46,10 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: DeepExtrema
+          # Voyager gold palette (matches src/voyagerConstants.js LEVELS ramp)
           outputs: |
-            dist/github-snake.svg?palette=github-dark
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake.svg?color_snake=#d4a85a&color_dots=#0a0805,#1a1308,#5a4220,#a37a3a,#d4a85a
+            dist/github-snake-dark.svg?color_snake=#f0d089&color_dots=#0a0805,#1a1308,#5a4220,#a37a3a,#d4a85a
 
       # ── Commit ────────────────────────────────────────
       - name: 💾 Commit changes
