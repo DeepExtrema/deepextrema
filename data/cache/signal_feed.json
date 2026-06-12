@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-06-12T08:56:56.945Z",
+  "timestamp": "2026-06-12T10:02:53.168Z",
   "space": {
     "title": "Venus and Jupiter: Conjunction from Avebury",
     "description": "To see Venus and Jupiter together this month, you won't need binoculars or even a telescope. Just...",
@@ -8,9 +8,9 @@
     "stale": false
   },
   "ai": {
-    "name": "tensorflow/tensorflow",
-    "description": "An Open Source Machine Learning Framework for Everyone",
-    "url": "https://github.com/tensorflow/tensorflow",
+    "name": "huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state...",
+    "url": "https://github.com/huggingface/transformers",
     "stale": false
   }
 }
