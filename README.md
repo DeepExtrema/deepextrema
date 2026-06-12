@@ -1,7 +1,9 @@
 <!--
   ============================================================
   DEEPEXTREMA · OPERATOR PROFILE
-  Auto-updated every 6h by .github/workflows/update-cockpit.yml
+  Auto-updated by .github/workflows/ —
+    update-cockpit.yml (6h) · update-instruments.yml (daily)
+    connect-four.yml (on issue) · deploy-pages.yml (on push)
   Do not hand-edit content between START/END markers.
   Voyager golden record aesthetic — pure black, soft gold.
   ============================================================
@@ -52,13 +54,27 @@ RATE·LIMIT <code>4993/5000</code>
 
 <br>
 
-## § 02 · Current transmissions
+## § 01 · Current transmissions
 
 <!-- CURRENT_FOCUS_START -->
 <div align="center">
   <img src="readme-assets/current-transmissions.svg" alt="Current transmissions" width="100%">
 </div>
 <!-- CURRENT_FOCUS_END -->
+
+<br>
+
+## § 02 · Notable instruments
+
+<!-- FEATURED_START -->
+<div align="center">
+  <img src="readme-assets/featured.svg" alt="Notable instruments — featured projects" width="100%">
+</div>
+
+<div align="center">
+<sub>OPEN AN INSTRUMENT · [aibar](https://github.com/DeepExtrema/aibar)  ·  [signal-scout](https://github.com/DeepExtrema/signal-scout)  ·  [Yapper](https://github.com/DeepExtrema/Yapper)  ·  [ARES](https://github.com/DeepExtrema/ARES)  ·  [Parallax-Proto-Strategy](https://github.com/DeepExtrema/Parallax-Proto-Strategy)  ·  [AskMyPaper](https://github.com/DeepExtrema/AskMyPaper)</sub>
+</div>
+<!-- FEATURED_END -->
 
 <br>
 
@@ -97,7 +113,17 @@ RATE·LIMIT <code>4993/5000</code>
 
 <br>
 
-## § 06 · Operating stack
+## § 06 · Instrument panel
+
+<!-- INSTRUMENTS_START -->
+<div align="center">
+  <img src="readme-assets/languages.svg" alt="Instrument panel — language distribution and counters" width="100%">
+</div>
+<!-- INSTRUMENTS_END -->
+
+<br>
+
+## § 07 · Operating stack
 
 <!-- The Voyager record carried gold, copper, and 116 images.
      This one carries five languages and a strong opinion. -->
@@ -112,7 +138,7 @@ RATE·LIMIT <code>4993/5000</code>
 
 <br>
 
-## § 07 · Signal feed
+## § 08 · Signal feed
 
 <!-- SIGNAL_FEED_START -->
 <table>
@@ -150,12 +176,12 @@ Venus and Jupiter: Conjunction from Avebury — To see Venus and Jupiter togethe
 
 <br>
 
-## § 08 · Parallax sighting
+## § 09 · Parallax sighting
 
 <!-- PARALLAX_START -->
 
 <div align="center">
-  <a href="https://deepextrema.github.io/parallax-sighting/" title="Open the parallax sighting simulator">
+  <a href="https://deepextrema.github.io/deepextrema/" title="Open the parallax sighting simulator">
     <img src="readme-assets/parallax-mini.svg" alt="Parallax sighting simulator — click to open" width="100%">
   </a>
 </div>
@@ -165,6 +191,26 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 </div></sub>
 
 <!-- PARALLAX_END -->
+
+<br>
+
+## § 10 · Tactical relay
+
+<!-- CONNECT4_START -->
+<div align="center">
+  <img src="readme-assets/connect4.svg" alt="Connect Four — tactical relay board" width="100%">
+</div>
+
+<div align="center">
+
+**DROP A DISC**  ·  [▼ A](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CA&body=Drop%20a%20gold%20disc%20into%20column%20A%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ B](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CB&body=Drop%20a%20gold%20disc%20into%20column%20B%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ C](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CC&body=Drop%20a%20gold%20disc%20into%20column%20C%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ D](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CD&body=Drop%20a%20gold%20disc%20into%20column%20D%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ E](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CE&body=Drop%20a%20gold%20disc%20into%20column%20E%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ F](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CF&body=Drop%20a%20gold%20disc%20into%20column%20F%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)  ·  [▼ G](https://github.com/DeepExtrema/deepextrema/issues/new?title=c4%7Cdrop%7CG&body=Drop%20a%20gold%20disc%20into%20column%20G%20of%20the%20tactical%20relay.%0A%0AJust%20press%20**Create**%20below%20%E2%80%94%20voyager-bot%20will%20make%20your%20move%2C%20answer%20with%20its%20own%2C%20update%20the%20board%20on%20the%20profile%2C%20and%20close%20this%20issue%20automatically.)
+
+<sub>FLIGHT CREW · BE THE FIRST TO TRANSMIT</sub>
+
+<sub><i>Opening an issue makes your move. The probe answers within a minute. No login tricks — just GitHub.</i></sub>
+
+</div>
+<!-- CONNECT4_END -->
 
 <br>
 
