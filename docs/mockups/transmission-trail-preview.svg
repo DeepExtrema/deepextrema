@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="200" viewBox="0 0 840 200" role="img">
+  <rect x="0.5" y="0.5" width="839" height="199" rx="10" fill="#000" stroke="#3a2c12"/>
+  <text x="28" y="38" font-family="monospace" font-size="11" letter-spacing="3" fill="#d4a85a">§ TRANSMISSION RECORD</text>
+  <!-- dim grid -->
+  <g fill="#0a0805" opacity="0.85">
+    <rect x="42" y="64" width="9" height="9" rx="2"/><rect x="53" y="64" width="9" height="9" rx="2"/><rect x="64" y="64" width="9" height="9" rx="2"/><rect x="75" y="64" width="9" height="9" rx="2"/><rect x="86" y="64" width="9" height="9" rx="2"/><rect x="97" y="64" width="9" height="9" rx="2"/><rect x="108" y="64" width="9" height="9" rx="2"/>
+    <rect x="42" y="75" width="9" height="9" rx="2"/><rect x="53" y="75" width="9" height="9" rx="2"/><rect x="64" y="75" width="9" height="9" rx="2"/><rect x="75" y="75" width="9" height="9" rx="2"/><rect x="86" y="75" width="9" height="9" rx="2"/><rect x="97" y="75" width="9" height="9" rx="2"/><rect x="108" y="75" width="9" height="9" rx="2"/>
+    <rect x="120" y="64" width="9" height="9" rx="2"/><rect x="131" y="64" width="9" height="9" rx="2"/><rect x="142" y="64" width="9" height="9" rx="2"/><rect x="153" y="64" width="9" height="9" rx="2"/><rect x="164" y="64" width="9" height="9" rx="2"/><rect x="175" y="64" width="9" height="9" rx="2"/><rect x="186" y="64" width="9" height="9" rx="2"/>
+    <rect x="120" y="75" width="9" height="9" rx="2"/><rect x="131" y="75" width="9" height="9" rx="2"/><rect x="142" y="75" width="9" height="9" rx="2"/><rect x="153" y="75" width="9" height="9" rx="2"/><rect x="164" y="75" width="9" height="9" rx="2"/><rect x="175" y="75" width="9" height="9" rx="2"/><rect x="186" y="75" width="9" height="9" rx="2"/>
+    <!-- abbreviated: rest implied visually by trail region -->
+  </g>
+  <!-- visited cells -->
+  <g fill="#5a4220">
+    <rect x="198" y="64" width="9" height="9" rx="2"/><rect x="209" y="75" width="9" height="9" rx="2"/><rect x="220" y="75" width="9" height="9" rx="2"/>
+    <rect x="231" y="86" width="9" height="9" rx="2"/><rect x="242" y="86" width="9" height="9" rx="2"/><rect x="253" y="97" width="9" height="9" rx="2"/>
+    <rect x="264" y="86" width="9" height="9" rx="2"/><rect x="275" y="75" width="9" height="9" rx="2"/><rect x="286" y="64" width="9" height="9" rx="2"/>
+    <rect x="330" y="97" width="9" height="9" rx="2"/><rect x="385" y="75" width="9" height="9" rx="2"/><rect x="440" y="97" width="9" height="9" rx="2"/>
+    <rect x="495" y="75" width="9" height="9" rx="2"/><rect x="550" y="97" width="9" height="9" rx="2"/><rect x="605" y="75" width="9" height="9" rx="2"/>
+    <rect x="627" y="64" width="9" height="9" rx="2" fill="#a37a3a"/>
+  </g>
+  <path d="M 202.5 68.5 L 213.5 79.5 L 224.5 79.5 L 235.5 90.5 L 246.5 90.5 L 257.5 101.5 L 268.5 90.5 L 279.5 79.5 L 290.5 68.5 L 334.5 101.5 L 389.5 79.5 L 444.5 101.5 L 499.5 79.5 L 554.5 101.5 L 609.5 79.5 L 631.5 68.5" fill="none" stroke="#d4a85a" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.75"/>
+  <g transform="translate(631.5 68.5)" fill="none" stroke="#f5e6b8" stroke-width="1.1">
+    <circle r="6" stroke-width="1.2" fill="#1a1308"/>
+    <line x1="0" y1="-6" x2="0" y2="-16"/>
+    <line x1="-6" y1="0" x2="-18" y2="4"/>
+    <line x1="6" y1="0" x2="18" y2="4"/>
+    <circle r="1.5" fill="#f5e6b8" stroke="none"/>
+  </g>
+  <circle cx="631.5" cy="68.5" r="14" fill="#d4a85a" opacity="0.12"/>
+  <text x="420" y="178" text-anchor="middle" font-family="monospace" font-size="9" letter-spacing="2" fill="#6b5a3a">52 WEEKS · LIVE · GITHUB · SIGNAL TRAIL</text>
+</svg>

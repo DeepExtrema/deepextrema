@@ -8,18 +8,16 @@ const { renderAbout } = require('../src/svg/about');
 const { renderProjectTile } = require('../src/svg/projectTile');
 const { renderButton } = require('../src/svg/contactButton');
 const { renderFooter } = require('../src/svg/footer');
-const { renderHeatmap } = require('../src/svg/heatmap');
+const { renderTransmissionTrail } = require('../src/svg/transmissionTrail');
 const { renderSectionHeader } = require('../src/svg/sectionHeader');
 const { fetchContributionWeeks } = require('../src/data/contributions');
-const { sampleHistoryWeeks } = require('../src/data/sampleHistory');
 
 const TILE_FILES = ['work-signal-scout.svg', 'work-data-quality.svg', 'work-ask-my-paper.svg', 'work-donna.svg'];
 
 const DEFAULT_SECTIONS = {
-  work: { num: '02', title: 'Selected work', subtitle: 'Projects worth tracking' },
-  historyLive: { num: '03', title: 'Transmission record', subtitle: 'Live GitHub calendar' },
-  historyExample: { num: '04', title: 'Arbitrary history', subtitle: 'Synthetic { date, count } demo' },
-  contact: { num: '05', title: 'Contact', subtitle: null },
+  work: { num: '02', title: 'Selected work', subtitle: 'Four projects — each tile links through to the repo' },
+  historyLive: { num: '03', title: 'Transmission record', subtitle: 'Live signal trail from GitHub — refreshed daily' },
+  contact: { num: '04', title: 'Contact', subtitle: 'Open channels' },
 };
 
 function write(outDir, file, svg) {
@@ -41,29 +39,22 @@ async function generate({ cfg, outDir, token, fetchWeeks }) {
 
   write(outDir, 'section-history-live.svg', renderSectionHeader(section(cfg, 'historyLive')));
 
-  write(outDir, 'section-history-example.svg', renderSectionHeader(section(cfg, 'historyExample')));
-  write(outDir, 'heatmap-example.svg', renderHeatmap(sampleHistoryWeeks(), {
-    title: 'Signal archive',
-    legend: '52 WEEKS · SYNTHETIC · ARBITRARY DATA',
-  }));
-
   write(outDir, 'section-contact.svg', renderSectionHeader(section(cfg, 'contact')));
   cfg.links.forEach((l) => write(outDir, l.file, renderButton(l.label)));
   write(outDir, 'footer.svg', renderFooter(cfg));
 
+  const recordPath = path.join(outDir, 'transmission-record.svg');
   try {
     const weeks = await (fetchWeeks || fetchContributionWeeks)(cfg.githubLogin, token);
-    write(outDir, 'heatmap.svg', renderHeatmap(weeks, {
-      title: 'Transmission record',
-      legend: `${weeks.length} WEEKS · LIVE · GITHUB`,
+    write(outDir, 'transmission-record.svg', renderTransmissionTrail(weeks, {
+      legend: `${weeks.length} WEEKS · LIVE · GITHUB · SIGNAL TRAIL`,
     }));
   } catch (e) {
-    const existing = path.join(outDir, 'heatmap.svg');
-    if (fs.existsSync(existing)) {
-      console.warn(`Heatmap fetch failed (${e.message}); keeping existing heatmap.svg`);
+    if (fs.existsSync(recordPath)) {
+      console.warn(`Transmission fetch failed (${e.message}); keeping existing transmission-record.svg`);
     } else {
-      console.warn(`Heatmap fetch failed (${e.message}); writing empty-state heatmap`);
-      write(outDir, 'heatmap.svg', renderHeatmap([], { legend: 'NO SIGNAL · OFFLINE' }));
+      console.warn(`Transmission fetch failed (${e.message}); writing offline transmission record`);
+      write(outDir, 'transmission-record.svg', renderTransmissionTrail([]));
     }
   }
 }
