@@ -1,0 +1,25 @@
+{
+  "name": "DeepExtrema",
+  "tagline": "Turning scattered signals into constellations",
+  "githubLogin": "DeepExtrema",
+  "about": {
+    "lede": "I build for the hard problems — the ones that only move when the engineering is real.",
+    "body": "Founder, independent researcher, engineer. I chase faint signals across machine learning, autonomy, and the edge of what's reliable."
+  },
+  "currently": {
+    "text": "Currently building Ephemeris — edge-AI for spacecraft",
+    "url": "https://parallex-website.jubranalawdi76.workers.dev/"
+  },
+  "projects": [
+    { "name": "Signal Scout", "blurb": "Finds the faint signal buried in the noise.", "url": "https://github.com/DeepExtrema/signal-scout" },
+    { "name": "Data Quality Agent", "blurb": "A sentinel for health data — drift, gaps, and anomalies caught before a model sees them.", "url": "https://github.com/DeepExtrema/DataQualityValidationAgentMedicalData" },
+    { "name": "Ask My Paper", "blurb": "Ask a question, get answers grounded in the papers themselves.", "url": "https://github.com/DeepExtrema/AskMyPaper" },
+    { "name": "Donna", "blurb": "An agent that keeps the work organized and moving.", "url": "https://github.com/DeepExtrema/Donna" }
+  ],
+  "links": [
+    { "label": "GitHub", "url": "https://github.com/DeepExtrema", "file": "btn-github.svg" },
+    { "label": "Website", "url": "https://taimoorawan.dev", "file": "btn-website.svg" },
+    { "label": "Parallax", "url": "https://parallex-website.jubranalawdi76.workers.dev/", "file": "btn-parallax.svg" }
+  ],
+  "footerStamp": "DEEPEXTREMA · SIGNAL OUTBOUND · ✦"
+}
