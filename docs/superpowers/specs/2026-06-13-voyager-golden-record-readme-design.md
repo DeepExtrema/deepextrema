@@ -89,10 +89,11 @@ markdown link: `[![alt](assets/x.svg)](url)`.
    - **Data Quality Agent** — *A sentinel for health data — drift, gaps, and anomalies caught before a model sees them.*
    - **Ask My Paper** — *Ask a question, get answers grounded in the papers themselves.*
    - **Donna** — *An agent that keeps the work organized and moving.*
-   - (One-liners are **draft** — to be confirmed by the owner; see §10.)
+   - (One-liners confirmed final. Tile repo URLs in §6.)
 4. **Transmission record box** — the **live contribution heatmap**, styled gold-on-dark
    to match (52 weeks). Regenerated on schedule.
-5. **Contact** — two framed button SVGs, each linked: **GitHub** and **Parallax**.
+5. **Contact** — three framed button SVGs, each linked, in order:
+   **GitHub** · **Website** (`taimoorawan.dev`) · **Parallax**.
 6. **Footer box** — Golden Record disc mark + tagline
    *"Turning scattered signals into constellations."* + mono stamp
    `DEEPEXTREMA · SIGNAL OUTBOUND · ✦`.
@@ -133,12 +134,16 @@ Reuse the palette module; reuse only the GitHub GraphQL utility needed for the h
   },
   "currently": { "text": "Currently building Ephemeris — edge-AI for spacecraft", "url": "https://parallex-website.jubranalawdi76.workers.dev/" },
   "projects": [
-    { "name": "Signal Scout", "blurb": "Finds the faint signal buried in the noise.", "url": "" },
-    { "name": "Data Quality Agent", "blurb": "A sentinel for health data — drift, gaps, and anomalies caught before a model sees them.", "url": "" },
-    { "name": "Ask My Paper", "blurb": "Ask a question, get answers grounded in the papers themselves.", "url": "" },
-    { "name": "Donna", "blurb": "An agent that keeps the work organized and moving.", "url": "" }
+    { "name": "Signal Scout", "blurb": "Finds the faint signal buried in the noise.", "url": "https://github.com/DeepExtrema/signal-scout" },
+    { "name": "Data Quality Agent", "blurb": "A sentinel for health data — drift, gaps, and anomalies caught before a model sees them.", "url": "https://github.com/DeepExtrema/DataQualityValidationAgentMedicalData" },
+    { "name": "Ask My Paper", "blurb": "Ask a question, get answers grounded in the papers themselves.", "url": "https://github.com/DeepExtrema/AskMyPaper" },
+    { "name": "Donna", "blurb": "An agent that keeps the work organized and moving.", "url": "https://github.com/DeepExtrema/Donna" }
   ],
-  "links": { "github": "https://github.com/DeepExtrema", "parallax": "https://parallex-website.jubranalawdi76.workers.dev/" }
+  "links": {
+    "github": "https://github.com/DeepExtrema",
+    "website": "https://taimoorawan.dev",
+    "parallax": "https://parallex-website.jubranalawdi76.workers.dev/"
+  }
 }
 ```
 
@@ -149,7 +154,7 @@ Reuse the palette module; reuse only the GitHub GraphQL utility needed for the h
 - `svg/about.js` — about box (+ currently line) SVG.
 - `svg/projectTile.js` — one project tile SVG (called per project).
 - `svg/heatmap.js` — gold-on-dark contribution heatmap SVG from calendar data.
-- `svg/contactButton.js` — one labeled button SVG.
+- `svg/contactButton.js` — one labeled button SVG (called per link: github/website/parallax).
 - `svg/footer.js` — footer box SVG.
 - `data/contributions.js` — fetch GitHub contribution calendar via GraphQL.
 - `generate.js` — orchestrator: load config, render all boxes, write to `assets/`.
@@ -157,7 +162,7 @@ Reuse the palette module; reuse only the GitHub GraphQL utility needed for the h
 **Output:** all generated SVGs in `assets/` (single asset dir):
 `hero.svg`, `about.svg`, `work-signal-scout.svg`, `work-data-quality.svg`,
 `work-ask-my-paper.svg`, `work-donna.svg`, `heatmap.svg`, `btn-github.svg`,
-`btn-parallax.svg`, `footer.svg`.
+`btn-website.svg`, `btn-parallax.svg`, `footer.svg`.
 
 **README.md:** hand-written static markdown referencing those assets. Not auto-edited.
 
@@ -211,14 +216,18 @@ Lightweight Jest tests for the generator:
   preserved (not overwritten).
 - README references every generated asset path that exists in `assets/`.
 
-## 10. Open Items (to confirm during/after review)
+## 10. Open Items — RESOLVED
 
-- **Project one-liners** are drafts — owner to confirm/replace final copy.
-- **Project repo URLs** — needed for the clickable tiles (currently blank in config).
-  If a repo URL is missing, the tile renders unlinked.
-- **Parallax URL** — using `https://parallex-website.jubranalawdi76.workers.dev/`;
-  confirm this is the canonical link.
-- **Hero link target** — leave hero unlinked, or link to the GitHub profile? (default: unlinked)
+- **Project one-liners:** confirmed final (as drafted).
+- **Project repo URLs:** provided —
+  Signal Scout `https://github.com/DeepExtrema/signal-scout`,
+  Data Quality Agent `https://github.com/DeepExtrema/DataQualityValidationAgentMedicalData`,
+  Ask My Paper `https://github.com/DeepExtrema/AskMyPaper`,
+  Donna `https://github.com/DeepExtrema/Donna`.
+- **Parallax URL:** `https://parallex-website.jubranalawdi76.workers.dev/` for now
+  (owner will change the domain later — keep it configurable in `profile.config.json`).
+- **Personal website:** `https://taimoorawan.dev` — added as a Contact button (GitHub · Website · Parallax).
+- **Hero link target:** unlinked (confirmed).
 
 ## Appendix A — Final copy
 
@@ -228,3 +237,4 @@ Lightweight Jest tests for the generator:
 - **About body:** Founder, independent researcher, engineer. I chase faint signals across machine learning, autonomy, and the edge of what's reliable.
 - **Currently:** Currently building Ephemeris — edge-AI for spacecraft → (Parallax site)
 - **Footer stamp:** DEEPEXTREMA · SIGNAL OUTBOUND · ✦
+- **Links:** GitHub `https://github.com/DeepExtrema` · Website `https://taimoorawan.dev` · Parallax `https://parallex-website.jubranalawdi76.workers.dev/`
