@@ -21,5 +21,11 @@
     { "label": "Website", "url": "https://taimoorawan.dev", "file": "btn-website.svg" },
     { "label": "Parallax", "url": "https://parallex-website.jubranalawdi76.workers.dev/", "file": "btn-parallax.svg" }
   ],
-  "footerStamp": "DEEPEXTREMA · SIGNAL OUTBOUND · ✦"
+  "footerStamp": "DEEPEXTREMA · SIGNAL OUTBOUND · ✦",
+  "sections": {
+    "work": { "num": "02", "title": "Selected work", "subtitle": "Four projects — each tile links through to the repo" },
+    "historyLive": { "num": "03", "title": "Transmission record", "subtitle": "Live signal from GitHub — refreshed daily" },
+    "historyExample": { "num": "04", "title": "Arbitrary history", "subtitle": "Same renderer, any week matrix of { date, count } — synthetic demo below" },
+    "contact": { "num": "05", "title": "Contact", "subtitle": "Open channels" }
+  }
 }

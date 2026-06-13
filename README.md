@@ -1,5 +1,6 @@
 <div align="center">
 
+<!-- § 01 · Identity -->
 <img src="assets/hero.svg" alt="DeepExtrema — turning scattered signals into constellations" width="100%">
 
 <br><br>
@@ -7,6 +8,11 @@
 <img src="assets/about.svg" alt="Founder, independent researcher, engineer. Currently building Ephemeris — edge-AI for spacecraft." width="100%">
 
 <br><br>
+
+<!-- § 02 · Selected work -->
+<img src="assets/section-work.svg" alt="§ 02 · Selected work" width="100%">
+
+<br>
 
 <table border="0" cellspacing="12" cellpadding="0"><tr>
 <td><a href="https://github.com/DeepExtrema/signal-scout"><img src="assets/work-signal-scout.svg" alt="Signal Scout — finds the faint signal buried in the noise"></a></td>
@@ -16,11 +22,30 @@
 <td><a href="https://github.com/DeepExtrema/Donna"><img src="assets/work-donna.svg" alt="Donna — an agent that keeps the work organized"></a></td>
 </tr></table>
 
+<br><br>
+
+<!-- § 03 · Live transmission record -->
+<img src="assets/section-history-live.svg" alt="§ 03 · Transmission record — live" width="100%">
+
 <br>
 
-<img src="assets/heatmap.svg" alt="Contribution heatmap — 52 weeks" width="100%">
+<img src="assets/heatmap.svg" alt="Live GitHub contribution heatmap — 52 weeks" width="100%">
 
 <br><br>
+
+<!-- § 04 · Arbitrary history demo -->
+<img src="assets/section-history-example.svg" alt="§ 04 · Arbitrary history — synthetic demo" width="100%">
+
+<br>
+
+<img src="assets/heatmap-example.svg" alt="History graph rendered from arbitrary synthetic { date, count } data" width="100%">
+
+<br><br>
+
+<!-- § 05 · Contact -->
+<img src="assets/section-contact.svg" alt="§ 05 · Contact" width="100%">
+
+<br>
 
 <a href="https://github.com/DeepExtrema"><img src="assets/btn-github.svg" alt="GitHub"></a>
 &nbsp;

@@ -11,8 +11,9 @@ test('heatmap renders one rect per day plus a label', () => {
     [{ date: '2026-01-01', count: 0 }, { date: '2026-01-02', count: 2 }],
     [{ date: '2026-01-03', count: 9 }],
   ];
-  const svg = renderHeatmap(weeks);
+  const svg = renderHeatmap(weeks, { title: 'Transmission record', legend: '2 WEEKS · TEST' });
   expect(svg.startsWith('<svg')).toBe(true);
-  expect((svg.match(/<rect/g) || []).length).toBeGreaterThanOrEqual(3 + 1); // 3 days + frame rect
+  expect((svg.match(/<rect/g) || []).length).toBeGreaterThanOrEqual(3 + 1 + 6); // days + frame + scale
   expect(svg).toContain('TRANSMISSION RECORD');
+  expect(svg).toContain('2 WEEKS · TEST');
 });
