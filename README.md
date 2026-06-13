@@ -40,13 +40,13 @@
 <!-- TELEMETRY_START -->
 <sub align="center">
 <b>TELEMETRY ·</b>
-COMMITS·30D <code>41</code>  ·
+COMMITS·30D <code>44</code>  ·
 PR·MERGED <code>0</code>  ·
 ISSUES·CLOSED <code>0</code>  ·
-ACTIVE·REPOS <code>3</code>  ·
+ACTIVE·REPOS <code>4</code>  ·
 STARS·TOTAL <code>6</code>  ·
 WORKFLOWS <code>⏳✅✅✅✅✅✅✅✅✅</code>  ·
-RATE·LIMIT <code>4993/5000</code>
+RATE·LIMIT <code>4990/5000</code>
 </sub>
 <!-- TELEMETRY_END -->
 
@@ -119,7 +119,7 @@ RATE·LIMIT <code>4993/5000</code>
 <tr>
 <td width="33%" align="center" valign="top">
 
-**🜨 SPACE** (stale)
+**🜨 SPACE**
 
 Venus and Jupiter: Conjunction from Avebury — To see Venus and Jupiter together this month, you won't need binoculars or ev...
 
@@ -130,16 +130,16 @@ Venus and Jupiter: Conjunction from Avebury — To see Venus and Jupiter togethe
 
 **◇ AI**
 
-[tensorflow/tensorflow](https://github.com/tensorflow/tensorflow)
+[f/prompts.chat](https://github.com/f/prompts.chat)
 
-<sub>HF TRENDING · AN OPEN SOURCE MACHINE LEARNING FRAMEWORK FOR EVERYONE</sub>
+<sub>HF TRENDING · F.K.A. AWESOME CHATGPT PROMPTS. SHARE, DISCOVER, AND COLL...</sub>
 
 </td>
 <td width="33%" align="center" valign="top">
 
 **✺ PHRASE**
 
-> *Curiosity compounds like interest, but pays in discoveries.*
+> *Ship early, iterate often, sleep eventually.*
 
 <sub>CURATED · DAILY</sub>
 
@@ -176,7 +176,7 @@ A small in-browser instrument. Two viewports six months apart — find the star 
 <div align="center">
 
 <sub>
-LAST BUILD <code>2026-06-12 20:03 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>e50ad03</code>
+LAST BUILD <code>2026-06-13 02:52 UTC</code>  ·  NEXT SYNC <code>+6h</code>  ·  WORKFLOW <code>update-cockpit.yml ✓</code>  ·  COMMIT <code>024b182</code>
 </sub>
 
 </div>
