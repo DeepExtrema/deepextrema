@@ -10,7 +10,13 @@ const FONTS = [
 
 function fontFaceCSS(fontsDir = path.join(__dirname, '..', 'assets', 'fonts')) {
   return FONTS.map((f) => {
-    const b64 = fs.readFileSync(path.join(fontsDir, f.file)).toString('base64');
+    const fp = path.join(fontsDir, f.file);
+    let b64;
+    try {
+      b64 = fs.readFileSync(fp).toString('base64');
+    } catch (e) {
+      throw new Error(`Failed to read font file for ${f.family} (${f.style} ${f.weight}): ${fp} — ${e.message}`);
+    }
     return `@font-face{font-family:'${f.family}';font-style:${f.style};font-weight:${f.weight};`
       + `src:url(data:font/woff2;base64,${b64}) format('woff2');}`;
   }).join('');
