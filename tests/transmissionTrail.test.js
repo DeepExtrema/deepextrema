@@ -13,6 +13,19 @@ test('transmission trail includes probe, dashed path, and legend', () => {
   expect(svg).not.toContain('NaN');
 });
 
+test('transmission trail animates progress without NaN', () => {
+  const weeks = [
+    [{ date: '2026-01-01', count: 2 }, { date: '2026-01-02', count: 0 }],
+    [{ date: '2026-01-03', count: 5 }],
+  ];
+  const start = renderTransmissionTrail(weeks, { progress: 0, embedFonts: false });
+  const mid = renderTransmissionTrail(weeks, { progress: 0.5, embedFonts: false });
+  expect(start).toContain('<circle');
+  expect(mid).toContain('stroke-dasharray');
+  expect(start).not.toContain('NaN');
+  expect(mid).not.toContain('NaN');
+});
+
 test('empty weeks renders offline state without probe path', () => {
   const svg = renderTransmissionTrail([]);
   expect(svg).toContain('NO SIGNAL');

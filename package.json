@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@octokit/graphql": "^9.0.3",
-    "dotenv": "^17.4.2"
+    "@resvg/resvg-js": "^2.6.2",
+    "dotenv": "^17.4.2",
+    "gifenc": "^1.0.3"
   }
 }

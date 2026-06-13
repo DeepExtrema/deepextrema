@@ -9,6 +9,7 @@ const { renderProjectTile } = require('../src/svg/projectTile');
 const { renderButton } = require('../src/svg/contactButton');
 const { renderFooter } = require('../src/svg/footer');
 const { renderTransmissionTrail } = require('../src/svg/transmissionTrail');
+const { renderTransmissionGif } = require('../src/animation/transmissionGif');
 const { renderSectionHeader } = require('../src/svg/sectionHeader');
 const { fetchContributionWeeks } = require('../src/data/contributions');
 
@@ -43,18 +44,32 @@ async function generate({ cfg, outDir, token, fetchWeeks }) {
   cfg.links.forEach((l) => write(outDir, l.file, renderButton(l.label)));
   write(outDir, 'footer.svg', renderFooter(cfg));
 
-  const recordPath = path.join(outDir, 'transmission-record.svg');
+  const recordSvgPath = path.join(outDir, 'transmission-record.svg');
+  const recordGifPath = path.join(outDir, 'transmission-record.gif');
   try {
     const weeks = await (fetchWeeks || fetchContributionWeeks)(cfg.githubLogin, token);
-    write(outDir, 'transmission-record.svg', renderTransmissionTrail(weeks, {
+    const trailOpts = {
       legend: `${weeks.length} WEEKS · LIVE · GITHUB · SIGNAL TRAIL`,
-    }));
+    };
+    write(outDir, 'transmission-record.svg', renderTransmissionTrail(weeks, trailOpts));
+    try {
+      fs.writeFileSync(recordGifPath, renderTransmissionGif(weeks, trailOpts));
+    } catch (gifErr) {
+      if (fs.existsSync(recordGifPath)) {
+        console.warn(`GIF generation failed (${gifErr.message}); keeping existing transmission-record.gif`);
+      } else {
+        console.warn(`GIF generation failed (${gifErr.message}); README will fall back to static SVG`);
+      }
+    }
   } catch (e) {
-    if (fs.existsSync(recordPath)) {
+    if (fs.existsSync(recordSvgPath)) {
       console.warn(`Transmission fetch failed (${e.message}); keeping existing transmission-record.svg`);
     } else {
       console.warn(`Transmission fetch failed (${e.message}); writing offline transmission record`);
       write(outDir, 'transmission-record.svg', renderTransmissionTrail([]));
+    }
+    if (fs.existsSync(recordGifPath)) {
+      console.warn(`Transmission fetch failed (${e.message}); keeping existing transmission-record.gif`);
     }
   }
 }

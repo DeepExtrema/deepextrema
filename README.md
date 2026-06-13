@@ -29,7 +29,7 @@
 
 <br>
 
-<img src="assets/transmission-record.svg" alt="Live GitHub contribution signal trail with probe" width="100%">
+<img src="assets/transmission-record.gif" alt="Live GitHub contribution signal trail with probe" width="100%">
 
 <br><br>
 

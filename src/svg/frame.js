@@ -10,10 +10,11 @@ function escapeXml(s) {
 }
 
 function box(width, height, inner, opts = {}) {
-  const { radius = 10, border = BORDER, bg = BG } = opts;
+  const { radius = 10, border = BORDER, bg = BG, embedFonts = true, fontsDir } = opts;
+  const defs = embedFonts ? `<defs>${fontDefs(fontsDir)}</defs>` : '';
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" `
     + `viewBox="0 0 ${width} ${height}" role="img">`
-    + `<defs>${fontDefs()}</defs>`
+    + defs
     + `<rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="${radius}" `
     + `fill="${bg}" stroke="${border}" stroke-width="1"/>`
     + inner
