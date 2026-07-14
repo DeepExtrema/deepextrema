@@ -2,7 +2,7 @@ name: ✦ Build README
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/funny-davinci-r6kx0m]  # branch entry is temporary: lets the redesign PR pick up live data; removed before merge
     paths:
       - 'profile.config.json'
       - 'scripts/**'
