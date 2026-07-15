@@ -1,17 +1,25 @@
 const fs = require('fs');
 const path = require('path');
+const { loadConfig } = require('../src/config');
 
-test('README references every generated asset and wraps tiles/buttons in links', () => {
-  const readme = fs.readFileSync(path.join(__dirname, '..', 'README.md'), 'utf8');
-  const assets = [
-    'hero.svg', 'about.svg', 'transmission-record.gif', 'footer.svg',
-    'section-work.svg', 'section-history-live.svg', 'section-contact.svg',
-    'work-signal-scout.svg', 'work-data-quality.svg', 'work-ask-my-paper.svg', 'work-donna.svg',
-    'btn-github.svg', 'btn-website.svg', 'btn-parallax.svg',
-  ];
-  assets.forEach((a) => expect(readme).toContain(`assets/${a}`));
-  expect(readme).not.toContain('heatmap-example.svg');
-  expect(readme).not.toContain('section-history-example.svg');
-  expect(readme).toContain('href="https://github.com/DeepExtrema/signal-scout"');
-  expect(readme).toContain('href="https://taimoorawan.dev"');
+const readme = fs.readFileSync(path.join(__dirname, '..', 'README.md'), 'utf8');
+
+test('README serves the plate with a dark-scheme source', () => {
+  expect(readme).toContain('<picture>');
+  expect(readme).toContain('media="(prefers-color-scheme: dark)"');
+  expect(readme).toContain('srcset="assets/colophon-dark.svg"');
+  expect(readme).toContain('src="assets/colophon-light.svg"');
+  expect(readme).toMatch(/alt="[^"]{100,}"/);
+});
+
+test('README links every project plus the site links', () => {
+  const cfg = loadConfig();
+  cfg.projects.forEach((p) => expect(readme).toContain(`href="${p.url}"`));
+  cfg.links.forEach((l) => expect(readme).toContain(`href="${l.url}"`));
+});
+
+test('README carries no leftovers from the previous design', () => {
+  ['hero.svg', 'transmission-record', 'btn-github', 'constellation', 'SIGNAL OUTBOUND'].forEach((s) => {
+    expect(readme).not.toContain(s);
+  });
 });
