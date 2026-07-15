@@ -2,7 +2,7 @@ name: ✦ Build README
 
 on:
   push:
-    branches: [main, claude/funny-davinci-r6kx0m]  # branch entry is temporary: regenerates PR plates after the Tesseract swap; removed before merge
+    branches: [main]
     paths:
       - 'profile.config.json'
       - 'scripts/**'
