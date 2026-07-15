@@ -110,3 +110,32 @@ test('embeds fonts by default', () => {
   expect(svg).toContain('@font-face');
   expect(svg).toContain('IBM Plex Serif');
 });
+
+test('slices tile the page exactly and window it through viewBox', () => {
+  const { buildPage, renderCodexSlices } = require('../src/svg/colophon');
+  const { height, bands } = buildPage(cfg, fixtureWeeks(), { embedFonts: false });
+  let prev = 0;
+  for (const b of bands) {
+    expect(b.y0).toBe(prev);
+    expect(b.y1).toBeGreaterThan(b.y0);
+    prev = b.y1;
+  }
+  expect(prev).toBe(height);
+
+  const slices = renderCodexSlices(cfg, fixtureWeeks(), { embedFonts: false });
+  expect(slices).toHaveLength(cfg.projects.length + 5);
+  for (const s of slices) {
+    expect(s.svg).toMatch(/viewBox="0 \d+ 880 \d+"/);
+  }
+});
+
+test('slice links map sections to their destinations', () => {
+  const { renderCodexSlices } = require('../src/svg/colophon');
+  const byKey = Object.fromEntries(renderCodexSlices(cfg, [], { embedFonts: false }).map((s) => [s.key, s.url]));
+  expect(byKey.head).toBe(cfg.links[0].url);
+  expect(byKey.now).toBe(cfg.now.url);
+  cfg.projects.forEach((p, i) => expect(byKey[`work-${i + 1}`]).toBe(p.url));
+  expect(byKey.activity).toBe(`https://github.com/${cfg.githubLogin}`);
+  expect(byKey.contents).toBeNull();
+  expect(byKey.foot).toBeNull();
+});

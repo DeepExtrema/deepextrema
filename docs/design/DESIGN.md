@@ -47,7 +47,18 @@ advance widths (`src/svg/metrics.js`), extracted once from the font files.
 
 Only the activity block: trace geometry, month ticks, the annotated max and
 current week, the date-range caption, the total, and the imprint year.
-Everything else is fixed by `profile.config.json`.
+Everything else is fixed by `profile.config.json`. The `✦ Build README`
+Action runs on a daily cron and on every push to main.
+
+## Clickable sections
+
+GitHub renders README images through a proxy, so links inside an SVG do not
+work. The page is therefore also emitted as stacked slices — the same page
+content windowed through per-section `viewBox`es, pixel-identical to the
+plate — and the README stacks them with `align="left" width="100%"` so they
+butt seamlessly, each slice wrapped in its own link: the title page to the
+site, the CURRENTLY section to Ephemeris, each contents row to its
+repository, the activity trace to the GitHub profile.
 
 ## Directions considered and set aside
 

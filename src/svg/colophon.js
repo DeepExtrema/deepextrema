@@ -167,14 +167,7 @@ function renderColophonFoot(cfg, pal, topY) {
   };
 }
 
-/**
- * Renders the whole profile page as a single plate.
- *
- * @param {object} cfg     validated profile config
- * @param {Array}  weeks   contribution calendar (weeks of {date, count} days)
- * @param {object} opts    { theme: 'light'|'dark', embedFonts, fontsDir }
- */
-function renderColophon(cfg, weeks, opts = {}) {
+function buildPage(cfg, weeks, opts = {}) {
   const { theme = 'light', embedFonts = true, fontsDir } = opts;
   const pal = PALETTES[theme];
   if (!pal) throw new Error(`Unknown theme: ${theme}`);
@@ -189,9 +182,7 @@ function renderColophon(cfg, weeks, opts = {}) {
   const height = foot.bottomY + 94;
 
   const defs = embedFonts ? `<defs>${fontDefs(fontsDir)}</defs>` : '';
-
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${height}" viewBox="0 0 ${W} ${height}" role="img">
-  ${defs}
+  const inner = `${defs}
   <rect width="${W}" height="${height}" fill="${pal.paper}"/>
   <rect x="20.5" y="20.5" width="${W - 41}" height="${height - 41}" fill="none" stroke="${pal.hairline}" stroke-width="1"/>
   ${cornerMarks(W, height, pal)}
@@ -200,8 +191,68 @@ function renderColophon(cfg, weeks, opts = {}) {
   ${renderContents(cfg, pal)}
   ${activity.svg}
   ${foot.svg}
-  ${mono(TEXT_R, height - 38, 9.5, pal.faint, 'f. 1 r', 'text-anchor="end"')}
+  ${mono(TEXT_R, height - 38, 9.5, pal.faint, 'f. 1 r', 'text-anchor="end"')}`;
+
+  // Horizontal cut lines between sections, each placed in quiet whitespace so
+  // the page can also be served as stacked slices (README regions can only
+  // link as whole images). Bands must tile [0, height] exactly.
+  const entriesTop = ENTRIES_START_Y - 32;
+  const bands = [
+    { key: 'head', y0: 0, y1: NOW_LABEL_Y - 24, link: 'site' },
+    { key: 'now', y0: NOW_LABEL_Y - 24, y1: CONTENTS_LABEL_Y - 24, link: 'now' },
+    { key: 'contents', y0: CONTENTS_LABEL_Y - 24, y1: entriesTop, link: null },
+    ...cfg.projects.map((p, i) => ({
+      key: `work-${i + 1}`,
+      y0: entriesTop + i * ENTRY_STEP,
+      y1: entriesTop + (i + 1) * ENTRY_STEP,
+      link: 'project',
+      project: p,
+    })),
+    { key: 'activity', y0: entriesTop + cfg.projects.length * ENTRY_STEP, y1: activity.bottomY + 24, link: 'github' },
+    { key: 'foot', y0: activity.bottomY + 24, y1: height, link: null },
+  ];
+
+  return { inner, height, bands };
+}
+
+/**
+ * Renders the whole profile page as a single plate.
+ *
+ * @param {object} cfg     validated profile config
+ * @param {Array}  weeks   contribution calendar (weeks of {date, count} days)
+ * @param {object} opts    { theme: 'light'|'dark', embedFonts, fontsDir }
+ */
+function renderColophon(cfg, weeks, opts = {}) {
+  const { inner, height } = buildPage(cfg, weeks, opts);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${height}" viewBox="0 0 ${W} ${height}" role="img">
+  ${inner}
 </svg>`;
 }
 
-module.exports = { renderColophon, PALETTES };
+/**
+ * Renders the page as an ordered list of slices — the same page content
+ * windowed through per-section viewBoxes, so the slices stack pixel-identical
+ * to the plate while each can be wrapped in its own link in the README.
+ *
+ * Returns [{ key, svg, url, project? }]; url is null for unlinked slices.
+ */
+function renderCodexSlices(cfg, weeks, opts = {}) {
+  const { inner, bands } = buildPage(cfg, weeks, opts);
+  const urlFor = (band) => {
+    if (band.link === 'site') return (cfg.links && cfg.links[0] && cfg.links[0].url) || null;
+    if (band.link === 'now') return cfg.now.url || null;
+    if (band.link === 'project') return band.project.url;
+    if (band.link === 'github') return `https://github.com/${cfg.githubLogin}`;
+    return null;
+  };
+  return bands.map((band) => ({
+    key: band.key,
+    url: urlFor(band),
+    project: band.project,
+    svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${band.y1 - band.y0}" viewBox="0 ${band.y0} ${W} ${band.y1 - band.y0}" role="img">
+  ${inner}
+</svg>`,
+  }));
+}
+
+module.exports = { renderColophon, renderCodexSlices, buildPage, PALETTES };
