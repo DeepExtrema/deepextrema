@@ -2,19 +2,22 @@ const { fontDefs } = require('../fonts');
 const { escapeXml } = require('./xml');
 const { measureSerif500, measureMono } = require('./metrics');
 const { aggregateWeeks, rangeCaption } = require('../data/weekly');
+const { EMBLEMS, orbit, cornerMarks } = require('./diagrams');
 
-// One plate, two inks. The dark paper is deliberately warmer than GitHub's
-// #0d1117 so the page frame reads as a page edge, not a themed card.
+// One plate, three inks: text ink, a sepia drawing ink for the figures, and
+// rubric red reserved for typography. The dark paper is deliberately warmer
+// than GitHub's #0d1117 so the page frame reads as a page edge, not a
+// themed card.
 const PALETTES = {
   light: {
     paper: '#FAF9F6', ink: '#1C1B18', muted: '#6E6A63', desc: '#55514A',
     hairline: '#DCD8CF', leader: '#B9B3A8', tick: '#C9C4BA', faint: '#9B958A',
-    rubric: '#96402A',
+    rubric: '#96402A', sepia: '#8A6A48', construction: '#CBBFA9',
   },
   dark: {
     paper: '#131210', ink: '#E8E3DA', muted: '#9C968B', desc: '#ACA69B',
     hairline: '#2E2B26', leader: '#555047', tick: '#45413A', faint: '#79736A',
-    rubric: '#C67A57',
+    rubric: '#C67A57', sepia: '#A58466', construction: '#4A443A',
   },
 };
 
@@ -44,29 +47,47 @@ function polylineLength(pts) {
 
 function renderTitlePage(cfg, pal, imprintYear) {
   const t = cfg.titlePage;
-  const currently = `${escapeXml(t.currently.pre)}<tspan font-style="italic">${escapeXml(t.currently.work)}</tspan>${escapeXml(t.currently.post)}`;
   const imprint = `${escapeXml(cfg.githubLogin.toUpperCase())} &#183; ${imprintYear}`;
   return [
     serif(CX, 132, 40, pal.ink, escapeXml(cfg.name.toUpperCase()), 'text-anchor="middle" font-weight="500" letter-spacing="10"'),
     `<line x1="${CX - 28}" y1="162" x2="${CX + 28}" y2="162" stroke="${pal.rubric}" stroke-width="1"/>`,
     serif(CX, 202, 16.5, pal.ink, escapeXml(t.role), 'text-anchor="middle"'),
     serif(CX, 230, 15.5, pal.muted, escapeXml(t.fields), 'text-anchor="middle" font-style="italic"'),
-    serif(CX, 268, 15.5, pal.ink, currently, 'text-anchor="middle"'),
-    mono(CX, 312, 11, pal.muted, imprint, 'text-anchor="middle" letter-spacing="3"'),
+    mono(CX, 272, 11, pal.muted, imprint, 'text-anchor="middle" letter-spacing="3"'),
   ].join('\n  ');
 }
 
+const NOW_LABEL_Y = 344;
+
+function renderNow(cfg, pal) {
+  const parts = [
+    serif(CX, NOW_LABEL_Y, 12.5, pal.muted, 'CURRENTLY', 'text-anchor="middle" font-weight="500" letter-spacing="5"'),
+    serif(140, NOW_LABEL_Y + 46, 19, pal.ink, escapeXml(cfg.now.name), 'font-weight="500"'),
+    mono(140 + measureSerif500(cfg.now.name, 19) + 14, NOW_LABEL_Y + 45, 12.5, pal.muted, 'in progress'),
+  ];
+  cfg.now.lines.forEach((line, i) => {
+    parts.push(serif(140, NOW_LABEL_Y + 72 + i * 24, 15, pal.desc, escapeXml(line)));
+  });
+  parts.push(orbit(548, NOW_LABEL_Y + 12, pal));
+  return parts.join('\n  ');
+}
+
+const CONTENTS_LABEL_Y = 536;
+const ENTRIES_START_Y = 580;
+
 function renderContents(cfg, pal) {
   const parts = [
-    serif(CX, 384, 12.5, pal.muted, 'CONTENTS', 'text-anchor="middle" font-weight="500" letter-spacing="5"'),
+    serif(CX, CONTENTS_LABEL_Y, 12.5, pal.muted, 'CONTENTS', 'text-anchor="middle" font-weight="500" letter-spacing="5"'),
   ];
   cfg.projects.forEach((p, i) => {
-    const y = 428 + i * ENTRY_STEP;
+    const y = ENTRIES_START_Y + i * ENTRY_STEP;
     const numeral = ROMAN[i] || String(i + 1);
     const detail = `${p.language} · ${p.year}`;
     const nameEnd = 140 + measureSerif500(p.name, 19);
     const leaderStart = Math.round(nameEnd + 12);
     const leaderEnd = Math.round(TEXT_R - measureMono(detail, 12.5) - 14);
+    const emblem = EMBLEMS[p.emblem];
+    if (emblem) parts.push(emblem(71, y + 6, pal));
     parts.push(serif(122, y, 14, pal.rubric, numeral, 'text-anchor="end" font-weight="500"'));
     parts.push(serif(140, y, 19, pal.ink, escapeXml(p.name), 'font-weight="500"'));
     if (leaderStart + 20 < leaderEnd) {
@@ -161,7 +182,7 @@ function renderColophon(cfg, weeks, opts = {}) {
   const series = aggregateWeeks(weeks || []);
   const imprintYear = series.lastDay ? series.lastDay.y : new Date().getFullYear();
 
-  const entriesBottom = 428 + (cfg.projects.length - 1) * ENTRY_STEP + 26;
+  const entriesBottom = ENTRIES_START_Y + (cfg.projects.length - 1) * ENTRY_STEP + 26;
   const activityLabelY = entriesBottom + 70;
   const activity = renderActivity(series, pal, activityLabelY);
   const foot = renderColophonFoot(cfg, pal, activity.bottomY + 54);
@@ -173,10 +194,13 @@ function renderColophon(cfg, weeks, opts = {}) {
   ${defs}
   <rect width="${W}" height="${height}" fill="${pal.paper}"/>
   <rect x="20.5" y="20.5" width="${W - 41}" height="${height - 41}" fill="none" stroke="${pal.hairline}" stroke-width="1"/>
+  ${cornerMarks(W, height, pal)}
   ${renderTitlePage(cfg, pal, imprintYear)}
+  ${renderNow(cfg, pal)}
   ${renderContents(cfg, pal)}
   ${activity.svg}
   ${foot.svg}
+  ${mono(TEXT_R, height - 38, 9.5, pal.faint, 'f. 1 r', 'text-anchor="end"')}
 </svg>`;
 }
 

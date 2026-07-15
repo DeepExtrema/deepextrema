@@ -3,11 +3,11 @@
   "githubLogin": "X",
   "titlePage": {
     "role": "r",
-    "fields": "f",
-    "currently": { "pre": "p", "work": "w", "post": "s" }
+    "fields": "f"
   },
+  "now": { "name": "N", "lines": ["l"], "url": "https://example.com" },
   "projects": [
-    { "name": "P", "description": "d", "year": "2026", "url": "https://example.com" }
+    { "name": "P", "description": "d", "year": "2026", "emblem": "signal", "url": "https://example.com" }
   ],
   "colophon": { "note": "n", "addresses": ["a"] }
 }

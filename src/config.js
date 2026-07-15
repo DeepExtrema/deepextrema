@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const REQUIRED = ['name', 'githubLogin', 'titlePage', 'projects', 'colophon'];
+const REQUIRED = ['name', 'githubLogin', 'titlePage', 'now', 'projects', 'colophon'];
 
 function loadConfig(file = path.join(__dirname, '..', 'profile.config.json')) {
   const cfg = JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -9,8 +9,11 @@ function loadConfig(file = path.join(__dirname, '..', 'profile.config.json')) {
   if (missing.length) throw new Error(`Config missing required field(s): ${missing.join(', ')}`);
 
   const t = cfg.titlePage;
-  if (!t.role || !t.fields || !t.currently || t.currently.work === undefined) {
-    throw new Error('Config missing required field: titlePage.role/fields/currently');
+  if (!t.role || !t.fields) {
+    throw new Error('Config missing required field: titlePage.role/fields');
+  }
+  if (!cfg.now.name || !Array.isArray(cfg.now.lines) || cfg.now.lines.length === 0) {
+    throw new Error('Config missing required field: now.name/lines');
   }
   if (!Array.isArray(cfg.projects) || cfg.projects.length === 0) {
     throw new Error('Config missing required field: projects');

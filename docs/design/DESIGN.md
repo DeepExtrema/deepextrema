@@ -1,9 +1,13 @@
-# The colophon design
+# The codex design
 
-The profile page is set like the front matter of a finely made book: a
-letterspaced title page, a table of contents with leader dots, a year of
-work drawn as a single hairline trace, and a closing colophon that states
-plainly how the page is made. One plate, two inks, no decoration.
+The profile page is set like the front matter of a finely made book that
+has passed through a notebook-keeper's hands: a letterspaced title page, a
+table of contents with leader dots, a year of work drawn as a single
+hairline trace, and a closing colophon that states plainly how the page is
+made — annotated throughout with hairline ink figures in the manner of a
+Renaissance codex: an orbital construction beside the current work, a
+marginal emblem beside each project (a signal fan, an inspected grid, a
+bracketed folio, a wireframe tesseract), a compass mark in one corner.
 
 | Light | Dark |
 |---|---|
@@ -27,6 +31,11 @@ live data once the daily Action has run.)*
   `prefers-color-scheme`.
 - **Rubric red** (`#96402A` / `#C67A57`) appears exactly three times: the
   title rule, the contents numerals, and the current-week marker.
+- **A second ink for the figures.** All drawings use a sepia ink
+  (`#8A6A48` / `#A58466`) with faint construction lines, so text stays text
+  and figures read as figures. Drawings may only carry annotations that are
+  true of the drawing itself (the drawn ellipse's eccentricity, its
+  constructed angle) — never invented measurements.
 
 ## Type
 

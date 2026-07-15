@@ -5,7 +5,8 @@ test('loads the real profile.config.json with required fields', () => {
   const cfg = loadConfig();
   expect(cfg.name).toBe('Taimoor Awan');
   expect(cfg.githubLogin).toBe('DeepExtrema');
-  expect(cfg.titlePage.currently.work).toBe('Ephemeris');
+  expect(cfg.now.name).toBe('Ephemeris');
+  expect(cfg.now.lines.length).toBeGreaterThanOrEqual(1);
   expect(cfg.projects).toHaveLength(4);
   cfg.projects.forEach((p) => {
     expect(p.url).toMatch(/^https:\/\/github\.com\/DeepExtrema\//);

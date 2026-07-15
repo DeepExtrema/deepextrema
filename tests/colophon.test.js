@@ -34,7 +34,22 @@ test('title page sets the name in caps with a plain-figure imprint', () => {
   expect(svg).toContain('TAIMOOR AWAN');
   expect(svg).toContain('DEEPEXTREMA &#183; 2026');
   expect(svg).not.toContain('MMXXVI');
-  expect(svg).toContain('<tspan font-style="italic">Ephemeris</tspan>');
+});
+
+test('the now section presents the current work with its figure', () => {
+  const svg = renderColophon(cfg, fixtureWeeks(), { embedFonts: false });
+  expect(svg).toContain('CURRENTLY');
+  expect(svg).toContain('>Ephemeris<');
+  expect(svg).toContain('in progress');
+  cfg.now.lines.forEach((l) => expect(svg).toContain(l.replace(/'/g, '&apos;').replace(/—/g, '—')));
+});
+
+test('every project carries its marginal emblem and the page its marks', () => {
+  const svg = renderColophon(cfg, fixtureWeeks(), { embedFonts: false });
+  // four emblems + orbit figure draw in the sepia ink
+  const sepia = (svg.match(/stroke="#8A6A48"/g) || []).length;
+  expect(sepia).toBeGreaterThanOrEqual(5);
+  expect(svg).toContain('f. 1 r');
 });
 
 test('contents lists every project with numeral, leader, detail, and description', () => {

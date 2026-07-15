@@ -3,12 +3,15 @@
   "githubLogin": "DeepExtrema",
   "titlePage": {
     "role": "Founder, independent researcher, engineer.",
-    "fields": "Machine learning · autonomy · edge systems",
-    "currently": {
-      "pre": "Currently building ",
-      "work": "Ephemeris",
-      "post": ", edge AI for spacecraft."
-    }
+    "fields": "Machine learning · autonomy · edge systems"
+  },
+  "now": {
+    "name": "Ephemeris",
+    "lines": [
+      "Edge AI for spacecraft — inference on board rather than",
+      "on the ground, within the vehicle's power and compute."
+    ],
+    "url": "https://parallex-website.jubranalawdi76.workers.dev/"
   },
   "projects": [
     {
@@ -16,6 +19,7 @@
       "description": "A macOS Wi-Fi Geiger counter: finds devices by signal strength.",
       "language": "Swift",
       "year": "2026",
+      "emblem": "signal",
       "url": "https://github.com/DeepExtrema/signal-scout"
     },
     {
@@ -23,6 +27,7 @@
       "description": "Validation for medical datasets: drift, gaps, and anomalies caught before training.",
       "language": "Python",
       "year": "2026",
+      "emblem": "grid",
       "url": "https://github.com/DeepExtrema/DataQualityValidationAgentMedicalData"
     },
     {
@@ -30,6 +35,7 @@
       "description": "Question answering grounded in the text of research papers.",
       "language": "Python",
       "year": "2026",
+      "emblem": "folio",
       "url": "https://github.com/DeepExtrema/AskMyPaper"
     },
     {
@@ -37,6 +43,7 @@
       "description": "Persistent, shared memory for AI agents, built on an Obsidian vault.",
       "language": "Python",
       "year": "2026",
+      "emblem": "tesseract",
       "url": "https://github.com/DeepExtrema/tesseract-mcp"
     }
   ],
